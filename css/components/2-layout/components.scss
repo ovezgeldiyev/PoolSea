@@ -2,16 +2,45 @@ h1 {
   font-weight: 700;
   font-size: 112px;
   line-height: 122px;
+  background: linear-gradient(
+    268.3deg,
+    #00fff9 -4.34%,
+    #00c5ff 15.57%,
+    #0078ff 93.71%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 h2 {
   font-size: 76px;
   line-height: 82px;
+  background: linear-gradient(
+    268.3deg,
+    #00fff9 -4.34%,
+    #00c5ff 13.53%,
+    #0078ff 93.71%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 h3 {
   font-size: 56px;
   line-height: 70px;
+  span{
+    background: linear-gradient(
+        268.3deg,
+        #00fff9 -4.34%,
+        #00c5ff 13.53%,
+        #0078ff 93.71%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+  }
 }
 
 h4 {
@@ -69,14 +98,14 @@ main {
     border-radius: 30px;
     background-color: $white;
 
-    span{
-        line-height: 23px;
-        font-weight: 700;
-        font-family: $sfDisplay;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        background: transparent;
+    span {
+      line-height: 23px;
+      font-weight: 700;
+      font-family: $sfDisplay;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      background: transparent;
     }
   }
 }

@@ -64,7 +64,7 @@ body {
   color: #fff;
   line-height: 25px;
   font-weight: 600;
-  background: #000;
+  background: #0D0F15;
 }
 
 a {
@@ -94,16 +94,30 @@ h1 {
   font-weight: 700;
   font-size: 112px;
   line-height: 122px;
+  background: linear-gradient(268.3deg, #00fff9 -4.34%, #00c5ff 15.57%, #0078ff 93.71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 h2 {
   font-size: 76px;
   line-height: 82px;
+  background: linear-gradient(268.3deg, #00fff9 -4.34%, #00c5ff 13.53%, #0078ff 93.71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 h3 {
   font-size: 56px;
   line-height: 70px;
+}
+h3 span {
+  background: linear-gradient(268.3deg, #00fff9 -4.34%, #00c5ff 13.53%, #0078ff 93.71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 h4 {
