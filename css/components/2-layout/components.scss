@@ -30,16 +30,16 @@ h2 {
 h3 {
   font-size: 56px;
   line-height: 70px;
-  span{
+  span {
     background: linear-gradient(
-        268.3deg,
-        #00fff9 -4.34%,
-        #00c5ff 13.53%,
-        #0078ff 93.71%
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      268.3deg,
+      #00fff9 -4.34%,
+      #00c5ff 13.53%,
+      #0078ff 93.71%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }
 
@@ -110,21 +110,21 @@ main {
   }
 }
 
-
 .mainLogo {
-    display: flex;
-    align-items: center;
-    &__image {
-      width: 50px;
-      margin-right: 12px;
-      img {
-        width: 100%;
-        object-fit: contain;
-      }
-    }
-    p {
-      font-size: 500;
-      line-height: 28px;
-      font-size: 28px;
+  display: flex;
+  align-items: center;
+  &__image {
+    width: 50px;
+    margin-right: 12px;
+    img {
+      width: 100%;
+      object-fit: contain;
     }
   }
+  p {
+    font-family: $sfDisplay;
+    font-size: 500;
+    line-height: 28px;
+    font-size: 28px;
+  }
+}

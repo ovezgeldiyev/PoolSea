@@ -33,13 +33,13 @@ input::-webkit-inner-spin-button {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba($color: #000, $alpha: 0.2);
+  // background: rgba($color: #000, $alpha: 0.2);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba($color: #000, $alpha: 0.3);
+  // background: rgba($color: #000, $alpha: 0.3);
 }
 /*** 
 ====================================================================
@@ -49,10 +49,10 @@ Global Settings
 body {
   font-family: $sfText;
   font-size: 18px;
-  color: $white;
+  color: $black;
   line-height: 25px;
   font-weight: 600;
-  background: $black;
+  background: $white;
 }
 a {
   text-decoration: none;
@@ -71,7 +71,7 @@ ul {
 }
 .auto__container {
   position: relative;
-  max-width: 1304px;
+  max-width: 1266px;
   margin: 0 auto;
   padding: 0 40px;
 }
