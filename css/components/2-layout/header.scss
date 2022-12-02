@@ -1,0 +1,52 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  &.sticky  {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   animation-name: sticky;
+   animation-duration: .4s;
+  }
+  &__inner {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 320px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+// 1024px
+@mixin header-lg-xlg {
+    .header {
+    
+    }
+}
+// 540px
+@mixin header-xsm-sm {
+    .header {
+    
+    }
+}
+@keyframes sticky {
+    0% {
+      top: -60px;
+      opacity: 0;
+    }
+    100% {
+      top: 0;
+      opacity: 1;
+    }
+  }
