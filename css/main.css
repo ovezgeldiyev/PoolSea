@@ -1,4 +1,8 @@
 @import "./fonts/stylesheet.css";
+:root {
+  --bgcolor: #fff;
+}
+
 html, body {
   scroll-behavior: smooth;
 }
@@ -59,8 +63,8 @@ body {
   font-size: 18px;
   color: #fff;
   line-height: 25px;
-  font-weight: 500;
-  background: #000;
+  font-weight: 600;
+  background: #0D0F15;
 }
 
 a {
@@ -88,8 +92,67 @@ ul li {
 
 h1 {
   font-weight: 700;
-  font-size: 70px;
-  line-height: 85px;
+  font-size: 112px;
+  line-height: 122px;
+  background: linear-gradient(268.3deg, #00fff9 -4.34%, #00c5ff 15.57%, #0078ff 93.71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+h2 {
+  font-size: 76px;
+  line-height: 82px;
+  background: linear-gradient(268.3deg, #00fff9 -4.34%, #00c5ff 13.53%, #0078ff 93.71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+h3 {
+  font-size: 56px;
+  line-height: 70px;
+}
+h3 span {
+  background: linear-gradient(268.3deg, #00fff9 -4.34%, #00c5ff 13.53%, #0078ff 93.71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+h4 {
+  font-size: 48px;
+  line-height: 58px;
+}
+
+h5 {
+  font-size: 28px;
+  line-height: 36px;
+}
+
+h6.big {
+  font-size: 20px;
+  line-height: 25px;
+}
+h6.sm {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+p.extra {
+  font-size: 32px;
+  line-height: 42px;
+}
+p.big {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+p.sm {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 main {
@@ -97,15 +160,49 @@ main {
 }
 
 .button {
+  padding: 15px 39px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 16px;
+}
+.button.secondary {
+  padding: 18px 37px;
+  font-size: 20px;
+  border-radius: 30px;
+  background-color: #fff;
+}
+.button.secondary span {
+  line-height: 23px;
+  font-weight: 700;
+  font-family: "sfDisplay", sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background: transparent;
+}
+
+.mainLogo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.mainLogo__image {
+  width: 50px;
+  margin-right: 12px;
+}
+.mainLogo__image img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.mainLogo p {
+  font-size: 500;
+  line-height: 28px;
+  font-size: 28px;
 }
 
 .header {
@@ -184,6 +281,37 @@ main {
 }
 .nav .burger {
   display: none;
+}
+
+.footer__inner-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__inner-main-content {
+  width: calc(40% - 10px);
+}
+.footer__inner-main-links {
+  width: calc(60% - 10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footerLink h5 {
+  font-size: 20px;
+  line-height: 23px;
+}
+.footerLink a {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 @media (max-width: 1024px) {

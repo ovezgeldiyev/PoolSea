@@ -57,35 +57,55 @@
 // // scroll end
 
 // faq start
-const tabBtn = document.querySelectorAll(".tabBtn");
-const tabEvent = document.querySelectorAll(".tabEvent");
-tabBtn.forEach((e) => {
-  onTabClick(tabBtn, tabEvent, e);
-});
-function onTabClick(tabBtns, tabItems, item) {
-  item.addEventListener("click", function (e) {
-    let currentBtn = item;
-    let tabId = currentBtn.getAttribute("data-tab");
-    let currentTab = document.querySelector(tabId);
-    if (currentBtn.classList.contains("active")) {
-      const faq = currentBtn.parentElement.querySelector(".tabEvent");
-      if (faq) {
-        faq.classList.remove("active");
-        currentBtn.classList.remove("active");
-      }
-    } else if (!currentBtn.classList.contains("active")) {
-      tabBtns.forEach(function (item) {
-        item.classList.remove("active");
-      });
+// const tabBtn = document.querySelectorAll(".tabBtn");
+// const tabEvent = document.querySelectorAll(".tabEvent");
+// tabBtn.forEach((e) => {
+//   onTabClick(tabBtn, tabEvent, e);
+// });
+// function onTabClick(tabBtns, tabItems, item) {
+//   item.addEventListener("click", function (e) {
+//     let currentBtn = item;
+//     let tabId = currentBtn.getAttribute("data-tab");
+//     let currentTab = document.querySelector(tabId);
+//     if (currentBtn.classList.contains("active")) {
+//       const faq = currentBtn.parentElement.querySelector(".tabEvent");
+//       if (faq) {
+//         faq.classList.remove("active");
+//         currentBtn.classList.remove("active");
+//       }
+//     } else if (!currentBtn.classList.contains("active")) {
+//       tabBtns.forEach(function (item) {
+//         item.classList.remove("active");
+//       });
 
-      tabItems.forEach(function (item) {
-        item.classList.remove("active");
-      });
-      currentBtn.classList.add("active");
-      currentTab.classList.add("active");
-    }
-  });
-}
+//       tabItems.forEach(function (item) {
+//         item.classList.remove("active");
+//       });
+//       currentBtn.classList.add("active");
+//       currentTab.classList.add("active");
+//     }
+//   });
+// }
 // faq end
 
 
+
+
+// var themeCheck = document.getElementById("themeCheck");
+// var themeLogo = document.getElementById("themeLogo");
+// var themeDuckleft = document.getElementById("themeDuckleft");
+// var themeDuckright = document.getElementById("themeDuckright");
+
+// themeCheck.onchange = function () {
+//   if (themeCheck.checked) {
+//     document.documentElement.setAttribute("data-theme", "light");
+//     themeLogo.setAttribute("src", "images/logo-light.png");
+//     themeDuckleft.setAttribute("src", "images/duckleft-light.png");
+//     themeDuckright.setAttribute("src", "images/duckright-light.png");
+//   } else {
+//     document.documentElement.setAttribute("data-theme", "dark");
+//     themeLogo.setAttribute("src", "images/logo.png");
+//     themeDuckleft.setAttribute("src", "images/duckleft.png");
+//     themeDuckright.setAttribute("src", "images/duckright.png");
+//   }
+// };
