@@ -1,3 +1,26 @@
+// slider
+
+// slider
+var swiper = new Swiper(".mySwiper", {
+  grabCursor: true,
+  effect: "creative",
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  creativeEffect: {
+    prev: {
+      // shadow: true,
+      translate: ["-20%", 0, -1],
+    },
+    next: {
+      translate: ["100%", 0, 0],
+    },
+  },
+});
+
+
+
 // // menu start
 // var menu = document.getElementById("menu");
 // var menuBtn = document.getElementById("menuBtn");

@@ -2,6 +2,8 @@ h1 {
   font-weight: 700;
   font-size: 112px;
   line-height: 122px;
+  font-family: $sfDisplay;
+
   background: linear-gradient(
     268.3deg,
     #00fff9 -4.34%,
@@ -16,6 +18,7 @@ h1 {
 h2 {
   font-size: 76px;
   line-height: 82px;
+  font-weight: 600;
   background: linear-gradient(
     268.3deg,
     #00fff9 -4.34%,
@@ -84,6 +87,7 @@ p {
 
 main {
   overflow: hidden;
+  margin-top: 215px;
 }
 
 .button {
@@ -92,6 +96,45 @@ main {
   color: $white;
   font-size: 16px;
   line-height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s ease;
+  cursor: pointer;
+  &:hover {
+    opacity: .88;
+
+  }
+  &.primary {
+    color: $white;
+    background: $gradient;
+    padding: 15px 38px;
+    line-height: 19px;
+  }
+  &.icon {
+    padding: 13px;
+    background-color: $iconbg;
+    img {
+      &.sun {
+        display: none;
+      }
+    }
+    &.active {
+      img {
+        &.sun {
+          display: block;
+        }
+        &.moon {
+          display: none;
+        }
+      }
+    }
+    svg {
+      fill: $iconColor;
+      width: 24px;
+      height: 24px;
+    }
+  }
   &.secondary {
     padding: 18px 37px;
     font-size: 20px;
