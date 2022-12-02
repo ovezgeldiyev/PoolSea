@@ -1,35 +1,47 @@
-.mainLogo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &__image{
-        width:50px;
-        margin-right: 12px;
-        img{
-            width: 100%;
-            object-fit: contain;
-        }
+.mainLogo {
+  display: flex;
+  align-items: center;
+  &__image {
+    width: 50px;
+    margin-right: 12px;
+    img {
+      width: 100%;
+      object-fit: contain;
     }
-    p{
-        font-size: 500;
-        line-height: 28px;
-        font-size: 28px;
-    }
+  }
+  p {
+    font-size: 500;
+    line-height: 28px;
+    font-size: 28px;
+  }
 }
-
 
 .footer {
   &__inner {
     &-main {
       display: flex;
       justify-content: space-between;
-      &-content{
-          width: calc(40% - 10px);
+      &-content {
+        width: calc(40% - 10px);
       }
-      &-links{
-          width: calc(60% - 10px);
+      &-links {
+        width: calc(60% - 10px);
+        display: flex;
+        justify-content: space-between;
       }
     }
+  }
+  &Link{
+      h5{
+          font-size: 20px;
+          line-height: 23px;
+      }
+      a{
+        display: block;
+        margin-bottom: 15px;
+        font-size: 16px;
+        line-height: 19px;
+      }
   }
 }
 

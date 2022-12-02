@@ -88,8 +88,53 @@ ul li {
 
 h1 {
   font-weight: 700;
-  font-size: 70px;
-  line-height: 85px;
+  font-size: 112px;
+  line-height: 122px;
+}
+
+h2 {
+  font-size: 76px;
+  line-height: 82px;
+}
+
+h3 {
+  font-size: 56px;
+  line-height: 70px;
+}
+
+h4 {
+  font-size: 48px;
+  line-height: 58px;
+}
+
+h5 {
+  font-size: 28px;
+  line-height: 36px;
+}
+
+h6.big {
+  font-size: 20px;
+  line-height: 25px;
+}
+h6.sm {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+p.extra {
+  font-size: 32px;
+  line-height: 42px;
+}
+p.big {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+p.sm {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 main {
@@ -193,9 +238,6 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 .mainLogo__image {
   width: 50px;
@@ -225,6 +267,22 @@ main {
 }
 .footer__inner-main-links {
   width: calc(60% - 10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footerLink h5 {
+  font-size: 20px;
+  line-height: 23px;
+}
+.footerLink a {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 @media (max-width: 1024px) {
