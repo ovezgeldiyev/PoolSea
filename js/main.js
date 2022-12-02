@@ -10,7 +10,7 @@ var swiper = new Swiper(".mySwiper", {
   },
   creativeEffect: {
     prev: {
-      // shadow: true,
+      shadow: true,
       translate: ["-20%", 0, -1],
     },
     next: {
