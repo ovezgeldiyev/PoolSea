@@ -1,20 +1,4 @@
-.mainLogo {
-  display: flex;
-  align-items: center;
-  &__image {
-    width: 50px;
-    margin-right: 12px;
-    img {
-      width: 100%;
-      object-fit: contain;
-    }
-  }
-  p {
-    font-size: 500;
-    line-height: 28px;
-    font-size: 28px;
-  }
-}
+
 
 .footer {
   &__inner {
