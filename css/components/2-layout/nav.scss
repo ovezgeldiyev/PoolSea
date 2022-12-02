@@ -1,17 +1,59 @@
 .nav {
+    display: flex;
+    align-items: center;
     &__inner {
         display: flex;
         align-items: center;
+        padding-top: 5px;
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 24px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                color: $textColor;
+                font-size: 16px;
+                line-height: 18px;
+                font-weight: 500;
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    top: 100%;
+                    left: 0;
+                    width: 0%;
+                    height: 1px;
+                    background: $gradient;
+                    transition: .3s ease;
+                }
+                &.active {
+                    background: $gradient;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    &::before {
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
+
     .burger {
         display: none;
     }
 }
+
 // 1024px
 @mixin nav-lg-xlg {
     body.active {
         overflow: hidden;
     }
+
     .nav {
         position: fixed;
         top: 60px;
@@ -22,9 +64,11 @@
         background: rgba($color: #000000, $alpha: 0.4);
         transform: translateX(100%);
         @include transition;
+
         &.active {
             @include transformReset;
         }
+
         &__inner {
             flex-direction: column;
             position: absolute;
@@ -41,6 +85,7 @@
             background: #FEFEFE;
         }
     }
+
     .burger {
         display: block;
         cursor: pointer;
@@ -48,9 +93,11 @@
         position: relative;
         width: 30px;
         height: 30px;
+
         &:hover {
             opacity: .8;
         }
+
         &::before {
             top: 20%;
             width: 100%;
@@ -62,6 +109,7 @@
             left: 50%;
             @include transformX;
         }
+
         span {
             top: 50%;
             width: 100%;
@@ -73,6 +121,7 @@
             @include transform;
             @include transition;
         }
+
         &::after {
             bottom: 20%;
             width: 100%;
@@ -84,15 +133,18 @@
             left: 50%;
             @include transformX;
         }
+
         &.active {
             &::before {
                 top: 50%;
                 -webkit-transform: translate(-50%, -50%) rotate(45deg);
                 transform: translate(-50%, -50%) rotate(45deg);
             }
+
             span {
                 opacity: 0;
             }
+
             &::after {
                 bottom: 50%;
                 -webkit-transform: translate(-50%, 50%) rotate(-45deg);
@@ -101,9 +153,8 @@
         }
     }
 }
+
 // 540px
 @mixin nav-xsm-sm {
-    .nav {
-    
-    }
+    .nav {}
 }

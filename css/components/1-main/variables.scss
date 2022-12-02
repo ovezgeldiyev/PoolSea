@@ -6,11 +6,31 @@ $white: #fff;
 $gradient: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
 
 
-$bgcolor: var(--bgcolor);
-:root {
-    --bgcolor: #fff;
-}
+$bgColor: var(--bgColor);
+$textColor: var(--textColor);
+$iconColor: var(--iconColor);
+$iconbg: var(--iconbg);
+$langColor: var(--langColor);
+$pColor: var(--pColor);
 
+:root {
+    --bgColor: #fff;
+    --textColor: #0D0F15;
+    --iconColor: #6E6E73;
+    --iconbg: #DDE8F4;
+    --langColor: #0D0F15;
+    --pColor: #22252A;
+
+}
+html.active {
+    --bgColor: #06070A;
+    --textColor: #fff;
+    --iconColor: #fff;
+    --iconbg: #131823;
+    --langColor: #F4F4F4CC;
+    --pColor: #F6F9FC;
+
+}
 
 // fonts
 $graphik: 'Graphik', sans-serif;

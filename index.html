@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,68 +14,55 @@
       <div class="auto__container">
         <div class="header__inner">
           <div class="header__inner-logo">
-            <img src="./images/logo.svg" alt="" />
+            <span>
+              <img src="./images/logo.svg" alt="" />
+            </span>
             PoolSea
           </div>
           <nav class="nav" id="menu">
             <ul class="nav__inner">
               <li>
-                <a href="#">
-                  $POOL
-                </a>
+                <a href="#"> $POOL </a>
               </li>
               <li>
-                <a href="#">
-                  DEX
-                </a>
+                <a href="#"> DEX </a>
               </li>
               <li>
-                <a href="#">
-                  NFT marketplace
-                </a>
+                <a href="#"> NFT marketplace </a>
               </li>
               <li>
-                <a href="#">
-                  Stablecoin
-                </a>
+                <a href="#" class="active"> Stablecoin </a>
               </li>
               <li>
-                <a href="#">
-                  Staking pool (Beta)
-                </a>
+                <a href="#"> Staking pool (Beta) </a>
               </li>
             </ul>
           </nav>
           <div class="header__inner-buttons">
-            <a href="#" class="button">
+            <a href="#" class="button icon">
               <svg>
                 <use xlink:href="#telegram"></use>
               </svg>
             </a>
-            <a href="#" class="button">
+            <a href="#" class="button icon">
               <svg>
                 <use xlink:href="#twitter"></use>
               </svg>
             </a>
-            <a href="#" class="button">
-              Info
-            </a>
-            <button>
-              <svg class="dark">
-                <use xlink:href="#moon"></use>
-              </svg>
-              <svg class="light">
-                <use xlink:href="#sun"></use>
-              </svg>
+            <a href="#" class="button primary"> Info </a>
+            <button class="button icon" id="themeChange">
+              <img class="moon" src="./images/icons/moon.svg" alt="" />
+              <img class="sun" src="./images/icons/sun.svg" alt="" />
             </button>
-            <a href="#" class="button">
-              <svg">
+            <a href="#" class="lang">
+              <svg class="globe">
                 <use xlink:href="#globe"></use>
               </svg>
               ENG
-              <svg">
-              <use xlink:href="#arrow-down"></use>
-            </svg>
+              <svg class="arrow">
+                <use xlink:href="#arrow-down"></use>
+              </svg>
+              <span> </span>
             </a>
           </div>
           <div class="burger" id="menuBtn">
@@ -87,37 +74,73 @@
     <!-- header end
     =========================================== -->
     <main>
-    <!-- hero start
+      <!-- hero start
     =========================================== -->
-    <section class="hero" >
-      <div class="auto__container">
-        <div class="hero__inner">
-          
+      <section class="hero">
+        <div class="auto__container">
+          <div class="hero__inner">
+            <h5>New</h5>
+            <h4>Better Solution</h4>
+            <h1>For Pulsechain</h1>
+            <h5>Dex, NFT marketplace, Staking pool & Stable coin</h5>
+            <div class="hero__inner-image">
+              <img src="./images/hero/hero-1.png" alt="" />
+            </div>
+          </div>
         </div>
-      </div>
-      
-    </section>
-    <!-- hero end
+      </section>
+      <!-- hero end
     =========================================== -->
-    <!-- intro start
+      <!-- intro start
     =========================================== -->
-    <section class="intro">
-      <div class="auto__container">
-        <div class="intro__inner">
-         
+      <section class="intro">
+        <div class="auto__container">
+          <div class="intro__inner">
+            <div class="intro__inner-content">
+              <h2>
+                Your StableCoin. <br />
+                Your staking pool. <br />
+                Your DEX <br />
+                Your NFT market place.
+              </h2>
+              <p class="extra">
+                Never sell your Hex, eHex, PLS, stPLS & wPLS. Trade with 0% fees
+                on our DEX. Earn daily yields with liquid staked PLS (stPLS).
+                Discover over 20.000.000 NFT’s.
+              </p>
+            </div>
+            <div class="intro__inner-swiper swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/swiper/swiper1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/swiper/swiper2.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/swiper/swiper3.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/swiper/swiper4.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/swiper/swiper5.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-button-next swiperBtn"></div>
+              <div class="swiper-button-prev swiperBtn"></div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- intro end
+      </section>
+      <!-- intro end
     =========================================== -->
-    <!-- footer start
+      <!-- footer start
     =========================================== -->
-    <footer class="footer">
-      <div class="auto__container">
-
-      </div>
-    </footer>
-    <!-- footer end
+      <footer class="footer">
+        <div class="auto__container"></div>
+      </footer>
+      <!-- footer end
     =========================================== -->
     </main>
 
@@ -127,30 +150,57 @@
     <svg style="display: none">
       <symbol id="telegram" viewBox="0 0 25 24">
         <g>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M18.9833 19.7901L18.984 19.7884L19.0014 19.7449L22.0002 4.6258V4.57669C22.0002 4.19999 21.861 3.87113 21.5581 3.67387C21.293 3.50121 20.9882 3.48892 20.7745 3.50514C20.5485 3.52229 20.3354 3.57871 20.1879 3.62567C20.112 3.64983 20.0484 3.67311 20.003 3.69071C19.9802 3.69955 19.9617 3.70705 19.9483 3.71263L19.9351 3.71819L3.21526 10.2771L3.21066 10.2788C3.20163 10.2821 3.18969 10.2865 3.17526 10.2921C3.14651 10.3033 3.10737 10.3193 3.06139 10.3402C2.97111 10.3811 2.84637 10.4442 2.71987 10.5309C2.50502 10.678 2.0959 11.0263 2.16499 11.5785C2.22221 12.036 2.53751 12.3265 2.75008 12.4769C2.86403 12.5575 2.97304 12.6156 3.05287 12.6536C3.09332 12.6729 3.12767 12.6876 3.15326 12.6981C3.16609 12.7033 3.17682 12.7075 3.18512 12.7106L3.19574 12.7146L3.20253 12.7171L6.12777 13.7019C6.1179 13.8854 6.1361 14.0726 6.18478 14.2572L7.65006 19.8156C7.8238 20.4747 8.42002 20.9337 9.10159 20.9333C9.71252 20.9328 10.2544 20.5632 10.4845 20.0118L12.7722 17.5657L16.7012 20.578L16.7571 20.6023C17.114 20.7581 17.4475 20.8075 17.7525 20.7658C18.057 20.7242 18.2989 20.5965 18.4807 20.4511C18.6595 20.308 18.7821 20.1465 18.8592 20.0249C18.8984 19.9631 18.9276 19.9088 18.9478 19.868C18.958 19.8475 18.966 19.8301 18.972 19.8166L18.9796 19.7991L18.9822 19.7927L18.9833 19.7901ZM7.63518 13.8748C7.60187 13.7485 7.65416 13.6151 7.76444 13.5451L17.6865 7.2442C17.6865 7.2442 18.27 6.8899 18.2492 7.2442C18.2492 7.2442 18.3533 7.30676 18.0406 7.59849C17.744 7.87557 10.9689 14.4166 10.2834 15.0785C10.2438 15.1167 10.2202 15.1605 10.2063 15.2137L9.10046 19.4332L7.63518 13.8748Z"/>
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M18.9833 19.7901L18.984 19.7884L19.0014 19.7449L22.0002 4.6258V4.57669C22.0002 4.19999 21.861 3.87113 21.5581 3.67387C21.293 3.50121 20.9882 3.48892 20.7745 3.50514C20.5485 3.52229 20.3354 3.57871 20.1879 3.62567C20.112 3.64983 20.0484 3.67311 20.003 3.69071C19.9802 3.69955 19.9617 3.70705 19.9483 3.71263L19.9351 3.71819L3.21526 10.2771L3.21066 10.2788C3.20163 10.2821 3.18969 10.2865 3.17526 10.2921C3.14651 10.3033 3.10737 10.3193 3.06139 10.3402C2.97111 10.3811 2.84637 10.4442 2.71987 10.5309C2.50502 10.678 2.0959 11.0263 2.16499 11.5785C2.22221 12.036 2.53751 12.3265 2.75008 12.4769C2.86403 12.5575 2.97304 12.6156 3.05287 12.6536C3.09332 12.6729 3.12767 12.6876 3.15326 12.6981C3.16609 12.7033 3.17682 12.7075 3.18512 12.7106L3.19574 12.7146L3.20253 12.7171L6.12777 13.7019C6.1179 13.8854 6.1361 14.0726 6.18478 14.2572L7.65006 19.8156C7.8238 20.4747 8.42002 20.9337 9.10159 20.9333C9.71252 20.9328 10.2544 20.5632 10.4845 20.0118L12.7722 17.5657L16.7012 20.578L16.7571 20.6023C17.114 20.7581 17.4475 20.8075 17.7525 20.7658C18.057 20.7242 18.2989 20.5965 18.4807 20.4511C18.6595 20.308 18.7821 20.1465 18.8592 20.0249C18.8984 19.9631 18.9276 19.9088 18.9478 19.868C18.958 19.8475 18.966 19.8301 18.972 19.8166L18.9796 19.7991L18.9822 19.7927L18.9833 19.7901ZM7.63518 13.8748C7.60187 13.7485 7.65416 13.6151 7.76444 13.5451L17.6865 7.2442C17.6865 7.2442 18.27 6.8899 18.2492 7.2442C18.2492 7.2442 18.3533 7.30676 18.0406 7.59849C17.744 7.87557 10.9689 14.4166 10.2834 15.0785C10.2438 15.1167 10.2202 15.1605 10.2063 15.2137L9.10046 19.4332L7.63518 13.8748Z"
+          />
         </g>
       </symbol>
       <symbol id="twitter" viewBox="0 0 25 20">
         <g>
-          <path d="M24.454 2.323C23.5691 2.712 22.624 2.977 21.6291 3.098C22.6431 2.487 23.4229 1.524 23.792 0.375C22.8411 0.930001 21.7871 1.334 20.6651 1.559C19.7691 0.600001 18.492 0 17.074 0C14.3569 0 12.154 2.203 12.154 4.917C12.154 5.307 12.199 5.682 12.281 6.041C8.191 5.848 4.566 3.884 2.14 0.915001C1.713 1.637 1.474 2.476 1.474 3.39C1.474 5.1 2.344 6.603 3.662 7.486C2.855 7.46 2.096 7.238 1.434 6.87V6.931C1.434 9.316 3.127 11.305 5.38 11.758C4.967 11.869 4.531 11.929 4.084 11.929C3.77 11.929 3.469 11.899 3.168 11.843C3.799 13.796 5.613 15.22 7.772 15.26C6.092 16.5791 3.963 17.3651 1.67 17.3651C1.28 17.3651 0.891 17.342 0.5 17.298C2.689 18.692 5.268 19.5071 8.057 19.5071C17.1111 19.5071 22.056 12.011 22.056 5.521C22.056 5.312 22.056 5.101 22.0411 4.891C23.002 4.202 23.8409 3.331 24.5009 2.343L24.454 2.323Z"/>
+          <path
+            d="M24.454 2.323C23.5691 2.712 22.624 2.977 21.6291 3.098C22.6431 2.487 23.4229 1.524 23.792 0.375C22.8411 0.930001 21.7871 1.334 20.6651 1.559C19.7691 0.600001 18.492 0 17.074 0C14.3569 0 12.154 2.203 12.154 4.917C12.154 5.307 12.199 5.682 12.281 6.041C8.191 5.848 4.566 3.884 2.14 0.915001C1.713 1.637 1.474 2.476 1.474 3.39C1.474 5.1 2.344 6.603 3.662 7.486C2.855 7.46 2.096 7.238 1.434 6.87V6.931C1.434 9.316 3.127 11.305 5.38 11.758C4.967 11.869 4.531 11.929 4.084 11.929C3.77 11.929 3.469 11.899 3.168 11.843C3.799 13.796 5.613 15.22 7.772 15.26C6.092 16.5791 3.963 17.3651 1.67 17.3651C1.28 17.3651 0.891 17.342 0.5 17.298C2.689 18.692 5.268 19.5071 8.057 19.5071C17.1111 19.5071 22.056 12.011 22.056 5.521C22.056 5.312 22.056 5.101 22.0411 4.891C23.002 4.202 23.8409 3.331 24.5009 2.343L24.454 2.323Z"
+          />
         </g>
       </symbol>
       <symbol id="globe" viewBox="0 0 25 24">
         <g>
-          <path d="M12.5 22C18.0228 22 22.5 17.5228 22.5 12C22.5 6.47715 18.0228 2 12.5 2C6.97715 2 2.5 6.47715 2.5 12C2.5 17.5228 6.97715 22 12.5 22Z" stroke="#F4F4F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M2.5 12H22.5" stroke="#F4F4F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M12.5 2C15.0013 4.73835 16.4228 8.29203 16.5 12C16.4228 15.708 15.0013 19.2616 12.5 22C9.99872 19.2616 8.57725 15.708 8.5 12C8.57725 8.29203 9.99872 4.73835 12.5 2V2Z" stroke="#F4F4F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path
+            d="M12.5 22C18.0228 22 22.5 17.5228 22.5 12C22.5 6.47715 18.0228 2 12.5 2C6.97715 2 2.5 6.47715 2.5 12C2.5 17.5228 6.97715 22 12.5 22Z"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M2.5 12H22.5"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M12.5 2C15.0013 4.73835 16.4228 8.29203 16.5 12C16.4228 15.708 15.0013 19.2616 12.5 22C9.99872 19.2616 8.57725 15.708 8.5 12C8.57725 8.29203 9.99872 4.73835 12.5 2V2Z"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
         </g>
       </symbol>
       <symbol id="arrow-down" viewBox="0 0 11 8">
         <g>
-          <path d="M10.1663 1.66663L5.49967 6.33329L0.833008 1.66663" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path
+            d="M10.1663 1.66663L5.49967 6.33329L0.833008 1.66663"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
         </g>
       </symbol>
     </svg>
     <!-- js
     =========================================== -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/swiper.js"></script>
     <script src="./js/main.js"></script>
-    
   </body>
 </html>

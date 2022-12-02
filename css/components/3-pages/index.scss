@@ -1,5 +1,37 @@
 .hero {
-    
+    .auto__container {
+        max-width: 1190px;
+    }
+    &__inner {
+        text-align: center;
+        &-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 100%;
+            }
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        h4 {
+            font-family: $sfDisplay;
+            margin-bottom: 10px;
+            color: $textColor;
+            font-weight: 600;
+        }
+        h5 {
+            margin-bottom: 20px;
+            color: $textColor;
+            font-weight: 700;
+            opacity: .7;
+            &:last-of-type {
+                margin-bottom: 55px;
+                opacity: 1;
+            }
+        }
+    }
 }
 // 1380px
 @mixin hero-xxxlg-xxxxlg {
@@ -53,5 +85,48 @@
 @mixin hero-xxsm-xsm {
     .hero {
 
+    }
+}
+.intro {
+    padding: 217px 0;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        &-content {
+            width: calc(65% - 35px);
+            max-width: 745px;
+        }
+        &-swiper {
+            width: 80%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 65%;
+            
+        }
+        .swiperBtn {
+            border-radius: 50%;
+            width: 52px;
+            height: 52px;
+            &::before {
+                width: 16px;
+            }
+        }
+        .swiper-button-next {
+            background: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
+  
+        }
+        h2 {
+            margin-bottom: 36px;
+            font-family: $sfDisplay;
+        }
+        p{ 
+            font-weight: 600;
+            font-family: $sfDisplay;
+            color: $pColor;
+            opacity: .8;
+        }
     }
 }
