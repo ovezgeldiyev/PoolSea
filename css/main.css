@@ -1,4 +1,8 @@
 @import "./fonts/stylesheet.css";
+:root {
+  --bgcolor: #fff;
+}
+
 html, body {
   scroll-behavior: smooth;
 }
@@ -59,7 +63,7 @@ body {
   font-size: 18px;
   color: #fff;
   line-height: 25px;
-  font-weight: 500;
+  font-weight: 600;
   background: #000;
 }
 
@@ -142,15 +146,26 @@ main {
 }
 
 .button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 15px 39px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 16px;
+}
+.button.secondary {
+  padding: 18px 37px;
+  font-size: 20px;
+  border-radius: 30px;
+  background-color: #fff;
+}
+.button.secondary span {
+  line-height: 23px;
+  font-weight: 700;
+  font-family: "sfDisplay", sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background: transparent;
 }
 
 .header {

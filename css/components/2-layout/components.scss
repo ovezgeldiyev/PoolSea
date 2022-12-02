@@ -46,10 +46,10 @@ p {
     font-size: 18px;
     line-height: 27px;
   }
-  &.sm{
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 20px;
+  &.sm {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -58,7 +58,25 @@ main {
 }
 
 .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 15px 39px;
+  border-radius: 10px;
+  color: $white;
+  font-size: 16px;
+  line-height: 16px;
+  &.secondary {
+    padding: 18px 37px;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: $white;
+
+    span{
+        line-height: 23px;
+        font-weight: 700;
+        font-family: $sfDisplay;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        background: transparent;
+    }
+  }
 }
