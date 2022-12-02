@@ -95,38 +95,151 @@
         justify-content: space-between;
         position: relative;
         &-content {
-            width: calc(65% - 35px);
+            width: 65%;
             max-width: 745px;
+            padding: 140px 0 60px;
         }
-        &-swiper {
-            width: 80%;
+        &-swiper-outer {
+            width: calc(80% - 18px);
             height: 100%;
             position: absolute;
             top: 0;
-            left: 65%;
+            left: calc(65% + 35px);
             
+        }
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                @include fullImage;
+            }
         }
         .swiperBtn {
             border-radius: 50%;
             width: 52px;
             height: 52px;
-            &::before {
-                width: 16px;
+            position: absolute;
+            top: calc(100% + 65px);
+            left: 14%;
+            z-index: 5;
+            &:hover {
+                opacity: .88;
+            }
+            &::after {
+                font-size: 16px;
+                line-height: 16px;
             }
         }
         .swiper-button-next {
             background: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
-  
+            left: calc(14% + 68px);
+            &::after {
+                color: $white;
+            }
+        }
+        .swiper-button-prev {
+            background-color: $arrowbg;
+            &::after {
+                color: $arrowColor;
+            }
         }
         h2 {
             margin-bottom: 36px;
             font-family: $sfDisplay;
+            letter-spacing: -0.02em;
         }
         p{ 
             font-weight: 600;
             font-family: $sfDisplay;
             color: $pColor;
             opacity: .8;
+        }
+    }
+}
+.tab {
+    padding-bottom: 400px;
+    &__inner {
+        &-header {
+            display: flex;
+            align-items: center;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: $tabheadBg;
+            overflow: hidden;
+            .tabBtn {
+                width: 20%;
+                text-align: center;
+                padding: 22px 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $textColor;
+                position: relative;
+                transition: .2s ease;
+                cursor: pointer;
+                background: transparent;
+                &:hover {
+                    opacity: .8;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0%;
+                    height: 2px;
+                    background: $tabLine;
+                    transition: .4s ease;
+                }
+                h5 {
+                    transition: .2s ease;
+                }
+                &.active {
+                    background: $tabActiveBg;
+                    &::before {
+                        width: 100%;
+                    }
+                    h5 {
+                        background: $tabActive;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                    }
+                }
+                h5 {
+                    
+                }
+            }
+        }
+        &-content {
+            background-color: $tabBg;
+            padding: 30px 60px 60px 80px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+    }
+    &Item {
+        display: none;
+        color: $textColor;
+        align-items: center;
+        justify-content: space-between;
+        &__content {
+            width: calc(50% - 20px);
+        }
+        &__image {
+            width: calc(50% - 20px);
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            img {
+                height: 100%;
+                object-fit: contain;
+                max-width: 100%;
+            }
+        }
+        &.active {
+            display: flex;
         }
     }
 }

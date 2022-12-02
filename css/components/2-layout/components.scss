@@ -54,6 +54,11 @@ h4 {
 h5 {
   font-size: 28px;
   line-height: 36px;
+  &.sm {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+  }
 }
 
 h6 {

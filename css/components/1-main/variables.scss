@@ -12,6 +12,13 @@ $iconColor: var(--iconColor);
 $iconbg: var(--iconbg);
 $langColor: var(--langColor);
 $pColor: var(--pColor);
+$arrowbg: var(--arrowbg);
+$arrowColor: var(--arrowColor);
+$tabBg: var(--tabBg);
+$tabheadBg: var(--tabheadBg);
+$tabActiveBg: var(--tabActiveBg);
+$tabActive: var(--tabActive);
+$tabLine: var(--tabLine);
 
 :root {
     --bgColor: #fff;
@@ -20,6 +27,13 @@ $pColor: var(--pColor);
     --iconbg: #DDE8F4;
     --langColor: #0D0F15;
     --pColor: #22252A;
+    --arrowbg: #D7D7DF;
+    --arrowColor: #6E6E73;
+    --tabBg: #F6F9FC;
+    --tabheadBg: #E8F0F7;
+    --tabActiveBg: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
+    --tabActive: #fff;
+    --tabLine: transparent;
 
 }
 html.active {
@@ -29,6 +43,13 @@ html.active {
     --iconbg: #131823;
     --langColor: #F4F4F4CC;
     --pColor: #F6F9FC;
+    --arrowbg: #131823;
+    --arrowColor: #6E6E73;
+    --tabBg: #131823;
+    --tabheadBg: #1B2232;
+    --tabActiveBg: #131823;
+    --tabActive: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
+    --tabLine: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
 
 }
 
