@@ -20,7 +20,7 @@ $pColor: var(--pColor);
     --iconbg: #DDE8F4;
     --langColor: #0D0F15;
     --pColor: #22252A;
-
+    
 }
 html.active {
     --bgColor: #06070A;
@@ -37,10 +37,11 @@ $graphik: 'Graphik', sans-serif;
 $sfDisplay: 'sfDisplay', sans-serif;
 $sfText: 'sfText', sans-serif;
 
-$bg:#fff;
-$black:#0D0F15;
-$blackLight:#22252A;
-$gray:#6E6E73;
-$gray2:#D9D9D9;
-$grayLight:#E8F0F7;
-$gradient: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
+
+
+
+
+
+$bgSection:#f6f9fc;
+$socialBg:#dddde4;
+$linkColor:#3772FF;

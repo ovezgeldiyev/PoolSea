@@ -99,11 +99,10 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: .3s ease;
+  transition: 0.3s ease;
   cursor: pointer;
   &:hover {
-    opacity: .88;
-
+    opacity: 0.88;
   }
   &.primary {
     color: $white;
@@ -136,7 +135,7 @@ main {
     }
   }
   &.secondary {
-    padding: 18px 37px;
+    padding: 18px 38px;
     font-size: 20px;
     border-radius: 30px;
     background-color: $white;
@@ -145,10 +144,15 @@ main {
       line-height: 23px;
       font-weight: 700;
       font-family: $sfDisplay;
+      background: linear-gradient(
+        268.3deg,
+        #00fff9 -4.34%,
+        #00c5ff 13.53%,
+        #0078ff 93.71%
+      );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      background: transparent;
     }
   }
 }

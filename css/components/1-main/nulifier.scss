@@ -49,7 +49,7 @@ Global Settings
 body {
   font-family: $sfText;
   font-size: 18px;
-  color: $black;
+  color: $langColor;
   line-height: 25px;
   font-weight: 600;
   background: $bgColor;
@@ -71,7 +71,7 @@ ul {
 }
 .auto__container {
   position: relative;
-  max-width: 1266px;
+  max-width: 1304px;
   margin: 0 auto;
   padding: 0 40px;
 }

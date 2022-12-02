@@ -17,7 +17,7 @@
     }
     &-copy {
       text-align: center;
-      color: $blackLight;
+      color: $pColor;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -28,14 +28,14 @@
         display: block;
         margin: 0 12px;
         border-radius: 50%;
-        background-color: $gray2;
+        background-color: #d9d9d9;
       }
     }
   }
   p {
     &.sm {
       line-height: 25px;
-      color: $blackLight;
+      color: $pColor;
     }
   }
   &Link {
@@ -50,7 +50,7 @@
       margin-bottom: 15px;
       font-size: 16px;
       line-height: 19px;
-      color: $gray;
+      color: $iconColor;
       &:last-child {
         margin-bottom: 0;
       }
@@ -81,12 +81,11 @@
   .footer {
   }
 }
-
 .join {
   &__inner {
     padding: 80px 20px;
     border-radius: 40px;
-    background-color: #f6f9fc;
+    background-color: $bgSection;
     &-social {
       display: flex;
       align-items: center;
@@ -103,7 +102,7 @@
   &Social {
     width: 69px;
     height: 69px;
-    background-color: #dddde4;
+    background-color: $socialBg;
     border-radius: 49px;
     display: flex;
     align-items: center;
@@ -112,11 +111,11 @@
     svg {
       width: 24px;
       height: 24px;
-      fill: #6e6e73;
+      fill: $iconColor;
       @include transition;
     }
     &:hover {
-      background-color: #0d0f15;
+      background-color: $langColor;
       opacity: 1;
       svg {
         fill: $white;
@@ -138,13 +137,17 @@
     &.big {
       width: calc(64% - 10px);
       line-height: 25px;
-      color: #6e6e73;
+      color: $iconColor;
     }
   }
 }
 .faq {
   &__inner {
     padding: 60px 0;
+    &-main {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
   }
   &Item {
     margin-bottom: 24px;
@@ -153,12 +156,11 @@
     }
     &__header {
       padding: 30px;
-      background-color: #f6f9fc;
+      background-color: $bgSection;
       border-radius: 10px;
       position: relative;
       cursor: pointer;
       @include transition;
-
       h6 {
         &.big {
           font-family: $sfDisplay;
@@ -179,7 +181,7 @@
         }
       }
       &.active {
-        background-color: #0d0f15;
+        background-color: $textColor;
         border-radius: 10px 10px 0 0;
         h6 {
           color: $white;
@@ -195,7 +197,7 @@
       opacity: 0;
       pointer-events: none;
       @include transition;
-      background-color: #0d0f15;
+      background-color: $textColor;
       border-radius: 0 0 10px 10px;
       p {
         &.sm {
@@ -218,7 +220,6 @@
     margin-bottom: 55px;
   }
 }
-
 .sponsors {
   &__inner {
     padding: 160px 0 100px;
@@ -234,7 +235,7 @@
   &Item {
     width: calc(25% - 14px);
     padding: 63px 45px;
-    background-color: #f6f9fc;
+    background-color: $bgSection;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -245,33 +246,32 @@
     }
   }
 }
-
 .status {
   &__inner {
     padding: 120px 20px;
-    background-color: #f6f9fc;
+    background-color: $bgSection;
     border-radius: 40px;
     &-main {
       max-width: 707px;
       margin: 0 auto;
     }
-    &-check{
-        display: inline;
-        font-size: 16px;
-        line-height: 16px;
-        font-weight: 500;
-        color: #6E6E73;
-        position: relative;
-        padding-bottom: 6px;
-        &:after{
-            content: "";
-            width: 100%;
-            height: 1px;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            background-color: #6E6E73;
-        }
+    &-check {
+      display: inline;
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: 500;
+      color: $iconColor;
+      position: relative;
+      padding-bottom: 6px;
+      &:after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: $iconColor;
+      }
     }
   }
   h3 {
@@ -294,7 +294,7 @@
     }
   }
   &Item {
-      margin-bottom: 28px;
+    margin-bottom: 28px;
     h6 {
       &.sm {
         margin-bottom: 9px;
@@ -314,18 +314,18 @@
         border-radius: 100px;
         background-color: #eeeef1;
         position: relative;
-        span{
-            width: 28px;
-            height: 28px;
-            position: absolute;
-            left: 78%;
-            top: 50%;
-            transform: translateY(-50%);
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
+        span {
+          width: 28px;
+          height: 28px;
+          position: absolute;
+          left: 78%;
+          top: 50%;
+          transform: translateY(-50%);
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
         }
         &::before {
           content: "";
@@ -354,4 +354,157 @@
       }
     }
   }
+}
+h5 {
+  &.sm {
+    font-size: 24px;
+    line-height: 30px;
+    font-family: $sfDisplay;
+  }
+}
+.location {
+  &__inner {
+    padding: 160px 0;
+    &-main {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 55px;
+  }
+  &Item {
+    width: calc(50% - 12px);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 36px;
+    background-color: $bgSection;
+    border-radius: 10px;
+    &__info {
+      width: calc(31% - 10px);
+    }
+    &__map {
+      width: calc(69% - 10px);
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    h5 {
+      &.sm {
+        margin-bottom: 143px;
+        small {
+          display: block;
+          margin-top: 24px;
+          font-size: 18px;
+        }
+      }
+    }
+    a {
+      color: $linkColor;
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 700;
+      display: inline;
+      position: relative;
+      padding-bottom: 1px;
+      &:after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: $linkColor;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+}
+.airdrop {
+  &__inner {
+    padding: 100px 0 238px;
+    &-main{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &Join {
+    width: calc(45% - 10px);
+    max-width: 521px;
+    padding: 115px 40px 100px;
+    border-radius: 10px;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: linear-gradient(
+      261.97deg,
+      #00fff9 -138.57%,
+      #00c5ff 4.66%,
+      #0078ff 128.42%
+    );
+    h4 {
+      color: $white;
+      margin-bottom: 36px;
+      text-align: center;
+    }
+    .button {
+      display: inline;
+    }
+    &__bg{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 262px;
+    pointer-events: none;
+    img{
+        width: 100%;
+        object-fit: contain ;
+    }
+    }
+  }
+  &Info{
+      width: calc(55% - 10px);
+      max-width: 626px;
+      &__text{
+          margin-bottom: 24px;
+          &:last-child{
+              margin-bottom: 0;
+          }
+          h6{
+              margin-bottom: 20px;
+          }
+          p{
+              max-width: 600px;
+              &.sm{
+                  line-height: 22px;
+              }
+          }
+      }
+  }
+  .auto__container{
+      max-width: 1280px;
+  }
+}
+
+.bonus{
+    &__inenr{
+        padding: 60px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-info{
+        }
+    }
+    h3{
+        margin-bottom: 16px;
+    }
 }
