@@ -3,8 +3,19 @@ $primary: #256f64;
 $main : #5d83e5;
 $black: #000;
 $white: #fff;
+$gradient: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
+
+
+$bgcolor: var(--bgcolor);
+:root {
+    --bgcolor: #fff;
+}
+
+
 // fonts
-$inter: 'Inter', sans-serif;
+$graphik: 'Graphik', sans-serif;
+$sfDisplay: 'sfDisplay', sans-serif;
+$sfText: 'sfText', sans-serif;
 
 
 
