@@ -5,14 +5,26 @@
 // 1380px
 @include xxxlg-xxxxlg {
   @include hero-xxxlg-xxxxlg;
+  @include bonus-xxxlg-xxxxlg;
 }
 // 1250px
 @include xlg-xxlg-extra {
   @include hero-xlg-xxlg-extra;
+  @include footer-xlg-xxlg-extra;
+  @include loaction-xlg-xxlg-extra;
 }
 // 1180px
 @include xlg-xxlg {
   @include hero-xlg-xxlg;
+  @include join-xlg-xxlg;
+  @include discleamer-xlg-xxlg;
+  @include faq-xlg-xxlg;
+  @include sponsors-xlg-xxlg;
+  @include status-xlg-xxlg;
+  @include location-xlg-xxlg;
+  @include airdrop-xlg-xxlg;
+  @include bonus-xlg-xxlg;
+  @include rate-xlg-xxlg;
 }
 // 1024px
 @include lg-xlg {
@@ -20,29 +32,73 @@
       display: none;
   }
   @include hero-lg-xlg;
+  @include discleamer-lg-xlg;
+  @include sponsors-lg-xlg;
+  @include status-lg-xlg;
+  @include location-lg-xlg;
+  @include airdrop-lg-xlg;
+  @include bonus-lg-xlg;
+
 }
 // 930px
 @include md-lg {
   @include hero-md-lg;
+  @include footer-md-lg;
+  @include status-md-lg;
+  @include airdrop-md-lg;
+  @include bonus-md-lg;
+}
+// 840px
+@include md-lg-extra {
+  @include discleamer-md-lg-extra ;
+  @include sponsors-md-lg-extra ;
+  @include airdrop-md-lg-extra ;
+  @include bonus-md-lg-extra ;
 }
 // 750px
 @include sm-md {
   @include hero-sm-md;
+  @include join-sm-md;
+  @include faq-sm-md;
+  @include status-sm-md;
 }
 // 650px
 @include sm-md-extra {
   @include hero-sm-md-extra;
+  @include footer-sm-md-extra;
+  @include location-sm-md-extra;
+  @include airdrop-sm-md-extra;
+
 }
 // 540px
 @include xsm-sm  {
   @include hero-xsm-sm;
+  @include join-xsm-sm;
+  @include discleamer-xsm-sm;
+  @include faq-xsm-sm;
+  @include sponsors-xsm-sm;
+  @include status-xsm-sm;
+  @include location-xsm-sm;
 }
 // 440px
 @include xxsm-xsm  {
   @include hero-xxsm-xsm;
+  @include footer-xxsm-xsm;
+  @include discleamer-xxsm-xsm;
+  @include location-xxsm-xsm;
+  @include airdrop-xxsm-xsm;
+  @include bonus-xxsm-xsm;
 }
 // 390px
 @include xxxsm-xxsm  {
   // @include hero-xxxsm-xxsm;
+  @include footer-xxxsm-xxsm;
+  @include join-xxxsm-xxsm;
+  @include discleamer-xxxsm-xxsm;
+  @include faq-xxxsm-xxsm;
+  @include sponsors-xxxsm-xxsm;
+  @include status-xxxsm-xxsm;
+  @include location-xxxsm-xxsm;
+  @include airdrop-xxxsm-xxsm;
 }
 
