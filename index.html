@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="activ">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,12 +13,12 @@
     <header class="header" id="header">
       <div class="auto__container">
         <div class="header__inner">
-          <div class="header__inner-logo">
+          <a href="#" class="header__inner-logo">
             <span>
               <img src="./images/logo.svg" alt="" />
             </span>
             PoolSea
-          </div>
+          </a>
           <nav class="nav" id="menu">
             <ul class="nav__inner">
               <li>
@@ -50,19 +50,23 @@
               </svg>
             </a>
             <a href="#" class="button primary"> Info </a>
-            <button class="button icon" id="themeChange">
+            <a href="#" class="button icon">
               <img class="moon" src="./images/icons/moon.svg" alt="" />
               <img class="sun" src="./images/icons/sun.svg" alt="" />
-            </button>
+              <input type="checkbox" id="themeChange">
+            </a>
             <a href="#" class="lang">
               <svg class="globe">
                 <use xlink:href="#globe"></use>
               </svg>
-              ENG
+              <span>ENG</span>
               <svg class="arrow">
                 <use xlink:href="#arrow-down"></use>
               </svg>
-              <span> </span>
+              <div class="lang__dropdown">
+                <span>Fr</span>
+                <span>Fin</span>
+              </div>
             </a>
           </div>
           <div class="burger" id="menuBtn">
@@ -113,19 +117,24 @@
               <div class="intro__inner-swiper swiper mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <img src="./images/swiper/swiper1.png" alt="" />
+                    <img class="light" src="./images/swiper/swiper1.png" alt="" />
+                    <img class="dark" src="./images/swiper/swiper1-dark.png" alt="" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="./images/swiper/swiper2.png" alt="" />
+                    <img class="light" src="./images/swiper/swiper2.png" alt="" />
+                    <img class="dark" src="./images/swiper/swiper2-dark.png" alt="" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="./images/swiper/swiper3.png" alt="" />
+                    <img class="light" src="./images/swiper/swiper3.png" alt="" />
+                    <img class="dark" src="./images/swiper/swiper3-dark.png" alt="" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="./images/swiper/swiper4.png" alt="" />
+                    <img class="light" src="./images/swiper/swiper4.png" alt="" />
+                    <img class="dark" src="./images/swiper/swiper4-dark.png" alt="" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="./images/swiper/swiper5.png" alt="" />
+                    <img class="light" src="./images/swiper/swiper5.png" alt="" />
+                    <img class="dark" src="./images/swiper/swiper5-dark.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -143,10 +152,10 @@
         <div class="auto__container">
           <div class="tab__inner">
             <div class="tab__inner-header">
-              <div class="tabBtn active" data-tab="#tab-a">
+              <div class="tabBtn" data-tab="#tab-a">
                 <h5 class="sm">$Pool</h5>
               </div>
-              <div class="tabBtn" data-tab="#tab-b">
+              <div class="tabBtn active" data-tab="#tab-b">
                 <h5 class="sm">Dex</h5>
               </div>
               <div class="tabBtn" data-tab="#tab-c">
@@ -160,10 +169,10 @@
               </div>
             </div>
             <div class="tab__inner-content">
-              <div class="tabItem tabEvent active" id="tab-a">
+              <div class="tabItem tabEvent" id="tab-a">
                 <div class="tabItem__content">
                   <h4>$POOL</h4>
-                  <p>POOL will be used as:</p>
+                  <p class="extra">POOL will be used as:</p>
                   <ul>
                     <li>DAO USDH & Staking POOL governance tool.</li>
                     <li>
@@ -178,91 +187,77 @@
                   </ul>
                 </div>
                 <div class="tabItem__image">
-                  <img src="./images/tab/tab-1.png" alt="">
+                  <img class="light" src="./images/tab/tab-1.png" alt="">
+                  <img class="dark" src="./images/tab/tab-1-dark.png" alt="">
                 </div>
               </div>
-              <div class="tabItem tabEvent" id="tab-b">
+              <div class="tabItem tabEvent active" id="tab-b">
                 <div class="tabItem__content">
-                  <h4>$POOL</h4>
-                  <p>POOL will be used as:</p>
-                  <ul>
-                    <li>DAO USDH & Staking POOL governance tool.</li>
-                    <li>
-                      Up to 33% buy & burn from each earned commission made by our
-                      DEX.
-                    </li>
-                    <li>Massive buy & burn from $Hpx token.</li>
-                    <li>Daily rewards in PLS, PLSX, USDH, HEX any many more…</li>
-                    <li>
-                      Only one token benefiting 0.01% trade commission on our DEX.
-                    </li>
-                  </ul>
+                  <h4>DEX</h4>
+                  <p class="big">Our routing algorithm offers asset exchanges at the best rates on the market. Pathfinder finds the most efficient paths for a token swap, able to split between different protocols and even different market depths in within one protocol in the shortest possible time.</p>
+                  <h6 class="sm">
+                    <span>
+                      <img src="./images/icons/tick-bg.svg" alt="">
+                      <svg>
+                        <use xlink:href="#tick"></use>
+                      </svg>
+                    </span>
+                    The lowest commission fee’s (0.28% - 0.01%)
+                  </h6>
+                  <h6 class="sm">
+                    <span>
+                      <img src="./images/icons/tick-bg.svg" alt="">
+                      <svg>
+                        <use xlink:href="#tick"></use>
+                      </svg>
+                    </span>
+                    Best prices
+                  </h6>
+                  <h6 class="sm">
+                    <span>
+                      <img src="./images/icons/tick-bg.svg" alt="">
+                      <svg>
+                        <use xlink:href="#tick"></use>
+                      </svg>
+                    </span>
+                    High yields
+                  </h6>
                 </div>
                 <div class="tabItem__image">
-                  <img src="./images/tab/tab-2.png" alt="">
+                  <img class="light" src="./images/tab/tab-2.png" alt="">
+                  <img class="dark" src="./images/tab/tab-2-dark.png" alt="">
                 </div>
               </div>
               <div class="tabItem tabEvent" id="tab-c">
                 <div class="tabItem__content">
-                  <h4>$POOL</h4>
-                  <p>POOL will be used as:</p>
-                  <ul>
-                    <li>DAO USDH & Staking POOL governance tool.</li>
-                    <li>
-                      Up to 33% buy & burn from each earned commission made by our
-                      DEX.
-                    </li>
-                    <li>Massive buy & burn from $Hpx token.</li>
-                    <li>Daily rewards in PLS, PLSX, USDH, HEX any many more…</li>
-                    <li>
-                      Only one token benefiting 0.01% trade commission on our DEX.
-                    </li>
-                  </ul>
+                  <h4>Staking pool</h4>
+                  <p class="big short">PoolSea lets users stake their PLS - without locking assets or maintaining infrastructure - whilst participating in on-chain activities, e.g. lending. When staking with PoolSea, users receive stPLS tokens which are issued 1:1 to their initial stake.</p>
                 </div>
                 <div class="tabItem__image">
-                  <img src="./images/tab/tab-3.png" alt="">
+                  <img class="light" src="./images/tab/tab-3.png" alt="">
+                  <img class="dark" src="./images/tab/tab-3-dark.png" alt="">
                 </div>
               </div>
-              <div class="tabItem tabEvent" id="tab-d">
+              <div class="tabItem tabEvent longer" id="tab-d">
                 <div class="tabItem__content">
-                  <h4>$POOL</h4>
-                  <p>POOL will be used as:</p>
-                  <ul>
-                    <li>DAO USDH & Staking POOL governance tool.</li>
-                    <li>
-                      Up to 33% buy & burn from each earned commission made by our
-                      DEX.
-                    </li>
-                    <li>Massive buy & burn from $Hpx token.</li>
-                    <li>Daily rewards in PLS, PLSX, USDH, HEX any many more…</li>
-                    <li>
-                      Only one token benefiting 0.01% trade commission on our DEX.
-                    </li>
-                  </ul>
+                  <h4>Stablecoin (Borrow)</h4>
+                  <p class="big">USDH is a decentralized cryptocurrency that aims to maintain a stable 1: 1 value against the US dollar. Which can be only obtain colleaterazing your asset’s against eHex, pHex, PLS or stPLS. Our main focus will be not liquidating our user’s by having healty collaterar unlike like 110% ratio one.
+                  </p>
                 </div>
                 <div class="tabItem__image">
-                  <img src="./images/tab/tab-4.png" alt="">
+                  <img class="light" src="./images/tab/tab-4.png" alt="">
+                  <img class="dark" src="./images/tab/tab-4-dark.png" alt="">
                 </div>
               </div>
-              <div class="tabItem tabEvent" id="tab-e">
+              <div class="tabItem tabEvent long" id="tab-e">
                 <div class="tabItem__content">
-                  <h4>$POOL</h4>
-                  <p>POOL will be used as:</p>
-                  <ul>
-                    <li>DAO USDH & Staking POOL governance tool.</li>
-                    <li>
-                      Up to 33% buy & burn from each earned commission made by our
-                      DEX.
-                    </li>
-                    <li>Massive buy & burn from $Hpx token.</li>
-                    <li>Daily rewards in PLS, PLSX, USDH, HEX any many more…</li>
-                    <li>
-                      Only one token benefiting 0.01% trade commission on our DEX.
-                    </li>
-                  </ul>
+                  <h4>NFT Market place (Hpx)</h4>
+                  <p class="big">More than 20.000.000 NFT’s will be available on our market place. Earn royalties in PLS, PLSX, POOL, HEX & USDH from each transaction everyday as a reward by staking our second native token $Hpx. $Hpx will start with 0 supply, 0 hidden wallet’s, 0 OA. It will also serve as a NFT trading facilitator which only one will benefit 0.01% trading fee’s.
+                  </p>
                 </div>
                 <div class="tabItem__image">
-                  <img src="./images/tab/tab-5.png" alt="">
+                  <img class="light" src="./images/tab/tab-5.png" alt="">
+                  <img class="dark" src="./images/tab/tab-5-dark.png" alt="">
                 </div>
               </div>
             </div>
@@ -271,7 +266,482 @@
       </section>
       <!-- tab end
   =========================================== -->
-
+    <!-- donate start
+    =========================================== -->
+    <section class="donate">
+      <div class="auto__container">
+        <div class="donate__inner">
+          <div class="donate__inner-list">
+            <h5 class="sm">
+              The top 10 most sacrificed cryptos so far:
+            </h5>
+            <div class="donate__inner-list-row">
+              <div class="donateItem">
+                <div class="donateItem__name">
+                  <span>
+                    <img src="./images/donate/donate-1.png" alt="">
+                  </span>
+                  USD Coin
+                </div>
+                <div class="donateItem__price">
+                  $10535
+                </div>
+              </div>
+              <div class="donateItem">
+                <div class="donateItem__name">
+                  <span>
+                    <img src="./images/donate/donate-2.png" alt="">
+                  </span>
+                  Hedron
+                </div>
+                <div class="donateItem__price">
+                  $50
+                </div>
+              </div>
+              <div class="donateItem">
+                <div class="donateItem__name">
+                  <span>
+                    <img src="./images/donate/donate-3.png" alt="">
+                  </span>
+                  ETH
+                </div>
+                <div class="donateItem__price">
+                  $12090
+                </div>
+              </div>
+              <div class="donateItem">
+                <div class="donateItem__name">
+                  <span>
+                    <img src="./images/donate/donate-4.png" alt="">
+                  </span>
+                  Icosa
+                </div>
+                <div class="donateItem__price">
+                  $0
+                </div>
+              </div>
+              <div class="donateItem">
+                <div class="donateItem__name">
+                  <span>
+                    <img src="./images/donate/donate-5.png" alt="">
+                  </span>
+                  Tether
+                </div>
+                <div class="donateItem__price">
+                  $13734
+                </div>
+              </div>
+              <div class="donateItem">
+                <div class="donateItem__name">
+                  <span>
+                    <img src="./images/donate/donate-6.png" alt="">
+                  </span>
+                  Polygon
+                </div>
+                <div class="donateItem__price">
+                  $0
+                </div>
+              </div>
+              <div class="donateItem">
+                <div class="donateItem__name">
+                  <span>
+                    <img src="./images/donate/donate-7.png" alt="">
+                  </span>
+                  HEX
+                </div>
+                <div class="donateItem__price">
+                  $7531
+                </div>
+              </div>
+              <div class="donateItem">
+                <div class="donateItem__name">
+                  <span>
+                    <img src="./images/donate/donate-8.png" alt="">
+                  </span>
+                  Shiba lnu
+                </div>
+                <div class="donateItem__price">
+                  $2002
+                </div>
+              </div>
+              <div class="donateItem">
+                <div class="donateItem__name">
+                  <span>
+                    <img src="./images/donate/donate-9.png" alt="">
+                  </span>
+                  Dai
+                </div>
+                <div class="donateItem__price">
+                  $200
+                </div>
+              </div>
+              <div class="donateItem">
+                <div class="donateItem__name">
+                  <span>
+                    <img src="./images/donate/donate-10.png" alt="">
+                  </span>
+                  Wrapped Bitcoin
+                </div>
+                <div class="donateItem__price">
+                  $0
+                </div>
+              </div>
+              <div class="donateItem">
+                <div class="donateItem__name">
+                  <span>
+                    <img src="./images/donate/donate-11.png" alt="">
+                  </span>
+                  Founder seed investment
+                </div>
+                <div class="donateItem__price">
+                  $37000
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="donate__inner-card">
+            <h4 class="sm">
+              Total sacrifices in <br>
+              USD so far              
+            </h4>
+            <div class="donate__inner-card-total">
+              <h4>
+                $94962
+              </h4>
+            </div>
+            <p class="big">
+              This is an estimate and only includes Sacrifices on the Binance & Ethereum chain which are updated every 24-48H.
+            </p>
+            <div class="donate__inner-card-info">
+              <input type="text" value="0x11Fd618748569cc6FDc9e641Fe306D20F988150a">
+              <span>
+                <img src="./images/icons/copy.svg" alt="">
+              </span>
+            </div>
+            <a href="#" class="button primary">
+              Check accepted coins
+            </a>
+          </div>
+          <a href="#">
+            Check the leaderboard (the results aren’t fully accurate)
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- donate end
+  =========================================== -->
+    <!-- team start
+    =========================================== -->
+    <section class="team">
+      <div class="auto__container">
+        <div class="team__inner">
+          <h3>
+            Meet our <span> Team</span>
+          </h3>
+          <div class="team__inner-swiper-outer">
+            <div class="team__inner-swiper swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="teamItem">
+                    <div class="teamItem__image">
+                        <img src="./images/team/team-1.png" alt="">
+                    </div>
+                    <h5 class="sm">
+                      Sébastien
+                    </h5>
+                    <p>
+                      Founder, Chairman
+                    </p>
+                    <div class="teamItem__social">
+                      <a href="#" class="teamItem__social-icon">
+                        <svg>
+                          <use xlink:href="#twitter"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="teamItem__social-icon">
+                        <svg>
+                          <use xlink:href="#telegram"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="teamItem">
+                    <div class="teamItem__image">
+                        <img src="./images/team/team-2.png" alt="">
+                    </div>
+                    <h5 class="sm">
+                      Seweryn
+                    </h5>
+                    <p>
+                      Febrit CEO
+                    </p>
+                    <div class="teamItem__social">
+                      <a href="#" class="teamItem__social-icon">
+                        <svg>
+                          <use xlink:href="#linkedin"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="teamItem__social-icon">
+                        <svg class="globe">
+                          <use xlink:href="#globe"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="teamItem">
+                    <div class="teamItem__image">
+                        <img src="./images/team/team-3.png" alt="">
+                    </div>
+                    <h5 class="sm">
+                      Adam K.
+                    </h5>
+                    <p>
+                      Febrit CTO
+                    </p>
+                    <div class="teamItem__social">
+                      <a href="#" class="teamItem__social-icon">
+                        <svg class="globe">
+                          <use xlink:href="#globe"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="teamItem">
+                    <div class="teamItem__image">
+                        <img src="./images/team/team-4.png" alt="">
+                    </div>
+                    <h5 class="sm">
+                      Wojtek J.
+                    </h5>
+                    <p>
+                      Backend Developer
+                    </p>
+                    <div class="teamItem__social">
+                      <a href="#" class="teamItem__social-icon">
+                        <svg class="globe">
+                          <use xlink:href="#globe"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="teamItem">
+                    <div class="teamItem__image">
+                        <img src="./images/team/team-5.png" alt="">
+                    </div>
+                    <h5 class="sm">
+                      Marcin Bejs R.
+                    </h5>
+                    <p>
+                      Graphic designer
+                    </p>
+                    <div class="teamItem__social">
+                      <a href="#" class="teamItem__social-icon">
+                        <svg class="globe">
+                          <use xlink:href="#globe"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="teamItem">
+                    <div class="teamItem__image">
+                        <img src="./images/team/team-6.png" alt="">
+                    </div>
+                    <h5 class="sm">
+                      Flo Crypto
+                    </h5>
+                    <p>
+                      Blockchain advisor
+                    </p>
+                    <div class="teamItem__social">
+                   
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="teamItem">
+                    <div class="teamItem__image">
+                        <img src="./images/team/team-7.png" alt="">
+                    </div>
+                    <h5 class="sm">
+                      Aleksander J.
+                    </h5>
+                    <p>
+                      Backend Developer 
+                    </p>
+                    <div class="teamItem__social">
+                      <a href="#" class="teamItem__social-icon">
+                        <svg class="globe">
+                          <use xlink:href="#globe"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="teamItem">
+                    <div class="teamItem__image">
+                        <img src="./images/team/team-1.png" alt="">
+                    </div>
+                    <h5 class="sm">
+                      Sébastien
+                    </h5>
+                    <p>
+                      Founder, Chairman
+                    </p>
+                    <div class="teamItem__social">
+                      <a href="#" class="teamItem__social-icon">
+                        <svg>
+                          <use xlink:href="#twitter"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="teamItem__social-icon">
+                        <svg>
+                          <use xlink:href="#telegram"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="teamItem">
+                    <div class="teamItem__image">
+                        <img src="./images/team/team-2.png" alt="">
+                    </div>
+                    <h5 class="sm">
+                      Seweryn
+                    </h5>
+                    <p>
+                      Febrit CEO
+                    </p>
+                    <div class="teamItem__social">
+                      <a href="#" class="teamItem__social-icon">
+                        <svg>
+                          <use xlink:href="#linkedin"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="teamItem__social-icon">
+                        <svg class="globe">
+                          <use xlink:href="#globe"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="teamItem">
+                    <div class="teamItem__image">
+                        <img src="./images/team/team-3.png" alt="">
+                    </div>
+                    <h5 class="sm">
+                      Adam K.
+                    </h5>
+                    <p>
+                      Febrit CTO
+                    </p>
+                    <div class="teamItem__social">
+                      <a href="#" class="teamItem__social-icon">
+                        <svg class="globe">
+                          <use xlink:href="#globe"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="teamItem">
+                    <div class="teamItem__image">
+                        <img src="./images/team/team-4.png" alt="">
+                    </div>
+                    <h5 class="sm">
+                      Wojtek J.
+                    </h5>
+                    <p>
+                      Backend Developer
+                    </p>
+                    <div class="teamItem__social">
+                      <a href="#" class="teamItem__social-icon">
+                        <svg class="globe">
+                          <use xlink:href="#globe"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="teamItem">
+                    <div class="teamItem__image">
+                        <img src="./images/team/team-5.png" alt="">
+                    </div>
+                    <h5 class="sm">
+                      Marcin Bejs R.
+                    </h5>
+                    <p>
+                      Graphic designer
+                    </p>
+                    <div class="teamItem__social">
+                      <a href="#" class="teamItem__social-icon">
+                        <svg class="globe">
+                          <use xlink:href="#globe"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="teamItem">
+                    <div class="teamItem__image">
+                        <img src="./images/team/team-6.png" alt="">
+                    </div>
+                    <h5 class="sm">
+                      Flo Crypto
+                    </h5>
+                    <p>
+                      Blockchain advisor
+                    </p>
+                    <div class="teamItem__social">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="teamItem">
+                    <div class="teamItem__image">
+                        <img src="./images/team/team-7.png" alt="">
+                    </div>
+                    <h5 class="sm">
+                      Aleksander J.
+                    </h5>
+                    <p>
+                      Backend Developer 
+                    </p>
+                    <div class="teamItem__social">
+                      <a href="#" class="teamItem__social-icon">
+                        <svg class="globe">
+                          <use xlink:href="#globe"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next swiperBtn"></div>
+            <div class="swiper-button-prev swiperBtn"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- team end
+  =========================================== -->
       <!-- footer start
     =========================================== -->
       <footer class="footer">
@@ -299,6 +769,11 @@
           <path
             d="M24.454 2.323C23.5691 2.712 22.624 2.977 21.6291 3.098C22.6431 2.487 23.4229 1.524 23.792 0.375C22.8411 0.930001 21.7871 1.334 20.6651 1.559C19.7691 0.600001 18.492 0 17.074 0C14.3569 0 12.154 2.203 12.154 4.917C12.154 5.307 12.199 5.682 12.281 6.041C8.191 5.848 4.566 3.884 2.14 0.915001C1.713 1.637 1.474 2.476 1.474 3.39C1.474 5.1 2.344 6.603 3.662 7.486C2.855 7.46 2.096 7.238 1.434 6.87V6.931C1.434 9.316 3.127 11.305 5.38 11.758C4.967 11.869 4.531 11.929 4.084 11.929C3.77 11.929 3.469 11.899 3.168 11.843C3.799 13.796 5.613 15.22 7.772 15.26C6.092 16.5791 3.963 17.3651 1.67 17.3651C1.28 17.3651 0.891 17.342 0.5 17.298C2.689 18.692 5.268 19.5071 8.057 19.5071C17.1111 19.5071 22.056 12.011 22.056 5.521C22.056 5.312 22.056 5.101 22.0411 4.891C23.002 4.202 23.8409 3.331 24.5009 2.343L24.454 2.323Z"
           />
+        </g>
+      </symbol>
+      <symbol id="linkedin" viewBox="0 0 18 19">
+        <g>
+          <path d="M15.2734 15.6396H12.6331V11.5046C12.6331 10.5185 12.6157 9.24919 11.26 9.24919C9.88488 9.24919 9.67445 10.3235 9.67445 11.4328V15.6392H7.03433V7.136H9.56888V8.29805H9.60442C10.1205 7.41561 11.0836 6.88661 12.1051 6.92454C14.7811 6.92454 15.2746 8.68479 15.2746 10.9748L15.2734 15.6396ZM4.05528 5.97364C3.21477 5.97364 2.5228 5.28203 2.5228 4.44144C2.5228 3.60086 3.21444 2.90917 4.05496 2.90917C4.8954 2.90917 5.58695 3.6007 5.58712 4.44112C5.58712 5.28155 4.89564 5.97356 4.05528 5.97364ZM5.37536 15.6396H2.73241V7.136H5.37536V15.6396ZM16.5896 0.457144H1.40564C0.692878 0.449094 0.0995075 1.02872 0.0908203 1.74153V16.9897C0.0991891 17.703 0.692474 18.2833 1.40564 18.2756H16.5896C17.3045 18.2846 17.8999 17.7044 17.9095 16.9897V1.7405C17.8999 1.02617 17.3037 0.44774 16.5896 0.457144Z" />
         </g>
       </symbol>
       <symbol id="globe" viewBox="0 0 25 24">
@@ -331,6 +806,11 @@
             stroke-linecap="round"
             stroke-linejoin="round"
           />
+        </g>
+      </symbol>
+      <symbol id="tick" viewBox="0 0 12 9">
+        <g>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8801 0.980178C11.2934 1.37865 11.3054 2.03668 10.9068 2.4499L4.81298 8.7695L1.09492 4.91375C0.696434 4.50052 0.7084 3.84249 1.12165 3.444C1.53488 3.04555 2.19291 3.05751 2.5914 3.47073L4.81298 5.77461L9.41041 1.00689C9.80889 0.593655 10.467 0.58169 10.8801 0.980178Z"/>
         </g>
       </symbol>
     </svg>

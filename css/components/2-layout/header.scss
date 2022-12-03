@@ -16,10 +16,12 @@
     width: 100%;
     animation-name: sticky;
     animation-duration: .4s;
+    background-color: $white;
+    box-shadow: 0px 8px 18px 0px #00000030;
   }
 
   &__inner {
-    padding: 40px 0;
+    padding: 40px 0 30px;
     display: flex;
     align-items: center;
 
@@ -49,11 +51,21 @@
 
     &-buttons {
       display: flex;
-      align-items: center;
+      align-items: stretch;
       margin: 0 0 0 auto;
-
+      #themeChange {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 2;
+        cursor: pointer;
+      }
       .button {
         margin-right: 12px;
+        position: relative;
       }
       .lang {
         display: flex;
@@ -81,10 +93,50 @@
     }
   }
 }
-
+// 1380px
+@mixin header-xxxlg-xxxxlg {
+  .header {
+      &__inner {
+        padding: 30px 0;
+        li {
+          margin-right: 16px;
+          a {
+            font-size: 14px;
+            line-height: 16px;
+          }
+        }
+        &-buttons {
+          .button {
+            margin-right: 8px;
+            &.primary {
+              padding: 10px 30px;
+            }
+            &.icon {
+              padding: 10px;
+              svg {
+                width: 18px;
+                height: 18px;
+              }
+            }
+          }
+        }
+        &-logo {
+          margin-right: 26px;
+          font-size: 22px;
+          line-height: 24px;
+          span {
+            width: 40px;
+            margin-right: 8px;
+          }
+        }
+      }
+  }
+}
 // 1024px
 @mixin header-lg-xlg {
-  .header {}
+  .header {
+
+  }
 }
 
 // 540px
