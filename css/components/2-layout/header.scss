@@ -89,7 +89,7 @@
           flex-direction: column;
           text-align: center;
           width: 120%;
-          padding: 12px;
+          padding: 8px;
           border-radius: 12px;
           background-color: $textColor;
           max-height: 0;
@@ -97,6 +97,7 @@
           transition: .3s ease;
           color: $bgColor;
           transform: translateX(-50%);
+          overflow: hidden;
           span {
             padding: 2px;
             transition: .2s ease;
