@@ -1,6 +1,5 @@
 // colors
-$primary: #256f64;
-$main : #5d83e5;
+
 $black: #000;
 $white: #fff;
 $gradient: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
@@ -19,8 +18,13 @@ $tabheadBg: var(--tabheadBg);
 $tabActiveBg: var(--tabActiveBg);
 $tabActive: var(--tabActive);
 $tabLine: var(--tabLine);
+$tickColor: var(--tickColor);
+$donateBorder: var(--donateBorder);
+$donateDashed: var(--donateDashed);
+$teamArrow: var(--teamArrow);
+$teamArrow2: var(--teamArrow2);
 
-:root {
+html[data-theme |= light] {
     --bgColor: #fff;
     --textColor: #0D0F15;
     --iconColor: #6E6E73;
@@ -34,9 +38,14 @@ $tabLine: var(--tabLine);
     --tabActiveBg: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
     --tabActive: #fff;
     --tabLine: transparent;
+    --tickColor: #fff;
+    --donateBorder: #EFEFF0;
+    --donateDashed: #6E6E7380;
+    --teamArrow: #DEDEE2;
+    --teamArrow2: #0D0F15;
 
 }
-html.active {
+html[data-theme |= dark] {
     --bgColor: #06070A;
     --textColor: #fff;
     --iconColor: #fff;
@@ -44,12 +53,17 @@ html.active {
     --langColor: #F4F4F4CC;
     --pColor: #F6F9FC;
     --arrowbg: #131823;
-    --arrowColor: #6E6E73;
+    --arrowColor: #F6F9FC;
     --tabBg: #131823;
     --tabheadBg: #1B2232;
     --tabActiveBg: #131823;
     --tabActive: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
     --tabLine: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
+    --tickColor: #070707;
+    --donateBorder: #191D24;
+    --donateDashed: #17A8FA;
+    --teamArrow: #06070A;
+    --teamArrow2: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
 
 }
 

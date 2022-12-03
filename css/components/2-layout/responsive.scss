@@ -5,6 +5,8 @@
 // 1380px
 @include xxxlg-xxxxlg {
     @include hero-xxxlg-xxxxlg;
+    @include header-xxxlg-xxxxlg;
+
 }
 // 1250px
 @include xlg-xxlg-extra {
@@ -12,6 +14,9 @@
 }
 // 1180px
 @include xlg-xxlg {
+    .auto__container {
+        padding: 0 30px;
+    }
     @include hero-xlg-xxlg;
 }
 // 1024px
@@ -19,6 +24,7 @@
     ::-webkit-scrollbar{
         display: none;
     }
+
     @include hero-lg-xlg;
 }
 // 930px
@@ -27,6 +33,9 @@
 }
 // 750px
 @include sm-md {
+    .auto__container {
+        padding: 0 20px;
+    }
     @include hero-sm-md;
 }
 // 650px

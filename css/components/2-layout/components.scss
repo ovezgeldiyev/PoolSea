@@ -4,12 +4,10 @@ h1 {
   line-height: 122px;
   font-family: $sfDisplay;
 
-  background: linear-gradient(
-    268.3deg,
-    #00fff9 -4.34%,
-    #00c5ff 15.57%,
-    #0078ff 93.71%
-  );
+  background: linear-gradient(268.3deg,
+      #00fff9 -4.34%,
+      #00c5ff 15.57%,
+      #0078ff 93.71%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -19,12 +17,10 @@ h2 {
   font-size: 76px;
   line-height: 82px;
   font-weight: 600;
-  background: linear-gradient(
-    268.3deg,
-    #00fff9 -4.34%,
-    #00c5ff 13.53%,
-    #0078ff 93.71%
-  );
+  background: linear-gradient(268.3deg,
+      #00fff9 -4.34%,
+      #00c5ff 13.53%,
+      #0078ff 93.71%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -33,27 +29,34 @@ h2 {
 h3 {
   font-size: 56px;
   line-height: 70px;
-  span{
-    background: linear-gradient(
-        268.3deg,
+
+  span {
+    background: linear-gradient(268.3deg,
         #00fff9 -4.34%,
         #00c5ff 13.53%,
-        #0078ff 93.71%
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+        #0078ff 93.71%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }
 
 h4 {
   font-size: 48px;
   line-height: 58px;
+
+  &.sm {
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 600;
+    font-family: $sfDisplay;
+  }
 }
 
 h5 {
   font-size: 28px;
   line-height: 36px;
+
   &.sm {
     font-weight: 600;
     font-size: 22px;
@@ -66,6 +69,7 @@ h6 {
     font-size: 20px;
     line-height: 25px;
   }
+
   &.sm {
     font-weight: 500;
     font-size: 18px;
@@ -78,11 +82,13 @@ p {
     font-size: 32px;
     line-height: 42px;
   }
+
   &.big {
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
   }
+
   &.sm {
     font-weight: 500;
     font-size: 16px;
@@ -106,40 +112,48 @@ main {
   justify-content: center;
   transition: .3s ease;
   cursor: pointer;
+
   &:hover {
     opacity: .88;
 
   }
+
   &.primary {
     color: $white;
     background: $gradient;
     padding: 15px 38px;
     line-height: 19px;
   }
+
   &.icon {
     padding: 13px;
     background-color: $iconbg;
+
     img {
       &.sun {
         display: none;
       }
     }
+
     &.active {
       img {
         &.sun {
           display: block;
         }
+
         &.moon {
           display: none;
         }
       }
     }
+
     svg {
       fill: $iconColor;
       width: 24px;
       height: 24px;
     }
   }
+
   &.secondary {
     padding: 18px 37px;
     font-size: 20px;
@@ -160,19 +174,38 @@ main {
 
 
 .mainLogo {
-    display: flex;
-    align-items: center;
-    &__image {
-      width: 50px;
-      margin-right: 12px;
-      img {
-        width: 100%;
-        object-fit: contain;
-      }
-    }
-    p {
-      font-size: 500;
-      line-height: 28px;
-      font-size: 28px;
+  display: flex;
+  align-items: center;
+
+  &__image {
+    width: 50px;
+    margin-right: 12px;
+
+    img {
+      width: 100%;
+      object-fit: contain;
     }
   }
+
+  p {
+    font-size: 500;
+    line-height: 28px;
+    font-size: 28px;
+  }
+}
+
+.swiperBtn {
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  z-index: 5;
+
+  &:hover {
+    opacity: .9;
+  }
+
+  &::after {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
