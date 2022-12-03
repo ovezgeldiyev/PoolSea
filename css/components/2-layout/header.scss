@@ -16,7 +16,7 @@
     width: 100%;
     animation-name: sticky;
     animation-duration: .4s;
-    background-color: $white;
+    background-color: $bgColor;
     box-shadow: 0px 8px 18px 0px #00000030;
   }
 
@@ -53,6 +53,10 @@
       display: flex;
       align-items: stretch;
       margin: 0 0 0 auto;
+      &-row {
+        display: flex;
+        align-items: stretch;
+      }
       #themeChange {
         position: absolute;
         top: 0;
@@ -76,7 +80,40 @@
         line-height: 15px;
         letter-spacing: -.5px;
         font-weight: 500;
-
+        position: relative;
+        &__dropdown {
+          position: absolute;
+          top: calc(100% + 5px);
+          left: 50%;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          width: 120%;
+          padding: 12px;
+          border-radius: 12px;
+          background-color: $textColor;
+          max-height: 0;
+          opacity: 0;
+          transition: .3s ease;
+          color: $bgColor;
+          transform: translateX(-50%);
+          span {
+            padding: 2px;
+            transition: .2s ease;
+            &:hover {
+              opacity: .9;
+            }
+          }
+        }
+        & > span {
+          margin-top: 4px;
+        }
+        &:hover {
+          .lang__dropdown {
+            max-height: 100px;
+            opacity: 1;
+          }
+        }
         svg {
           width: 11px;
           height: 7px;
@@ -113,7 +150,7 @@
             }
             &.icon {
               padding: 10px;
-              svg {
+              svg, img {
                 width: 18px;
                 height: 18px;
               }
@@ -135,13 +172,54 @@
 // 1024px
 @mixin header-lg-xlg {
   .header {
-
+    &__inner {
+      padding: 16px 0;
+      &-logo {
+        margin-right: 0;
+      }
+      &-buttons {
+        .button {
+          margin-right: 12px;
+        }
+        &-row {
+          display: none;
+        }
+        .lang {
+          margin-right: 20px;
+        }
+      }
+    }
   }
 }
 
 // 540px
 @mixin header-xsm-sm {
-  .header {}
+  .header {
+    &__inner {
+      padding: 10px 0;
+      &-logo {
+        font-size: 18px;
+        line-height: 20px;
+        span {
+          width: 36px;
+          margin-right: 6px;
+        }
+      }
+      &-buttons {
+        .button {
+          margin-right: 8px;
+          &.icon {
+            padding: 8px;
+            border-radius: 6px;
+            svg, img {
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @keyframes sticky {

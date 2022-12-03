@@ -26,6 +26,9 @@
     }
 
     @include hero-lg-xlg;
+    @include header-lg-xlg;
+    @include nav-lg-xlg;
+
 }
 // 930px
 @include md-lg {
@@ -44,7 +47,10 @@
 }
 // 540px
 @include xsm-sm  {
+    @include header-xsm-sm;
+    @include nav-xsm-sm;
     @include hero-xsm-sm;
+
 }
 // 440px
 @include xxsm-xsm  {

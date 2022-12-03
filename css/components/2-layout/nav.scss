@@ -5,6 +5,9 @@
         display: flex;
         align-items: center;
         padding-top: 5px;
+        .header__inner-buttons-row {
+            display: none;
+        }
         li {
             display: flex;
             justify-content: center;
@@ -56,10 +59,10 @@
 
     .nav {
         position: fixed;
-        top: 60px;
+        top: 75.2px;
         left: 0;
         width: 100%;
-        height: calc(100% - 60px);
+        height: calc(100% - 75.2px);
         z-index: 9;
         background: rgba($color: #000000, $alpha: 0.4);
         transform: translateX(100%);
@@ -77,12 +80,15 @@
             box-sizing: border-box;
             top: 0;
             right: 0;
-            width: 100%;
+            width: 320px;
             z-index: 1;
             padding: 50px 20px 20px 20px;
             height: 100%;
             overflow-y: auto;
             background: #FEFEFE;
+            .header__inner-buttons-row {
+                display: flex;
+            }
         }
     }
 
@@ -91,8 +97,8 @@
         cursor: pointer;
         @include transition;
         position: relative;
-        width: 30px;
-        height: 30px;
+        width: 26px;
+        height: 26px;
 
         &:hover {
             opacity: .8;
@@ -101,8 +107,8 @@
         &::before {
             top: 20%;
             width: 100%;
-            height: 3px;
-            background-color: $black;
+            height: 2px;
+            background-color: $textColor;
             transition: all 0.3s ease;
             content: "";
             position: absolute;
@@ -113,8 +119,8 @@
         span {
             top: 50%;
             width: 100%;
-            height: 3px;
-            background-color: $black;
+            height: 2px;
+            background-color: $textColor;
             transition: all 0.3s ease;
             position: absolute;
             left: 50%;
@@ -125,8 +131,8 @@
         &::after {
             bottom: 20%;
             width: 100%;
-            height: 3px;
-            background-color: $black;
+            height: 2px;
+            background-color: $textColor;
             transition: all 0.3s ease;
             content: "";
             position: absolute;

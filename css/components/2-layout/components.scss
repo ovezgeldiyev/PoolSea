@@ -130,6 +130,8 @@ main {
     background-color: $iconbg;
 
     img {
+      width: 24px;
+      height: 24px;
       &.sun {
         display: none;
       }
