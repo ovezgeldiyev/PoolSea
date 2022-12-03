@@ -20,6 +20,7 @@ var swiper = new Swiper(".mySwiper", {
 var swiper2 = new Swiper(".mySwiper2", {
   slidesPerView: 7,
   spaceBetween: 15,
+  loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -27,9 +28,9 @@ var swiper2 = new Swiper(".mySwiper2", {
   breakpoints: {
     280: {
       slidesPerView: 2,
-      spaceBetween: 30,
+      spaceBetween: 8,
     },
-    640: {
+    600: {
       slidesPerView: 3,
       spaceBetween: 5,
     },
