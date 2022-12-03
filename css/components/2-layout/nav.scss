@@ -1,13 +1,16 @@
 .nav {
     display: flex;
     align-items: center;
+
     &__inner {
         display: flex;
         align-items: center;
         padding-top: 5px;
+
         .header__inner-buttons-row {
             display: none;
         }
+
         li {
             display: flex;
             justify-content: center;
@@ -24,6 +27,7 @@
                 line-height: 18px;
                 font-weight: 500;
                 position: relative;
+
                 &::before {
                     position: absolute;
                     content: "";
@@ -34,10 +38,12 @@
                     background: $gradient;
                     transition: .3s ease;
                 }
+
                 &.active {
                     background: $gradient;
                     background-clip: text;
                     -webkit-text-fill-color: transparent;
+
                     &::before {
                         width: 100%;
                     }
@@ -80,14 +86,44 @@
             box-sizing: border-box;
             top: 0;
             right: 0;
-            width: 320px;
+            width: 300px;
             z-index: 1;
             padding: 50px 20px 20px 20px;
             height: 100%;
             overflow-y: auto;
-            background: #FEFEFE;
-            .header__inner-buttons-row {
-                display: flex;
+            background: $bgColor;
+
+            li {
+                width: 100%;
+                margin-bottom: 10px;
+                a {
+                    font-size: 18px;
+                    line-height: 20px;
+                    width: 100%;
+                    padding: 10px;
+                    text-align: center;
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+
+            .header__inner-buttons {
+                width: 100%;
+                margin-top: auto;
+                &-row {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .button {
+                    margin-right: 8px;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
             }
         }
     }
@@ -162,5 +198,8 @@
 
 // 540px
 @mixin nav-xsm-sm {
-    .nav {}
+    .nav {
+        top: 58px;
+        height: calc(100% - 58px);
+    }
 }

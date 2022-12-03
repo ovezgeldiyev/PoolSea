@@ -1,9 +1,65 @@
 // 1450px
 @include xxxxlg-xxxxxlg {
+    h1 {
+        font-size: 90px;
+        line-height: 105px;
+    }
+    h2 {
+        font-size: 70px;
+        line-height: 78px;
+    }
+    h3 {
+        font-size: 50px;
+        line-height: 58px;
+    }
+    h4 {
+        font-size: 42px;
+        line-height: 49px;
+        &.sm {
+            font-size: 32px;
+            line-height: 40px;
+        }
+    }
+    h5 {
+        font-size: 25px;
+        line-height: 32px;
+        &.sm {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
     // @include hero-xxxxlg-xxxxxlg;
 }
 // 1380px
 @include xxxlg-xxxxlg {
+    h1 {
+        font-size: 80px;
+        line-height: 92px;
+    }
+    h2 {
+        font-size: 60px;
+        line-height: 68px;
+    }
+    h3 {
+        font-size: 45px;
+        line-height: 52px;
+    }
+    h4 {
+        font-size: 35px;
+        line-height: 38px;
+        &.sm {
+            font-size: 28px;
+            line-height: 34px;
+        }
+    }
+    h5 {
+        font-size: 22px;
+        line-height: 28px;
+        &.sm {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
     @include hero-xxxlg-xxxxlg;
     @include header-xxxlg-xxxxlg;
 
@@ -16,6 +72,26 @@
 @include xlg-xxlg {
     .auto__container {
         padding: 0 30px;
+    }
+    h1 {
+        font-size: 70px;
+        line-height: 82px;
+    }
+    h2 {
+        font-size: 55px;
+        line-height: 62px;
+    }
+    h3 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    h4 {
+        font-size: 30px;
+        line-height: 34px;
+        &.sm {
+            font-size: 24px;
+            line-height: 30px;
+        }
     }
     @include hero-xlg-xxlg;
 }
