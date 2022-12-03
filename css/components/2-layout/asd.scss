@@ -14,6 +14,7 @@
 // 1180px
 @include xlg-xxlg {
   @include hero-xlg-xxlg;
+  @include join-xlg-xxlg;
 }
 // 1024px
 @include lg-xlg {
@@ -21,6 +22,7 @@
       display: none;
   }
   @include hero-lg-xlg;
+  @include discleamer-lg-xlg;
 }
 // 930px
 @include md-lg {
@@ -30,6 +32,7 @@
 // 750px
 @include sm-md {
   @include hero-sm-md;
+  @include join-sm-md;
 }
 // 650px
 @include sm-md-extra {
@@ -39,17 +42,17 @@
 // 540px
 @include xsm-sm  {
   @include hero-xsm-sm;
+  @include join-xsm-sm;
 }
 // 440px
 @include xxsm-xsm  {
   @include hero-xxsm-xsm;
   @include footer-xxsm-xsm;
-
 }
 // 390px
 @include xxxsm-xxsm  {
   // @include hero-xxxsm-xxsm;
   @include footer-xxxsm-xxsm;
-
+  @include join-xxxsm-xxsm;
 }
 
