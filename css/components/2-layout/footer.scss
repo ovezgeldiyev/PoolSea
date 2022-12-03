@@ -85,7 +85,7 @@
   &__inner {
     padding: 80px 20px;
     border-radius: 40px;
-    background-color: $bgSection;
+    background-color: $tabBg;
     &-social {
       display: flex;
       align-items: center;
@@ -102,7 +102,7 @@
   &Social {
     width: 69px;
     height: 69px;
-    background-color: $socialBg;
+    background: $teamArrow;
     border-radius: 49px;
     display: flex;
     align-items: center;
@@ -115,7 +115,7 @@
       @include transition;
     }
     &:hover {
-      background-color: $langColor;
+      background: $socialBg;
       opacity: 1;
       svg {
         fill: $white;
@@ -142,6 +142,7 @@
   }
 }
 .faq {
+  background: $faqOuterBg;
   &__inner {
     padding: 60px 0;
     &-main {
@@ -151,12 +152,14 @@
   }
   &Item {
     margin-bottom: 24px;
+    border: 1px solid $faqBorder;
+    border-radius: 10px;
     &:last-child {
       margin-bottom: 0;
     }
     &__header {
       padding: 30px;
-      background-color: $bgSection;
+      background-color: $tabBg;
       border-radius: 10px;
       position: relative;
       cursor: pointer;
@@ -181,7 +184,7 @@
         }
       }
       &.active {
-        background-color: $textColor;
+        background-color: $faqBg;
         border-radius: 10px 10px 0 0;
         h6 {
           color: $white;
@@ -197,7 +200,7 @@
       opacity: 0;
       pointer-events: none;
       @include transition;
-      background-color: $textColor;
+      background-color: $faqBg;
       border-radius: 0 0 10px 10px;
       p {
         &.sm {
@@ -235,7 +238,7 @@
   &Item {
     width: calc(25% - 14px);
     padding: 63px 45px;
-    background-color: $bgSection;
+    background-color: $tabBg;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -249,7 +252,7 @@
 .status {
   &__inner {
     padding: 120px 20px;
-    background-color: $bgSection;
+    background-color: $tabBg;
     border-radius: 40px;
     &-main {
       max-width: 707px;
@@ -373,7 +376,7 @@
     display: flex;
     justify-content: space-between;
     padding: 30px 36px;
-    background-color: $bgSection;
+    background-color: $tabBg;
     border-radius: 10px;
     &__info {
       width: calc(31% - 10px);
@@ -520,7 +523,7 @@
     }
     .timer{
       padding:28px 64px 28px 40px ;
-      background-color: $timerColor;
+      background-color: $socialBg;
       border-radius: 10px;
       margin-bottom: 24px;
       &__clock{
@@ -578,7 +581,7 @@
 .rate{
   &__inner{
     padding: 120px 102px;
-    background-color:$bgSection;
+    background-color:$tabBg;
     border-radius: 40px;
     &-image{
       width: 100%;

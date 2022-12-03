@@ -3,6 +3,7 @@
 $black: #000;
 $white: #fff;
 $gradient: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
+$linkColor:#3772FF;
 
 
 $bgColor: var(--bgColor);
@@ -23,6 +24,10 @@ $donateBorder: var(--donateBorder);
 $donateDashed: var(--donateDashed);
 $teamArrow: var(--teamArrow);
 $teamArrow2: var(--teamArrow2);
+$socialBg: var(--socialBg);
+$faqOuterBg: var(--faqOuterBg);
+$faqBg: var(--faqBg);
+$faqBorder: var(--faqBorder);
 
 html[data-theme |= light] {
     --bgColor: #fff;
@@ -43,6 +48,10 @@ html[data-theme |= light] {
     --donateDashed: #6E6E7380;
     --teamArrow: #DEDEE2;
     --teamArrow2: #0D0F15;
+    --socialBg: #0D0F15;
+    --faqBg: #0D0F15;
+    --faqBorder: transparent;
+    --faqOuterBg: #fff;
 
 }
 html[data-theme |= dark] {
@@ -64,6 +73,11 @@ html[data-theme |= dark] {
     --donateDashed: #17A8FA;
     --teamArrow: #06070A;
     --teamArrow2: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
+    --bgSection: #0D0F15;
+    --socialBg:  linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
+    --faqBg: #0F1219;
+    --faqBorder: #2B364F;
+    --faqOuterBg: #131823;
 
 }
 
@@ -74,8 +88,4 @@ $sfText: 'sfText', sans-serif;
 
 
 
-$bgSection:#f6f9fc;
-$socialBg:#dddde4;
-$linkColor:#3772FF;
-$timerColor:#0D0F15;
-$bordersColor:#E5E5E6;
+
