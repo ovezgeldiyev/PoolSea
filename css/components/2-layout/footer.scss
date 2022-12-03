@@ -355,13 +355,7 @@
     }
   }
 }
-h5 {
-  &.sm {
-    font-size: 24px;
-    line-height: 30px;
-    font-family: $sfDisplay;
-  }
-}
+
 .location {
   &__inner {
     padding: 160px 0;
@@ -494,17 +488,123 @@ h5 {
       max-width: 1280px;
   }
 }
-
 .bonus{
-    &__inenr{
+    &__inner{
         padding: 60px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
         &-info{
+        width: calc(50% - 10px);
+        max-width: 515px;
         }
+        &-image{
+          width: calc(50% - 10px);
+          max-width: 572px;
+          img{
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+     
     }
     h3{
         margin-bottom: 16px;
+        font-family: $sfDisplay;
     }
+   p{
+      color: $iconColor;
+      font-family: $sfDisplay;
+      margin-bottom: 40px;
+
+    }
+    .timer{
+      padding:28px 64px 28px 40px ;
+      background-color: $timerColor;
+      border-radius: 10px;
+      margin-bottom: 24px;
+      &__clock{
+        display: flex;
+        align-items: center;
+      }
+      h6{
+        margin-bottom: 8px;
+        font-weight: 500;
+        color: $white;
+      }
+      p,span{
+        font-size: 48px;
+        line-height: 48px;
+        color: $white;
+        font-family: $sfDisplay;
+        margin-bottom: unset;
+      }
+    }
+    a{
+      font-size:16px ;
+      line-height: 19px;
+      color: $langColor;
+      position: relative;
+      padding-bottom: 2px;
+      &:after{
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: $langColor;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    }
+    &.multiplier{
+      .bonus{
+        &__inner{
+          align-items: flex-start;
+          &-info{
+            width: calc(21%- 10px);
+          }
+          &-text{
+            width: calc(79% - 10px);
+            p{
+              font-weight: 500;
+              line-height: 25px;
+              font-family: $sfText;
+            }
+          }
+        }
+      }
+    }
+}
+.rate{
+  &__inner{
+    padding: 120px 102px;
+    background-color:$bgSection;
+    border-radius: 40px;
+    &-image{
+      width: 100%;
+      img{
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+
+  }
+  h3{
+    margin-bottom:60px;
+    text-align: center;
+    font-family: $sfDisplay;
+  }
+}
+h5 {
+  &.sm {
+    font-size: 24px;
+    line-height: 30px;
+    font-family: $sfDisplay;
+  }
+}
+h4{
+  &.sm{
+    font-size: 36px;
+    line-height: 45px;
+  }
 }
