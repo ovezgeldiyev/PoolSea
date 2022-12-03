@@ -389,6 +389,9 @@
             line-height: 20px;
         }
     }
+    main {
+        margin-top: 90px;
+    }
     @include hero-xxsm-xsm;
     @include donate-xxsm-xsm;
 
