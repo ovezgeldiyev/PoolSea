@@ -53,21 +53,21 @@ var swiper2 = new Swiper(".mySwiper2", {
 });
 
 // menu start
-var menu = document.getElementById("menu");
-var menuBtn = document.getElementById("menuBtn");
-var body = document.body;
-menuBtn.onclick = function () {
-  menu.classList.toggle("active");
-  menuBtn.classList.toggle("active");
-  body.classList.toggle("active");
-};
-window.onclick = function (event) {
-  if (event.target == menu) {
-    menu.classList.remove("active");
-    menuBtn.classList.remove("active");
-    body.classList.remove("active");
-  }
-};
+// var menu = document.getElementById("menu");
+// var menuBtn = document.getElementById("menuBtn");
+// var body = document.body;
+// menuBtn.onclick = function () {
+//   menu.classList.toggle("active");
+//   menuBtn.classList.toggle("active");
+//   body.classList.toggle("active");
+// };
+// window.onclick = function (event) {
+//   if (event.target == menu) {
+//     menu.classList.remove("active");
+//     menuBtn.classList.remove("active");
+//     body.classList.remove("active");
+//   }
+// };
 // menu end
 
 // scroll start
@@ -116,31 +116,31 @@ function onTabClick(tabBtns, tabItems, item) {
 }
 // faq end
 
-const themeChange = document.getElementById("themeChange");
-const themeChangeBtn = themeChange.parentNode;
-const tabItems = document.querySelectorAll(".tabItem");
-const swiperWrapper = document.querySelector(".intro__inner-swiper-outer");
-const swiperItems = swiperWrapper.querySelectorAll(".swiper-slide");
+// const themeChange = document.getElementById("themeChange");
+// const themeChangeBtn = themeChange.parentNode;
+// const tabItems = document.querySelectorAll(".tabItem");
+// const swiperWrapper = document.querySelector(".intro__inner-swiper-outer");
+// const swiperItems = swiperWrapper.querySelectorAll(".swiper-slide");
 
-console.log(swiperItems);  
-themeChange.onchange = function () {
-  if (themeChange.checked) {
-    document.documentElement.setAttribute("data-theme", "dark");
-    themeChangeBtn.classList.add("active");
-    tabItems.forEach((tabItem) => {
-      tabItem.classList.add("dark");
-    });
-    swiperItems.forEach((swiperItem) => {
-      swiperItem.classList.add("dark");
-    });
-  } else {
-    document.documentElement.setAttribute("data-theme", "light");
-    themeChangeBtn.classList.remove("active");
-    tabItems.forEach((tabItem) => {
-      tabItem.classList.remove("dark");
-    });
-    swiperItems.forEach((swiperItem) => {
-      swiperItem.classList.remove("dark");
-    });
-  }
-};
+// console.log(swiperItems);  
+// themeChange.onchange = function () {
+//   if (themeChange.checked) {
+//     document.documentElement.setAttribute("data-theme", "dark");
+//     themeChangeBtn.classList.add("active");
+//     tabItems.forEach((tabItem) => {
+//       tabItem.classList.add("dark");
+//     });
+//     swiperItems.forEach((swiperItem) => {
+//       swiperItem.classList.add("dark");
+//     });
+//   } else {
+//     document.documentElement.setAttribute("data-theme", "light");
+//     themeChangeBtn.classList.remove("active");
+//     tabItems.forEach((tabItem) => {
+//       tabItem.classList.remove("dark");
+//     });
+//     swiperItems.forEach((swiperItem) => {
+//       swiperItem.classList.remove("dark");
+//     });
+//   }
+// };

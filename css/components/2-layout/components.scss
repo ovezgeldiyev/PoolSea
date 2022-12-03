@@ -158,11 +158,10 @@ main {
 
   &.secondary {
     padding: 18px 38px;
-    font-size: 20px;
     border-radius: 30px;
     background-color: $white;
-
     span {
+    font-size: 20px;
       line-height: 23px;
       font-weight: 700;
       font-family: $sfDisplay;
