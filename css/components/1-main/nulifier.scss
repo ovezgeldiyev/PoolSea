@@ -33,13 +33,13 @@ input::-webkit-inner-spin-button {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba($color: #000, $alpha: 0.2);
+  // background: rgba($color: #000, $alpha: 0.2);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba($color: #000, $alpha: 0.3);
+  // background: rgba($color: #000, $alpha: 0.3);
 }
 /*** 
 ====================================================================
@@ -49,7 +49,7 @@ Global Settings
 body {
   font-family: $sfText;
   font-size: 18px;
-  color: $white;
+  color: $langColor;
   line-height: 25px;
   font-weight: 600;
   background: $bgColor;
