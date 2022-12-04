@@ -6,14 +6,33 @@
     &__inner {
         text-align: center;
 
-        &-image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        &-wrapper {
+            position: sticky;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -5;
+            // height: 100vh;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
 
-            img {
+            canvas {
                 width: 100%;
             }
+        }
+
+        &-image {
+
+
+            // canvas {
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     width: 100%;
+
+            // }
         }
 
         h1 {
@@ -126,6 +145,7 @@
         align-items: flex-end;
         justify-content: space-between;
         position: relative;
+
         &-content {
             width: 65%;
             max-width: 745px;
@@ -162,7 +182,7 @@
             img {
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
+
                 &.dark {
                     display: none;
                 }
@@ -176,7 +196,8 @@
             z-index: 5;
             background: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
             transition: .3s ease;
-            &::after {  
+
+            &::after {
                 color: $white;
                 transition: .3s ease;
             }
@@ -194,6 +215,7 @@
             &-next {
                 left: calc(14% + 68px);
             }
+
             &-disabled {
                 background: $arrowbg;
 
@@ -222,17 +244,20 @@
 @mixin intro-xxxlg-xxxxlg {
     .intro {
         padding: 160px 0;
+
         &__inner {
             &-content {
                 padding: 70px 0 40px;
                 width: calc(60%);
             }
+
             &-swiper {
                 &-outer {
                     width: 60%;
                     left: calc(60% + 16px);
                 }
             }
+
             h2 {
                 margin-bottom: 20px;
             }
@@ -242,26 +267,27 @@
 
 // 1250px
 @mixin intro-xlg-xxlg-extra {
-    .intro {
-
-    }
+    .intro {}
 }
 
 // 1180px
 @mixin intro-xlg-xxlg {
     .intro {
         padding: 110px 0;
+
         &__inner {
             &-content {
                 padding: 50px 0 30px;
                 width: 55%;
             }
+
             &-swiper {
                 &-outer {
                     width: 50%;
                     left: calc(55% + 26px);
                 }
             }
+
             .swiperBtn {
                 top: calc(100% + 45px);
             }
@@ -273,27 +299,33 @@
 @mixin intro-lg-xlg {
     .intro {
         padding: 80px 0 100px;
+
         &__inner {
             flex-direction: column;
+
             &-content {
                 padding: 0;
                 width: 100%;
                 max-width: unset;
                 margin-bottom: 40px;
             }
+
             &-swiper {
                 &-outer {
                     width: 100%;
                     position: unset;
                 }
             }
+
             h2 {
                 margin-bottom: 20px;
             }
+
             .swiperBtn {
                 top: calc(100% + 35px);
                 left: 10%;
             }
+
             .swiper-button-next {
                 left: calc(10% + 55px);
             }
@@ -303,9 +335,7 @@
 
 // 930px
 @mixin intro-md-lg {
-    .intro {
-
-    }
+    .intro {}
 }
 
 // 750px
@@ -322,14 +352,17 @@
 @mixin intro-xsm-sm {
     .intro {
         padding: 30px 0 70px;
+
         &__inner {
             &-content {
                 margin-bottom: 20px;
             }
+
             .swiperBtn {
                 top: calc(100% + 35px);
                 left: 10%;
             }
+
             .swiper-button-next {
                 left: calc(10% + 46px);
             }
@@ -345,6 +378,7 @@
 .tab {
     padding: 25px 0;
     position: relative;
+
     &__inner {
         &-header {
             display: flex;
@@ -401,7 +435,7 @@
                     }
                 }
 
-    
+
             }
         }
 
@@ -422,6 +456,7 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
+
         &:first-child {
             .tabItem__image {
                 img {
@@ -429,6 +464,7 @@
                 }
             }
         }
+
         &.dark {
             .tabItem {
                 &__image {
@@ -592,6 +628,7 @@
             display: flex;
         }
     }
+
     .circle {
         position: absolute;
         top: -22%;
@@ -599,6 +636,7 @@
         transform: translateX(60%);
     }
 }
+
 // 1380px
 @mixin tab-xxxlg-xxxxlg {
     .tab {}
@@ -618,16 +656,19 @@
                 min-height: 500px;
             }
         }
+
         &Item {
             ul {
                 li {
                     font-size: 18px;
                     line-height: 40px;
+
                     &::before {
                         top: 18px;
                     }
                 }
             }
+
             p {
                 &.extra {
                     font-size: 20px;
@@ -645,28 +686,34 @@
         &__inner {
             &-header {
                 overflow-y: auto;
+
                 .tabBtn {
                     padding: 16px 15px;
                     min-width: 150px;
                 }
             }
+
             &-content {
                 padding: 30px;
                 min-height: 400px;
             }
         }
+
         &Item {
             &__content {
                 width: calc(55% - 15px);
             }
+
             &__image {
                 width: calc(45% - 15px);
             }
+
             ul {
                 li {
                     font-size: 16px;
                     line-height: 30px;
                     padding-left: 15px;
+
                     &::before {
                         top: 12px;
                         width: 6px;
@@ -674,6 +721,7 @@
                     }
                 }
             }
+
             p {
                 &.extra {
                     font-size: 18px;
@@ -681,11 +729,13 @@
                     margin-bottom: 5px;
                 }
             }
+
             h6 {
                 &:first-of-type {
                     margin-top: 20px;
                 }
             }
+
             h4 {
                 margin-bottom: 15px;
             }
@@ -703,43 +753,47 @@
 
                 }
             }
+
             &-content {
                 min-height: 380px;
             }
         }
+
         &Item {
             &__content {
                 width: calc(57% - 8px);
             }
+
             &__image {
                 width: calc(43% - 8px);
             }
+
             &.long {
                 .tabItem {
                     &__content {
                         width: calc(35% - 10px);
                         max-width: 316px;
                     }
-    
+
                     &__image {
                         width: calc(65% - 10px);
                     }
                 }
             }
-    
+
             &.longer {
                 .tabItem {
                     &__content {
                         width: calc(35% - 10px);
                         max-width: 270px;
                     }
-    
+
                     &__image {
                         width: calc(65% - 10px);
                     }
                 }
             }
-  
+
         }
     }
 }
@@ -752,8 +806,10 @@
                 padding: 20px 20px 30px;
             }
         }
+
         &Item {
             flex-direction: column;
+
             &:first-child {
                 .tabItem__image {
                     img {
@@ -761,35 +817,38 @@
                     }
                 }
             }
+
             &__content {
                 width: 100%;
             }
+
             &__image {
                 width: 100%;
                 order: -1;
                 justify-content: center;
                 margin-bottom: 20px;
             }
+
             &.long {
                 .tabItem {
                     &__content {
                         width: 100%;
                         max-width: unset;
                     }
-    
+
                     &__image {
                         width: 100%;
                     }
                 }
             }
-    
+
             &.longer {
                 .tabItem {
                     &__content {
                         width: 100%;
                         max-width: unset;
                     }
-    
+
                     &__image {
                         width: 100%;
 
@@ -813,40 +872,49 @@
                 border-top-left-radius: 15px;
                 border-top-right-radius: 15px;
             }
+
             &-content {
                 padding: 20px 15px;
                 border-bottom-left-radius: 15px;
                 border-bottom-right-radius: 15px;
             }
         }
+
         &Item {
             &__image {
                 margin-bottom: 16px;
             }
+
             h6 {
                 margin-bottom: 10px;
+
                 &:first-of-type {
                     margin-top: 15px;
                 }
+
                 span {
                     width: 20px;
                     height: 20px;
                     margin-right: 5px;
+
                     svg {
                         width: 10px;
                         height: 7px;
                     }
                 }
-            
+
             }
+
             h4 {
                 margin-bottom: 8px;
             }
+
             ul {
                 li {
                     font-size: 14px;
                     line-height: 25px;
                     padding-left: 12px;
+
                     &::before {
                         top: 9px;
                         width: 5px;
@@ -854,6 +922,7 @@
                     }
                 }
             }
+
             p {
                 &.extra {
                     font-size: 16px;
@@ -868,6 +937,7 @@
 @mixin tab-xxsm-xsm {
     .tab {}
 }
+
 .donate {
     padding: 140px 0 180px;
 
@@ -1052,6 +1122,7 @@
                 width: 36px;
                 height: 36px;
                 margin-right: 12px;
+
                 img {
                     width: 100%;
                 }
@@ -1059,6 +1130,7 @@
         }
     }
 }
+
 // 1380px
 @mixin donate-xxxlg-xxxxlg {
     .donate {}
@@ -1073,15 +1145,18 @@
 @mixin donate-xlg-xxlg {
     .donate {
         padding: 100px 0 150px;
+
         &__inner {
             &-list {
                 width: calc(65% - 8px);
                 padding: 35px 18px 10px;
             }
+
             &-card {
                 width: calc(35% - 8px);
                 padding: 45px 18px;
             }
+
             h5 {
                 margin-bottom: 10px;
             }
@@ -1093,19 +1168,24 @@
 @mixin donate-lg-xlg {
     .donate {
         padding: 60px 0 110px;
+
         &__inner {
             &-list {
                 padding: 25px 18px 10px;
+
                 &-row {
                     margin: 0 -5px;
                 }
             }
+
             &-card {
                 padding: 25px 18px;
+
                 &-total {
                     padding: 28px;
                     margin-bottom: 20px;
                 }
+
                 &-info {
                     span {
                         width: 40px;
@@ -1113,29 +1193,36 @@
                         padding: 10px;
                     }
                 }
-                & > h4 {
+
+                &>h4 {
                     margin-bottom: 20px;
                 }
             }
+
             h5 {
                 margin-bottom: 15px;
             }
-            & > a {
+
+            &>a {
                 top: calc(100% + 18px)
             }
+
             p {
                 margin-bottom: 28px;
             }
+
             .button {
                 padding: 16px 20px;
             }
         }
+
         &Item {
             margin: 5px;
             width: calc(50% - 10px);
             padding: 12px 14px;
             font-size: 16px;
             line-height: 18px;
+
             &__name {
                 span {
                     width: 32px;
@@ -1153,31 +1240,39 @@
             &-list {
                 padding: 20px 14px 8px;
             }
+
             &-card {
                 padding: 20px 14px;
+
                 &-total {
                     padding: 22px;
                     margin-bottom: 18px;
                 }
+
                 &-info {
                     margin-bottom: 24px;
+
                     span {
                         width: 32px;
                         height: 32px;
                         padding: 6px;
                     }
+
                     input {
                         padding: 15px 54px 14px 14px;
                     }
                 }
-                & > h4 {
+
+                &>h4 {
                     margin-bottom: 20px;
                 }
+
                 p {
                     margin-bottom: 24px;
                     font-size: 13px;
                     line-height: 18px;
                 }
+
                 .button {
                     padding: 14px 15px;
                     font-size: 14px;
@@ -1185,10 +1280,12 @@
                 }
             }
         }
+
         &Item {
             padding: 10px 12px;
             font-size: 14px;
             line-height: 16px;
+
             &__name {
                 span {
                     width: 28px;
@@ -1204,20 +1301,24 @@
 @mixin donate-sm-md {
     .donate {
         padding: 30px 0 60px;
+
         &__inner {
             flex-direction: column;
             align-items: center;
+
             &-list {
                 width: 100%;
                 margin-bottom: 12px;
                 padding: 15px 10px 7px;
             }
+
             &-card {
                 width: 100%;
                 max-width: 350px;
                 order: 2;
             }
-            & > a{
+
+            &>a {
                 position: unset;
                 align-self: flex-start;
                 margin-bottom: 36px;
@@ -1235,17 +1336,20 @@
 @mixin donate-xsm-sm {
     .donate {
         padding: 20px 0 40px;
+
         &__inner {
-            & > a{
+            &>a {
                 font-size: 14px;
                 line-height: 15px;
                 margin-bottom: 25px;
             }
         }
+
         &Item {
             padding: 6px 8px;
             font-size: 12px;
             line-height: 14px;
+
             &__name {
                 span {
                     width: 24px;
@@ -1260,24 +1364,29 @@
 @mixin donate-xxsm-xsm {
     .donate {
         padding: 0 0 30px;
+
         &__inner {
             &-list {
                 margin-bottom: 8px;
             }
-            & > a{
+
+            &>a {
                 font-size: 10px;
                 line-height: 12px;
                 margin-bottom: 20px;
             }
+
             h5 {
                 margin-bottom: 10px;
             }
         }
+
         &Item {
             padding: 10px 12px;
             font-size: 14px;
             line-height: 16px;
             width: 100%;
+
             &__name {
                 span {
                     width: 26px;
@@ -1287,6 +1396,7 @@
         }
     }
 }
+
 .team {
     padding: 160px 0;
     background-color: $tabBg;
@@ -1310,29 +1420,35 @@
                 position: relative;
             }
         }
+
         .swiperBtn {
             background: $teamArrow2;
             position: absolute;
             right: 0;
             transform: translateX(28px);
             transition: .3s ease;
+
             &::after {
                 color: $white;
                 transition: .3s ease;
             }
+
             &:hover {
                 background: $teamArrow;
+
                 &::after {
                     color: #6E6E73;
                 }
             }
         }
+
         .swiper-button {
             &-prev {
                 right: unset;
                 left: 0;
                 transform: translateX(-28px);
             }
+
             &-disabled {
                 opacity: 1;
                 pointer-events: unset;
@@ -1412,6 +1528,7 @@
         }
     }
 }
+
 // 1380px
 @mixin team-xxxlg-xxxxlg {
     .team {}
@@ -1426,10 +1543,12 @@
 @mixin team-xlg-xxlg {
     .team {
         padding: 120px 0;
+
         &__inner {
             .swiperBtn {
                 transform: translateX(18px);
             }
+
             .swiper-button-prev {
                 transform: translateX(-18px);
 
@@ -1442,14 +1561,17 @@
 @mixin team-lg-xlg {
     .team {
         padding: 90px 0;
+
         &__inner {
             &-swiper {
                 width: calc(100% - 40px);
             }
+
             h3 {
                 margin-bottom: 40px;
             }
         }
+
         &Item {
             padding: 10px;
         }
@@ -1465,17 +1587,21 @@
 @mixin team-sm-md {
     .team {
         padding: 40px 0;
+
         &__inner {
             .swiperBtn {
                 transform: translateX(4px);
             }
+
             .swiper-button-prev {
                 transform: translateX(-4px);
 
             }
+
             &-swiper {
                 width: calc(100% - 20px);
             }
+
             h3 {
                 margin-bottom: 30px;
             }

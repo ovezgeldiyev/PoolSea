@@ -142,6 +142,28 @@ p {
       }
     }
   }
+  &__bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 8%;
+    pointer-events: none;
+    .circle {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translateX(70%);
+      z-index: 2;
+      &.left {
+        top: unset;
+        bottom: -10%;
+        right: unset;
+        left: 0;
+        transform: translateX(-65%);
+      }
+    }
+  }
 }
 
 .circle {
@@ -278,11 +300,11 @@ p {
 }
 
 canvas {
-  position: fixed;
-  z-index: 999;
-  left: 50%;
-  top: 50%;
-  max-height: 100vh;
-  max-width: 100vw;
-  transform: translate(-50%, -50%);
+  // position: fixed;
+  // z-index: 999;
+  // left: 50%;
+  // top: 50%;
+  // max-height: 100vh;
+  // max-width: 100vw;
+  // transform: translate(-50%, -50%);
 }
