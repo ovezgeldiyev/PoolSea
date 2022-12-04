@@ -104,7 +104,7 @@ Global Settings
 body {
   font-family: "sfText", sans-serif;
   font-size: 18px;
-  color: var(--langColor);
+  color: var(--textColor);
   line-height: 25px;
   font-weight: 600;
   background: var(--bgColor);
@@ -972,6 +972,19 @@ p.sm {
 .status h3 {
   text-align: center;
   margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .status h3 span {
   background: linear-gradient(268.3deg, #00fff9 -4.34%, #00c5ff 13.53%, #0078ff 93.71%);
@@ -1006,7 +1019,7 @@ p.sm {
   height: 8px;
   opacity: 0.8;
   border-radius: 100px;
-  background-color: #eeeef1;
+  background-color: #EEEEF1;
   position: relative;
 }
 .statusItem__range-line button {
@@ -1230,9 +1243,10 @@ p.sm {
 }
 .bonus .timer {
   padding: 28px 64px 28px 40px;
-  background-color: var(--socialBg);
+  background-color: #0D0F15;
   border-radius: 10px;
   margin-bottom: 24px;
+  max-width: 364px;
 }
 .bonus .timer__clock {
   display: -webkit-box;
@@ -1290,6 +1304,9 @@ p.sm {
   margin-bottom: 0;
 }
 
+.rate {
+  position: relative;
+}
 .rate__inner {
   padding: 120px 102px;
   background-color: var(--tabBg);
@@ -1307,6 +1324,14 @@ p.sm {
   margin-bottom: 60px;
   text-align: center;
   font-family: "sfDisplay", sans-serif;
+}
+.rate .circle {
+  position: absolute;
+  left: 0;
+  top: 20px;
+}
+.rate .circle img {
+  width: 100%;
 }
 
 h5.sm {
@@ -3090,6 +3115,12 @@ h4.sm {
   .bonus.multiplier .bonus__inner-info {
     width: calc(32% - 10px);
   }
+
+  .status h3 span {
+    font-size: 19px;
+    line-height: 26px;
+    margin-bottom: 8px;
+  }
 }
 @media (max-width: 1250px) {
   .footer__inner {
@@ -3190,6 +3221,10 @@ h4.sm {
   }
   .status h3 {
     margin-bottom: 50px;
+  }
+  .status h3 span {
+    font-size: 17px;
+    line-height: 22px;
   }
 
   .location__inner {
@@ -3477,6 +3512,7 @@ h4.sm {
   .bonus .timer {
     padding: 20px 30px 20px;
     margin-bottom: 15px;
+    max-width: 300px;
   }
   .bonus .timer p, .bonus .timer span {
     font-size: 30px;
@@ -3670,6 +3706,11 @@ h4.sm {
   }
   .status h3 {
     margin-bottom: 30px;
+  }
+  .status h3 span {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 5px;
   }
 }
 @media (max-width: 650px) {

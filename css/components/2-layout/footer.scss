@@ -837,6 +837,12 @@
   h3 {
     text-align: center;
     margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+
+    
     span {
       background: linear-gradient(
         268.3deg,
@@ -872,7 +878,7 @@
         height: 8px;
         opacity: 0.8;
         border-radius: 100px;
-        background-color: #eeeef1;
+        background-color: $line;
         position: relative;
         button {
           width: 28px;
@@ -914,6 +920,18 @@
     }
   }
 }
+// 1350px
+@mixin status-xxxlg-xxxxlg{
+  .status{
+    h3{
+      span{
+        font-size: 19px;
+        line-height: 26px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
 // 1180px
 @mixin status-xlg-xxlg {
   .status {
@@ -922,6 +940,10 @@
     }
     h3 {
       margin-bottom: 50px;
+      span{
+        font-size: 17px;
+        line-height: 22px;
+      }
     }
   }
 }
@@ -977,6 +999,11 @@
     }
     h3 {
       margin-bottom: 30px;
+      span{
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 5px;
+      }
     }
   }
 }
@@ -1646,9 +1673,10 @@
   }
   .timer {
     padding: 28px 64px 28px 40px;
-    background-color: $socialBg;
+    background-color: $timer;
     border-radius: 10px;
     margin-bottom: 24px;
+    max-width: 364px;
     &__clock {
       display: flex;
       align-items: center;
@@ -1805,6 +1833,7 @@
     .timer{
       padding: 20px 30px 20px;
       margin-bottom: 15px;
+      max-width: 300px;
       p,span{
         font-size: 30px;
         line-height: 30px;
@@ -1895,6 +1924,7 @@
 
 
 .rate {
+  position: relative;
   &__inner {
     padding: 120px 102px;
     background-color: $tabBg;
@@ -1911,6 +1941,14 @@
     margin-bottom: 60px;
     text-align: center;
     font-family: $sfDisplay;
+  }
+  .circle{
+    position: absolute;
+    left: 0;
+    top:20px;
+    img{
+      width: 100%;
+    }
   }
 }
 // 1180px
@@ -1988,3 +2026,26 @@ h4 {
     line-height: 45px;
   }
 }
+
+// const imagesDark = document.querySelectorAll(".dark");
+// const imagesLight = document.querySelectorAll(".light");
+// const html = document.querySelector("html")
+// const imageChange = () =>{
+//   if(html.getAttribute("data-theme") == "light"){
+//     imagesLight.forEach((image) =>{
+//       image.style.display = "block"
+//     })
+//     imagesDark.forEach((image) =>{
+//       image.style.display = "none"
+//     })
+//   }else{
+//     imagesLight.forEach((image) =>{
+//       image.style.display = "none"
+//     })
+//     imagesDark.forEach((image) =>{
+//       image.style.display = "block"
+//     })
+
+//   }
+// }
+// imageChange()

@@ -149,5 +149,9 @@ themeChange.onchange = function () {
     circles.forEach((circle) => {
       circle.classList.remove("dark");
     });
+
   }
 };
+
+
+
