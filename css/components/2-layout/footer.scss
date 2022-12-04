@@ -1,6 +1,6 @@
 .footer {
   &__inner {
-    padding: 100px 0 170px;
+    padding: 100px 0 92px;
     &-main {
       display: flex;
       justify-content: space-between;
@@ -64,7 +64,7 @@
 @mixin footer-xlg-xxlg-extra {
   .footer {
     &__inner {
-      padding: 90px 0 150px;
+      padding: 90px 0;
       &-main {
         &-links {
           width: calc(55% - 10px);
@@ -97,7 +97,7 @@
 @mixin footer-md-lg {
   .footer {
     &__inner {
-      padding: 80px 0 100px;
+      padding: 80px 0;
 
       &-main {
         flex-direction: column;
@@ -127,7 +127,7 @@
 @mixin footer-sm-md-extra {
   .footer {
     &__inner {
-      padding: 70px 0 90px;
+      padding: 70px 0 ;
       &-copy {
         font-size: 16px;
         line-height: 22px;
@@ -199,7 +199,6 @@
     }
   }
 }
-
 // 390px
 @mixin footer-xxxsm-xxsm {
   .footer {
@@ -343,7 +342,7 @@
 }
 .discleamer {
   &__inner {
-    padding: 100px 0;
+    padding: 160px 0;
     display: flex;
     justify-content: space-between;
   }
@@ -446,6 +445,9 @@
 // 390px
 @mixin discleamer-xxxsm-xxsm {
   .discleamer {
+    &__inner{
+      padding: 40px 0;
+    }
     p {
       &.big {
         font-size: 13px;
@@ -457,7 +459,7 @@
 .faq {
   background: $faqOuterBg;
   &__inner {
-    padding: 60px 0;
+    padding: 160px 0;
     &-main {
       max-width: 1000px;
       margin: 0 auto;
@@ -544,14 +546,29 @@
 // 1180px
 @mixin faq-xlg-xxlg {
   .faq {
+    &__inner{
+      padding: 120px 0;
+    }
     h3 {
       margin-bottom: 45px;
     }
   }
 }
+// 1024px
+@mixin faq-lg-xlg{
+  .faq {
+    &__inner{
+      padding: 90px 0;
+    }
+  }
+
+}
 // 750px
 @mixin faq-sm-md {
   .faq {
+    &__inner{
+      padding: 70px 0;
+    }
     h3 {
       margin-bottom: 30px;
     }
@@ -581,11 +598,12 @@
     }
   }
 }
+
 // 540px
 @mixin faq-xsm-sm {
   .faq {
     &__inner {
-      padding: 50px 0 0;
+      padding: 50px 0 ;
     }
     &Item {
       margin-bottom: 15px;
@@ -616,6 +634,9 @@
 // 390px
 @mixin faq-xxxsm-xxsm {
   .faq {
+    &__inner{
+    padding: 40px 0;
+    }
     &Item {
       &__header {
         padding: 15px;
@@ -648,10 +669,14 @@
 
 .sponsors {
   &__inner {
-    padding: 160px 0 100px;
+    padding: 160px 0;
     &-main {
       display: flex;
       justify-content: space-between;
+      margin-bottom: 60px;
+    }
+    &-check{
+      text-align: center;
     }
   }
   h3 {
@@ -671,12 +696,33 @@
       object-fit: contain;
     }
   }
+  .check{
+    font-size: 18px;
+    line-height: 22px;
+    color: $langColor;
+    font-family: $sfDisplay;
+    position: relative;
+    display: inline;
+    padding-bottom: 2px;
+    &:after{
+      content:"";
+      width: 100%;
+      height: 1px;
+      background-color: $langColor;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
 }
 // 1180px
 @mixin sponsors-xlg-xxlg {
   .sponsors {
     &__inner {
-      padding: 130px 0 90px;
+      padding:120px 0;
+      &-main{
+        margin-bottom: 50px; 
+      }
     }
     h3 {
       margin-bottom: 50px;
@@ -690,7 +736,10 @@
 @mixin sponsors-lg-xlg {
   .sponsors {
     &__inner {
-      padding: 100px 0 80px;
+      padding: 90px 0;
+      &-main{
+        margin-bottom: 40px;
+      }
     }
     h3 {
       margin-bottom: 30px;
@@ -699,13 +748,17 @@
       padding: 40px 30px;
       width: calc(25% - 10px);
     }
+    .check{
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 }
 // 840px
 @mixin sponsors-md-lg-extra {
   .sponsors {
     &__inner {
-      padding: 70px 0;
+      padding: 60px 0;
       &-main {
         flex-wrap: wrap;
         justify-content: center;
@@ -723,6 +776,9 @@
   .sponsors {
     &__inner {
       padding: 50px 0;
+      &-main{
+        margin-bottom: 30px;
+      }
     }
     h3 {
       margin-bottom: 30px;
@@ -1157,9 +1213,6 @@
 // 540px
 @mixin location-xsm-sm {
   .location {
-    &__inner {
-      padding: 40px 0;
-    }
     &Item {
       &__info {
         h5 {
@@ -1196,6 +1249,9 @@
 // 390px
 @mixin location-xxxsm-xxsm {
   .location {
+    &__inner{
+      padding: 40px 0;
+    }
     &Item {
       flex-direction: column;
       position: relative;
@@ -1240,7 +1296,7 @@
 
 .airdrop {
   &__inner {
-    padding: 100px 0 238px;
+    padding: 160px 0;
     &-main {
       display: flex;
       justify-content: space-between;
@@ -1317,7 +1373,7 @@
 @mixin airdrop-xlg-xxlg {
   .airdrop {
     &__inner {
-      padding: 90px 0 150px;
+      padding: 120px 0;
     }
     h3 {
       margin-bottom: 50px;
@@ -1364,7 +1420,7 @@
 @mixin airdrop-lg-xlg {
   .airdrop {
     &__inner {
-      padding: 80px 0 100px;
+      padding: 90px  0;
     }
     h3 {
       margin-bottom: 40px;
@@ -1508,6 +1564,9 @@
 // 650px
 @mixin airdrop-sm-md-extra {
   .airdrop {
+    &__inner{
+      padding: 50px 0;
+    }
     &Join {
       padding: 90px 30px;
       margin-bottom: 30px;
@@ -1520,6 +1579,7 @@
 // 440px
 @mixin airdrop-xxsm-xsm{
   .airdrop {
+
     &Join {
       padding: 70px 30px;
       margin-bottom: 30px;
@@ -1530,6 +1590,9 @@
 // 390px
 @mixin airdrop-xxxsm-xxsm{
   .airdrop {
+    &__inner{
+      padding: 40px 0;
+    }
     &Join {
       padding: 50px 10px;
       margin-bottom: 30px;
@@ -1552,7 +1615,6 @@
 
 .bonus {
   &__inner {
-    padding: 60px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1625,6 +1687,7 @@
     .bonus {
       &__inner {
         align-items: flex-start;
+        padding: 160px 0;
         &-info{
           width: calc(38% - 10px);
         }
@@ -1647,6 +1710,7 @@
   &.multiplier{
     .bonus{
       &__inner{
+        padding: 140px 0;
         &-text{
           width: calc(68% - 10px);
         }
@@ -1667,6 +1731,13 @@
       line-height: 40px;
     }
 
+  }
+  &.multiplier{
+    .bonnus{
+      &__inner{
+        padding: 90px 0;
+      }
+    }
   }
 }
 }
@@ -1697,6 +1768,7 @@
     &.multiplier{
       .bonus{
         &__inner{
+          padding: 70px 0;
           &-info{
             width: calc(40% - 10px);
           }
@@ -1769,6 +1841,7 @@
     &.multiplier{
       .bonus{
         &__inner{
+          padding: 60px 0;
           &-info{
             width: 100%;
           }
@@ -1784,12 +1857,13 @@
   }
 
 }
-// 840px
+// 440px
 @mixin bonus-xxsm-xsm{
 .bonus{
   &.multiplier{
     .bonus{
       &__inner{
+        padding: 50px 0;
         &-info{
           margin-bottom: 20px;
         }
@@ -1806,6 +1880,20 @@
   }
 }
 }
+// 390px
+@mixin bonus-xxxsm-xxsm{
+  .bonus{
+    &.multiplier{
+      .bonus{
+        &__inner{
+          padding: 40px 0;
+        }
+      }
+    }
+  }
+}
+
+
 .rate {
   &__inner {
     padding: 120px 102px;
@@ -1835,6 +1923,57 @@
     margin-bottom: 50px;
   }
 }
+}
+// 1024px
+@mixin rate-lg-xlg{
+  .rate{
+    &__inner{
+      padding: 70px;
+    }
+    h3{
+      margin-bottom: 40px;
+    }
+  }
+}
+// 840px
+@mixin rate-md-lg-extra {
+  .rate{
+    &__inner{
+      padding: 50px;
+      border-radius: 30px;
+    }
+    h3{
+      margin-bottom: 30px;
+    }
+  }
+
+}
+// 650px
+@mixin rate-sm-md-extra{
+  .rate{
+    &__inner{
+      padding: 40px;
+      border-radius: 20px;
+    }
+    h3{
+      margin-bottom: 25px;
+    }
+  }
+}
+// 390px
+@mixin rate-xxxsm-xxsm{
+  .rate{
+    background-color: $tabBg
+    &__inner{
+      padding: unset;
+      border-radius: unset;
+      background-color: unset;
+    }
+    h3{
+      margin-bottom: 25px;
+    }
+  }
+
 }
 h5 {
   &.sm {
