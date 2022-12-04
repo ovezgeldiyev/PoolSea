@@ -119,37 +119,135 @@ function onTabClick(tabBtns, tabItems, item) {
 
 const themeChange = document.getElementById("themeChange");
 const themeChangeBtn = themeChange.parentNode;
-const tabItems = document.querySelectorAll(".tabItem");
-const swiperWrapper = document.querySelector(".intro__inner-swiper-outer");
-const swiperItems = swiperWrapper.querySelectorAll(".swiper-slide");
 const circles = document.querySelectorAll(".circle");
+
+const imagesDark = document.querySelectorAll(".dark");
+const imagesLight = document.querySelectorAll(".light");
+const html = document.querySelector("html");
+const imageChange = () => {
+  if (html.getAttribute("data-theme") == "light") {
+    imagesLight.forEach((image) => {
+      image.style.display = "block";
+    });
+    imagesDark.forEach((image) => {
+      image.style.display = "none";
+    });
+  } else {
+    imagesLight.forEach((image) => {
+      image.style.display = "none";
+    });
+    imagesDark.forEach((image) => {
+      image.style.display = "block";
+    });
+  }
+};
+imageChange();
 
 themeChange.onchange = function () {
   if (themeChange.checked) {
     document.documentElement.setAttribute("data-theme", "dark");
     themeChangeBtn.classList.add("active");
-    tabItems.forEach((tabItem) => {
-      tabItem.classList.add("dark");
-    });
-    swiperItems.forEach((swiperItem) => {
-      swiperItem.classList.add("dark");
-    });
+    imageChange();
     circles.forEach((circle) => {
       circle.classList.add("dark");
     });
   } else {
     document.documentElement.setAttribute("data-theme", "light");
     themeChangeBtn.classList.remove("active");
-    tabItems.forEach((tabItem) => {
-      tabItem.classList.remove("dark");
-    });
-    swiperItems.forEach((swiperItem) => {
-      swiperItem.classList.remove("dark");
-    });
+    imageChange();
     circles.forEach((circle) => {
       circle.classList.remove("dark");
     });
   }
 };
 
+let upgradeTime = 3283200;
+let seconds = upgradeTime;
+let countdownTimer = setInterval("timer()", 1000);
 
+function timer() {
+  let days = Math.floor(seconds / 24 / 60 / 60);
+  let hoursLeft = Math.floor(seconds - days * 86400);
+  let hours = Math.floor(hoursLeft / 3600);
+  let minutesLeft = Math.floor(hoursLeft - hours * 3600);
+  let minutes = Math.floor(minutesLeft / 60);
+  let remainingSeconds = seconds % 60;
+  function pad(n) {
+    return n < 10 ? "0" + n : n;
+  }
+  document.getElementById("countdown").innerHTML =
+    pad(days) +
+    ":" +
+    pad(hours) +
+    ":" +
+    pad(minutes) +
+    ":" +
+    pad(remainingSeconds);
+  if (seconds == 0) {
+    clearInterval(countdownTimer);
+    document.getElementById("countdown").innerHTML = "Completed";
+  } else {
+    seconds--;
+  }
+}
+
+const intro = document.querySelector("#startPoint");
+const controller = new ScrollMagic.Controller();
+
+let scene = new ScrollMagic.Scene({
+  duration: 9000,
+  triggerElement: intro,
+  triggerHook: 0.17,
+})
+  // .addIndicators()
+  .setPin(intro)
+  .addTo(controller);
+
+const canvas = document.querySelector(".animation-scrolling");
+const context = canvas.getContext("2d");
+const currentFrame = (index) =>
+  `./images/canvas/${index.toString().padStart(4, "0")}.jpg`;
+
+
+// const currentFrame = (index) =>
+//   `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index
+//     .toString()
+//     .padStart(4, "0")}.jpg`;
+
+const frameCount = 230;
+canvas.height = 770;
+canvas.width = 1158;
+const img = new Image();
+img.src = currentFrame(1);
+
+img.onLoad = function () {
+  context.drawImage(img, 0, 0);
+};
+
+window.addEventListener("scroll", () => {
+  const scrollTop = html.scrollTop;
+  const maxScrollTop = html.scrollHeight - window.innerHeight;
+  const scrollFraction = scrollTop / maxScrollTop;
+  const frameIndex = Math.min(
+    frameCount - 1,
+    Math.floor(scrollFraction * frameCount)
+  );
+  requestAnimationFrame(() => updateImage(frameIndex + 1));
+});
+
+const updateImage = (index) => {
+  img.src = currentFrame(index);
+  // context.clearRect(0, 0, canvas.width, canvas.height);
+  // context.reset();
+
+  context.drawImage(img, 0, 0);
+
+};
+
+const preloadImages = () => {
+  for (let i = 1; i < frameCount; i++) {
+    const img = new Image();
+    img.src = currentFrame(i);
+  }
+};
+preloadImages();

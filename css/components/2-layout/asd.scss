@@ -6,6 +6,8 @@
 @include xxxlg-xxxxlg {
   @include hero-xxxlg-xxxxlg;
   @include bonus-xxxlg-xxxxlg;
+  @include status-xxxlg-xxxxlg;
+
 }
 // 1250px
 @include xlg-xxlg-extra {
@@ -38,6 +40,8 @@
   @include location-lg-xlg;
   @include airdrop-lg-xlg;
   @include bonus-lg-xlg;
+  @include faq-lg-xlg;
+  @include rate-lg-xlg;
 
 }
 // 930px
@@ -54,6 +58,7 @@
   @include sponsors-md-lg-extra ;
   @include airdrop-md-lg-extra ;
   @include bonus-md-lg-extra ;
+  @include rate-md-lg-extra ;
 }
 // 750px
 @include sm-md {
@@ -68,7 +73,7 @@
   @include footer-sm-md-extra;
   @include location-sm-md-extra;
   @include airdrop-sm-md-extra;
-
+  @include rate-sm-md-extra;
 }
 // 540px
 @include xsm-sm  {
@@ -100,5 +105,7 @@
   @include status-xxxsm-xxsm;
   @include location-xxxsm-xxsm;
   @include airdrop-xxxsm-xxsm;
+  @include bonus-xxxsm-xxsm;
+  @include rate-xxxsm-xxsm;
 }
 
