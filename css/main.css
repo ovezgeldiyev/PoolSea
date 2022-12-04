@@ -278,7 +278,6 @@ p.sm {
   right: 0;
   -webkit-transform: translateX(70%);
           transform: translateX(70%);
-  z-index: 2;
 }
 .main__bottom .circle.left {
   top: unset;
@@ -4208,6 +4207,8 @@ p.sm {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .locationItem__info h5 br {
     display: none;

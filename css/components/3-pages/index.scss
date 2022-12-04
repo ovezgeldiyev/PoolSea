@@ -2735,7 +2735,7 @@
                     width: 100%;
                     display: flex;
                     justify-content: space-between;
-
+                    flex-wrap: wrap;
                     br {
                         display: none;
                     }
@@ -3670,13 +3670,14 @@
         @include transition;
         margin: 0 10px;
 
+
         svg {
             width: 24px;
             height: 24px;
             fill: $iconColor;
             @include transition;
         }
-
+       
         &:hover {
             background: $socialBg;
             opacity: 1;

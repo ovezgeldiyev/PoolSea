@@ -193,11 +193,11 @@ function timer() {
 
 const intro = document.querySelector("#startPoint");
 const controller = new ScrollMagic.Controller();
-const duration = 9000;
+const duration = 2000;
 let scene = new ScrollMagic.Scene({
   duration: duration,
   triggerElement: intro,
-  triggerHook: 0.1,
+  triggerHook: 0.05,
 })
 
   // .addIndicators()
@@ -206,20 +206,17 @@ let scene = new ScrollMagic.Scene({
 
 const canvas = document.querySelector(".animation-scrolling");
 const context = canvas.getContext("2d");
-const currentFrame = (index) =>
-  `./images/canvas/${index.toString().padStart(4, "0")}.jpg`;
+const generatePath = (index) =>
+  `./images/canvas/${(index || 1).toString().padStart(4, "0")}.jpg`;
 
-// const currentFrame = (index) =>
-//   `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index
-//     .toString()
-//     .padStart(4, "0")}.jpg`;
+const speed = 0.6;
 
 const frameCount = 230;
 canvas.height = 1100;
 canvas.width = 1940;
 const img = new Image();
-img.src = currentFrame(1);
-img.onLoad = function () {
+img.src = generatePath(1);
+img.onload = function () {
   context.drawImage(img, 0, 0);
 };
 
@@ -229,21 +226,20 @@ window.addEventListener("scroll", () => {
   const scrollFraction = frameCount / duration;
   const frameIndex = Math.min(
     frameCount - 1,
-    Math.floor(scrollTop * scrollFraction)
+    Math.floor(speed * scrollTop * scrollFraction)
   );
-  console.log(frameIndex);
-  requestAnimationFrame(() => updateImage(frameIndex + 1));
+  requestAnimationFrame(() => updateImage(frameIndex));
 });
 
 const updateImage = (index) => {
-  img.src = currentFrame(index);
+  img.src = generatePath(index);
   context.drawImage(img, 0, 0);
 };
 
 const preloadImages = () => {
   for (let i = 1; i < frameCount; i++) {
     const img = new Image();
-    img.src = currentFrame(i);
+    img.src = generatePath(i);
   }
 };
 preloadImages();
