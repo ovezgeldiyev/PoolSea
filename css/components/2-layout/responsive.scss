@@ -82,8 +82,8 @@
         }
     }
 
-    main {
-        margin-top: 180px;
+    .main {
+        padding-top: 180px;
     }
 
     @include header-xxxlg-xxxxlg;
@@ -145,8 +145,8 @@
         }
     }
 
-    main {
-        margin-top: 150px;
+    .main {
+        padding-top: 150px;
     }
 
     @include hero-xlg-xxlg;
@@ -206,9 +206,10 @@
 
     }
 
-    main {
-        margin-top: 110px;
+    .main {
+        padding-top: 110px;
     }
+
     .swiperBtn {
         width: 42px;
         height: 42px;
@@ -286,7 +287,10 @@
             line-height: 24px;
         }
     }
-
+    .circle {
+        width: 300px;
+        height: 300px;
+    }
     @include hero-sm-md;
     @include tab-sm-md;
     @include team-sm-md;
@@ -389,8 +393,8 @@
             line-height: 20px;
         }
     }
-    main {
-        margin-top: 90px;
+    .main {
+        padding-top: 90px;
     }
     @include hero-xxsm-xsm;
     @include donate-xxsm-xsm;
