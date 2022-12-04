@@ -5,7 +5,6 @@
 
     &__inner {
         text-align: center;
-
         &-wrapper {
             position: sticky;
             top: 0;
@@ -21,18 +20,6 @@
             canvas {
                 width: 100%;
             }
-        }
-
-        &-image {
-
-
-            // canvas {
-            //     position: absolute;
-            //     top: 0;
-            //     left: 0;
-            //     width: 100%;
-
-            // }
         }
 
         h1 {
