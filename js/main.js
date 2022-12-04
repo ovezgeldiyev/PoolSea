@@ -211,7 +211,7 @@ const generatePath = (index) =>
 
 const speed = 0.6;
 
-const frameCount = 230;
+const frameCount = parseInt(intro.getAttribute("data-frames"));
 canvas.height = 1100;
 canvas.width = 1940;
 const img = new Image();
