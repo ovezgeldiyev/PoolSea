@@ -260,6 +260,30 @@ p.sm {
   -webkit-transform: translate(-60%, -50%);
           transform: translate(-60%, -50%);
 }
+.main__bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8%;
+  pointer-events: none;
+}
+.main__bottom .circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translateX(70%);
+          transform: translateX(70%);
+  z-index: 2;
+}
+.main__bottom .circle.left {
+  top: unset;
+  bottom: -10%;
+  right: unset;
+  left: 0;
+  -webkit-transform: translateX(-65%);
+          transform: translateX(-65%);
+}
 
 .circle {
   display: none;
@@ -392,17 +416,6 @@ p.sm {
 .swiperBtn::after {
   font-size: 16px;
   line-height: 16px;
-}
-
-canvas {
-  position: fixed;
-  z-index: 999;
-  left: 50%;
-  top: 50%;
-  max-height: 100vh;
-  max-width: 100vw;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 .header {
@@ -1381,18 +1394,18 @@ h4.sm {
 .hero__inner {
   text-align: center;
 }
-.hero__inner-image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.hero__inner-wrapper {
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -5;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.hero__inner-image img {
+.hero__inner-wrapper canvas {
   width: 100%;
 }
 .hero__inner h1 {
@@ -1465,8 +1478,6 @@ h4.sm {
 .intro__inner .swiper-slide img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .intro__inner .swiper-slide img.dark {
   display: none;
@@ -2727,8 +2738,8 @@ h4.sm {
   }
 
   .circle {
-    width: 450px;
-    height: 450px;
+    width: 550px;
+    height: 550px;
   }
 
   .tab__inner-header .tabBtn {
@@ -2984,8 +2995,8 @@ h4.sm {
   }
 
   .circle {
-    width: 280px;
-    height: 280px;
+    width: 320px;
+    height: 320px;
   }
 
   .main__bg {

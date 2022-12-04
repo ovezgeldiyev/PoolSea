@@ -195,6 +195,12 @@ themeChange.onchange = function () {
 // };
 // preloadImages();
 
+
+
+
+
+
+
 const imagesDark = document.querySelectorAll(".dark");
 const imagesLight = document.querySelectorAll(".light");
 const html = document.querySelector("html")
@@ -217,92 +223,6 @@ const imageChange = () =>{
   }
 }
 imageChange()
-
-
-
-
-// var myTimer;
-// function clock() {
-//   myTimer = setInterval(myClock, 1000);
-//   let hour = document.querySelector("#hour");
-//   let minute = document.querySelector("#minute");
-//   let second = document.querySelector("#second");
-
-//   var c = 3600; //Initially set to 1 hour
-//   function myClock() {
-//     --c;
-//     var seconds = c % 60; // Seconds that cannot be written in minutes
-//     var secondsInMinutes = (c - seconds) / 60; // Gives the seconds that COULD be given in minutes
-//     var minutes = secondsInMinutes % 60; // Minutes that cannot be written in hours
-//     var hours = (secondsInMinutes - minutes) / 60;
-//     var days = 24 - hours;
-
-//     // Now in hours, minutes and seconds, you have the time you need.
-//     console.clear();
-//     console.log(days +":" + hours + ":" + minutes + ":" + seconds );
-//     console.log(hours.toString(), minutes)
-//     let myHour = hours.toString()
-//     let myMinute = minutes.toString()
-//     let mySecond = seconds.toString()
-//     // if(myHour.length === 1) {
-//     //   hour.innerText = `0${myHour}`;
-//     // }
-//     // else {
-//     //   hour.innerText = myHour;
-//     // }
-//     // if(myMinute.length === 1) {
-//     //   minute.innerText = `0${myMinute}`;
-//     // }
-//     // else {
-//     //   minute.innerText = myMinute;
-//     // }
-//     // if(mySecond.length === 1) {
-//     //   second.innerText = `0${mySecond}`;
-//     // }
-//     // else {
-//     //   second.innerText = mySecond;
-//     // }
-
-//     if (c == 0) {
-//       clearInterval(myTimer);
-//     }
-//   }
-// }
-
-// // clock();
-
-
-// // Set the date we're counting down to
-// var countDownDate = new Date("Jan 11, 2023 15:37:25").getTime();
-
-// // Update the count down every 1 second
-// var x = setInterval(function() {
-
-//   // Get today's date and time
-//   var now = new Date().getTime();
-
-//   // Find the distance between now and the count down date
-//   var distance = countDownDate - now;
-
-//   // Time calculations for days, hours, minutes and seconds
-//   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-//   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-//   // Display the result in the element with id="demo"
-//  console.log(days +" "  + hours +" "+ 
-//   minutes +" " + seconds  );  
-
-//   // If the count down is finished, write some text
-//   if (distance < 0) {
-//     clearInterval(x);
-//     document.getElementById("demo").innerHTML = "EXPIRED";
-//   }
-// }, 1000);
-
-
-
 var upgradeTime = 3283200;
 var seconds = upgradeTime;
 function timer() {
