@@ -1295,6 +1295,7 @@ p.sm {
   background-color: #0D0F15;
   border-radius: 10px;
   margin-bottom: 24px;
+  max-width: 364px;
 }
 .bonus .timer h6 {
   margin-bottom: 8px;
@@ -3354,6 +3355,9 @@ h4.sm {
     line-height: 22px;
   }
 
+  .bonus .timer {
+    max-width: 320px;
+  }
   .bonus .timer span {
     font-size: 40px;
     line-height: 40px;
@@ -3477,6 +3481,7 @@ h4.sm {
   .bonus .timer {
     padding: 25px 50px 25px 30px;
     margin-bottom: 20px;
+    max-width: 221px;
   }
   .bonus .timer span {
     font-size: 35px;
@@ -3584,6 +3589,7 @@ h4.sm {
   .bonus .timer {
     padding: 20px 30px 20px;
     margin-bottom: 15px;
+    max-width: 224px;
   }
   .bonus .timer span {
     font-size: 30px;
@@ -4236,6 +4242,7 @@ h4.sm {
 
   .bonus .timer {
     padding: 18px 25px;
+    max-width: 218px;
   }
   .bonus.multiplier .bonus__inner {
     padding: 40px 0;

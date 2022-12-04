@@ -1699,6 +1699,7 @@
     background-color: $timer;
     border-radius: 10px;
     margin-bottom: 24px;
+    max-width: 364px;
     h6 {
       margin-bottom: 8px;
       font-weight: 500;
@@ -1772,6 +1773,7 @@
 @mixin bonus-xlg-xxlg {
   .bonus {
     .timer {
+      max-width: 320px;
       span {
         font-size: 40px;
         line-height: 40px;
@@ -1804,6 +1806,7 @@
     .timer {
       padding: 25px 50px 25px 30px;
       margin-bottom: 20px;
+      max-width: 221px;
       span {
         font-size: 35px;
         line-height: 35px;
@@ -1846,6 +1849,7 @@
     .timer {
       padding: 20px 30px 20px;
       margin-bottom: 15px;
+      max-width: 224px;
       span {
         font-size: 30px;
         line-height: 30px;
@@ -1937,7 +1941,7 @@
   .bonus {
     .timer{
       padding: 18px 25px ;
-
+      max-width: 218px;
     }
     &.multiplier {
       .bonus {
