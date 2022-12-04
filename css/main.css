@@ -753,18 +753,28 @@ p.sm {
   text-align: center;
 }
 .hero__inner-wrapper {
-  position: sticky;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background: #06070a;
 }
 .hero__inner-wrapper canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .hero__inner h1 {
   margin-bottom: 20px;
@@ -3625,12 +3635,12 @@ p.sm {
     max-width: 112px;
   }
   .locationItem__info h5.sm {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 22px;
   }
   .locationItem__info h5.sm small {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 13px;
+    line-height: 17px;
     margin-top: 10px;
   }
   .locationItem a {
@@ -4204,11 +4214,13 @@ p.sm {
   }
   .locationItem__info h5.sm {
     margin-bottom: 0;
+    font-size: 14px;
+    line-height: 18px;
   }
   .locationItem__info h5.sm small {
     margin: 0;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 14px;
+    line-height: 18px;
   }
   .locationItem__info a {
     position: absolute;
