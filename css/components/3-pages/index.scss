@@ -5,12 +5,14 @@
 
     &__inner {
         text-align: center;
+
         &-wrapper {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             background: #06070a;
+
             canvas {
                 position: absolute;
                 top: 0;
@@ -2736,6 +2738,7 @@
                     display: flex;
                     justify-content: space-between;
                     flex-wrap: wrap;
+
                     br {
                         display: none;
                     }
@@ -3262,6 +3265,11 @@
 
     &__inner {
         padding: 140px 0;
+        transition: padding .2s ease;
+
+        @include inLightMode {
+            padding: 0px 0 140px 0;
+        }
 
         &-main {
             max-width: 1000px;
@@ -3365,6 +3373,9 @@
     .faq {
         &__inner {
             padding: 120px 0;
+            @include inLightMode {
+                padding: 0px 0 110px 0;
+            }
         }
 
         h3 {
@@ -3378,6 +3389,9 @@
     .faq {
         &__inner {
             padding: 90px 0;
+            @include inLightMode {
+                padding: 0px 0 90px 0;
+            }
         }
     }
 }
@@ -3387,6 +3401,9 @@
     .faq {
         &__inner {
             padding: 70px 0;
+            @include inLightMode {
+                padding: 0px 0 60px 0;
+            }
         }
 
         h3 {
@@ -3429,6 +3446,9 @@
     .faq {
         &__inner {
             padding: 50px 0;
+            @include inLightMode {
+                padding: 0px 0 30px 0;
+            }
         }
 
         &Item {
@@ -3467,7 +3487,10 @@
 @mixin faq-xxxsm-xxsm {
     .faq {
         &__inner {
-            padding: 40px 0;
+            padding: 30px 0;
+            @include inLightMode {
+                padding: 0;
+            }
         }
 
         &Item {
@@ -3677,7 +3700,7 @@
             fill: $iconColor;
             @include transition;
         }
-       
+
         &:hover {
             background: $socialBg;
             opacity: 1;

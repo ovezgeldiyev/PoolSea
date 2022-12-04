@@ -197,7 +197,7 @@ const duration = 2000;
 let scene = new ScrollMagic.Scene({
   duration: duration,
   triggerElement: intro,
-  triggerHook: 0.05,
+  triggerHook: .07,
 })
 
   // .addIndicators()

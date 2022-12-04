@@ -541,8 +541,7 @@ p.sm {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
-  width: 120%;
+  width: 100%;
   padding: 8px;
   border-radius: 12px;
   background-color: var(--textColor);
@@ -557,9 +556,10 @@ p.sm {
   z-index: 12;
 }
 .header__inner-buttons .lang__dropdown span {
-  padding: 2px;
+  padding: 4px 10px;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
+  text-align: start;
 }
 .header__inner-buttons .lang__dropdown span:hover {
   opacity: 0.9;
@@ -1987,6 +1987,11 @@ p.sm {
 }
 .faq__inner {
   padding: 140px 0;
+  -webkit-transition: padding 0.2s ease;
+  transition: padding 0.2s ease;
+}
+html[data-theme=light] .faq__inner {
+  padding: 0px 0 140px 0;
 }
 .faq__inner-main {
   max-width: 1000px;
@@ -2476,6 +2481,9 @@ p.sm {
 
   .faq__inner {
     padding: 120px 0;
+  }
+  html[data-theme=light] .faq__inner {
+    padding: 0px 0 110px 0;
   }
   .faq h3 {
     margin-bottom: 45px;
@@ -3072,6 +3080,9 @@ p.sm {
   .faq__inner {
     padding: 90px 0;
   }
+  html[data-theme=light] .faq__inner {
+    padding: 0px 0 90px 0;
+  }
 
   .rate__inner {
     padding: 70px;
@@ -3535,6 +3546,9 @@ p.sm {
   .faq__inner {
     padding: 70px 0;
   }
+  html[data-theme=light] .faq__inner {
+    padding: 0px 0 60px 0;
+  }
   .faq h3 {
     margin-bottom: 30px;
   }
@@ -3855,6 +3869,9 @@ p.sm {
   .faq__inner {
     padding: 50px 0;
   }
+  html[data-theme=light] .faq__inner {
+    padding: 0px 0 30px 0;
+  }
   .faqItem {
     margin-bottom: 15px;
   }
@@ -3984,7 +4001,7 @@ p.sm {
   }
 
   .footer__inner {
-    padding: 60px 0;
+    padding: 40px 0;
   }
   .footer__inner-copy {
     font-size: 15px;
@@ -4050,7 +4067,7 @@ p.sm {
   }
 
   .footer__inner {
-    padding: 40px 0;
+    padding: 30px 0;
   }
   .footer__inner-main {
     margin-bottom: 30px;
@@ -4108,7 +4125,10 @@ p.sm {
   }
 
   .faq__inner {
-    padding: 40px 0;
+    padding: 30px 0;
+  }
+  html[data-theme=light] .faq__inner {
+    padding: 0;
   }
   .faqItem__header {
     padding: 15px;
