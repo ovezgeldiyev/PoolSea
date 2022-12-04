@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 12;
 
   .auto__container {
     max-width: 1460px;
@@ -98,6 +98,7 @@
           color: $bgColor;
           transform: translateX(-50%);
           overflow: hidden;
+          z-index: 12;
           span {
             padding: 2px;
             transition: .2s ease;
@@ -110,6 +111,7 @@
           margin-top: 4px;
         }
         &:hover {
+          opacity: 1;
           .lang__dropdown {
             max-height: 100px;
             opacity: 1;
@@ -207,6 +209,9 @@
         }
       }
       &-buttons {
+        .lang {
+          margin-right: 12px;
+        }
         .button {
           margin-right: 8px;
           &.icon {

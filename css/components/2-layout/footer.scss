@@ -127,7 +127,7 @@
 @mixin footer-sm-md-extra {
   .footer {
     &__inner {
-      padding: 70px 0 ;
+      padding: 70px 0;
       &-copy {
         font-size: 16px;
         line-height: 22px;
@@ -305,8 +305,11 @@
 @mixin join-sm-md {
   .join {
     &__inner {
-      padding: 60px 20px;
+      padding: 50px 20px;
       border-radius: 30px;
+    }
+    h5{
+      margin-bottom:28px ;
     }
   }
 }
@@ -315,9 +318,6 @@
   .join {
     &__inner {
       border-radius: 20px;
-    }
-    h5 {
-      margin-bottom: 30px;
     }
     &Social {
       width: 60px;
@@ -445,7 +445,7 @@
 // 390px
 @mixin discleamer-xxxsm-xxsm {
   .discleamer {
-    &__inner{
+    &__inner {
       padding: 40px 0;
     }
     p {
@@ -546,7 +546,7 @@
 // 1180px
 @mixin faq-xlg-xxlg {
   .faq {
-    &__inner{
+    &__inner {
       padding: 120px 0;
     }
     h3 {
@@ -555,18 +555,17 @@
   }
 }
 // 1024px
-@mixin faq-lg-xlg{
+@mixin faq-lg-xlg {
   .faq {
-    &__inner{
+    &__inner {
       padding: 90px 0;
     }
   }
-
 }
 // 750px
 @mixin faq-sm-md {
   .faq {
-    &__inner{
+    &__inner {
       padding: 70px 0;
     }
     h3 {
@@ -603,7 +602,7 @@
 @mixin faq-xsm-sm {
   .faq {
     &__inner {
-      padding: 50px 0 ;
+      padding: 50px 0;
     }
     &Item {
       margin-bottom: 15px;
@@ -634,8 +633,8 @@
 // 390px
 @mixin faq-xxxsm-xxsm {
   .faq {
-    &__inner{
-    padding: 40px 0;
+    &__inner {
+      padding: 40px 0;
     }
     &Item {
       &__header {
@@ -675,7 +674,7 @@
       justify-content: space-between;
       margin-bottom: 60px;
     }
-    &-check{
+    &-check {
       text-align: center;
     }
   }
@@ -696,7 +695,7 @@
       object-fit: contain;
     }
   }
-  .check{
+  .check {
     font-size: 18px;
     line-height: 22px;
     color: $langColor;
@@ -704,8 +703,8 @@
     position: relative;
     display: inline;
     padding-bottom: 2px;
-    &:after{
-      content:"";
+    &:after {
+      content: "";
       width: 100%;
       height: 1px;
       background-color: $langColor;
@@ -719,9 +718,9 @@
 @mixin sponsors-xlg-xxlg {
   .sponsors {
     &__inner {
-      padding:120px 0;
-      &-main{
-        margin-bottom: 50px; 
+      padding: 120px 0;
+      &-main {
+        margin-bottom: 50px;
       }
     }
     h3 {
@@ -737,7 +736,7 @@
   .sponsors {
     &__inner {
       padding: 90px 0;
-      &-main{
+      &-main {
         margin-bottom: 40px;
       }
     }
@@ -748,7 +747,7 @@
       padding: 40px 30px;
       width: calc(25% - 10px);
     }
-    .check{
+    .check {
       font-size: 16px;
       line-height: 20px;
     }
@@ -776,7 +775,7 @@
   .sponsors {
     &__inner {
       padding: 50px 0;
-      &-main{
+      &-main {
         margin-bottom: 30px;
       }
     }
@@ -808,6 +807,7 @@
 }
 .status {
   &__inner {
+  position: relative;
     padding: 120px 40px;
     background-color: $tabBg;
     border-radius: 40px;
@@ -840,9 +840,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center ;
+    justify-content: center;
 
-    
     span {
       background: linear-gradient(
         268.3deg,
@@ -919,12 +918,18 @@
       }
     }
   }
+  .circle{
+    position: absolute;
+    bottom: -27%;
+    right: -23%;
+    z-index: -1;
+  }
 }
 // 1350px
-@mixin status-xxxlg-xxxxlg{
-  .status{
-    h3{
-      span{
+@mixin status-xxxlg-xxxxlg {
+  .status {
+    h3 {
+      span {
         font-size: 19px;
         line-height: 26px;
         margin-bottom: 8px;
@@ -940,7 +945,7 @@
     }
     h3 {
       margin-bottom: 50px;
-      span{
+      span {
         font-size: 17px;
         line-height: 22px;
       }
@@ -956,6 +961,9 @@
     h3 {
       margin-bottom: 40px;
     }
+    .circle{
+      width: 500px;
+    }
   }
 }
 // 930px
@@ -965,7 +973,7 @@
       padding: 50px 40px;
     }
     h3 {
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
   }
 }
@@ -999,11 +1007,16 @@
     }
     h3 {
       margin-bottom: 30px;
-      span{
+      span {
         font-size: 14px;
         line-height: 20px;
         margin-bottom: 5px;
       }
+    }
+    .circle{
+      width: 400px;
+    right: -33%;
+    bottom: -11%;
     }
   }
 }
@@ -1038,6 +1051,9 @@
     }
     h3 {
       margin-bottom: 25px;
+    }
+    .circle{
+      bottom: 0;
     }
   }
 }
@@ -1276,7 +1292,7 @@
 // 390px
 @mixin location-xxxsm-xxsm {
   .location {
-    &__inner{
+    &__inner {
       padding: 40px 0;
     }
     &Item {
@@ -1344,6 +1360,7 @@
     justify-content: center;
     position: relative;
     max-height: 426px;
+    overflow: hidden;
     background: linear-gradient(
       261.97deg,
       #00fff9 -138.57%,
@@ -1447,7 +1464,7 @@
 @mixin airdrop-lg-xlg {
   .airdrop {
     &__inner {
-      padding: 90px  0;
+      padding: 90px 0;
     }
     h3 {
       margin-bottom: 40px;
@@ -1591,7 +1608,7 @@
 // 650px
 @mixin airdrop-sm-md-extra {
   .airdrop {
-    &__inner{
+    &__inner {
       padding: 50px 0;
     }
     &Join {
@@ -1604,33 +1621,31 @@
   }
 }
 // 440px
-@mixin airdrop-xxsm-xsm{
+@mixin airdrop-xxsm-xsm {
   .airdrop {
-
     &Join {
       padding: 70px 30px;
       margin-bottom: 30px;
     }
   }
-
 }
 // 390px
-@mixin airdrop-xxxsm-xxsm{
+@mixin airdrop-xxxsm-xxsm {
   .airdrop {
-    &__inner{
+    &__inner {
       padding: 40px 0;
     }
     &Join {
       padding: 50px 10px;
       margin-bottom: 30px;
-      h4{
+      h4 {
         font-size: 26px;
         line-height: 32px;
       }
-      .button{
-        &.secondary{
+      .button {
+        &.secondary {
           padding: 12px 20px;
-          span{
+          span {
             font-size: 15px;
             line-height: 15px;
           }
@@ -1648,6 +1663,9 @@
     &-info {
       width: calc(50% - 10px);
       max-width: 515px;
+      display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     }
     &-image {
       width: calc(50% - 10px);
@@ -1661,9 +1679,14 @@
   h3 {
     margin-bottom: 16px;
     font-family: $sfDisplay;
-    span{
-      background: linear-gradient(91deg, #00fff9 -4.34%, #00c5ff 13.53%, #0078ff 93.71%);
-          -webkit-background-clip: text;
+    span {
+      background: linear-gradient(
+        91deg,
+        #00fff9 -4.34%,
+        #00c5ff 13.53%,
+        #0078ff 93.71%
+      );
+      -webkit-background-clip: text;
     }
   }
   p {
@@ -1676,23 +1699,18 @@
     background-color: $timer;
     border-radius: 10px;
     margin-bottom: 24px;
-    max-width: 364px;
-    &__clock {
-      display: flex;
-      align-items: center;
-    }
     h6 {
       margin-bottom: 8px;
       font-weight: 500;
       color: $white;
     }
-    p,
     span {
       font-size: 48px;
       line-height: 48px;
       color: $white;
       font-family: $sfDisplay;
       margin-bottom: unset;
+      padding: 0;
     }
   }
   a {
@@ -1716,7 +1734,7 @@
       &__inner {
         align-items: flex-start;
         padding: 160px 0;
-        &-info{
+        &-info {
           width: calc(38% - 10px);
         }
         &-text {
@@ -1733,174 +1751,180 @@
   }
 }
 // 1380px
-@mixin bonus-xxxlg-xxxxlg{
-.bonus{
-  &.multiplier{
-    .bonus{
-      &__inner{
-        padding: 140px 0;
-        &-text{
-          width: calc(68% - 10px);
-        }
-        &-info{
-          width: calc(32% - 10px);
-        }
-      }
-    }
-  }
-}
-}
-// 1180px
-@mixin bonus-xlg-xxlg{
-.bonus{
-  .timer{
-    p,span{
-      font-size: 40px;
-      line-height: 40px;
-    }
-
-  }
-  &.multiplier{
-    .bonnus{
-      &__inner{
-        padding: 90px 0;
-      }
-    }
-  }
-}
-}
-// 1024px
-@mixin bonus-lg-xlg{
-  .bonus{
-    &__inner{
-      &-info{
-        h3{
-          margin-bottom: 10px;
-        }
-        p{
-          &.sm{
-            margin-bottom: 20px; 
+@mixin bonus-xxxlg-xxxxlg {
+  .bonus {
+    &.multiplier {
+      .bonus {
+        &__inner {
+          padding: 140px 0;
+          &-text {
+            width: calc(68% - 10px);
+          }
+          &-info {
+            width: calc(32% - 10px);
           }
         }
       }
     }
-    .timer{
+  }
+}
+// 1180px
+@mixin bonus-xlg-xxlg {
+  .bonus {
+    .timer {
+      span {
+        font-size: 40px;
+        line-height: 40px;
+      }
+    }
+    &.multiplier {
+      .bonnus {
+        &__inner {
+          padding: 90px 0;
+        }
+      }
+    }
+  }
+}
+// 1024px
+@mixin bonus-lg-xlg {
+  .bonus {
+    &__inner {
+      &-info {
+        h3 {
+          margin-bottom: 10px;
+        }
+        p {
+          &.sm {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+    .timer {
       padding: 25px 50px 25px 30px;
       margin-bottom: 20px;
-      p,span{
+      span {
         font-size: 35px;
         line-height: 35px;
       }
-  
     }
-    &.multiplier{
-      .bonus{
-        &__inner{
+    &.multiplier {
+      .bonus {
+        &__inner {
           padding: 70px 0;
-          &-info{
+          &-info {
             width: calc(40% - 10px);
           }
-          &-text{
+          &-text {
             width: calc(60% - 10px);
-            p{
-              &.big{
+            p {
+              &.big {
                 font-size: 16px;
                 line-height: 24px;
               }
             }
           }
-
         }
       }
     }
   }
-
 }
 // 930px
-@mixin bonus-md-lg{
-  .bonus{
-    &__inner{
-     &-info{
-       p{
-         &.sm{
-           font-size: 14px;
-           line-height: 20px;
-         }
-       }
-     }
-      
+@mixin bonus-md-lg {
+  .bonus {
+    &__inner {
+      &-info {
+        p {
+          &.sm {
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+      }
     }
-    .timer{
+    .timer {
       padding: 20px 30px 20px;
       margin-bottom: 15px;
-      max-width: 300px;
-      p,span{
+      span {
         font-size: 30px;
         line-height: 30px;
       }
-  
     }
-  }
-}
-// 840px
-@mixin bonus-md-lg-extra{
-  .bonus{
-    &__inner{
-      flex-direction: column;
-     &-info{
+    h3{
       width: 100%;
-      margin: 0 auto 30px;
-      max-width: 650px;
-     }
-     &-image{
-       width: 100%;
-      margin: 0 auto;
-      max-width: 650px;
-     }
-    }
-    .timer{
-      padding: 20px 30px 20px;
-      margin-bottom: 15px;
-      p,span{
-        font-size: 30px;
-        line-height: 30px;
-      }
-  
+      text-align: center;
     }
     &.multiplier{
       .bonus{
         &__inner{
-          padding: 60px 0;
           &-info{
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+// 840px
+@mixin bonus-md-lg-extra {
+  .bonus {
+    &__inner {
+      flex-direction: column;
+      &-info {
+        width: 100%;
+        margin: 0 auto 30px;
+        max-width: 650px;
+      }
+      &-image {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 650px;
+      }
+    }
+    .timer {
+      padding: 20px 30px 20px;
+      margin-bottom: 15px;
+      p,
+      span {
+        font-size: 30px;
+        line-height: 30px;
+      }
+    }
+    &.multiplier {
+      .bonus {
+        &__inner {
+          padding: 60px 0;
+          &-info {
             width: 100%;
           }
-          &-text{
+          &-text {
             width: 100%;
           }
         }
       }
-      h3{
+      h3 {
         text-align: center;
       }
     }
   }
-
 }
 // 440px
-@mixin bonus-xxsm-xsm{
-.bonus{
-  &.multiplier{
-    .bonus{
-      &__inner{
-        padding: 50px 0;
-        &-info{
-          margin-bottom: 20px;
-        }
-        &-text{
-          p{
-            &.big{
-              font-size: 14px;
-              line-height: 20px;
+@mixin bonus-xxsm-xsm {
+  .bonus {
+    &.multiplier {
+      .bonus {
+        &__inner {
+          padding: 50px 0;
+          &-info {
+            margin-bottom: 20px;
+          }
+          &-text {
+            p {
+              &.big {
+                font-size: 14px;
+                line-height: 20px;
+              }
             }
           }
         }
@@ -1908,20 +1932,22 @@
     }
   }
 }
-}
 // 390px
-@mixin bonus-xxxsm-xxsm{
-  .bonus{
-    &.multiplier{
-      .bonus{
-        &__inner{
+@mixin bonus-xxxsm-xxsm {
+  .bonus {
+    .timer{
+      padding: 18px 25px ;
+
+    }
+    &.multiplier {
+      .bonus {
+        &__inner {
           padding: 40px 0;
         }
       }
     }
   }
 }
-
 
 .rate {
   position: relative;
@@ -1942,76 +1968,84 @@
     text-align: center;
     font-family: $sfDisplay;
   }
-  .circle{
+  .circle {
     position: absolute;
-    left: 0;
-    top:20px;
-    img{
+    top: 60%;
+    transform: translate(-60%, -50%);
+    width: 1400px;
+    z-index: -1;
+    img {
       width: 100%;
     }
   }
 }
 // 1180px
-@mixin rate-xlg-xxlg{
-.rate{
-  &__inner{
-    padding: 100px ;
+@mixin rate-xlg-xxlg {
+  .rate {
+    &__inner {
+      padding: 100px;
+    }
+    h3 {
+      margin-bottom: 50px;
+    }
+    .circle {
+      width: 900px;
+    }
   }
-  h3{
-    margin-bottom: 50px;
-  }
-}
 }
 // 1024px
-@mixin rate-lg-xlg{
-  .rate{
-    &__inner{
+@mixin rate-lg-xlg {
+  .rate {
+    &__inner {
       padding: 70px;
     }
-    h3{
+    h3 {
       margin-bottom: 40px;
     }
   }
 }
 // 840px
 @mixin rate-md-lg-extra {
-  .rate{
-    &__inner{
+  .rate {
+    &__inner {
       padding: 50px;
       border-radius: 30px;
     }
-    h3{
+    h3 {
       margin-bottom: 30px;
     }
+    .circle{
+      width: 500px;
+    }
   }
-
 }
 // 650px
-@mixin rate-sm-md-extra{
-  .rate{
-    &__inner{
+@mixin rate-sm-md-extra {
+  .rate {
+    &__inner {
       padding: 40px;
       border-radius: 20px;
     }
-    h3{
+    h3 {
       margin-bottom: 25px;
     }
   }
 }
 // 390px
-@mixin rate-xxxsm-xxsm{
-  .rate{
-    background-color: $tabBg
-    &__inner{
+@mixin rate-xxxsm-xxsm {
+  .rate {
+    background-color: $tabBg &__inner {
       padding: unset;
       border-radius: unset;
       background-color: unset;
     }
-    h3{
+    h3 {
       margin-bottom: 25px;
     }
+    .circle{
+      width:300px;
+    }
   }
-
 }
 h5 {
   &.sm {
@@ -2026,26 +2060,3 @@ h4 {
     line-height: 45px;
   }
 }
-
-// const imagesDark = document.querySelectorAll(".dark");
-// const imagesLight = document.querySelectorAll(".light");
-// const html = document.querySelector("html")
-// const imageChange = () =>{
-//   if(html.getAttribute("data-theme") == "light"){
-//     imagesLight.forEach((image) =>{
-//       image.style.display = "block"
-//     })
-//     imagesDark.forEach((image) =>{
-//       image.style.display = "none"
-//     })
-//   }else{
-//     imagesLight.forEach((image) =>{
-//       image.style.display = "none"
-//     })
-//     imagesDark.forEach((image) =>{
-//       image.style.display = "block"
-//     })
-
-//   }
-// }
-// imageChange()

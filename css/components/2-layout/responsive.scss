@@ -251,6 +251,10 @@
         }
 
     }
+    .circle {
+        width: 450px;
+        height: 450px;
+    }
     @include hero-md-lg;
     @include tab-md-lg;
     @include donate-md-lg;
@@ -287,9 +291,10 @@
             line-height: 24px;
         }
     }
-    .circle {
-        width: 300px;
-        height: 300px;
+    .main {
+        &__bg {
+            height: 10%;
+        }
     }
     @include hero-sm-md;
     @include tab-sm-md;
@@ -354,6 +359,15 @@
             font-size: 12px;
             line-height: 12px;
           }
+    }
+    .circle {
+        width: 280px;
+        height: 280px;
+    }
+    .main {
+        &__bg {
+            height: 7%;
+        }
     }
     @include header-xsm-sm;
     @include nav-xsm-sm;

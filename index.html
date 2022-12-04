@@ -8,6 +8,7 @@
     <title>Home</title>
   </head>
   <body>
+    <canvas class="animation-scrolling"></canvas>
     <!-- header start
     =========================================== -->
     <header class="header" id="header">
@@ -179,6 +180,9 @@
       <!-- tab start
     =========================================== -->
       <section class="tab">
+        <div class="circle">
+          <img src="./images/circle.png" alt="">
+        </div>
         <div class="auto__container">
           <div class="tab__inner">
             <div class="tab__inner-header">
@@ -473,13 +477,9 @@
             Sacrifice points
           </h3>
           <div class="rate__inner-image">
-            <img class="light" src="./images/rateLight.png" alt="">
-            <img class="dark" src="./images/rateDark.png" alt="">
+            <img src="./images/rateLight.png" alt="">
           </div>
         </div>
-      </div>
-      <div class="circle">
-        <img src="./images/circle.png" alt="">
       </div>
     </section>
     <!-- rate end
@@ -540,7 +540,10 @@
                 End in
               </h6>
               <div class="timer__clock">
-                <span id="countdown" class="timer"></span>
+                <p id="day">38</p><span>:</span>
+                <p id="hour">18</p><span>:</span>
+                <p id="minutes">00</p><span>:</span>
+                <p id="seconds">00</p>
               </div>
             </div>
             <a href="#">
@@ -548,8 +551,7 @@
             </a>
           </div>
           <div class="bonus__inner-image">
-            <img class="light" src="./images/costLight.png" alt="">
-            <img class="dark"  src="./images/costdark.png" alt="">
+            <img src="./images/costLight.png" alt="">
           </div>
         </div>
       </div>
@@ -944,7 +946,7 @@
       <div class="auto__container">
         <div class="location__inner">
           <h3>
-            Our <span>Locations</span>
+            Our Locations
           </h3>
           <div class="location__inner-main">
             <div class="locationItem">
@@ -994,7 +996,7 @@
           <h3>
             <span>
               Development Status
-            </span>
+            </span> <br>
             PoolSea
           </h3>
           <div class="status__inner-main">
@@ -1003,12 +1005,11 @@
                 Core
               </h6>
               <div class="statusItem__range">
-                <div class="statusItem__range-line" style="">
+                <div class="statusItem__range-line">
                   <!-- Line -->
-                  <button style="left: 78%;">
+                  <span>
                     <img src="./images/rangeButton.png" alt="">
-                  </button>
-                  <span style="width: 80%;"></span>
+                  </span>
                 </div>
                 <p>
                   80%
@@ -1022,10 +1023,9 @@
               <div class="statusItem__range">
                 <div class="statusItem__range-line">
                   <!-- Line -->
-                  <button style="left: 68%;">
+                  <span>
                     <img src="./images/rangeButton.png" alt="">
-                  </button>
-                  <span style="width: 70%;"></span>
+                  </span>
                 </div>
                 <p>
                   70%
@@ -1039,10 +1039,9 @@
               <div class="statusItem__range">
                 <div class="statusItem__range-line">
                   <!-- Line -->
-                  <button style="left: 90%;">
+                  <span>
                     <img src="./images/rangeButton.png" alt="">
-                  </button>
-                  <span style="width: 92%;"></span>
+                  </span>
                 </div>
                 <p>
                   92%
@@ -1056,10 +1055,9 @@
               <div class="statusItem__range">
                 <div class="statusItem__range-line">
                   <!-- Line -->
-                  <button style="left: 26%;">
+                  <span>
                     <img src="./images/rangeButton.png" alt="">
-                  </button>
-                  <span style="width: 28%;"></span>
+                  </span>
                 </div>
                 <p>
                   28%
@@ -1073,10 +1071,9 @@
               <div class="statusItem__range">
                 <div class="statusItem__range-line">
                   <!-- Line -->
-                  <button style="left: 86%;">
+                  <span>
                     <img src="./images/rangeButton.png" alt="">
-                  </button>
-                  <span style="width: 88%;"></span>
+                  </span>
                 </div>
                 <p>
                   88%
@@ -1090,10 +1087,9 @@
               <div class="statusItem__range">
                 <div class="statusItem__range-line">
                   <!-- Line -->
-                  <button style="left: 93%;">
+                  <span>
                     <img src="./images/rangeButton.png" alt="">
-                  </button>
-                  <span style="width: 95%;"></span>
+                  </span>
                 </div>
                 <p>
                   95%
@@ -1107,10 +1103,9 @@
               <div class="statusItem__range">
                 <div class="statusItem__range-line">
                   <!-- Line -->
-                  <button style="left: 74%;">
+                  <span>
                     <img src="./images/rangeButton.png" alt="">
-                  </button>
-                  <span style="width: 76%;"></span>
+                  </span>
                 </div>
                 <p>
                   76%
@@ -1120,9 +1115,6 @@
             <a href="#" class="status__inner-check">
               Check the code
             </a>
-          </div>
-          <div class="circle">
-            <img src="./images/circle.png" alt="">
           </div>
         </div>
       </div>
@@ -1135,27 +1127,20 @@
       <div class="auto__container">
         <div class="sponsors__inner">
           <h3>
-           <span> Audited</span> by
+            Audited by
           </h3>
           <div class="sponsors__inner-main">
             <a href="#" class="sponsorsItem">
-              <img class="light" src="./images/sponsors/quanLight.png" alt="">
-              <img class="dark" src="./images/sponsors/quanDark.png" alt="">
+              <img src="./images/sponsors/quanLight.png" alt="">
             </a>
             <a href="#" class="sponsorsItem">
               <img src="./images/sponsors/mixBytes.png" alt="">
             </a>
             <a href="#" class="sponsorsItem">
-              <img class="light" src="./images/sponsors/certickLight.png" alt="">
-              <img class="dark" src="./images/sponsors/certicDark.png" alt="">
+              <img src="./images/sponsors/certickLight.png" alt="">
             </a>
             <a href="#" class="sponsorsItem">
-              <img class="light" src="./images/sponsors/sigmaLight.png" alt="">
-            </a>
-          </div>
-          <div class="sponsors__inner-check">
-            <a href="#" class="check">
-              Check the code
+              <img src="./images/sponsors/sigmaLight.png" alt="">
             </a>
           </div>
         </div>
@@ -1474,6 +1459,7 @@
     <!-- footer end
     =========================================== -->
     </main>
+
     <!-- Sprites
     =========================================== -->
 

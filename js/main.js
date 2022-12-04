@@ -153,5 +153,174 @@ themeChange.onchange = function () {
   }
 };
 
+// const html = document.documentElement;
+// const canvas = document.querySelector(".animation-scrolling");
+// const context = canvas.getContext("2d");
+// console.log(canvas)
+// const currentFrame = (index) =>
+//   `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index
+//     .toString()
+//     .padStart(4, "0")}.jpg`;
+
+// const frameCount = 148;
+// canvas.height = 770;
+// canvas.width = 1158;
+// const img = new Image();
+// img.src = currentFrame(1);
+// img.onLoad = function () {
+//   context.drawImage(img, 0, 0);
+// };
+
+// window.addEventListener("scroll", () => {
+//   const scrollTop = html.scrollTop;
+//   const maxScrollTop = html.scrollHeight - window.innerHeight;
+//   const scrollFraction = scrollTop / maxScrollTop;
+//   const frameIndex = Math.min(
+//     frameCount - 1,
+//     Math.floor(scrollFraction * frameCount)
+//   );
+//   requestAnimationFrame(() => updateImage(frameIndex + 1));
+// });
+
+// const updateImage = (index) => {
+//   img.src = currentFrame(index);
+//   context.drawImage(img, 0, 0);
+// };
+
+// const preloadImages = () => {
+//   for (let i = 1; i < frameCount; i++) {
+//     const img = new Image();
+//     img.src = currentFrame(i);
+//   }
+// };
+// preloadImages();
+
+const imagesDark = document.querySelectorAll(".dark");
+const imagesLight = document.querySelectorAll(".light");
+const html = document.querySelector("html")
+const imageChange = () =>{
+  if(html.getAttribute("data-theme") == "light"){
+    imagesLight.forEach((image) =>{
+      image.style.display = "block"
+    })
+    imagesDark.forEach((image) =>{
+      image.style.display = "none"
+    })
+  }else{
+    imagesLight.forEach((image) =>{
+      image.style.display = "none"
+    })
+    imagesDark.forEach((image) =>{
+      image.style.display = "block"
+    })
+
+  }
+}
+imageChange()
 
 
+
+
+// var myTimer;
+// function clock() {
+//   myTimer = setInterval(myClock, 1000);
+//   let hour = document.querySelector("#hour");
+//   let minute = document.querySelector("#minute");
+//   let second = document.querySelector("#second");
+
+//   var c = 3600; //Initially set to 1 hour
+//   function myClock() {
+//     --c;
+//     var seconds = c % 60; // Seconds that cannot be written in minutes
+//     var secondsInMinutes = (c - seconds) / 60; // Gives the seconds that COULD be given in minutes
+//     var minutes = secondsInMinutes % 60; // Minutes that cannot be written in hours
+//     var hours = (secondsInMinutes - minutes) / 60;
+//     var days = 24 - hours;
+
+//     // Now in hours, minutes and seconds, you have the time you need.
+//     console.clear();
+//     console.log(days +":" + hours + ":" + minutes + ":" + seconds );
+//     console.log(hours.toString(), minutes)
+//     let myHour = hours.toString()
+//     let myMinute = minutes.toString()
+//     let mySecond = seconds.toString()
+//     // if(myHour.length === 1) {
+//     //   hour.innerText = `0${myHour}`;
+//     // }
+//     // else {
+//     //   hour.innerText = myHour;
+//     // }
+//     // if(myMinute.length === 1) {
+//     //   minute.innerText = `0${myMinute}`;
+//     // }
+//     // else {
+//     //   minute.innerText = myMinute;
+//     // }
+//     // if(mySecond.length === 1) {
+//     //   second.innerText = `0${mySecond}`;
+//     // }
+//     // else {
+//     //   second.innerText = mySecond;
+//     // }
+
+//     if (c == 0) {
+//       clearInterval(myTimer);
+//     }
+//   }
+// }
+
+// // clock();
+
+
+// // Set the date we're counting down to
+// var countDownDate = new Date("Jan 11, 2023 15:37:25").getTime();
+
+// // Update the count down every 1 second
+// var x = setInterval(function() {
+
+//   // Get today's date and time
+//   var now = new Date().getTime();
+
+//   // Find the distance between now and the count down date
+//   var distance = countDownDate - now;
+
+//   // Time calculations for days, hours, minutes and seconds
+//   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+//   // Display the result in the element with id="demo"
+//  console.log(days +" "  + hours +" "+ 
+//   minutes +" " + seconds  );  
+
+//   // If the count down is finished, write some text
+//   if (distance < 0) {
+//     clearInterval(x);
+//     document.getElementById("demo").innerHTML = "EXPIRED";
+//   }
+// }, 1000);
+
+
+
+var upgradeTime = 3283200;
+var seconds = upgradeTime;
+function timer() {
+  var days        = Math.floor(seconds/24/60/60);
+  var hoursLeft   = Math.floor((seconds) - (days*86400));
+  var hours       = Math.floor(hoursLeft/3600);
+  var minutesLeft = Math.floor((hoursLeft) - (hours*3600));
+  var minutes     = Math.floor(minutesLeft/60);
+  var remainingSeconds = seconds % 60;
+  function pad(n) {
+    return (n < 10 ? "0" + n : n);
+  }
+  document.getElementById('countdown').innerHTML = pad(days) + ":" + pad(hours) + ":" + pad(minutes) + ":" + pad(remainingSeconds);
+  if (seconds == 0) {
+    clearInterval(countdownTimer);
+    document.getElementById('countdown').innerHTML = "Completed";
+  } else {
+    seconds--;
+  }
+}
+var countdownTimer = setInterval('timer()', 1000);

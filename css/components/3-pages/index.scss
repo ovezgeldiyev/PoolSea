@@ -344,6 +344,7 @@
 
 .tab {
     padding: 25px 0;
+    position: relative;
     &__inner {
         &-header {
             display: flex;
@@ -590,6 +591,12 @@
         &.active {
             display: flex;
         }
+    }
+    .circle {
+        position: absolute;
+        top: -22%;
+        right: 0;
+        transform: translateX(60%);
     }
 }
 // 1380px
