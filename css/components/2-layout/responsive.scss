@@ -204,8 +204,8 @@
         line-height: 25px;
 
         &.sm {
-            font-size: 18px;
-            line-height: 20px;
+            font-size: 16px;
+            line-height: 18px;
         }
     }
 
@@ -473,6 +473,7 @@
 
     @include hero-xxsm-xsm;
     @include donate-xxsm-xsm;
+    @include tab-xxsm-xsm;
     @include footer-xxsm-xsm;
     @include discleamer-xxsm-xsm;
     @include location-xxsm-xsm;

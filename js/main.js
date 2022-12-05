@@ -1,4 +1,4 @@
-// slider
+// swiper start
 var swiper = new Swiper(".mySwiper", {
   grabCursor: true,
   effect: "creative",
@@ -52,6 +52,7 @@ var swiper2 = new Swiper(".mySwiper2", {
     },
   },
 });
+// swiper end
 
 // menu start
 var menu = document.getElementById("menu");
@@ -85,7 +86,7 @@ window.onscroll = function () {
 };
 // scroll end
 
-// faq start
+// tab start
 const tabBtn = document.querySelectorAll(".tabBtn");
 const tabEvent = document.querySelectorAll(".tabEvent");
 tabBtn.forEach((e) => {
@@ -115,8 +116,40 @@ function onTabClick(tabBtns, tabItems, item) {
     }
   });
 }
+// tab end
+// faq start
+const faqBtn = document.querySelectorAll(".faqBtn");
+const faqEvent = document.querySelectorAll(".faqEvent");
+faqBtn.forEach((e) => {
+  onFaqClick(faqBtn, faqEvent, e);
+});
+function onFaqClick(faqBtns, faqItems, item) {
+  item.addEventListener("click", function (e) {
+    let currentBtn = item;
+    let faqId = currentBtn.getAttribute("data-faq");
+    let currentTab = document.querySelector(faqId);
+    if (currentBtn.classList.contains("active")) {
+      const faq = currentBtn.parentElement.querySelector(".faqEvent");
+      if (faq) {
+        faq.classList.remove("active");
+        currentBtn.classList.remove("active");
+      }
+    } else if (!currentBtn.classList.contains("active")) {
+      faqBtn.forEach(function (item) {
+        item.classList.remove("active");
+      });
+
+      faqItems.forEach(function (item) {
+        item.classList.remove("active");
+      });
+      currentBtn.classList.add("active");
+      currentTab.classList.add("active");
+    }
+  });
+}
 // faq end
 
+// themeChange start
 const themeChange = document.getElementById("themeChange");
 const themeChangeBtn = themeChange.parentNode;
 const circles = document.querySelectorAll(".circle");
@@ -160,7 +193,9 @@ themeChange.onchange = function () {
     });
   }
 };
+// themeChange end
 
+// timer start
 let upgradeTime = 3283200;
 let seconds = upgradeTime;
 let countdownTimer = setInterval("timer()", 1000);
@@ -190,20 +225,22 @@ function timer() {
     seconds--;
   }
 }
+// timer end
 
+// scrollMagic
 const intro = document.querySelector("#startPoint");
 const controller = new ScrollMagic.Controller();
 const duration = 2000;
 let scene = new ScrollMagic.Scene({
   duration: duration,
   triggerElement: intro,
-  triggerHook: .07,
+  triggerHook: 0.07,
 })
 
-  // .addIndicators()
   .setPin(intro)
   .addTo(controller);
 
+// canvas start
 const canvas = document.querySelector(".animation-scrolling");
 const context = canvas.getContext("2d");
 const generatePath = (index) =>
@@ -243,3 +280,33 @@ const preloadImages = () => {
   }
 };
 preloadImages();
+// canvas end
+
+
+
+// copy start
+
+const copyBtn = document.getElementById("copyBtn");
+const copyInput = document.getElementById("copyInput");
+const tooltip = copyBtn.querySelector("span");
+const copy = (text) => {
+  if (navigator.clipboard !== undefined) {
+    navigator.clipboard.writeText(text).then(
+      () => {
+      },
+      (err) => console.error("Async: Could not copy text: ", err)
+    );
+  } else if (window.clipboardData) {
+    window.clipboardData.setData("Text", text);
+  } else {
+    console.log(`can't copy: not secure`);
+  }
+};
+
+copyBtn.onclick = () => {
+  copy(copyInput.value);
+  tooltip.classList.add("active");
+  setTimeout( ()=>  tooltip.classList.remove("active"), 1500);
+
+};
+// copy end

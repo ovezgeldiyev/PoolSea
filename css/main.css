@@ -854,29 +854,23 @@ p.sm {
   top: calc(100% + 65px);
   left: 14%;
   z-index: 5;
-  background: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
+  background: var(--arrowbg);
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 .intro__inner .swiperBtn::after {
-  color: #fff;
+  color: var(--arrowColor);
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 .intro__inner .swiperBtn:hover {
-  background: var(--arrowbg);
+  background: linear-gradient(268.3deg, #00fff9 -4.34%, #00c5ff 13.53%, #0078ff 93.71%);
 }
 .intro__inner .swiperBtn:hover::after {
-  color: var(--arrowColor);
+  color: #fff;
 }
 .intro__inner .swiper-button-next {
   left: calc(14% + 68px);
-}
-.intro__inner .swiper-button-disabled {
-  background: var(--arrowbg);
-}
-.intro__inner .swiper-button-disabled::after {
-  color: var(--arrowColor);
 }
 .intro__inner h2 {
   margin-bottom: 36px;
@@ -925,6 +919,12 @@ p.sm {
   transition: 0.2s ease;
   cursor: pointer;
   background: transparent;
+}
+.tab__inner-header .tabBtn:first-child {
+  border-top-left-radius: 20px;
+}
+.tab__inner-header .tabBtn:last-child {
+  border-top-right-radius: 20px;
 }
 .tab__inner-header .tabBtn:hover {
   opacity: 0.8;
@@ -1197,7 +1197,7 @@ p.sm {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #0D0F15;
+  background-color: #0d0f15;
   width: 100%;
   border-radius: 10px;
 }
@@ -1225,7 +1225,6 @@ p.sm {
   margin-bottom: 28px;
   position: relative;
   width: 100%;
-  overflow: hidden;
 }
 .donate__inner-card-info input {
   position: absolute;
@@ -1233,7 +1232,7 @@ p.sm {
   height: 100%;
   top: 0;
   left: 0;
-  padding: 18px 64px 18px 18px;
+  padding: 18px 58px 18px 18px;
   font-size: 12px;
   line-height: 12px;
   font-family: "sfText", sans-serif;
@@ -1241,8 +1240,9 @@ p.sm {
   letter-spacing: -0.06em;
   color: var(--textColor);
   background: var(--bgColor);
+  border-radius: 100px;
 }
-.donate__inner-card-info span {
+.donate__inner-card-info button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1254,7 +1254,7 @@ p.sm {
           align-items: center;
   width: 44px;
   height: 44px;
-  background-color: #17A8FA;
+  background-color: #17a8fa;
   border-radius: 50%;
   padding: 12px;
   position: relative;
@@ -1262,11 +1262,57 @@ p.sm {
   cursor: pointer;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  position: relative;
 }
-.donate__inner-card-info span:hover {
+.donate__inner-card-info button span {
+  position: absolute;
+  bottom: calc(100% + 12px);
+  width: 70px;
+  height: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: var(--textColor);
+  color: var(--bgColor);
+  padding: 4px;
+  border-radius: 5px;
+  z-index: 3;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.donate__inner-card-info button span.active {
+  pointer-events: unset;
+  opacity: 1;
+}
+.donate__inner-card-info button span:before {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  content: "";
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--textColor) transparent transparent transparent;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.donate__inner-card-info button:hover {
   opacity: 0.88;
 }
-.donate__inner-card-info span img {
+.donate__inner-card-info button img {
   width: 100%;
 }
 .donate__inner > a {
@@ -1609,7 +1655,7 @@ p.sm {
   position: relative;
 }
 .team__inner .swiperBtn {
-  background: var(--teamArrow2);
+  background: var(--teamArrow);
   position: absolute;
   right: 0;
   -webkit-transform: translateX(28px);
@@ -1618,15 +1664,15 @@ p.sm {
   transition: 0.3s ease;
 }
 .team__inner .swiperBtn::after {
-  color: #fff;
+  color: #6e6e73;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 .team__inner .swiperBtn:hover {
-  background: var(--teamArrow);
+  background: var(--teamArrow2);
 }
 .team__inner .swiperBtn:hover::after {
-  color: #6E6E73;
+  color: #fff;
 }
 .team__inner .swiper-button-prev {
   right: unset;
@@ -1721,7 +1767,7 @@ p.sm {
   line-height: 24px;
   letter-spacing: -0.015em;
   font-weight: 600;
-  color: #6E6E73;
+  color: #6e6e73;
   margin-bottom: 20px;
 }
 
@@ -2629,8 +2675,8 @@ html[data-theme=light] .faq__inner {
     line-height: 25px;
   }
   h5.sm {
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 18px;
   }
 
   p.extra {
@@ -2733,6 +2779,7 @@ html[data-theme=light] .faq__inner {
   .nav__inner .header__inner-buttons {
     width: 100%;
     margin-top: auto;
+    margin-top: 20px;
   }
   .nav__inner .header__inner-buttons-row {
     width: 100%;
@@ -2858,11 +2905,19 @@ html[data-theme=light] .faq__inner {
   }
 
   .tab__inner-header {
-    overflow-y: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .tab__inner-header .tabBtn {
-    padding: 16px 15px;
-    min-width: 150px;
+    padding: 16px 12px;
+    width: 33.3%;
+  }
+  .tab__inner-header .tabBtn:nth-child(3) {
+    border-top-right-radius: 20px;
+  }
+  .tab__inner-header .tabBtn:nth-child(n+4) {
+    width: 50%;
+    border-radius: unset;
   }
   .tab__inner-content {
     padding: 30px;
@@ -2925,7 +2980,11 @@ html[data-theme=light] .faq__inner {
     padding: 28px;
     margin-bottom: 20px;
   }
-  .donate__inner-card-info span {
+  .donate__inner-card-info input {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .donate__inner-card-info button {
     width: 40px;
     height: 40px;
     padding: 10px;
@@ -3152,13 +3211,13 @@ html[data-theme=light] .faq__inner {
   .donate__inner-card-info {
     margin-bottom: 24px;
   }
-  .donate__inner-card-info span {
-    width: 32px;
-    height: 32px;
-    padding: 6px;
+  .donate__inner-card-info button {
+    width: 30px;
+    height: 30px;
+    padding: 7px;
   }
   .donate__inner-card-info input {
-    padding: 15px 54px 14px 14px;
+    padding: 15px 44px 14px 10px;
   }
   .donate__inner-card > h4 {
     margin-bottom: 20px;
@@ -3222,7 +3281,7 @@ html[data-theme=light] .faq__inner {
   }
 
   .airdrop__inner {
-    padding: 70px 0;
+    padding: 80px 0;
   }
   .airdropJoin {
     padding: 15px;
@@ -3253,9 +3312,21 @@ html[data-theme=light] .faq__inner {
     line-height: 18px;
   }
 
-  .bonus__inner-info p.sm {
-    font-size: 14px;
-    line-height: 20px;
+  .bonus__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bonus__inner-info {
+    width: 100%;
+    margin: 0 auto 30px;
+    max-width: 650px;
+  }
+  .bonus__inner-image {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 650px;
   }
   .bonus .timer {
     padding: 20px 30px 20px;
@@ -3269,9 +3340,20 @@ html[data-theme=light] .faq__inner {
   .bonus h3 {
     width: 100%;
     text-align: center;
+    margin-bottom: 15px;
   }
   .bonus.multiplier .bonus__inner-info {
-    margin-bottom: 5px;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .bonus.multiplier .bonus__inner-text {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  .bonus.multiplier h3 {
+    text-align: center;
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 840px) {
@@ -3306,10 +3388,10 @@ html[data-theme=light] .faq__inner {
     max-width: 265px;
     margin: 10px;
   }
-
-  .airdrop__inner {
-    padding: 60px 0;
+  .sponsors h3 {
+    margin-bottom: 20px;
   }
+
   .airdrop__inner-main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3354,22 +3436,6 @@ html[data-theme=light] .faq__inner {
     max-width: unset;
   }
 
-  .bonus__inner {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .bonus__inner-info {
-    width: 100%;
-    margin: 0 auto 30px;
-    max-width: 650px;
-  }
-  .bonus__inner-image {
-    width: 100%;
-    margin: 0 auto;
-    max-width: 650px;
-  }
   .bonus .timer {
     padding: 20px 30px 20px;
     margin-bottom: 15px;
@@ -3381,15 +3447,6 @@ html[data-theme=light] .faq__inner {
   }
   .bonus.multiplier .bonus__inner {
     padding: 60px 0;
-  }
-  .bonus.multiplier .bonus__inner-info {
-    width: 100%;
-  }
-  .bonus.multiplier .bonus__inner-text {
-    width: 100%;
-  }
-  .bonus.multiplier h3 {
-    text-align: center;
   }
 
   .rate__inner {
@@ -3527,6 +3584,10 @@ html[data-theme=light] .faq__inner {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+  .donate__inner-card-info input {
+    font-size: 11px;
+    line-height: 11px;
   }
   .donate__inner > a {
     position: unset;
@@ -3786,6 +3847,12 @@ html[data-theme=light] .faq__inner {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
   }
+  .tab__inner-header .tabBtn:first-child {
+    border-top-left-radius: 15px;
+  }
+  .tab__inner-header .tabBtn:nth-child(3) {
+    border-top-right-radius: 15px;
+  }
   .tab__inner-content {
     padding: 20px 15px;
     border-bottom-left-radius: 15px;
@@ -3834,6 +3901,10 @@ html[data-theme=light] .faq__inner {
     font-size: 14px;
     line-height: 15px;
     margin-bottom: 25px;
+  }
+  .donate__inner-card-info input {
+    font-size: 10px;
+    line-height: 10px;
   }
   .donateItem {
     padding: 6px 8px;
@@ -3998,6 +4069,14 @@ html[data-theme=light] .faq__inner {
   .donateItem__name span {
     width: 26px;
     height: 26px;
+  }
+
+  .tab__inner-header .tabBtn {
+    padding: 10px;
+  }
+  .tab__inner-header .tabBtn h5.sm {
+    font-size: 12px;
+    line-height: 14px;
   }
 
   .footer__inner {
@@ -4277,10 +4356,10 @@ html[data-theme=light] .faq__inner {
   }
 
   .rate {
-    background-color: var(--tabBg) .rate __inner;
-    background-color-padding: unset;
-    background-color-border-radius: unset;
-    background-color-background-color: unset;
+    background-color: var(--tabBg);
+  }
+  .rate__inner {
+    padding: 30px 20px;
   }
   .rate h3 {
     margin-bottom: 25px;
