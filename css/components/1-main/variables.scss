@@ -30,6 +30,9 @@ $faqBorder: var(--faqBorder);
 $line: var(--line);
 $timer: var(--timer);
 $heroBg: var(--heroBg);
+$scrollBg: var(--scrollBg);
+$scrollThumb: var(--scrollThumb);
+$scrollThumbHover: var(--scrollThumbHover);
 
 html[data-theme |=light] {
     --bgColor: #fff;
@@ -57,7 +60,9 @@ html[data-theme |=light] {
     --line: #EEEEF1;
     --timer: #0D0F15;
     --heroBg: #fff;
-
+    --scrollBg: #d4d4d4;
+    --scrollThumb: rgba(0, 0, 0, 0.3);
+    --scrollThumbHover: rgba(0, 0, 0, 0.4);
 }
 
 html[data-theme |=dark] {
@@ -87,7 +92,9 @@ html[data-theme |=dark] {
     --line: #06070A;
     --timer: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
     --heroBg: #010103;
-
+    --scrollBg: #525252;
+    --scrollThumb: rgba(255, 255, 255, 0.3);
+    --scrollThumbHover: rgba(255, 255, 255, 0.4);
 }
 
 // fonts
