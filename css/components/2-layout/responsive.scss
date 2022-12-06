@@ -86,7 +86,6 @@
     }
 
     @include header-xxxlg-xxxxlg;
-    @include hero-xxxlg-xxxxlg;
     @include intro-xxxlg-xxxxlg;
     @include bonus-xxxlg-xxxxlg;
     @include status-xxxlg-xxxxlg;
@@ -94,8 +93,6 @@
 
 // 1250px
 @include xlg-xxlg-extra {
-    @include hero-xlg-xxlg-extra;
-    @include hero-xlg-xxlg-extra;
     @include footer-xlg-xxlg-extra;
     @include location-xlg-xxlg-extra;
 }
@@ -233,7 +230,6 @@
 
     @include header-lg-xlg;
     @include nav-lg-xlg;
-    @include hero-lg-xlg;
     @include intro-lg-xlg;
     @include tab-lg-xlg;
     @include team-lg-xlg;
@@ -279,7 +275,6 @@
         height: 550px;
     }
 
-    @include hero-md-lg;
     @include tab-md-lg;
     @include donate-md-lg;
     @include footer-md-lg;
@@ -345,7 +340,6 @@
 
 // 650px
 @include sm-md-extra {
-    @include hero-sm-md-extra;
     @include footer-sm-md-extra;
     @include location-sm-md-extra;
     @include airdrop-sm-md-extra;
@@ -422,7 +416,6 @@
 
     @include header-xsm-sm;
     @include nav-xsm-sm;
-    @include hero-xsm-sm;
     @include intro-xsm-sm;
     @include tab-xsm-sm;
     @include donate-xsm-sm;

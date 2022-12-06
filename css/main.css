@@ -25,6 +25,7 @@ html[data-theme|=light] {
   --faqOuterBg: #fff;
   --line: #EEEEF1;
   --timer: #0D0F15;
+  --heroBg: #fff;
 }
 
 html[data-theme|=dark] {
@@ -53,6 +54,7 @@ html[data-theme|=dark] {
   --faqOuterBg: #131823;
   --line: #06070A;
   --timer: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
+  --heroBg: #010103;
 }
 
 html, body {
@@ -762,7 +764,7 @@ p.sm {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  background: #06070a;
+  background: var(--heroBg);
 }
 .hero__inner-wrapper canvas {
   position: absolute;
@@ -4044,6 +4046,14 @@ html[data-theme=light] .faq__inner {
 
   .main {
     padding-top: 90px;
+  }
+
+  .hero__inner-wrapper canvas {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 130%;
   }
 
   .donate {

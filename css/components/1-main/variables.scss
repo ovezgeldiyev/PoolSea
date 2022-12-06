@@ -29,6 +29,7 @@ $faqBg: var(--faqBg);
 $faqBorder: var(--faqBorder);
 $line: var(--line);
 $timer: var(--timer);
+$heroBg: var(--heroBg);
 
 html[data-theme |=light] {
     --bgColor: #fff;
@@ -55,6 +56,7 @@ html[data-theme |=light] {
     --faqOuterBg: #fff;
     --line: #EEEEF1;
     --timer: #0D0F15;
+    --heroBg: #fff;
 
 }
 
@@ -84,6 +86,8 @@ html[data-theme |=dark] {
     --faqOuterBg: #131823;
     --line: #06070A;
     --timer: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
+    --heroBg: #010103;
+
 }
 
 // fonts

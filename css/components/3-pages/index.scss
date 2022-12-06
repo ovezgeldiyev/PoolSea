@@ -11,7 +11,7 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background: #06070a;
+      background: $heroBg;
 
       canvas {
         position: absolute;
@@ -49,16 +49,6 @@
   }
 }
 
-// 1380px
-@mixin hero-xxxlg-xxxxlg {
-  .hero {}
-}
-
-// 1250px
-@mixin hero-xlg-xxlg-extra {
-  .hero {}
-}
-
 // 1180px
 @mixin hero-xlg-xxlg {
   .hero {
@@ -82,16 +72,6 @@
   }
 }
 
-// 1024px
-@mixin hero-lg-xlg {
-  .hero {}
-}
-
-// 930px
-@mixin hero-md-lg {
-  .hero {}
-}
-
 // 750px
 @mixin hero-sm-md {
   .hero {
@@ -111,19 +91,20 @@
   }
 }
 
-// 650px
-@mixin hero-sm-md-extra {
-  .hero {}
-}
-
-// 540px
-@mixin hero-xsm-sm {
-  .hero {}
-}
-
 // 440px
 @mixin hero-xxsm-xsm {
-  .hero {}
+  .hero {
+    &__inner {
+      &-wrapper {
+        canvas {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 130%;
+        }
+      }
+    }
+  }
 }
 
 .intro {
@@ -251,11 +232,6 @@
   }
 }
 
-// 1250px
-@mixin intro-xlg-xxlg-extra {
-  .intro {}
-}
-
 // 1180px
 @mixin intro-xlg-xxlg {
   .intro {
@@ -319,21 +295,6 @@
   }
 }
 
-// 930px
-@mixin intro-md-lg {
-  .intro {}
-}
-
-// 750px
-@mixin intro-sm-md {
-  .intro {}
-}
-
-// 650px
-@mixin intro-sm-md-extra {
-  .intro {}
-}
-
 // 540px
 @mixin intro-xsm-sm {
   .intro {
@@ -356,10 +317,6 @@
   }
 }
 
-// 440px
-@mixin intro-xxsm-xsm {
-  .intro {}
-}
 
 .tab {
   padding: 25px 0;
@@ -629,16 +586,6 @@
   }
 }
 
-// 1380px
-@mixin tab-xxxlg-xxxxlg {
-  .tab {}
-}
-
-// 1250px
-@mixin tab-xlg-xxlg-extra {
-  .tab {}
-}
-
 // 1180px
 @mixin tab-xlg-xxlg {
   .tab {
@@ -858,11 +805,6 @@
   }
 }
 
-// 650px
-@mixin tab-sm-md-extra {
-  .tab {}
-}
-
 // 540px
 @mixin tab-xsm-sm {
   .tab {
@@ -950,6 +892,7 @@
       &-header {
         .tabBtn {
           padding: 10px;
+
           h5.sm {
             font-size: 12px;
             line-height: 14px;
@@ -1190,16 +1133,6 @@
   }
 }
 
-// 1380px
-@mixin donate-xxxlg-xxxxlg {
-  .donate {}
-}
-
-// 1250px
-@mixin donate-xlg-xxlg-extra {
-  .donate {}
-}
-
 // 1180px
 @mixin donate-xlg-xxlg {
   .donate {
@@ -1398,11 +1331,6 @@
   }
 }
 
-// 650px
-@mixin donate-sm-md-extra {
-  .donate {}
-}
-
 // 540px
 @mixin donate-xsm-sm {
   .donate {
@@ -1580,6 +1508,7 @@
 @mixin rate-xxxsm-xxsm {
   .rate {
     background-color: $tabBg;
+
     &__inner {
       padding: 30px 20px;
     }
@@ -2446,16 +2375,6 @@
   }
 }
 
-// 1380px
-@mixin team-xxxlg-xxxxlg {
-  .team {}
-}
-
-// 1250px
-@mixin team-xlg-xxlg-extra {
-  .team {}
-}
-
 // 1180px
 @mixin team-xlg-xxlg {
   .team {
@@ -2494,11 +2413,6 @@
   }
 }
 
-// 930px
-@mixin team-md-lg {
-  .team {}
-}
-
 // 750px
 @mixin team-sm-md {
   .team {
@@ -2522,21 +2436,6 @@
       }
     }
   }
-}
-
-// 650px
-@mixin team-sm-md-extra {
-  .team {}
-}
-
-// 540px
-@mixin team-xsm-sm {
-  .team {}
-}
-
-// 440px
-@mixin team-xxsm-xsm {
-  .team {}
 }
 
 .location {

@@ -58,6 +58,8 @@ var swiper2 = new Swiper(".mySwiper2", {
 var menu = document.getElementById("menu");
 var menuBtn = document.getElementById("menuBtn");
 var body = document.body;
+const html = document.querySelector("html");
+
 menuBtn.onclick = function () {
   menu.classList.toggle("active");
   menuBtn.classList.toggle("active");
@@ -149,52 +151,6 @@ function onFaqClick(faqBtns, faqItems, item) {
 }
 // faq end
 
-// themeChange start
-const themeChange = document.getElementById("themeChange");
-const themeChangeBtn = themeChange.parentNode;
-const circles = document.querySelectorAll(".circle");
-
-const imagesDark = document.querySelectorAll(".dark");
-const imagesLight = document.querySelectorAll(".light");
-const html = document.querySelector("html");
-const imageChange = () => {
-  if (html.getAttribute("data-theme") == "light") {
-    imagesLight.forEach((image) => {
-      image.style.display = "block";
-    });
-    imagesDark.forEach((image) => {
-      image.style.display = "none";
-    });
-  } else {
-    imagesLight.forEach((image) => {
-      image.style.display = "none";
-    });
-    imagesDark.forEach((image) => {
-      image.style.display = "block";
-    });
-  }
-};
-imageChange();
-
-themeChange.onchange = function () {
-  if (themeChange.checked) {
-    document.documentElement.setAttribute("data-theme", "dark");
-    themeChangeBtn.classList.add("active");
-    imageChange();
-    circles.forEach((circle) => {
-      circle.classList.add("dark");
-    });
-  } else {
-    document.documentElement.setAttribute("data-theme", "light");
-    themeChangeBtn.classList.remove("active");
-    imageChange();
-    circles.forEach((circle) => {
-      circle.classList.remove("dark");
-    });
-  }
-};
-// themeChange end
-
 // timer start
 let upgradeTime = 3283200;
 let seconds = upgradeTime;
@@ -243,8 +199,18 @@ let scene = new ScrollMagic.Scene({
 // canvas start
 const canvas = document.querySelector(".animation-scrolling");
 const context = canvas.getContext("2d");
-const generatePath = (index) =>
-  `./images/canvas/${(index || 1).toString().padStart(4, "0")}.jpg`;
+
+const generatePath = (index) => {
+  if (html.getAttribute("data-theme") == "light") {
+    return `./images/canvas/white/${(index || 1)
+      .toString()
+      .padStart(4, "0")}.jpg`;
+  } else {
+    return `./images/canvas/black/${(index || 1)
+      .toString()
+      .padStart(4, "0")}.jpg`;
+  }
+};
 
 const speed = 0.6;
 
@@ -256,7 +222,6 @@ img.src = generatePath(1);
 img.onload = function () {
   context.drawImage(img, 0, 0);
 };
-
 window.addEventListener("scroll", () => {
   const scrollTop = html.scrollTop;
   const maxScrollTop = html.scrollHeight - window.innerHeight;
@@ -274,6 +239,10 @@ const updateImage = (index) => {
 };
 
 const preloadImages = () => {
+  img.src = generatePath(1);
+  img.onload = function () {
+    context.drawImage(img, 0, 0);
+  };
   for (let i = 1; i < frameCount; i++) {
     const img = new Image();
     img.src = generatePath(i);
@@ -281,8 +250,6 @@ const preloadImages = () => {
 };
 preloadImages();
 // canvas end
-
-
 
 // copy start
 
@@ -292,8 +259,7 @@ const tooltip = copyBtn.querySelector("span");
 const copy = (text) => {
   if (navigator.clipboard !== undefined) {
     navigator.clipboard.writeText(text).then(
-      () => {
-      },
+      () => {},
       (err) => console.error("Async: Could not copy text: ", err)
     );
   } else if (window.clipboardData) {
@@ -306,7 +272,52 @@ const copy = (text) => {
 copyBtn.onclick = () => {
   copy(copyInput.value);
   tooltip.classList.add("active");
-  setTimeout( ()=>  tooltip.classList.remove("active"), 1500);
-
+  setTimeout(() => tooltip.classList.remove("active"), 1500);
 };
 // copy end
+
+// themeChange start
+const themeChange = document.getElementById("themeChange");
+const themeChangeBtn = themeChange.parentNode;
+const circles = document.querySelectorAll(".circle");
+
+const imagesDark = document.querySelectorAll(".dark");
+const imagesLight = document.querySelectorAll(".light");
+const imageChange = () => {
+  if (html.getAttribute("data-theme") == "light") {
+    imagesLight.forEach((image) => {
+      image.style.display = "block";
+    });
+    imagesDark.forEach((image) => {
+      image.style.display = "none";
+    });
+  } else {
+    imagesLight.forEach((image) => {
+      image.style.display = "none";
+    });
+    imagesDark.forEach((image) => {
+      image.style.display = "block";
+    });
+  }
+};
+imageChange();
+
+themeChange.onchange = function () {
+  if (themeChange.checked) {
+    document.documentElement.setAttribute("data-theme", "dark");
+    themeChangeBtn.classList.add("active");
+    imageChange();
+    circles.forEach((circle) => {
+      circle.classList.add("dark");
+    });
+  } else {
+    document.documentElement.setAttribute("data-theme", "light");
+    themeChangeBtn.classList.remove("active");
+    imageChange();
+    circles.forEach((circle) => {
+      circle.classList.remove("dark");
+    });
+  }
+  preloadImages();
+};
+// themeChange end
