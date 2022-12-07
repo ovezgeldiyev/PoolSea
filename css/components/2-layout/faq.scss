@@ -125,6 +125,7 @@
           left: -1px;
           border-radius: 10px;
           pointer-events: none;
+          z-index: -1;
         }
         &__header {
           background: $faqNFTBg;
@@ -691,9 +692,7 @@
           line-height: 26px;
         }
       }
-      &-main {
-        margin: 0;
-      }
+
     }
     &Item {
       width: calc(50% - 20px);

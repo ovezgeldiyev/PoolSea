@@ -40,6 +40,10 @@ $scrollThumb: var(--scrollThumb);
 $scrollThumbHover: var(--scrollThumbHover);
 $closeBtn: var(--closeBtn);
 $techspecsText: var(--techspecsText);
+$faqNFTBg: var(--faqNFTBg);
+$faqNFTActive: var(--faqNFTActive);
+$faqNFTBorder: var(--faqNFTBorder);
+$pExtraColor: var(--pExtraColor);
 
 html[data-theme |=light] {
     --bgColor: #fff;
@@ -72,6 +76,10 @@ html[data-theme |=light] {
     --scrollThumbHover: rgba(0, 0, 0, 0.4);
     --closeBtn: #0D0D0D;
     --techspecsText: #707A83;
+    --faqNFTBg: #f6f9fc;
+    --faqNFTActive: #0d0f15;
+    --faqNFTBorder: transparent;
+    --pExtraColor: #505763;
 
 }
 
@@ -107,6 +115,10 @@ html[data-theme |=dark] {
     --scrollThumbHover: rgba(255, 255, 255, 0.4);
     --closeBtn: #fff;
     --techspecsText: rgba(255, 255, 255, 0.7);
+    --faqNFTBg: #06070A;
+    --faqNFTActive: #0F1219;
+    --faqNFTBorder: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
+    --pExtraColor: #fff;
 
 }
 
@@ -115,13 +127,6 @@ $graphik: "Graphik", sans-serif;
 $sfDisplay: "sfDisplay", sans-serif;
 $sfText: "sfText", sans-serif;
 
-$faqNFTBg: #f6f9fc;
-// transparent
-$faqNFTActive: #0d0f15;
-// #0F1219
-$faqNFTBorder: transparent;
-//  linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
-$pExtraColor:#505763;
-// #fff
+
 
 

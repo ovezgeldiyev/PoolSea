@@ -102,6 +102,7 @@
     ::-webkit-scrollbar {
         display: none;
     }
+
     .auto__container {
         padding: 0 30px;
     }
@@ -151,6 +152,7 @@
     .main {
         padding-top: 150px;
     }
+
     @include header-xlg-xxlg;
     @include nav-xlg-xxlg;
     @include hero-xlg-xxlg;
@@ -167,6 +169,10 @@
     @include airdrop-xlg-xxlg;
     @include bonus-xlg-xxlg;
     @include rate-xlg-xxlg;
+
+    @include about-xlg-xxlg;
+    @include work-xlg-xxlg;
+    @include features-xlg-xxlg;
 }
 
 // 1024px
@@ -242,6 +248,10 @@
     @include bonus-lg-xlg;
     @include faq-lg-xlg;
     @include rate-lg-xlg;
+
+    @include about-lg-xlg;
+    @include work-lg-xlg;
+    @include features-lg-xlg;
 }
 
 // 930px
@@ -281,6 +291,9 @@
     @include status-md-lg;
     @include airdrop-md-lg;
     @include bonus-md-lg;
+
+    @include about-md-lg;
+    @include work-md-lg;
 }
 
 // 840px
@@ -344,6 +357,10 @@
     @include location-sm-md-extra;
     @include airdrop-sm-md-extra;
     @include rate-sm-md-extra;
+
+    @include about-sm-md-extra;
+    @include work-sm-md-extra;
+    @include features-sm-md-extra;
 }
 
 // 540px
@@ -463,6 +480,7 @@
     .main {
         padding-top: 90px;
     }
+
     @include header-xxsm-xsm;
     @include nav-xxsm-xsm;
     @include hero-xxsm-xsm;
@@ -491,4 +509,8 @@
     @include airdrop-xxxsm-xxsm;
     @include bonus-xxxsm-xxsm;
     @include rate-xxxsm-xxsm;
+
+    @include about-xxxsm-xxsm;
+    @include work-xxxsm-xxsm;
+    @include features-xxxsm-xxsm;
 }
