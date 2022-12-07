@@ -3371,21 +3371,21 @@
 }
 
 // 1180px
-@mixin faq-xlg-xxlg {
-  .faq {
-    &__inner {
-      padding: 120px 0;
+// @mixin faq-xlg-xxlg {
+//   .faq {
+//     &__inner {
+//       padding: 120px 0;
 
-      @include inLightMode {
-        padding: 0px 0 110px 0;
-      }
-    }
+//       @include inLightMode {
+//         padding: 0px 0 110px 0;
+//       }
+//     }
 
-    h3 {
-      margin-bottom: 45px;
-    }
-  }
-}
+//     h3 {
+//       margin-bottom: 45px;
+//     }
+//   }
+// }
 
 // 1024px
 @mixin faq-lg-xlg {
