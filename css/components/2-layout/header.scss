@@ -162,6 +162,16 @@
               }
             }
           }
+          .lang {
+            svg {
+              &.globe {
+                width: 20px;
+                height: 20px;
+                margin-right: 5px;
+              }
+
+            }
+          }
         }
         &-logo {
           margin-right: 26px;
@@ -192,6 +202,7 @@
         }
         .lang {
           margin-right: 20px;
+
         }
       }
     }
@@ -202,7 +213,6 @@
 @mixin header-xsm-sm {
   .header {
     &__inner {
-      padding: 10px 0;
       &-logo {
         font-size: 18px;
         line-height: 20px;
@@ -213,10 +223,13 @@
       }
       &-buttons {
         .lang {
-          margin-right: 12px;
+          margin-right: 8px;
+          svg {
+
+          }
         }
         .button {
-          margin-right: 8px;
+          margin-right: 5px;
           &.icon {
             padding: 8px;
             border-radius: 6px;
@@ -230,7 +243,58 @@
     }
   }
 }
-
+// 440px
+@mixin header-xxsm-xsm {
+  .header {
+    &__inner {
+      padding: 20px 0;
+      &-logo {
+        font-size: 16px;
+        line-height: 18px;
+        span {
+          width: 28px;
+          margin-right: 7px;
+        }
+      }
+      &-buttons {
+        .lang {
+          margin-right: 8px;
+          font-size: 11px;
+          line-height: 12px;
+          &__dropdown {
+            padding: 6px;
+            border-radius: 10px;
+            span {
+              padding: 3px 6px;
+              margin: 0;
+            }
+          }
+          & > span {
+            margin-top: 3px;
+          }
+          svg {
+            margin-left: 5px;
+            &.globe {
+              width: 13px;
+              height: 13px;
+            }
+          }
+        }
+        .button {
+          margin-right: 4px;
+          &.icon {
+            padding: 5px;
+            border-radius: 4px;
+            svg, img {
+              width: 12px;
+              height: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @keyframes sticky {
   0% {
     top: -60px;

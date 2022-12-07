@@ -475,9 +475,14 @@ p.sm {
 .button.icon:hover svg {
   fill: #3772FF;
 }
+.button.icon:hover img {
+  opacity: 0.8;
+}
 .button.icon img {
   width: 24px;
   height: 24px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .button.icon img.sun {
   display: none;
@@ -2592,6 +2597,11 @@ html[data-theme=light] .faq__inner {
     width: 18px;
     height: 18px;
   }
+  .header__inner-buttons .lang svg.globe {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
   .header__inner-logo {
     margin-right: 26px;
     font-size: 22px;
@@ -2669,6 +2679,10 @@ html[data-theme=light] .faq__inner {
   }
 }
 @media (max-width: 1180px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
   .auto__container {
     padding: 0 30px;
   }
@@ -2772,16 +2786,22 @@ html[data-theme=light] .faq__inner {
             box-sizing: border-box;
     top: 0;
     right: 0;
-    width: 375px;
+    width: 320px;
     z-index: 1;
-    padding: 50px 20px 20px 20px;
+    padding: 26px;
     height: 100%;
     overflow-y: auto;
     background: var(--bgColor);
   }
+  .nav__inner ::-webkit-scrollbar {
+    display: none;
+  }
   .nav__inner li {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
+  }
+  .nav__inner li:last-of-type {
+    margin: 0;
   }
   .nav__inner li a {
     font-size: 18px;
@@ -2795,23 +2815,30 @@ html[data-theme=light] .faq__inner {
   }
   .nav__inner .header__inner-buttons {
     width: 100%;
-    margin-top: auto;
-    margin-top: 20px;
+    margin-top: 80px;
   }
   .nav__inner .header__inner-buttons-row {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .nav__inner .header__inner-buttons .button {
-    margin-right: 8px;
+    width: 100%;
+    margin-bottom: 16px;
   }
-  .nav__inner .header__inner-buttons .button:last-child {
-    margin: 0;
+  .nav__inner .header__inner-buttons .button.primary {
+    padding: 20px 30px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .nav__inner .header__inner-buttons .button.uniq {
+    padding: 20px 30px;
   }
 
   .burger {
@@ -3105,10 +3132,6 @@ html[data-theme=light] .faq__inner {
   }
 }
 @media (max-width: 1024px) {
-  ::-webkit-scrollbar {
-    display: none;
-  }
-
   h1 {
     font-size: 60px;
     line-height: 72px;
@@ -4084,9 +4107,6 @@ html[data-theme=light] .faq__inner {
     height: 7%;
   }
 
-  .header__inner {
-    padding: 10px 0;
-  }
   .header__inner-logo {
     font-size: 18px;
     line-height: 20px;
@@ -4096,10 +4116,10 @@ html[data-theme=light] .faq__inner {
     margin-right: 6px;
   }
   .header__inner-buttons .lang {
-    margin-right: 12px;
+    margin-right: 8px;
   }
   .header__inner-buttons .button {
-    margin-right: 8px;
+    margin-right: 5px;
   }
   .header__inner-buttons .button.icon {
     padding: 8px;
@@ -4111,8 +4131,8 @@ html[data-theme=light] .faq__inner {
   }
 
   .nav {
-    top: 58px;
-    height: calc(100% - 58px);
+    top: 70.88px;
+    height: calc(100% - 70.88px);
   }
 
   .intro {
@@ -4330,6 +4350,61 @@ html[data-theme=light] .faq__inner {
 
   .main {
     padding-top: 90px;
+  }
+
+  .header__inner {
+    padding: 20px 0;
+  }
+  .header__inner-logo {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .header__inner-logo span {
+    width: 28px;
+    margin-right: 7px;
+  }
+  .header__inner-buttons .lang {
+    margin-right: 8px;
+    font-size: 11px;
+    line-height: 12px;
+  }
+  .header__inner-buttons .lang__dropdown {
+    padding: 6px;
+    border-radius: 10px;
+  }
+  .header__inner-buttons .lang__dropdown span {
+    padding: 3px 6px;
+    margin: 0;
+  }
+  .header__inner-buttons .lang > span {
+    margin-top: 3px;
+  }
+  .header__inner-buttons .lang svg {
+    margin-left: 5px;
+  }
+  .header__inner-buttons .lang svg.globe {
+    width: 13px;
+    height: 13px;
+  }
+  .header__inner-buttons .button {
+    margin-right: 4px;
+  }
+  .header__inner-buttons .button.icon {
+    padding: 5px;
+    border-radius: 4px;
+  }
+  .header__inner-buttons .button.icon svg, .header__inner-buttons .button.icon img {
+    width: 12px;
+    height: 12px;
+  }
+
+  .nav {
+    top: 70.24px;
+    height: calc(100% - 70.24px);
+  }
+  .burger {
+    width: 20px;
+    height: 22px;
   }
 
   .hero__inner-wrapper canvas {

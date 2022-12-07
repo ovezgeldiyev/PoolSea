@@ -99,6 +99,9 @@
 
 // 1180px
 @include xlg-xxlg {
+    ::-webkit-scrollbar {
+        display: none;
+    }
     .auto__container {
         padding: 0 30px;
     }
@@ -168,9 +171,7 @@
 
 // 1024px
 @include lg-xlg {
-    ::-webkit-scrollbar {
-        display: none;
-    }
+
 
     h1 {
         font-size: 60px;
@@ -462,7 +463,8 @@
     .main {
         padding-top: 90px;
     }
-
+    @include header-xxsm-xsm;
+    @include nav-xxsm-xsm;
     @include hero-xxsm-xsm;
     @include donate-xxsm-xsm;
     @include tab-xxsm-xsm;

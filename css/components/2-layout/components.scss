@@ -319,11 +319,14 @@ p {
       svg {
         fill: $linkColor;
       }
+      img {
+        opacity: .8;
+      }
     }
     img {
       width: 24px;
       height: 24px;
-
+      transition: .3s ease;
       &.sun {
         display: none;
       }

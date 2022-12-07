@@ -74,6 +74,7 @@
         transform: translateX(100%);
         @include transition;
         z-index: 9;
+
         &.active {
             @include transformReset;
         }
@@ -86,22 +87,32 @@
             box-sizing: border-box;
             top: 0;
             right: 0;
-            width: 375px;
+            width: 320px;
             z-index: 1;
-            padding: 50px 20px 20px 20px;
+            padding: 26px;
             height: 100%;
             overflow-y: auto;
             background: $bgColor;
 
+            ::-webkit-scrollbar {
+                display: none;
+            }
+
             li {
                 width: 100%;
-                margin-bottom: 10px;
+                margin-bottom: 16px;
+
+                &:last-of-type {
+                    margin: 0;
+                }
+
                 a {
                     font-size: 18px;
                     line-height: 20px;
                     width: 100%;
                     padding: 10px;
                     text-align: start;
+
                     &::before {
                         display: none;
                     }
@@ -110,19 +121,25 @@
 
             .header__inner-buttons {
                 width: 100%;
-                margin-top: auto;
-                margin-top: 20px;
+                margin-top: 80px;
+
                 &-row {
                     width: 100%;
                     display: flex;
-                    justify-content: center;
+                    flex-direction: column;
                 }
 
                 .button {
-                    margin-right: 8px;
+                    width: 100%;
+                    margin-bottom: 16px;
 
-                    &:last-child {
-                        margin: 0;
+                    &.primary {
+                        padding: 20px 30px;
+                        order: -1;
+                    }
+
+                    &.uniq {
+                        padding: 20px 30px;
                     }
                 }
             }
@@ -200,8 +217,23 @@
 // 540px
 @mixin nav-xsm-sm {
     .nav {
-        top: 58px;
-        height: calc(100% - 58px);
+        top: 70.88px;
+        height: calc(100% - 70.88px);
     }
 }
 
+// 440px
+@mixin nav-xxsm-xsm {
+    .nav {
+        top: 70.24px;
+        height: calc(100% - 70.24px);
+        &__inner {
+
+        }
+    
+    }
+    .burger {
+        width: 20px;
+        height: 22px;
+    }
+}
