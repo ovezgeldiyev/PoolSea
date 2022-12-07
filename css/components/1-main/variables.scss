@@ -2,8 +2,13 @@
 
 $black: #000;
 $white: #fff;
-$gradient: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
-$linkColor:#3772FF;
+$gradient: linear-gradient(
+  268.3deg,
+  #00fff9 -4.34%,
+  #00c5ff 13.53%,
+  #0078ff 93.71%
+);
+$linkColor: #3772ff;
 
 $bgColor: var(--bgColor);
 $textColor: var(--textColor);
@@ -34,73 +39,111 @@ $scrollBg: var(--scrollBg);
 $scrollThumb: var(--scrollThumb);
 $scrollThumbHover: var(--scrollThumbHover);
 
-html[data-theme |=light] {
-    --bgColor: #fff;
-    --textColor: #0D0F15;
-    --iconColor: #6E6E73;
-    --iconbg: #DDE8F4;
-    --langColor: #0D0F15;
-    --pColor: #22252A;
-    --arrowbg: #D7D7DF;
-    --arrowColor: #6E6E73;
-    --tabBg: #F6F9FC;
-    --tabheadBg: #E8F0F7;
-    --tabActiveBg: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
-    --tabActive: #fff;
-    --tabLine: transparent;
-    --tickColor: #fff;
-    --donateBorder: #EFEFF0;
-    --donateDashed: #6E6E7380;
-    --teamArrow: #DEDEE2;
-    --teamArrow2: #0D0F15;
-    --socialBg: #0D0F15;
-    --faqBg: #0D0F15;
-    --faqBorder: transparent;
-    --faqOuterBg: #fff;
-    --line: #EEEEF1;
-    --timer: #0D0F15;
-    --heroBg: #fff;
-    --scrollBg: #d4d4d4;
-    --scrollThumb: rgba(0, 0, 0, 0.3);
-    --scrollThumbHover: rgba(0, 0, 0, 0.4);
+html[data-theme|="light"] {
+  --bgColor: #fff;
+  --textColor: #0d0f15;
+  --iconColor: #6e6e73;
+  --iconbg: #dde8f4;
+  --langColor: #0d0f15;
+  --pColor: #22252a;
+  --arrowbg: #d7d7df;
+  --arrowColor: #6e6e73;
+  --tabBg: #f6f9fc;
+  --tabheadBg: #e8f0f7;
+  --tabActiveBg: linear-gradient(
+    268.3deg,
+    #00fff9 -4.34%,
+    #00c5ff 13.53%,
+    #0078ff 93.71%
+  );
+  --tabActive: #fff;
+  --tabLine: transparent;
+  --tickColor: #fff;
+  --donateBorder: #efeff0;
+  --donateDashed: #6e6e7380;
+  --teamArrow: #dedee2;
+  --teamArrow2: #0d0f15;
+  --socialBg: #0d0f15;
+  --faqBg: #0d0f15;
+  --faqBorder: transparent;
+  --faqOuterBg: #fff;
+  --line: #eeeef1;
+  --timer: #0d0f15;
+  --heroBg: #fff;
+  --scrollBg: #d4d4d4;
+  --scrollThumb: rgba(0, 0, 0, 0.3);
+  --scrollThumbHover: rgba(0, 0, 0, 0.4);
 }
 
-html[data-theme |=dark] {
-    --bgColor: #06070A;
-    --textColor: #fff;
-    --iconColor: #fff;
-    --iconbg: #131823;
-    --langColor: #F4F4F4CC;
-    --pColor: #F6F9FC;
-    --arrowbg: #131823;
-    --arrowColor: #F6F9FC;
-    --tabBg: #131823;
-    --tabheadBg: #1B2232;
-    --tabActiveBg: #131823;
-    --tabActive: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
-    --tabLine: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
-    --tickColor: #070707;
-    --donateBorder: #191D24;
-    --donateDashed: #17A8FA;
-    --teamArrow: #06070A;
-    --teamArrow2: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
-    --bgSection: #0D0F15;
-    --socialBg: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
-    --faqBg: #0F1219;
-    --faqBorder: #2B364F;
-    --faqOuterBg: #131823;
-    --line: #06070A;
-    --timer: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
-    --heroBg: #010103;
-    --scrollBg: #525252;
-    --scrollThumb: rgba(255, 255, 255, 0.3);
-    --scrollThumbHover: rgba(255, 255, 255, 0.4);
+html[data-theme|="dark"] {
+  --bgColor: #06070a;
+  --textColor: #fff;
+  --iconColor: #fff;
+  --iconbg: #131823;
+  --langColor: #f4f4f4cc;
+  --pColor: #f6f9fc;
+  --arrowbg: #131823;
+  --arrowColor: #f6f9fc;
+  --tabBg: #131823;
+  --tabheadBg: #1b2232;
+  --tabActiveBg: #131823;
+  --tabActive: linear-gradient(
+    268.3deg,
+    #00fff9 -4.34%,
+    #00c5ff 13.53%,
+    #0078ff 93.71%
+  );
+  --tabLine: linear-gradient(
+    268.3deg,
+    #00fff9 -4.34%,
+    #00c5ff 13.53%,
+    #0078ff 93.71%
+  );
+  --tickColor: #070707;
+  --donateBorder: #191d24;
+  --donateDashed: #17a8fa;
+  --teamArrow: #06070a;
+  --teamArrow2: linear-gradient(
+    268.3deg,
+    #00fff9 -4.34%,
+    #00c5ff 13.53%,
+    #0078ff 93.71%
+  );
+  --bgSection: #0d0f15;
+  --socialBg: linear-gradient(
+    268.3deg,
+    #00fff9 -4.34%,
+    #00c5ff 13.53%,
+    #0078ff 93.71%
+  );
+  --faqBg: #0f1219;
+  --faqBorder: #2b364f;
+  --faqOuterBg: #131823;
+  --line: #06070a;
+  --timer: linear-gradient(
+    268.3deg,
+    #00fff9 -4.34%,
+    #00c5ff 13.53%,
+    #0078ff 93.71%
+  );
+  --heroBg: #010103;
+  --scrollBg: #525252;
+  --scrollThumb: rgba(255, 255, 255, 0.3);
+  --scrollThumbHover: rgba(255, 255, 255, 0.4);
 }
 
 // fonts
-$graphik: 'Graphik',
-sans-serif;
-$sfDisplay: 'sfDisplay',
-sans-serif;
-$sfText: 'sfText',
-sans-serif;
+$graphik: "Graphik", sans-serif;
+$sfDisplay: "sfDisplay", sans-serif;
+$sfText: "sfText", sans-serif;
+
+$faqNFTBg: #f6f9fc;
+// transparent
+$faqNFTActive: #0d0f15;
+// #0F1219
+$faqNFTBorder: transparent;
+//  linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
+$pExtraColor:#505763;
+// #fff
+
+
