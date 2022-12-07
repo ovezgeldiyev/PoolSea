@@ -147,8 +147,11 @@
         }
         &-buttons {
           .button {
-            margin-right: 8px;
+            margin-right: 6px;
             &.primary {
+              padding: 10px 20px;
+            }
+            &.uniq {
               padding: 10px 30px;
             }
             &.icon {
@@ -172,8 +175,8 @@
       }
   }
 }
-// 1024px
-@mixin header-lg-xlg {
+// 1180px
+@mixin header-xlg-xxlg {
   .header {
     &__inner {
       padding: 16px 0;

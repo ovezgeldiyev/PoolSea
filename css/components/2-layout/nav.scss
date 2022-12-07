@@ -57,8 +57,8 @@
     }
 }
 
-// 1024px
-@mixin nav-lg-xlg {
+// 1180px
+@mixin nav-xlg-xxlg {
     body.active {
         overflow: hidden;
     }
@@ -82,11 +82,11 @@
             flex-direction: column;
             position: absolute;
             justify-content: unset;
-            align-items: center;
+            align-items: flex-start;
             box-sizing: border-box;
             top: 0;
             right: 0;
-            width: 300px;
+            width: 375px;
             z-index: 1;
             padding: 50px 20px 20px 20px;
             height: 100%;
@@ -101,7 +101,7 @@
                     line-height: 20px;
                     width: 100%;
                     padding: 10px;
-                    text-align: center;
+                    text-align: start;
                     &::before {
                         display: none;
                     }
