@@ -24,6 +24,8 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  letter-spacing: -0.02em;
+  font-family: $sfDisplay;
 }
 
 h3 {
@@ -39,7 +41,6 @@ h3 {
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
-
 }
 
 h4 {
@@ -57,7 +58,12 @@ h4 {
 h5 {
   font-size: 28px;
   line-height: 36px;
-
+  &.extra {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: $sfDisplay;
+  }
   &.sm {
     font-weight: 600;
     font-size: 22px;
@@ -102,6 +108,60 @@ p {
   padding-top: 215px;
   position: relative;
 
+  &__note {
+    position: relative;
+    top: 0;
+    left: 50%;
+    display: flex;
+    padding: 28px 130px 28px 32px;
+    background-color: $tabBg;
+    border-radius: 8px;
+    max-width: 900px;
+    transform: translate(-50%, -50%);
+    &-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 28px;
+      height: 28px;
+      margin-right: 24px;
+      margin-top: 7px;
+      img {
+        width: 100%;
+      }
+    }
+
+    p {
+      color: $textColor;
+      font-family: $sfDisplay;
+      font-weight: 500;
+      width: calc(100% - 60px);
+    }
+
+    span {
+      position: absolute;
+      top: 36px;
+      right: 32px;
+      width: 15px;
+      height: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: .3s ease;
+
+      &:hover {
+        opacity: .8;
+      }
+
+      svg {
+        width: 100%;
+        height: 100%;
+        fill: $closeBtn
+      }
+    }
+  }
+
   &__bg {
     position: absolute;
     width: 100%;
@@ -120,7 +180,9 @@ p {
       width: 100%;
       height: 60%;
       opacity: .6;
-
+      &.sharp {
+        opacity: 1;
+      }
       img {
         width: 100%;
       }
@@ -142,6 +204,7 @@ p {
       }
     }
   }
+
   &__bottom {
     position: absolute;
     bottom: 0;
@@ -149,11 +212,13 @@ p {
     width: 100%;
     height: 8%;
     pointer-events: none;
+
     .circle {
       position: absolute;
       top: 0;
       right: 0;
       transform: translateX(70%);
+
       &.left {
         top: unset;
         bottom: -10%;
@@ -192,22 +257,69 @@ p {
   justify-content: center;
   transition: 0.3s ease;
   cursor: pointer;
-
   &:hover {
     opacity: 0.88;
   }
-
+  &.uniq {
+    background: $bgColor;
+    position: relative;
+    padding: 12px 38px;
+    &:hover {
+      opacity: 1;
+      background: linear-gradient(268.3deg,
+      #00fff9 -4.34%,
+      #00c5ff 13.53%,
+      #0078ff 93.71%);
+      span {
+        background: transparent;
+        -webkit-text-fill-color: unset;
+        color: $white;
+      }
+    }
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+      border-radius: 10px;
+      content: "";
+      background: linear-gradient(268.3deg,
+      #00fff9 -4.34%,
+      #00c5ff 13.53%,
+      #0078ff 93.71%);
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+    span {
+      background: linear-gradient(268.3deg,
+      #00fff9 -4.34%,
+      #00c5ff 13.53%,
+      #0078ff 93.71%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      transition: .3s ease;
+    }
+  }
   &.primary {
     color: $white;
     background: $gradient;
-    padding: 15px 38px;
+    padding: 15px 23px;
     line-height: 19px;
+    font-weight: 600;
+ 
   }
 
   &.icon {
     padding: 13px;
     background-color: $iconbg;
-
+    &:hover {
+      opacity: 1;
+      svg {
+        fill: $linkColor;
+      }
+    }
     img {
       width: 24px;
       height: 24px;
@@ -233,6 +345,7 @@ p {
       fill: $iconColor;
       width: 24px;
       height: 24px;
+      transition: .2s ease;
     }
   }
 

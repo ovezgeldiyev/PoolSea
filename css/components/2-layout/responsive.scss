@@ -148,7 +148,8 @@
     .main {
         padding-top: 150px;
     }
-
+    @include header-xlg-xxlg;
+    @include nav-xlg-xxlg;
     @include hero-xlg-xxlg;
     @include intro-xlg-xxlg;
     @include tab-xlg-xxlg;
@@ -228,8 +229,6 @@
         }
     }
 
-    @include header-lg-xlg;
-    @include nav-lg-xlg;
     @include intro-lg-xlg;
     @include tab-lg-xlg;
     @include team-lg-xlg;

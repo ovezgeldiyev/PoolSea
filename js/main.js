@@ -154,126 +154,134 @@ function onFaqClick(faqBtns, faqItems, item) {
 // timer start
 let upgradeTime = 3283200;
 let seconds = upgradeTime;
-let countdownTimer = setInterval("timer()", 1000);
-
-function timer() {
-  let days = Math.floor(seconds / 24 / 60 / 60);
-  let hoursLeft = Math.floor(seconds - days * 86400);
-  let hours = Math.floor(hoursLeft / 3600);
-  let minutesLeft = Math.floor(hoursLeft - hours * 3600);
-  let minutes = Math.floor(minutesLeft / 60);
-  let remainingSeconds = seconds % 60;
-  function pad(n) {
-    return n < 10 ? "0" + n : n;
-  }
-  document.getElementById("countdown").innerHTML =
-    pad(days) +
-    ":" +
-    pad(hours) +
-    ":" +
-    pad(minutes) +
-    ":" +
-    pad(remainingSeconds);
-  if (seconds == 0) {
-    clearInterval(countdownTimer);
-    document.getElementById("countdown").innerHTML = "Completed";
-  } else {
-    seconds--;
+const countdown = document.getElementById("countdown");
+if (countdown) {
+  let countdownTimer = setInterval("timer()", 1000);
+  
+  function timer() {
+    let days = Math.floor(seconds / 24 / 60 / 60);
+    let hoursLeft = Math.floor(seconds - days * 86400);
+    let hours = Math.floor(hoursLeft / 3600);
+    let minutesLeft = Math.floor(hoursLeft - hours * 3600);
+    let minutes = Math.floor(minutesLeft / 60);
+    let remainingSeconds = seconds % 60;
+    function pad(n) {
+      return n < 10 ? "0" + n : n;
+    }
+    document.getElementById("countdown").innerHTML =
+      pad(days) +
+      ":" +
+      pad(hours) +
+      ":" +
+      pad(minutes) +
+      ":" +
+      pad(remainingSeconds);
+    if (seconds == 0) {
+      clearInterval(countdownTimer);
+      document.getElementById("countdown").innerHTML = "Completed";
+    } else {
+      seconds--;
+    }
   }
 }
+
+
 // timer end
 
-// scrollMagic
-const intro = document.querySelector("#startPoint");
-const controller = new ScrollMagic.Controller();
-const duration = 2000;
-let scene = new ScrollMagic.Scene({
-  duration: duration,
-  triggerElement: intro,
-  triggerHook: 0.07,
-})
+// // scrollMagic
+// const intro = document.querySelector("#startPoint");
+// const controller = new ScrollMagic.Controller();
+// const duration = 2000;
+// let scene = new ScrollMagic.Scene({
+//   duration: duration,
+//   triggerElement: intro,
+//   triggerHook: 0.07,
+// })
 
-  .setPin(intro)
-  .addTo(controller);
+//   .setPin(intro)
+//   .addTo(controller);
 
-// canvas start
-const canvas = document.querySelector(".animation-scrolling");
-const context = canvas.getContext("2d");
+// // canvas start
+// const canvas = document.querySelector(".animation-scrolling");
+// const context = canvas.getContext("2d");
 
-const generatePath = (index) => {
-  if (html.getAttribute("data-theme") == "light") {
-    return `./images/canvas/white/${(index || 1)
-      .toString()
-      .padStart(4, "0")}.jpg`;
-  } else {
-    return `./images/canvas/black/${(index || 1)
-      .toString()
-      .padStart(4, "0")}.jpg`;
-  }
-};
+// const generatePath = (index) => {
+//   if (html.getAttribute("data-theme") == "light") {
+//     return `./images/canvas/white/${(index || 1)
+//       .toString()
+//       .padStart(4, "0")}.jpg`;
+//   } else {
+//     return `./images/canvas/black/${(index || 1)
+//       .toString()
+//       .padStart(4, "0")}.jpg`;
+//   }
+// };
 
-const speed = 0.6;
+// const speed = 0.6;
 
-const frameCount = parseInt(intro.getAttribute("data-frames"));
-canvas.height = 1100;
-canvas.width = 1940;
-const img = new Image();
-img.src = generatePath(1);
-img.onload = function () {
-  context.drawImage(img, 0, 0);
-};
-window.addEventListener("scroll", () => {
-  const scrollTop = html.scrollTop;
-  const maxScrollTop = html.scrollHeight - window.innerHeight;
-  const scrollFraction = frameCount / duration;
-  const frameIndex = Math.min(
-    frameCount - 1,
-    Math.floor(speed * scrollTop * scrollFraction)
-  );
-  requestAnimationFrame(() => updateImage(frameIndex));
-});
+// const frameCount = parseInt(intro.getAttribute("data-frames"));
+// canvas.height = 1100;
+// canvas.width = 1940;
+// const img = new Image();
+// img.src = generatePath(1);
+// img.onload = function () {
+//   context.drawImage(img, 0, 0);
+// };
+// window.addEventListener("scroll", () => {
+//   const scrollTop = html.scrollTop;
+//   const maxScrollTop = html.scrollHeight - window.innerHeight;
+//   const scrollFraction = frameCount / duration;
+//   const frameIndex = Math.min(
+//     frameCount - 1,
+//     Math.floor(speed * scrollTop * scrollFraction)
+//   );
+//   requestAnimationFrame(() => updateImage(frameIndex));
+// });
 
-const updateImage = (index) => {
-  img.src = generatePath(index);
-  context.drawImage(img, 0, 0);
-};
+// const updateImage = (index) => {
+//   img.src = generatePath(index);
+//   context.drawImage(img, 0, 0);
+// };
 
-const preloadImages = () => {
-  img.src = generatePath(1);
-  img.onload = function () {
-    context.drawImage(img, 0, 0);
-  };
-  for (let i = 1; i < frameCount; i++) {
-    const img = new Image();
-    img.src = generatePath(i);
-  }
-};
-preloadImages();
-// canvas end
+// const preloadImages = () => {
+//   img.src = generatePath(1);
+//   img.onload = function () {
+//     context.drawImage(img, 0, 0);
+//   };
+//   for (let i = 1; i < frameCount; i++) {
+//     const img = new Image();
+//     img.src = generatePath(i);
+//   }
+// };
+// preloadImages();
+// // canvas end
 
 // copy start
-
 const copyBtn = document.getElementById("copyBtn");
 const copyInput = document.getElementById("copyInput");
-const tooltip = copyBtn.querySelector("span");
-const copy = (text) => {
-  if (navigator.clipboard !== undefined) {
-    navigator.clipboard.writeText(text).then(
-      () => {},
-      (err) => console.error("Async: Could not copy text: ", err)
-    );
-  } else if (window.clipboardData) {
-    window.clipboardData.setData("Text", text);
-  } else {
-    console.log(`can't copy: not secure`);
-  }
-};
 
-copyBtn.onclick = () => {
-  copy(copyInput.value);
-  tooltip.classList.add("active");
-  setTimeout(() => tooltip.classList.remove("active"), 1500);
-};
+if (copyBtn) {
+  const tooltip = copyBtn.querySelector("span");
+  const copy = (text) => {
+    if (navigator.clipboard !== undefined) {
+      navigator.clipboard.writeText(text).then(
+        () => {},
+        (err) => console.error("Async: Could not copy text: ", err)
+      );
+    } else if (window.clipboardData) {
+      window.clipboardData.setData("Text", text);
+    } else {
+      console.log(`can't copy: not secure`);
+    }
+  };
+
+  copyBtn.onclick = () => {
+    copy(copyInput.value);
+    tooltip.classList.add("active");
+    setTimeout(() => tooltip.classList.remove("active"), 1500);
+  };
+}
+
 // copy end
 
 // themeChange start
@@ -321,3 +329,9 @@ themeChange.onchange = function () {
   preloadImages();
 };
 // themeChange end
+
+const warn = document.getElementById("warn");
+const warnClose = document.getElementById("warnClose");
+warnClose.onclick = () => {
+  warn.style.display = "none";
+};

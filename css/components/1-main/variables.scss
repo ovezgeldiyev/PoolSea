@@ -33,6 +33,8 @@ $heroBg: var(--heroBg);
 $scrollBg: var(--scrollBg);
 $scrollThumb: var(--scrollThumb);
 $scrollThumbHover: var(--scrollThumbHover);
+$closeBtn: var(--closeBtn);
+$techspecsText: var(--techspecsText);
 
 html[data-theme |=light] {
     --bgColor: #fff;
@@ -63,6 +65,9 @@ html[data-theme |=light] {
     --scrollBg: #d4d4d4;
     --scrollThumb: rgba(0, 0, 0, 0.3);
     --scrollThumbHover: rgba(0, 0, 0, 0.4);
+    --closeBtn: #0D0D0D;
+    --techspecsText: #707A83;
+
 }
 
 html[data-theme |=dark] {
@@ -95,6 +100,9 @@ html[data-theme |=dark] {
     --scrollBg: #525252;
     --scrollThumb: rgba(255, 255, 255, 0.3);
     --scrollThumbHover: rgba(255, 255, 255, 0.4);
+    --closeBtn: #fff;
+    --techspecsText: rgba(255, 255, 255, 0.7);
+
 }
 
 // fonts
