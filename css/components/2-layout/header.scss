@@ -87,9 +87,8 @@
           left: 50%;
           display: flex;
           flex-direction: column;
-          text-align: center;
-          width: 120%;
-          padding: 8px;
+          width: 100%;
+          padding: 8px ;
           border-radius: 12px;
           background-color: $textColor;
           max-height: 0;
@@ -100,8 +99,9 @@
           overflow: hidden;
           z-index: 12;
           span {
-            padding: 2px;
+            padding: 4px 10px;
             transition: .2s ease;
+            text-align: start;
             &:hover {
               opacity: .9;
             }

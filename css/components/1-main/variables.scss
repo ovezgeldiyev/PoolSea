@@ -5,7 +5,6 @@ $white: #fff;
 $gradient: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
 $linkColor:#3772FF;
 
-
 $bgColor: var(--bgColor);
 $textColor: var(--textColor);
 $iconColor: var(--iconColor);
@@ -28,8 +27,14 @@ $socialBg: var(--socialBg);
 $faqOuterBg: var(--faqOuterBg);
 $faqBg: var(--faqBg);
 $faqBorder: var(--faqBorder);
+$line: var(--line);
+$timer: var(--timer);
+$heroBg: var(--heroBg);
+$scrollBg: var(--scrollBg);
+$scrollThumb: var(--scrollThumb);
+$scrollThumbHover: var(--scrollThumbHover);
 
-html[data-theme |= light] {
+html[data-theme |=light] {
     --bgColor: #fff;
     --textColor: #0D0F15;
     --iconColor: #6E6E73;
@@ -52,9 +57,15 @@ html[data-theme |= light] {
     --faqBg: #0D0F15;
     --faqBorder: transparent;
     --faqOuterBg: #fff;
-
+    --line: #EEEEF1;
+    --timer: #0D0F15;
+    --heroBg: #fff;
+    --scrollBg: #d4d4d4;
+    --scrollThumb: rgba(0, 0, 0, 0.3);
+    --scrollThumbHover: rgba(0, 0, 0, 0.4);
 }
-html[data-theme |= dark] {
+
+html[data-theme |=dark] {
     --bgColor: #06070A;
     --textColor: #fff;
     --iconColor: #fff;
@@ -74,21 +85,22 @@ html[data-theme |= dark] {
     --teamArrow: #06070A;
     --teamArrow2: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
     --bgSection: #0D0F15;
-    --socialBg:  linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
+    --socialBg: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
     --faqBg: #0F1219;
     --faqBorder: #2B364F;
     --faqOuterBg: #131823;
-
+    --line: #06070A;
+    --timer: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
+    --heroBg: #010103;
+    --scrollBg: #525252;
+    --scrollThumb: rgba(255, 255, 255, 0.3);
+    --scrollThumbHover: rgba(255, 255, 255, 0.4);
 }
 
 // fonts
-$graphik: 'Graphik', sans-serif;
-$sfDisplay: 'sfDisplay', sans-serif;
-$sfText: 'sfText', sans-serif;
-
-
-$line:#EEEEF1;
-// #06070A
-$timer:#0D0F15;
-
-
+$graphik: 'Graphik',
+sans-serif;
+$sfDisplay: 'sfDisplay',
+sans-serif;
+$sfText: 'sfText',
+sans-serif;

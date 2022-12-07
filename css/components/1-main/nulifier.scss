@@ -28,18 +28,18 @@ input::-webkit-inner-spin-button {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #fff;
+  background: $scrollBg;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  // background: rgba($color: #000, $alpha: 0.2);
+  background: $scrollThumb;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  // background: rgba($color: #000, $alpha: 0.3);
+  background: $scrollThumbHover;
 }
 /*** 
 ====================================================================

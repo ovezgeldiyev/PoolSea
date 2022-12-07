@@ -84,7 +84,7 @@
               </svg>
               <div class="lang__dropdown">
                 <span>Fr</span>
-                <span>Fin</span>
+                <span>Esp</span>
                 <span>Ger</span>
               </div>
             </a>
@@ -119,19 +119,22 @@
       </div>
       <!-- hero start
     =========================================== -->
+
       <section class="hero">
         <div class="auto__container">
           <div class="hero__inner">
             <h5>New</h5>
-            <h4>Better Solution</h4>
+            <h4 >Better Solution</h4>
             <h1>For Pulsechain</h1>
             <h5>Dex, NFT marketplace, Staking pool & Stable coin</h5>
-            <div class="hero__inner-wrapper">
-                <canvas class="animation-scrolling"></canvas>
-            </div>
           </div>
         </div>
       </section>
+      <div class="hero__inner-wrapper" id="startPoint" data-frames="230">
+        <div class="hero__inner-image">
+          <canvas class="animation-scrolling"></canvas>
+        </div>
+      </div>
       <!-- hero end
     =========================================== -->
       <!-- intro start
@@ -194,10 +197,10 @@
         <div class="auto__container">
           <div class="tab__inner">
             <div class="tab__inner-header">
-              <div class="tabBtn" data-tab="#tab-a">
+              <div class="tabBtn active" data-tab="#tab-a">
                 <h5 class="sm">$Pool</h5>
               </div>
-              <div class="tabBtn active" data-tab="#tab-b">
+              <div class="tabBtn" data-tab="#tab-b">
                 <h5 class="sm">Dex</h5>
               </div>
               <div class="tabBtn" data-tab="#tab-c">
@@ -211,7 +214,7 @@
               </div>
             </div>
             <div class="tab__inner-content">
-              <div class="tabItem tabEvent" id="tab-a">
+              <div class="tabItem tabEvent active" id="tab-a">
                 <div class="tabItem__content">
                   <h4>$POOL</h4>
                   <p class="extra">POOL will be used as:</p>
@@ -233,7 +236,7 @@
                   <img class="dark" src="./images/tab/tab-1-dark.png" alt="">
                 </div>
               </div>
-              <div class="tabItem tabEvent active" id="tab-b">
+              <div class="tabItem tabEvent" id="tab-b">
                 <div class="tabItem__content">
                   <h4>DEX</h4>
                   <p class="big">Our routing algorithm offers asset exchanges at the best rates on the market. Pathfinder finds the most efficient paths for a token swap, able to split between different protocols and even different market depths in within one protocol in the shortest possible time.</p>
@@ -455,10 +458,11 @@
               This is an estimate and only includes Sacrifices on the Binance & Ethereum chain which are updated every 24-48H.
             </p>
             <div class="donate__inner-card-info">
-              <input type="text" value="0x11Fd618748569cc6FDc9e641Fe306D20F988150a">
-              <span>
+              <input type="text" value="0x11Fd618748569cc6FDc9e641Fe306D20F988150a" disabled id="copyInput">
+              <button id="copyBtn">
                 <img src="./images/icons/copy.svg" alt="">
-              </span>
+                <span>Copied!</span>
+              </button>
             </div>
             <a href="#" class="button primary">
               Check accepted coins
@@ -485,9 +489,13 @@
             Sacrifice points
           </h3>
           <div class="rate__inner-image">
-            <img src="./images/rateLight.png" alt="">
+            <img class="light" src="./images/rateLight.png" alt="">
+            <img class="dark" src="./images/rateDark.png" alt="">
           </div>
         </div>
+      </div>
+      <div class="circle">
+        <img src="./images/circle.png" alt="">
       </div>
     </section>
     <!-- rate end
@@ -548,10 +556,7 @@
                 End in
               </h6>
               <div class="timer__clock">
-                <p id="day">38</p><span>:</span>
-                <p id="hour">18</p><span>:</span>
-                <p id="minutes">00</p><span>:</span>
-                <p id="seconds">00</p>
+                <span id="countdown"></span>
               </div>
             </div>
             <a href="#">
@@ -559,7 +564,8 @@
             </a>
           </div>
           <div class="bonus__inner-image">
-            <img src="./images/costLight.png" alt="">
+            <img class="light" src="./images/costLight.png" alt="">
+            <img class="dark"  src="./images/costdark.png" alt="">
           </div>
         </div>
       </div>
@@ -628,7 +634,6 @@
                   Once our sacrifice phase will end.
                 </p>
               </div>
-
             </div>
           </div>
         </div>
@@ -954,7 +959,7 @@
       <div class="auto__container">
         <div class="location__inner">
           <h3>
-            Our Locations
+            Our <span>Locations</span>
           </h3>
           <div class="location__inner-main">
             <div class="locationItem">
@@ -970,7 +975,7 @@
                 </a>
               </div>
               <div class="locationItem__map">
-                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42000.84234487918!2d2.227958700724894!3d48.857206469466014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67ab3264355e9%3A0x50b82c368941b40!2zWFZJINC-0LrRgNGD0LMg0J_QsNGA0LjQttCwLCDQn9Cw0YDQuNC2LCDQpNGA0LDQvdGG0LjRjw!5e0!3m2!1sru!2s!4v1669993496587!5m2!1sru!2s"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42000.84234487918!2d2.227958700724894!3d48.857206469466014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67ab3264355e9%3A0x50b82c368941b40!2zWFZJINC-0LrRgNGD0LMg0J_QsNGA0LjQttCwLCDQn9Cw0YDQuNC2LCDQpNGA0LDQvdGG0LjRjw!5e0!3m2!1sru!2s!4v1669993496587!5m2!1sru!2s"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
             <div class="locationItem">
@@ -987,7 +992,7 @@
                 </a>
               </div>
               <div class="locationItem__map">
-                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10250.933578755477!2d22.003782340417477!3d50.03509130342378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473cf0bc5d8f3fb7%3A0x260386a28124a054!2zMzUtMzMwIE1hdHlzw7N3a2EsINCf0L7Qu9GM0YjQsA!5e0!3m2!1sru!2s!4v1669994580528!5m2!1sru!2s"   style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10250.933578755477!2d22.003782340417477!3d50.03509130342378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473cf0bc5d8f3fb7%3A0x260386a28124a054!2zMzUtMzMwIE1hdHlzw7N3a2EsINCf0L7Qu9GM0YjQsA!5e0!3m2!1sru!2s!4v1669994580528!5m2!1sru!2s"   style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
           </div>
@@ -1004,7 +1009,7 @@
           <h3>
             <span>
               Development Status
-            </span> <br>
+            </span>
             PoolSea
           </h3>
           <div class="status__inner-main">
@@ -1013,11 +1018,12 @@
                 Core
               </h6>
               <div class="statusItem__range">
-                <div class="statusItem__range-line">
+                <div class="statusItem__range-line" style="">
                   <!-- Line -->
-                  <span>
+                  <button style="left: 78%;">
                     <img src="./images/rangeButton.png" alt="">
-                  </span>
+                  </button>
+                  <span style="width: 80%;"></span>
                 </div>
                 <p>
                   80%
@@ -1031,9 +1037,10 @@
               <div class="statusItem__range">
                 <div class="statusItem__range-line">
                   <!-- Line -->
-                  <span>
+                  <button style="left: 68%;">
                     <img src="./images/rangeButton.png" alt="">
-                  </span>
+                  </button>
+                  <span style="width: 70%;"></span>
                 </div>
                 <p>
                   70%
@@ -1047,9 +1054,10 @@
               <div class="statusItem__range">
                 <div class="statusItem__range-line">
                   <!-- Line -->
-                  <span>
+                  <button style="left: 90%;">
                     <img src="./images/rangeButton.png" alt="">
-                  </span>
+                  </button>
+                  <span style="width: 92%;"></span>
                 </div>
                 <p>
                   92%
@@ -1063,9 +1071,10 @@
               <div class="statusItem__range">
                 <div class="statusItem__range-line">
                   <!-- Line -->
-                  <span>
+                  <button style="left: 26%;">
                     <img src="./images/rangeButton.png" alt="">
-                  </span>
+                  </button>
+                  <span style="width: 28%;"></span>
                 </div>
                 <p>
                   28%
@@ -1079,9 +1088,10 @@
               <div class="statusItem__range">
                 <div class="statusItem__range-line">
                   <!-- Line -->
-                  <span>
+                  <button style="left: 86%;">
                     <img src="./images/rangeButton.png" alt="">
-                  </span>
+                  </button>
+                  <span style="width: 88%;"></span>
                 </div>
                 <p>
                   88%
@@ -1095,9 +1105,10 @@
               <div class="statusItem__range">
                 <div class="statusItem__range-line">
                   <!-- Line -->
-                  <span>
+                  <button style="left: 93%;">
                     <img src="./images/rangeButton.png" alt="">
-                  </span>
+                  </button>
+                  <span style="width: 95%;"></span>
                 </div>
                 <p>
                   95%
@@ -1111,9 +1122,10 @@
               <div class="statusItem__range">
                 <div class="statusItem__range-line">
                   <!-- Line -->
-                  <span>
+                  <button style="left: 74%;">
                     <img src="./images/rangeButton.png" alt="">
-                  </span>
+                  </button>
+                  <span style="width: 76%;"></span>
                 </div>
                 <p>
                   76%
@@ -1123,6 +1135,9 @@
             <a href="#" class="status__inner-check">
               Check the code
             </a>
+          </div>
+          <div class="circle">
+            <img src="./images/circle.png" alt="">
           </div>
         </div>
       </div>
@@ -1135,20 +1150,29 @@
       <div class="auto__container">
         <div class="sponsors__inner">
           <h3>
-            Audited by
+           <span> Audited</span> by
           </h3>
           <div class="sponsors__inner-main">
             <a href="#" class="sponsorsItem">
-              <img src="./images/sponsors/quanLight.png" alt="">
+              <img class="light" src="./images/sponsors/quanLight.png" alt="">
+              <img class="dark" src="./images/sponsors/quanDark.png" alt="">
             </a>
             <a href="#" class="sponsorsItem">
               <img src="./images/sponsors/mixBytes.png" alt="">
             </a>
             <a href="#" class="sponsorsItem">
-              <img src="./images/sponsors/certickLight.png" alt="">
+              <img class="light" src="./images/sponsors/certickLight.png" alt="">
+              <img class="dark" src="./images/sponsors/certicDark.png" alt="">
             </a>
             <a href="#" class="sponsorsItem">
-              <img src="./images/sponsors/sigmaLight.png" alt="">
+              <img class="light" src="./images/sponsors/sigmaLight.png" alt="">
+              <img class="dark" src="./images/sponsors/sigmaDark.png" alt="">
+
+            </a>
+          </div>
+          <div class="sponsors__inner-check">
+            <a href="#" class="check">
+              Check the code
             </a>
           </div>
         </div>
@@ -1166,7 +1190,7 @@
           </h3>
           <div class="faq__inner-main">
             <div class="faqItem">
-              <div class="faqItem__header tabBtn" data-tab="#tab-1">
+              <div class="faqItem__header faqBtn" data-faq="#faq-1">
                 <h6 class="big">
                   Who is responsible for developing PoolSea?
                 </h6>
@@ -1176,7 +1200,7 @@
                   </svg>
                 </span>
               </div>
-              <div class="faqItem__content tabEvent" id="tab-1">
+              <div class="faqItem__content faqEvent" id="faq-1">
                 <p class="sm">
                   Febrit.co is an organization of developers, analysts and graphic designers who improve agile business
                   processes and scale your work to international markets. The organization develops startups and digital
@@ -1188,7 +1212,7 @@
               </div>
             </div>
             <div class="faqItem">
-              <div class="faqItem__header tabBtn" data-tab="#tab-2">
+              <div class="faqItem__header faqBtn" data-faq="#faq-2">
                 <h6 class="big">
                   Who is responsible for developing PoolSea?
                 </h6>
@@ -1198,7 +1222,7 @@
                   </svg>
                 </span>
               </div>
-              <div class="faqItem__content tabEvent" id="tab-2">
+              <div class="faqItem__content faqEvent" id="faq-2">
                 <p class="sm">
                   Febrit.co is an organization of developers, analysts and graphic designers who improve agile business
                   processes and scale your work to international markets. The organization develops startups and digital
@@ -1210,7 +1234,7 @@
               </div>
             </div>
             <div class="faqItem">
-              <div class="faqItem__header tabBtn" data-tab="#tab-3">
+              <div class="faqItem__header faqBtn" data-faq="#faq-3">
                 <h6 class="big">
                   When will $PoolSea will be release?
                 </h6>
@@ -1220,7 +1244,7 @@
                   </svg>
                 </span>
               </div>
-              <div class="faqItem__content tabEvent" id="tab-3">
+              <div class="faqItem__content faqEvent" id="faq-3">
                 <p class="sm">
                   Febrit.co is an organization of developers, analysts and graphic designers who improve agile business
                   processes and scale your work to international markets. The organization develops startups and digital
@@ -1232,7 +1256,7 @@
               </div>
             </div>
             <div class="faqItem">
-              <div class="faqItem__header tabBtn" data-tab="#tab-4">
+              <div class="faqItem__header faqBtn" data-faq="#faq-4">
                 <h6 class="big">
                   Where can I see your NFT platform?
                 </h6>
@@ -1242,7 +1266,7 @@
                   </svg>
                 </span>
               </div>
-              <div class="faqItem__content tabEvent" id="tab-4">
+              <div class="faqItem__content faqEvent" id="faq-4">
                 <p class="sm">
                   Febrit.co is an organization of developers, analysts and graphic designers who improve agile business
                   processes and scale your work to international markets. The organization develops startups and digital
@@ -1254,7 +1278,7 @@
               </div>
             </div>
             <div class="faqItem">
-              <div class="faqItem__header tabBtn" data-tab="#tab-5">
+              <div class="faqItem__header faqBtn" data-faq="#faq-5">
                 <h6 class="big">
                   Will I be able to store my $PoolSea in Meta Mask?
                 </h6>
@@ -1264,7 +1288,7 @@
                   </svg>
                 </span>
               </div>
-              <div class="faqItem__content tabEvent" id="tab-5">
+              <div class="faqItem__content faqEvent" id="faq-5">
                 <p class="sm">
                   Febrit.co is an organization of developers, analysts and graphic designers who improve agile business
                   processes and scale your work to international markets. The organization develops startups and digital
@@ -1276,7 +1300,7 @@
               </div>
             </div>
             <div class="faqItem">
-              <div class="faqItem__header tabBtn" data-tab="#tab-6">
+              <div class="faqItem__header faqBtn" data-faq="#faq-6">
                 <h6 class="big">
                   I still have questions! Where can I talk about PoolSea ?
                 </h6>
@@ -1286,7 +1310,7 @@
                   </svg>
                 </span>
               </div>
-              <div class="faqItem__content tabEvent" id="tab-6">
+              <div class="faqItem__content faqEvent" id="faq-6">
                 <p class="sm">
                   Febrit.co is an organization of developers, analysts and graphic designers who improve agile business
                   processes and scale your work to international markets. The organization develops startups and digital
@@ -1298,7 +1322,7 @@
               </div>
             </div>
             <div class="faqItem">
-              <div class="faqItem__header tabBtn" data-tab="#tab-7">
+              <div class="faqItem__header faqBtn" data-faq="#faq-7">
                 <h6 class="big">
                   In total how many tokens are there?
                 </h6>
@@ -1308,7 +1332,7 @@
                   </svg>
                 </span>
               </div>
-              <div class="faqItem__content tabEvent" id="tab-7">
+              <div class="faqItem__content faqEvent" id="faq-7">
                 <p class="sm">
                   Febrit.co is an organization of developers, analysts and graphic designers who improve agile business
                   processes and scale your work to international markets. The organization develops startups and digital
@@ -1470,7 +1494,6 @@
 
     <!-- Sprites
     =========================================== -->
-
     <svg style="display: none">
       <symbol id="youTube" viewBox="0 0 24 16">
         <g>
@@ -1544,7 +1567,9 @@
     </svg>
     <!-- js
     =========================================== -->
+
     <script src="./js/swiper.js"></script>
+    <script src="./js/scrollMagic.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

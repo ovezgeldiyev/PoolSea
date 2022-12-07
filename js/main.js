@@ -1,4 +1,4 @@
-// slider
+// swiper start
 var swiper = new Swiper(".mySwiper", {
   grabCursor: true,
   effect: "creative",
@@ -52,11 +52,14 @@ var swiper2 = new Swiper(".mySwiper2", {
     },
   },
 });
+// swiper end
 
 // menu start
 var menu = document.getElementById("menu");
 var menuBtn = document.getElementById("menuBtn");
 var body = document.body;
+const html = document.querySelector("html");
+
 menuBtn.onclick = function () {
   menu.classList.toggle("active");
   menuBtn.classList.toggle("active");
@@ -85,7 +88,7 @@ window.onscroll = function () {
 };
 // scroll end
 
-// faq start
+// tab start
 const tabBtn = document.querySelectorAll(".tabBtn");
 const tabEvent = document.querySelectorAll(".tabEvent");
 tabBtn.forEach((e) => {
@@ -115,132 +118,206 @@ function onTabClick(tabBtns, tabItems, item) {
     }
   });
 }
+// tab end
+// faq start
+const faqBtn = document.querySelectorAll(".faqBtn");
+const faqEvent = document.querySelectorAll(".faqEvent");
+faqBtn.forEach((e) => {
+  onFaqClick(faqBtn, faqEvent, e);
+});
+function onFaqClick(faqBtns, faqItems, item) {
+  item.addEventListener("click", function (e) {
+    let currentBtn = item;
+    let faqId = currentBtn.getAttribute("data-faq");
+    let currentTab = document.querySelector(faqId);
+    if (currentBtn.classList.contains("active")) {
+      const faq = currentBtn.parentElement.querySelector(".faqEvent");
+      if (faq) {
+        faq.classList.remove("active");
+        currentBtn.classList.remove("active");
+      }
+    } else if (!currentBtn.classList.contains("active")) {
+      faqBtn.forEach(function (item) {
+        item.classList.remove("active");
+      });
+
+      faqItems.forEach(function (item) {
+        item.classList.remove("active");
+      });
+      currentBtn.classList.add("active");
+      currentTab.classList.add("active");
+    }
+  });
+}
 // faq end
 
+// timer start
+let upgradeTime = 3283200;
+let seconds = upgradeTime;
+let countdownTimer = setInterval("timer()", 1000);
+
+function timer() {
+  let days = Math.floor(seconds / 24 / 60 / 60);
+  let hoursLeft = Math.floor(seconds - days * 86400);
+  let hours = Math.floor(hoursLeft / 3600);
+  let minutesLeft = Math.floor(hoursLeft - hours * 3600);
+  let minutes = Math.floor(minutesLeft / 60);
+  let remainingSeconds = seconds % 60;
+  function pad(n) {
+    return n < 10 ? "0" + n : n;
+  }
+  document.getElementById("countdown").innerHTML =
+    pad(days) +
+    ":" +
+    pad(hours) +
+    ":" +
+    pad(minutes) +
+    ":" +
+    pad(remainingSeconds);
+  if (seconds == 0) {
+    clearInterval(countdownTimer);
+    document.getElementById("countdown").innerHTML = "Completed";
+  } else {
+    seconds--;
+  }
+}
+// timer end
+
+// scrollMagic
+const intro = document.querySelector("#startPoint");
+const controller = new ScrollMagic.Controller();
+const duration = 2000;
+let scene = new ScrollMagic.Scene({
+  duration: duration,
+  triggerElement: intro,
+  triggerHook: 0.07,
+})
+
+  .setPin(intro)
+  .addTo(controller);
+
+// canvas start
+const canvas = document.querySelector(".animation-scrolling");
+const context = canvas.getContext("2d");
+
+const generatePath = (index) => {
+  if (html.getAttribute("data-theme") == "light") {
+    return `./images/canvas/white/${(index || 1)
+      .toString()
+      .padStart(4, "0")}.jpg`;
+  } else {
+    return `./images/canvas/black/${(index || 1)
+      .toString()
+      .padStart(4, "0")}.jpg`;
+  }
+};
+
+const speed = 0.6;
+
+const frameCount = parseInt(intro.getAttribute("data-frames"));
+canvas.height = 1100;
+canvas.width = 1940;
+const img = new Image();
+img.src = generatePath(1);
+img.onload = function () {
+  context.drawImage(img, 0, 0);
+};
+window.addEventListener("scroll", () => {
+  const scrollTop = html.scrollTop;
+  const maxScrollTop = html.scrollHeight - window.innerHeight;
+  const scrollFraction = frameCount / duration;
+  const frameIndex = Math.min(
+    frameCount - 1,
+    Math.floor(speed * scrollTop * scrollFraction)
+  );
+  requestAnimationFrame(() => updateImage(frameIndex));
+});
+
+const updateImage = (index) => {
+  img.src = generatePath(index);
+  context.drawImage(img, 0, 0);
+};
+
+const preloadImages = () => {
+  img.src = generatePath(1);
+  img.onload = function () {
+    context.drawImage(img, 0, 0);
+  };
+  for (let i = 1; i < frameCount; i++) {
+    const img = new Image();
+    img.src = generatePath(i);
+  }
+};
+preloadImages();
+// canvas end
+
+// copy start
+
+const copyBtn = document.getElementById("copyBtn");
+const copyInput = document.getElementById("copyInput");
+const tooltip = copyBtn.querySelector("span");
+const copy = (text) => {
+  if (navigator.clipboard !== undefined) {
+    navigator.clipboard.writeText(text).then(
+      () => {},
+      (err) => console.error("Async: Could not copy text: ", err)
+    );
+  } else if (window.clipboardData) {
+    window.clipboardData.setData("Text", text);
+  } else {
+    console.log(`can't copy: not secure`);
+  }
+};
+
+copyBtn.onclick = () => {
+  copy(copyInput.value);
+  tooltip.classList.add("active");
+  setTimeout(() => tooltip.classList.remove("active"), 1500);
+};
+// copy end
+
+// themeChange start
 const themeChange = document.getElementById("themeChange");
 const themeChangeBtn = themeChange.parentNode;
-const tabItems = document.querySelectorAll(".tabItem");
-const swiperWrapper = document.querySelector(".intro__inner-swiper-outer");
-const swiperItems = swiperWrapper.querySelectorAll(".swiper-slide");
 const circles = document.querySelectorAll(".circle");
+
+const imagesDark = document.querySelectorAll(".dark");
+const imagesLight = document.querySelectorAll(".light");
+const imageChange = () => {
+  if (html.getAttribute("data-theme") == "light") {
+    imagesLight.forEach((image) => {
+      image.style.display = "block";
+    });
+    imagesDark.forEach((image) => {
+      image.style.display = "none";
+    });
+  } else {
+    imagesLight.forEach((image) => {
+      image.style.display = "none";
+    });
+    imagesDark.forEach((image) => {
+      image.style.display = "block";
+    });
+  }
+};
+imageChange();
 
 themeChange.onchange = function () {
   if (themeChange.checked) {
     document.documentElement.setAttribute("data-theme", "dark");
     themeChangeBtn.classList.add("active");
-    tabItems.forEach((tabItem) => {
-      tabItem.classList.add("dark");
-    });
-    swiperItems.forEach((swiperItem) => {
-      swiperItem.classList.add("dark");
-    });
+    imageChange();
     circles.forEach((circle) => {
       circle.classList.add("dark");
     });
   } else {
     document.documentElement.setAttribute("data-theme", "light");
     themeChangeBtn.classList.remove("active");
-    tabItems.forEach((tabItem) => {
-      tabItem.classList.remove("dark");
-    });
-    swiperItems.forEach((swiperItem) => {
-      swiperItem.classList.remove("dark");
-    });
+    imageChange();
     circles.forEach((circle) => {
       circle.classList.remove("dark");
     });
-
   }
+  preloadImages();
 };
-
-// const html = document.documentElement;
-// const canvas = document.querySelector(".animation-scrolling");
-// const context = canvas.getContext("2d");
-// console.log(canvas)
-// const currentFrame = (index) =>
-//   `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index
-//     .toString()
-//     .padStart(4, "0")}.jpg`;
-
-// const frameCount = 148;
-// canvas.height = 770;
-// canvas.width = 1158;
-// const img = new Image();
-// img.src = currentFrame(1);
-// img.onLoad = function () {
-//   context.drawImage(img, 0, 0);
-// };
-
-// window.addEventListener("scroll", () => {
-//   const scrollTop = html.scrollTop;
-//   const maxScrollTop = html.scrollHeight - window.innerHeight;
-//   const scrollFraction = scrollTop / maxScrollTop;
-//   const frameIndex = Math.min(
-//     frameCount - 1,
-//     Math.floor(scrollFraction * frameCount)
-//   );
-//   requestAnimationFrame(() => updateImage(frameIndex + 1));
-// });
-
-// const updateImage = (index) => {
-//   img.src = currentFrame(index);
-//   context.drawImage(img, 0, 0);
-// };
-
-// const preloadImages = () => {
-//   for (let i = 1; i < frameCount; i++) {
-//     const img = new Image();
-//     img.src = currentFrame(i);
-//   }
-// };
-// preloadImages();
-
-
-
-
-
-
-
-const imagesDark = document.querySelectorAll(".dark");
-const imagesLight = document.querySelectorAll(".light");
-const html = document.querySelector("html")
-const imageChange = () =>{
-  if(html.getAttribute("data-theme") == "light"){
-    imagesLight.forEach((image) =>{
-      image.style.display = "block"
-    })
-    imagesDark.forEach((image) =>{
-      image.style.display = "none"
-    })
-  }else{
-    imagesLight.forEach((image) =>{
-      image.style.display = "none"
-    })
-    imagesDark.forEach((image) =>{
-      image.style.display = "block"
-    })
-
-  }
-}
-imageChange()
-var upgradeTime = 3283200;
-var seconds = upgradeTime;
-function timer() {
-  var days        = Math.floor(seconds/24/60/60);
-  var hoursLeft   = Math.floor((seconds) - (days*86400));
-  var hours       = Math.floor(hoursLeft/3600);
-  var minutesLeft = Math.floor((hoursLeft) - (hours*3600));
-  var minutes     = Math.floor(minutesLeft/60);
-  var remainingSeconds = seconds % 60;
-  function pad(n) {
-    return (n < 10 ? "0" + n : n);
-  }
-  document.getElementById('countdown').innerHTML = pad(days) + ":" + pad(hours) + ":" + pad(minutes) + ":" + pad(remainingSeconds);
-  if (seconds == 0) {
-    clearInterval(countdownTimer);
-    document.getElementById('countdown').innerHTML = "Completed";
-  } else {
-    seconds--;
-  }
-}
-var countdownTimer = setInterval('timer()', 1000);
+// themeChange end

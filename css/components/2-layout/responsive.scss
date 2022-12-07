@@ -42,7 +42,6 @@
         }
     }
 
-    // @include hero-xxxxlg-xxxxxlg;
 }
 
 // 1380px
@@ -87,14 +86,15 @@
     }
 
     @include header-xxxlg-xxxxlg;
-    @include hero-xxxlg-xxxxlg;
     @include intro-xxxlg-xxxxlg;
-
+    @include bonus-xxxlg-xxxxlg;
+    @include status-xxxlg-xxxxlg;
 }
 
 // 1250px
 @include xlg-xxlg-extra {
-    @include hero-xlg-xxlg-extra;
+    @include footer-xlg-xxlg-extra;
+    @include location-xlg-xxlg-extra;
 }
 
 // 1180px
@@ -154,7 +154,15 @@
     @include tab-xlg-xxlg;
     @include team-xlg-xxlg;
     @include donate-xlg-xxlg;
-
+    @include join-xlg-xxlg;
+    @include discleamer-xlg-xxlg;
+    @include faq-xlg-xxlg;
+    @include sponsors-xlg-xxlg;
+    @include status-xlg-xxlg;
+    @include location-xlg-xxlg;
+    @include airdrop-xlg-xxlg;
+    @include bonus-xlg-xxlg;
+    @include rate-xlg-xxlg;
 }
 
 // 1024px
@@ -193,8 +201,8 @@
         line-height: 25px;
 
         &.sm {
-            font-size: 18px;
-            line-height: 20px;
+            font-size: 16px;
+            line-height: 18px;
         }
     }
 
@@ -213,19 +221,27 @@
     .swiperBtn {
         width: 42px;
         height: 42px;
+
         &::after {
             font-size: 14px;
             line-height: 14px;
-          }
+        }
     }
+
     @include header-lg-xlg;
     @include nav-lg-xlg;
-    @include hero-lg-xlg;
     @include intro-lg-xlg;
     @include tab-lg-xlg;
     @include team-lg-xlg;
     @include donate-lg-xlg;
-
+    @include discleamer-lg-xlg;
+    @include sponsors-lg-xlg;
+    @include status-lg-xlg;
+    @include location-lg-xlg;
+    @include airdrop-lg-xlg;
+    @include bonus-lg-xlg;
+    @include faq-lg-xlg;
+    @include rate-lg-xlg;
 }
 
 // 930px
@@ -237,6 +253,7 @@
             line-height: 18px;
         }
     }
+
     h6 {
 
         &.sm {
@@ -244,6 +261,7 @@
             line-height: 18px;
         }
     }
+
     p {
         &.big {
             font-size: 15px;
@@ -251,14 +269,27 @@
         }
 
     }
+
     .circle {
         width: 550px;
         height: 550px;
     }
-    @include hero-md-lg;
+
     @include tab-md-lg;
     @include donate-md-lg;
+    @include footer-md-lg;
+    @include status-md-lg;
+    @include airdrop-md-lg;
+    @include bonus-md-lg;
+}
 
+// 840px
+@include md-lg-extra {
+    @include discleamer-md-lg-extra;
+    @include sponsors-md-lg-extra;
+    @include airdrop-md-lg-extra;
+    @include bonus-md-lg-extra;
+    @include rate-md-lg-extra;
 }
 
 // 750px
@@ -291,21 +322,28 @@
             line-height: 24px;
         }
     }
+
     .main {
         &__bg {
             height: 10%;
         }
     }
+
     @include hero-sm-md;
     @include tab-sm-md;
     @include team-sm-md;
     @include donate-sm-md;
-
+    @include join-sm-md;
+    @include faq-sm-md;
+    @include status-sm-md;
 }
 
 // 650px
 @include sm-md-extra {
-    @include hero-sm-md-extra;
+    @include footer-sm-md-extra;
+    @include location-sm-md-extra;
+    @include airdrop-sm-md-extra;
+    @include rate-sm-md-extra;
 }
 
 // 540px
@@ -324,10 +362,12 @@
         font-size: 25px;
         line-height: 28px;
     }
+
     h4 {
         font-size: 22px;
         line-height: 26px;
     }
+
     h5 {
 
         &.sm {
@@ -352,30 +392,39 @@
             line-height: 16px;
         }
     }
+
     .swiperBtn {
         width: 32px;
         height: 32px;
+
         &::after {
             font-size: 12px;
             line-height: 12px;
-          }
+        }
     }
+
     .circle {
         width: 320px;
         height: 320px;
     }
+
     .main {
         &__bg {
             height: 7%;
         }
     }
+
     @include header-xsm-sm;
     @include nav-xsm-sm;
-    @include hero-xsm-sm;
     @include intro-xsm-sm;
     @include tab-xsm-sm;
     @include donate-xsm-sm;
-
+    @include join-xsm-sm;
+    @include discleamer-xsm-sm;
+    @include faq-xsm-sm;
+    @include sponsors-xsm-sm;
+    @include status-xsm-sm;
+    @include location-xsm-sm;
 }
 
 // 440px
@@ -389,10 +438,12 @@
         font-size: 30px;
         line-height: 36px;
     }
+
     h4 {
         font-size: 20px;
         line-height: 24px;
     }
+
     h6 {
 
         &.sm {
@@ -400,6 +451,7 @@
             line-height: 15px;
         }
     }
+
     p {
 
         &.big {
@@ -407,12 +459,19 @@
             line-height: 20px;
         }
     }
+
     .main {
         padding-top: 90px;
     }
+
     @include hero-xxsm-xsm;
     @include donate-xxsm-xsm;
-
+    @include tab-xxsm-xsm;
+    @include footer-xxsm-xsm;
+    @include discleamer-xxsm-xsm;
+    @include location-xxsm-xsm;
+    @include airdrop-xxsm-xsm;
+    @include bonus-xxsm-xsm;
 }
 
 // 390px
@@ -420,5 +479,15 @@
     .auto__container {
         padding: 0 15px;
     }
-    // @include hero-xxxsm-xxsm;
+
+    @include footer-xxxsm-xxsm;
+    @include join-xxxsm-xxsm;
+    @include discleamer-xxxsm-xxsm;
+    @include faq-xxxsm-xxsm;
+    @include sponsors-xxxsm-xxsm;
+    @include status-xxxsm-xxsm;
+    @include location-xxxsm-xxsm;
+    @include airdrop-xxxsm-xxsm;
+    @include bonus-xxxsm-xxsm;
+    @include rate-xxxsm-xxsm;
 }

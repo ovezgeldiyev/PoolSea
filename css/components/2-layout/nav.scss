@@ -111,6 +111,7 @@
             .header__inner-buttons {
                 width: 100%;
                 margin-top: auto;
+                margin-top: 20px;
                 &-row {
                     width: 100%;
                     display: flex;
@@ -203,3 +204,4 @@
         height: calc(100% - 58px);
     }
 }
+
