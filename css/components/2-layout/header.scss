@@ -1,4 +1,40 @@
 .header {
+  &.uniqHead:not(.sticky){
+      .header {
+        &__inner {
+          &-logo {
+            color: #fff;
+          }
+          .button.icon {
+            background-color: #131823;
+            &:hover {
+              svg {
+                fill: $linkColor;
+              }
+            }
+            svg {
+              fill: #fff;
+            }
+          }
+          .lang {
+            color: #F6F9FC;
+            svg {
+              stroke:#F4F4F4CC
+            }
+          }
+        }
+      
+      }
+      .nav {
+        &__inner {
+          li {
+            a {
+              color: #fff;
+            }
+          }
+        }
+      }
+  }
   position: absolute;
   top: 0;
   left: 0;
@@ -246,6 +282,15 @@
 // 440px
 @mixin header-xxsm-xsm {
   .header {
+    &.sticky {
+      .header__inner {
+        padding: 12px 0;
+      }
+      .nav {
+        top: 54.24px;
+        height: calc(100% - 54.24px);
+      }
+    }
     &__inner {
       padding: 20px 0;
       &-logo {

@@ -260,28 +260,31 @@ if (canvas) {
 // canvas end
 
 // copy start
+const copyBtn = document.getElementById("copyBtn");
 
-// const copyBtn = document.getElementById("copyBtn");
-// const copyInput = document.getElementById("copyInput");
-// const tooltip = copyBtn.querySelector("span");
-// const copy = (text) => {
-//   if (navigator.clipboard !== undefined) {
-//     navigator.clipboard.writeText(text).then(
-//       () => {},
-//       (err) => console.error("Async: Could not copy text: ", err)
-//     );
-//   } else if (window.clipboardData) {
-//     window.clipboardData.setData("Text", text);
-//   } else {
-//     console.log(`can't copy: not secure`);
-//   }
-// };
+if(copyBtn) {
+  const copyInput = document.getElementById("copyInput");
+  const tooltip = copyBtn.querySelector("span");
+  const copy = (text) => {
+    if (navigator.clipboard !== undefined) {
+      navigator.clipboard.writeText(text).then(
+        () => {},
+        (err) => console.error("Async: Could not copy text: ", err)
+      );
+    } else if (window.clipboardData) {
+      window.clipboardData.setData("Text", text);
+    } else {
+      console.log(`can't copy: not secure`);
+    }
+  };
+  
+  copyBtn.onclick = () => {
+    copy(copyInput.value);
+    tooltip.classList.add("active");
+    setTimeout(() => tooltip.classList.remove("active"), 1500);
+  };
+}
 
-// copyBtn.onclick = () => {
-//   copy(copyInput.value);
-//   tooltip.classList.add("active");
-//   setTimeout(() => tooltip.classList.remove("active"), 1500);
-// };
 // copy end
 
 // themeChange start
@@ -326,7 +329,9 @@ themeChange.onchange = function () {
       circle.classList.remove("dark");
     });
   }
-  preloadImages();
+  if(canvas) {
+    preloadImages();
+  }
 };
 // themeChange end
 
