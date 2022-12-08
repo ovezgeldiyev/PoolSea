@@ -235,6 +235,19 @@
 // 1180px
 @mixin header-xlg-xxlg {
   .header {
+    &.uniqHead:not(.sticky){
+      .header {
+      }
+      .nav {
+        &__inner {
+          li {
+            a {
+              color: $textColor;
+            }
+          }
+        }
+      }
+  }
     &__inner {
       padding: 16px 0;
       &-logo {

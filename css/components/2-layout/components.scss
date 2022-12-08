@@ -3,6 +3,20 @@ h1 {
   font-size: 112px;
   line-height: 122px;
   font-family: $sfDisplay;
+  &.sm {
+    font-weight: 600;
+    font-size: 92px;
+    line-height: 98px;
+    span {
+      background: linear-gradient(268.3deg,
+          #00fff9 -4.34%,
+          #00c5ff 13.53%,
+          #0078ff 93.71%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  }
 }
 
 h2 {
@@ -431,5 +445,22 @@ p {
   &::after {
     font-size: 16px;
     line-height: 16px;
+  }
+}
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 56%;
+
+  video, iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 }
