@@ -122,11 +122,12 @@
           height: calc(100% + 2px);
           background: $faqNFTBorder;
           position: absolute;
-          top: -1px;
-          left: -1px;
+          top: 50%;
+          left: 50%;
           border-radius: 10px;
           pointer-events: none;
           z-index: -1;
+          transform: translate(-50%, -50%);
         }
         &__header {
           background: $faqNFTBg;

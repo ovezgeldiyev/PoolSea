@@ -346,9 +346,6 @@ if(warn) {
 
 
 
-
-
-
 const sponsorTooltip = () =>{
   const content = document.querySelector("#sponsorsTooltip")
   content.classList.add("active");

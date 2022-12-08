@@ -167,7 +167,7 @@
     @include sponsors-xlg-xxlg;
     @include status-xlg-xxlg;
     @include location-xlg-xxlg;
-    // @include airdrop-xlg-xxlg;
+    @include airdrop-xlg-xxlg;
     @include bonus-xlg-xxlg;
     @include rate-xlg-xxlg;
     @include techspecs-xlg-xxlg;
@@ -175,7 +175,8 @@
     @include work-xlg-xxlg;
     @include features-xlg-xxlg;
     @include info-xlg-xxlg;
-
+    @include fees-xlg-xxlg;
+    @include summary-xlg-xxlg;
 }
 
 // 1024px
@@ -254,7 +255,7 @@
     @include sponsors-lg-xlg;
     @include status-lg-xlg;
     @include location-lg-xlg;
-    // @include airdrop-lg-xlg;
+    @include airdrop-lg-xlg;
     @include bonus-lg-xlg;
     @include faq-lg-xlg;
     @include rate-lg-xlg;
@@ -262,6 +263,8 @@
     @include about-lg-xlg;
     @include work-lg-xlg;
     @include features-lg-xlg;
+    @include fees-lg-xlg;
+    @include summary-lg-xlg;
 }
 
 // 930px
@@ -317,13 +320,14 @@
     @include donate-md-lg;
     @include footer-md-lg;
     @include status-md-lg;
-    // @include airdrop-md-lg;
+    @include airdrop-md-lg;
     @include bonus-md-lg;
     @include info-md-lg;
     @include about-md-lg;
     @include work-md-lg;
     @include techspecs-md-lg;
     @include dex-md-lg;
+    @include fees-md-lg;
 
 }
 
@@ -331,7 +335,7 @@
 @include md-lg-extra {
     @include discleamer-md-lg-extra;
     @include sponsors-md-lg-extra;
-    // @include airdrop-md-lg-extra;
+    @include airdrop-md-lg-extra;
     @include bonus-md-lg-extra;
     @include rate-md-lg-extra;
 }
@@ -386,6 +390,7 @@
     @include techspecs-sm-md;
     @include info-sm-md;
     @include dex-sm-md;
+    @include summary-sm-md;
 
 }
 
@@ -393,7 +398,7 @@
 @include sm-md-extra {
     @include hero-sm-md-extra;
     @include location-sm-md-extra;
-    // @include airdrop-sm-md-extra;
+    @include airdrop-sm-md-extra;
     @include rate-sm-md-extra;
     @include info-sm-md-extra;
     @include about-sm-md-extra;
@@ -401,7 +406,8 @@
     @include features-sm-md-extra;
     @include techspecs-sm-md-extra;
     @include footer-sm-md-extra;
-
+    @include fees-sm-md-extra;
+    @include summary-sm-md-extra;
 }
 
 // 540px
@@ -504,6 +510,8 @@
     @include sponsors-xsm-sm;
     @include status-xsm-sm;
     @include location-xsm-sm;
+    @include fees-xsm-sm;
+    @include summary-xsm-sm;
 }
 
 // 440px
@@ -557,11 +565,12 @@
     @include footer-xxsm-xsm;
     @include discleamer-xxsm-xsm;
     @include location-xxsm-xsm;
-    // @include airdrop-xxsm-xsm;
+    @include airdrop-xxsm-xsm;
     @include bonus-xxsm-xsm;
     @include techspecs-xxsm-xsm;
     @include dex-xxsm-xsm;
-
+    @include fees-xxsm-xsm;
+    @include summary-xxsm-xsm;
 }
 
 // 390px
@@ -577,7 +586,7 @@
     @include sponsors-xxxsm-xxsm;
     @include status-xxxsm-xxsm;
     @include location-xxxsm-xxsm;
-    // @include airdrop-xxxsm-xxsm;
+    @include airdrop-xxxsm-xxsm;
     @include bonus-xxxsm-xxsm;
     @include rate-xxxsm-xxsm;
     @include techspecs-xxxsm-xxsm;
@@ -585,5 +594,6 @@
     @include work-xxxsm-xxsm;
     @include features-xxxsm-xxsm;
     @include dex-xxxsm-xxsm;
-
+    @include fees-xxxsm-xxsm;
+    @include summary-xxxsm-xxsm;
 }

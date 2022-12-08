@@ -9,6 +9,8 @@ $gradient: linear-gradient(
   #0078ff 93.71%
 );
 $linkColor: #3772ff;
+$darkWhite:rgba(255, 255, 255 , .7);
+
 
 $bgColor: var(--bgColor);
 $textColor: var(--textColor);
@@ -44,6 +46,10 @@ $faqNFTBg: var(--faqNFTBg);
 $faqNFTActive: var(--faqNFTActive);
 $faqNFTBorder: var(--faqNFTBorder);
 $pExtraColor: var(--pExtraColor);
+$feesBorder: var(--feesBorder);
+$feesColor: var(--feesColor);
+$feesItenBg: var(--feesItenBg);
+$feesPColor: var(--feesPColor);
 
 html[data-theme |=light] {
     --bgColor: #fff;
@@ -80,8 +86,10 @@ html[data-theme |=light] {
     --faqNFTActive: #0d0f15;
     --faqNFTBorder: transparent;
     --pExtraColor: #505763;
-  
-
+    --feesBorder: #E2E2E3;
+    --feesColor: #3D3F44;
+    --feesItenBg: #F6F9FC;
+    --feesPColor: #6e6f73;
 }
 
 html[data-theme |=dark] {
@@ -120,21 +128,12 @@ html[data-theme |=dark] {
     --faqNFTActive: #0F1219;
     --faqNFTBorder: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
     --pExtraColor:rgba(255, 255, 255 , .7);
-
+    --feesBorder: #505763;
+    --feesColor: #cdcdce;
+    --feesItenBg: #0F1219;
+    --feesPColor: #828384;
 }
 // fonts
 $graphik: "Graphik", sans-serif;
 $sfDisplay: "sfDisplay", sans-serif;
 $sfText: "sfText", sans-serif;
-
-
-
-$darkWhite:rgba(255, 255, 255 , .7);
-$feesBorder:#E2E2E3;
-// #505763
-$feesColor:#3D3F44;
-// #cdcdce
-$feesItenBg:#F6F9FC;
-// #0F1219;
-$feesPColor:#6e6f73;
-// #828384
