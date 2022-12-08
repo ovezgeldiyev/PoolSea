@@ -119,10 +119,9 @@ html[data-theme |=dark] {
     --faqNFTBg: #06070A;
     --faqNFTActive: #0F1219;
     --faqNFTBorder: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
-    --pExtraColor: #fff;
+    --pExtraColor:rgba(255, 255, 255 , .7);
 
 }
-
 // fonts
 $graphik: "Graphik", sans-serif;
 $sfDisplay: "sfDisplay", sans-serif;
@@ -130,4 +129,12 @@ $sfText: "sfText", sans-serif;
 
 
 
-
+$darkWhite:rgba(255, 255, 255 , .7);
+$feesBorder:#E2E2E3;
+// #505763
+$feesColor:#3D3F44;
+// #cdcdce
+$feesItenBg:#F6F9FC;
+// #0F1219;
+$feesPColor:#6e6f73;
+// #828384
