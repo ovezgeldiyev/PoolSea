@@ -1586,25 +1586,25 @@
         padding: 40px;
       }
     }
-    h3{
+    h3 {
       margin-bottom: 20px;
     }
-    p{
-      &.big{
+    p {
+      &.big {
         font-size: 16px;
         line-height: 24px;
       }
     }
-    h5{
+    h5 {
       font-size: 22px;
       line-height: 28px;
     }
-    ul{
-      li{
+    ul {
+      li {
         font-size: 16px;
         line-height: 24px;
         margin-bottom: 20px;
-        &::before{
+        &::before {
           width: 22px;
         }
       }
@@ -1613,128 +1613,399 @@
 }
 
 // 650px
-@mixin summary-sm-md-extra{
-  .summary{
-    &__inner{
+@mixin summary-sm-md-extra {
+  .summary {
+    &__inner {
       padding-bottom: 50px;
-      &-info{
+      &-info {
         margin-bottom: 30px;
       }
-      &-text{
+      &-text {
         padding: 30px;
         border-radius: 15px;
       }
     }
-    h5{
+    h5 {
       font-size: 20px;
       line-height: 26px;
     }
   }
 }
 // 540px
-@mixin summary-xsm-sm{
-  .summary{
-    &__inner{
+@mixin summary-xsm-sm {
+  .summary {
+    &__inner {
       padding-bottom: 40px;
-      &-text{
+      &-text {
         padding: 25px;
         border-radius: 12px;
       }
     }
-    h3{
+    h3 {
       margin-bottom: 15px;
     }
-    p{
-      &.big{
+    p {
+      &.big {
         font-size: 15px;
         line-height: 21px;
       }
     }
-    h5{
+    h5 {
       font-size: 18px;
       line-height: 24px;
       margin-bottom: 20px;
     }
-    ul{
-      li{
+    ul {
+      li {
         font-size: 15px;
         line-height: 21px;
         padding-left: 30px;
-        &::before{
+        &::before {
           top: 8.5px;
           width: 18px;
         }
       }
     }
   }
-
 }
 
 // 440px
-@mixin summary-xxsm-xsm{
-  .summary{
-    &__inner{
+@mixin summary-xxsm-xsm {
+  .summary {
+    &__inner {
       padding-bottom: 30px;
-      &-text{
+      &-text {
         padding: 20px;
         border-radius: 10px;
       }
     }
-    p{
-      &.big{
+    p {
+      &.big {
         font-size: 14px;
         line-height: 20px;
       }
     }
-    h5{
+    h5 {
       font-size: 17px;
       line-height: 23px;
       margin-bottom: 15px;
     }
-    ul{
-      li{
+    ul {
+      li {
         font-size: 14px;
         line-height: 20px;
         margin-bottom: 15px;
-        &::before{
+        &::before {
           top: 8.5px;
           width: 18px;
         }
       }
     }
   }
-
 }
 // 390px
-@mixin summary-xxxsm-xxsm{
-  .summary{
-    &__inner{
+@mixin summary-xxxsm-xxsm {
+  .summary {
+    &__inner {
       padding-bottom: 40px;
-      &-text{
+      &-text {
         padding: 15px;
         border-radius: 8px;
       }
     }
-    p{
-      &.big{
+    p {
+      &.big {
         font-size: 14px;
         line-height: 20px;
       }
     }
-    h5{
+    h5 {
       font-size: 17px;
       line-height: 23px;
       margin-bottom: 15px;
     }
-    ul{
-      li{
+    ul {
+      li {
         font-size: 14px;
         line-height: 20px;
         margin-bottom: 15px;
         padding-left: 25px;
-        &::before{
+        &::before {
           width: 16px;
         }
+      }
+    }
+  }
+}
+
+.aquaPool {
+  padding: 160px 0;
+  &__inner {
+    padding: 60px;
+    background: $tabBg;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-info {
+      width: calc(37% - 10px);
+      max-width: 387px;
+    }
+    &-points {
+      width: calc(63% - 20px);
+      max-width: 628px;
+    }
+  }
+  &Item {
+    padding: 30px;
+    background: $aquaItem;
+    border-radius: 20px;
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  h6 {
+    border-radius: 50%;
+    background-color: $aquaNumber;
+    margin-bottom: 18px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      background: $gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      position: absolute;
+      font-family: $sfDisplay;
+    }
+  }
+  p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $feesColor;
+    &.big {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+  h3 {
+    margin-bottom: 30px;
+    font-family: $sfDisplay;
+  }
+}
+
+// 1180px
+@mixin aquaPool-xlg-xxlg {
+  .aquaPool {
+    padding: 140px 0;
+    &__inner {
+      padding: 50px;
+    }
+    h3 {
+      margin-bottom: 25px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 27px;
+      &.big {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+// 1024px
+@mixin aquaPool-lg-xlg {
+  .aquaPool {
+    padding: 100px 0;
+    &__inner {
+      padding: 45px;
+      flex-wrap: wrap;
+      &-info {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto 40px;
+        text-align: center;
+      }
+      &-points {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+// 840px
+@mixin aquaPool-md-lg-extra {
+  .aquaPool {
+    padding: 70px 0;
+    &__inner {
+      padding: 35px;
+    }
+  }
+}
+
+// 650px
+@mixin aquaPool-sm-md-extra {
+  .aquaPool {
+    padding: 50px 0;
+    &__inner {
+      padding: 30px;
+      &-info {
+        margin-bottom: 30px;
+      }
+    }
+    &Item {
+      margin-bottom: 20px;
+      padding: 25px;
+      border-radius: 15px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      &.big {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+// 440px
+@mixin aquaPool-xxsm-xsm {
+  .aquaPool {
+    &__inner {
+      padding: 25px;
+    }
+    &Item {
+      padding: 20px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 22px;
+      &.big {
+        font-size: 13px;
+        line-height: 18px;
+      }
+    }
+    h3 {
+      margin-bottom: 20px;
+    }
+    h6 {
+      width: 35px;
+      height: 35px;
+      span {
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+// 390px
+@mixin aquaPool-xxxsm-xxsm {
+  .aquaPool {
+    margin: 50px 0;
+    padding: 30px 0;
+    background-color: $tabBg;
+    &__inner {
+      padding: unset;
+    }
+  }
+}
+
+.update {
+  &__inner {
+    padding-bottom: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    h3 {
+      width: calc(50% - 20px);
+      max-width: 500px;
+      font-family: $sfDisplay;
+    }
+    p {
+      width: calc(50% - 20px);
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 400;
+      color: $feesColor;
+      max-width: 594px;
+    }
+  }
+}
+
+// 1180px
+@mixin update-xlg-xxlg{
+  .update{
+    &__inner{
+      padding-bottom: 120px;
+      align-items: center;
+      p{
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+  }
+}
+// 1024px
+@mixin update-lg-xlg{
+  .update{
+    &__inner{
+      padding-bottom: 90px;
+      flex-wrap: wrap;
+      h3{
+        width: 100%;
+        max-width: 800px;
+        text-align: center;
+        margin: 0 auto 40px;
+      }
+      p{
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+}
+
+// 750px
+@mixin update-sm-md{
+  .update{
+    &__inner{
+      padding-bottom: 60px;
+    }
+  }
+}
+// 540px
+@mixin update-xsm-sm{
+  .update{
+    &__inner{
+      padding-bottom: 40px;
+    }
+  }
+}
+
+//390px
+@mixin update-xxxsm-xxsm{
+  .update{
+    &__inner{
+      padding-bottom: 30px;
+      h3{
+        margin-bottom: 30px;
+      }
+      p{
+        font-size: 16px;
+        line-height: 24px;
       }
     }
   }
