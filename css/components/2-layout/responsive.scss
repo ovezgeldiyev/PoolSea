@@ -3,6 +3,7 @@
     h1 {
         font-size: 90px;
         line-height: 105px;
+
         &.sm {
             font-size: 80px;
             line-height: 88px;
@@ -53,6 +54,7 @@
     h1 {
         font-size: 80px;
         line-height: 92px;
+
         &.sm {
             font-size: 75px;
             line-height: 84px;
@@ -118,6 +120,7 @@
     h1 {
         font-size: 70px;
         line-height: 82px;
+
         &.sm {
             font-size: 65px;
             line-height: 72px;
@@ -191,7 +194,8 @@
     @include summary-xlg-xxlg;
     @include staking-xlg-xxlg;
     @include demo-xlg-xxlg;
-
+    @include aquaPool-xlg-xxlg;
+    @include update-xlg-xxlg;
 }
 
 // 1024px
@@ -201,6 +205,7 @@
     h1 {
         font-size: 60px;
         line-height: 72px;
+
         &.sm {
             font-size: 55px;
             line-height: 63px;
@@ -230,10 +235,12 @@
     h5 {
         font-size: 20px;
         line-height: 25px;
+
         &.extra {
             font-size: 20px;
             line-height: 26px;
         }
+
         &.sm {
             font-size: 16px;
             line-height: 18px;
@@ -250,6 +257,7 @@
 
     .main {
         padding-top: 110px;
+
         &__note {
             transform: translate(-50%, -20%);
             width: calc(100% - 60px);
@@ -265,6 +273,7 @@
             line-height: 14px;
         }
     }
+
     @include hero-lg-xlg;
     @include intro-lg-xlg;
     @include tab-lg-xlg;
@@ -284,6 +293,8 @@
     @include features-lg-xlg;
     @include fees-lg-xlg;
     @include summary-lg-xlg;
+    @include aquaPool-lg-xlg;
+    @include update-lg-xlg;
 }
 
 // 930px
@@ -292,16 +303,19 @@
         font-size: 38px;
         line-height: 46px;
     }
+
     h5 {
         &.extra {
             font-size: 18px;
             line-height: 24px;
         }
+
         &.sm {
             font-size: 16px;
             line-height: 18px;
         }
     }
+
     h6 {
 
         &.sm {
@@ -322,18 +336,22 @@
         width: 550px;
         height: 550px;
     }
+
     .main {
         &__note {
             padding: 20px 70px 20px 20px;
+
             &-icon {
                 margin-right: 18px;
             }
+
             span {
                 top: 24px;
                 right: 24px;
             }
         }
     }
+
     @include hero-md-lg;
     @include tab-md-lg;
     @include donate-md-lg;
@@ -359,6 +377,8 @@
     @include airdrop-md-lg-extra;
     @include bonus-md-lg-extra;
     @include rate-md-lg-extra;
+    @include aquaPool-md-lg-extra;
+
 }
 
 // 750px
@@ -370,6 +390,7 @@
     h1 {
         font-size: 55px;
         line-height: 64px;
+
         &.sm {
             font-size: 50px;
             line-height: 58px;
@@ -400,11 +421,13 @@
         &__bg {
             height: 10%;
         }
+
         &__note {
             width: calc(100% - 40px);
             padding: 20px 60px 20px 20px;
         }
     }
+
     @include hero-sm-md;
     @include tab-sm-md;
     @include team-sm-md;
@@ -416,6 +439,7 @@
     @include info-sm-md;
     @include dex-sm-md;
     @include summary-sm-md;
+    @include update-sm-md;
 
 }
 
@@ -433,6 +457,8 @@
     @include footer-sm-md-extra;
     @include fees-sm-md-extra;
     @include summary-sm-md-extra;
+  @include aquaPool-sm-md-extra;
+
 }
 
 // 540px
@@ -440,6 +466,7 @@
     h1 {
         font-size: 45px;
         line-height: 52px;
+
         &.sm {
             font-size: 38px;
             line-height: 45px;
@@ -466,6 +493,7 @@
             font-size: 16px;
             line-height: 22px;
         }
+
         &.sm {
             font-size: 14px;
             line-height: 16px;
@@ -508,26 +536,31 @@
         &__bg {
             height: 7%;
         }
+
         &__note {
             padding: 12px 40px 12px 12px;
+
             &-icon {
                 width: 20px;
                 height: 20px;
                 margin-right: 10px;
                 margin-top: 4px;
             }
+
             span {
                 top: 18px;
                 right: 18px;
                 width: 11px;
                 height: 11px;
-                
+
             }
+
             p {
                 width: calc(100% - 35px);
             }
         }
     }
+
     @include header-xsm-sm;
     @include nav-xsm-sm;
     @include intro-xsm-sm;
@@ -542,6 +575,7 @@
     @include fees-xsm-sm;
     @include summary-xsm-sm;
     @include demo-xsm-sm;
+    @include update-xsm-sm;
 
 }
 
@@ -550,6 +584,7 @@
     h1 {
         font-size: 40px;
         line-height: 47px;
+
         &.sm {
             font-size: 34px;
             line-height: 42px;
@@ -565,10 +600,12 @@
         font-size: 20px;
         line-height: 24px;
     }
+
     h5 {
         font-size: 17px;
         line-height: 22px;
     }
+
     h6 {
 
         &.sm {
@@ -587,6 +624,7 @@
 
     .main {
         padding-top: 90px;
+
         &__note {
             p {
                 font-size: 10px;
@@ -610,6 +648,7 @@
     @include fees-xxsm-xsm;
     @include summary-xxsm-xsm;
     @include staking-xxsm-xsm;
+    @include aquaPool-xxsm-xsm;
 
 }
 
@@ -636,4 +675,6 @@
     @include dex-xxxsm-xxsm;
     @include fees-xxxsm-xxsm;
     @include summary-xxxsm-xxsm;
+    @include aquaPool-xxxsm-xxsm;
+    @include update-xxxsm-xxsm;
 }

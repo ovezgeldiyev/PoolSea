@@ -50,6 +50,8 @@ $feesBorder: var(--feesBorder);
 $feesColor: var(--feesColor);
 $feesItenBg: var(--feesItenBg);
 $feesPColor: var(--feesPColor);
+$aquaItem: var(--aquaItem);
+$aquaNumber: var(--aquaNumber);
 
 html[data-theme |=light] {
     --bgColor: #fff;
@@ -90,6 +92,9 @@ html[data-theme |=light] {
     --feesColor: #3D3F44;
     --feesItenBg: #F6F9FC;
     --feesPColor: #6e6f73;
+    --aquaItem: #e8eef4;
+    --aquaNumber: #c0c8d9;
+
 }
 
 html[data-theme |=dark] {
@@ -132,14 +137,11 @@ html[data-theme |=dark] {
     --feesColor: #cdcdce;
     --feesItenBg: #0F1219;
     --feesPColor: #828384;
+    --aquaItem: #0e121a;
+    --aquaNumber: #131823;
+
 }
 // fonts
 $graphik: "Graphik", sans-serif;
 $sfDisplay: "sfDisplay", sans-serif;
 $sfText: "sfText", sans-serif;
-
-
-$aquaItem:#0e121a;
-// #e8eef4
-$aquaNumber:#131823;
-// #c0c8d9
