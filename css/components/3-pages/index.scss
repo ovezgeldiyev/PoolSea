@@ -3706,3 +3706,33 @@
     }
   }
 }
+// 440px
+@mixin dex-xxsm-xsm {
+  .dex {
+    &__inner {
+      h1 {
+        font-size: 26px;
+      }
+      h5 {
+        font-size: 12px;
+      }
+    }
+  }
+}
+// 390px
+@mixin dex-xxxsm-xxsm {
+  .dex {
+    &__inner {
+      &-content {
+        left: 15px;
+        bottom: 10px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      h5 {
+        font-size: 10px;
+      }
+    }
+  }
+}

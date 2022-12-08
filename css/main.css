@@ -617,6 +617,15 @@ p.sm {
 .header.uniqHead:not(.sticky) .header__inner .lang svg {
   stroke: #F4F4F4CC;
 }
+.header.uniqHead:not(.sticky) .burger::before {
+  background-color: #fff;
+}
+.header.uniqHead:not(.sticky) .burger::after {
+  background-color: #fff;
+}
+.header.uniqHead:not(.sticky) .burger span {
+  background-color: #fff;
+}
 .header.uniqHead:not(.sticky) .nav__inner li a {
   color: #fff;
 }
@@ -4908,11 +4917,18 @@ html[data-theme=light] .faq.big .faq__inner {
   }
 
   .header.sticky .header__inner {
-    padding: 12px 0;
+    padding: 10px 0;
   }
   .header.sticky .nav {
-    top: 54.24px;
-    height: calc(100% - 54.24px);
+    top: 50.24px;
+    height: calc(100% - 50.24px);
+  }
+  .header.uniqHead .header__inner {
+    padding: 10px 0;
+  }
+  .header.uniqHead .nav {
+    top: 50.24px;
+    height: calc(100% - 50.24px);
   }
   .header__inner {
     padding: 20px 0;
@@ -5074,6 +5090,13 @@ html[data-theme=light] .faq.big .faq__inner {
     padding: 25px 20px;
     margin: 0 -20px;
     border-radius: unset;
+  }
+
+  .dex__inner h1 {
+    font-size: 26px;
+  }
+  .dex__inner h5 {
+    font-size: 12px;
   }
 }
 @media (max-width: 390px) {
@@ -5346,5 +5369,16 @@ html[data-theme=light] .faq.big .faq__inner {
   .featuresItem p.sm {
     font-size: 12px;
     line-height: 18px;
+  }
+
+  .dex__inner-content {
+    left: 15px;
+    bottom: 10px;
+  }
+  .dex__inner h1 {
+    font-size: 22px;
+  }
+  .dex__inner h5 {
+    font-size: 10px;
   }
 }

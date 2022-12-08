@@ -25,6 +25,17 @@
         }
       
       }
+      .burger {
+        &::before {
+          background-color: #fff;
+        }
+        &::after {
+          background-color: #fff;
+        }
+        span {
+          background-color: #fff;
+        }
+      }
       .nav {
         &__inner {
           li {
@@ -284,11 +295,22 @@
   .header {
     &.sticky {
       .header__inner {
-        padding: 12px 0;
+        padding: 10px 0;
       }
       .nav {
-        top: 54.24px;
-        height: calc(100% - 54.24px);
+        top: 50.24px;
+        height: calc(100% - 50.24px);
+      }
+    }
+    &.uniqHead {
+      .header {
+        &__inner {
+          padding: 10px 0;
+        }
+      }
+      .nav {
+        top: 50.24px;
+        height: calc(100% - 50.24px);
       }
     }
     &__inner {
