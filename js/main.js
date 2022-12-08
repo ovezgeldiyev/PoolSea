@@ -338,3 +338,14 @@ if(warn) {
   };
 }
 
+
+
+
+
+
+
+const sponsorTooltip = () =>{
+  const content = document.querySelector("#sponsorsTooltip")
+  content.classList.add("active");
+  setTimeout(() => content.classList.remove("active"), 1500);
+}

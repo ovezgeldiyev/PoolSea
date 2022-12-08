@@ -6,10 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/main.css" />
-  <title>Home</title>
+  <title>NFT marketplace</title>
 </head>
 
 <body>
+
   <!-- header start
     =========================================== -->
   <header class="header" id="header">
@@ -24,51 +25,54 @@
         <nav class="nav" id="menu">
           <ul class="nav__inner">
             <li>
-              <a href="#"> $POOL </a>
+              <a href="#">$POOL</a>
             </li>
             <li>
-              <a href="#"> DEX </a>
+              <a href="#">DEX</a>
             </li>
             <li>
-              <a href="#"> NFT marketplace </a>
+              <a href="./marketplace.html" class="active">NFT marketplace</a>
             </li>
             <li>
-              <a href="#" class="active"> Stablecoin </a>
+              <a href="./index.html">Stablecoin</a>
             </li>
             <li>
-              <a href="#"> Staking pool (Beta) </a>
+              <a href="#">Staking pool</a>
             </li>
             <div class="header__inner-buttons">
               <div class="header__inner-buttons-row">
-                <a href="#" class="button icon">
-                  <svg>
-                    <use xlink:href="#telegram"></use>
-                  </svg>
+                <a href="#" class="button uniq">
+                  <span>
+                    Info
+                  </span>
                 </a>
-                <a href="#" class="button icon">
-                  <svg>
-                    <use xlink:href="#twitter"></use>
-                  </svg>
+                <a href="#" class="button primary">
+                  Referral
                 </a>
-                <a href="#" class="button primary"> Info </a>
               </div>
             </div>
-
           </ul>
         </nav>
         <div class="header__inner-buttons">
+          <a href="#" class="button icon">
+            <svg>
+              <use xlink:href="#telegram"></use>
+            </svg>
+          </a>
+          <a href="#" class="button icon">
+            <svg>
+              <use xlink:href="#twitter"></use>
+            </svg>
+          </a>
           <div class="header__inner-buttons-row">
-            <a href="#" class="button icon">
-              <svg>
-                <use xlink:href="#telegram"></use>
-              </svg>
+            <a href="#" class="button uniq">
+              <span>
+                Info
+              </span>
             </a>
-            <a href="#" class="button icon">
-              <svg>
-                <use xlink:href="#twitter"></use>
-              </svg>
+            <a href="#" class="button primary">
+              Referral
             </a>
-            <a href="#" class="button primary"> Info </a>
           </div>
           <a href="#" class="button icon">
             <img class="moon" src="./images/icons/moon.svg" alt="" />
@@ -85,8 +89,7 @@
             </svg>
             <div class="lang__dropdown">
               <span>Fr</span>
-              <span>Esp</span>
-              <span>Ger</span>
+              <span>PL</span>
             </div>
           </a>
         </div>
@@ -100,7 +103,7 @@
     =========================================== -->
   <main class="main">
     <div class="main__bg">
-      <div class="main__bg-wave">
+      <div class="main__bg-wave sharp">
         <img src="./images/wave.png" alt="">
       </div>
       <div class="circle left">
@@ -118,155 +121,147 @@
         <img src="./images/circle.png" alt="">
       </div>
     </div>
-    <!-- features start
-    =========================================== -->
-    <section class="features" >
-      <div class="auto__container">
-        <div class="features__inner">
+   
+    <!-- summary start
+      =========================================== -->  
+  <section class="summary">
+    <div class="auto__container">
+      <div class="summary__inner">
+        <div class="summary__inner-info">
           <h3>
-            Hpx is designed to increase in value
-            <small>
-              The 10,000x tokenomics
-            </small>
+            <span>
+              AMM
+            </span>
           </h3>
-          <div class="features__inner-main">
-            <div class="featuresItem">
-              <div class="featuresItem__icon">
-                <img src="./images/features/utility.png" alt="">
-              </div>
-              <h5>
-                Hpx core utility
-              </h5>
-              <p class="sm">
-                $Hpx will be used as one of four different trading methods, which will be the only one to benefit the x10 cheaper commission fee’s than other trading methods. (From 2.222% to 0.222%).
-              </p>
-            </div>
-            <div class="featuresItem">
-              <div class="featuresItem__icon">
-                <img src="./images/features/trading.png" alt="">
-              </div>
-              <h5>
-                NFTs Trading
-              </h5>
-              <p class="sm">
-                Pulsechain,  pHex,  pulseX and the  USDL will be available as well for Nft trading methods. Once the trade is completed, they will be committed to an 2.22% commission fee.
-              </p>
-            </div>
-            <div class="featuresItem">
-              <div class="featuresItem__icon">
-                <img src="./images/features/staking.png" alt="">
-              </div>
-              <h5>
-                Hpx staking
-              </h5>
-              <p class="sm">
-                100% of our commission earned in PLS, PLSX and USDL will be given to $Hpx stakers. By staking it, you’re becoming stakeholder of Hpx company. The more $Hpx you stake, the more  pulsechain,  pulseX,  pHex and  USDL you will earn.
-              </p>
-            </div>
-            <div class="featuresItem">
-              <div class="featuresItem__icon">
-                <img src="./images/features/deflation.png" alt="">
-              </div>
-              <h5>
-                Hpx deflation
-              </h5>
-              <p class="sm">
-                Once someone stakes $Hpx, 0.111% of their coins get’s burned.
+          <p class="big">
+            With PoolSea Swap, we’ll allow liquidity providers (LPs) to ‘concentrate’ their liquidity in specific price ranges to maximize capital efficiency. LPs who provide deeper liquidity for ranges where trades actually occur will earn a higher share of fees and rewards, thereby enhancing potential ROIs.
+          </p>
+        </div>
+        <div class="summary__inner-text">
+          <h5 class="extra">
+            Here’s a quick summary of how concentrated liquidity is a <strong>beast</strong> of AMMs;
+          </h5>
+          <ul>
+            <li>
+              LPs can provide liquidity with up to <strong>4,000x capital efficiency</strong> relative to standard AMMs, earning higher ROIs on their capital
+            </li>
+            <li>
+              <strong> Liquidity utilization rates beyond 100%, </strong> compared to an average of 5%-10% that most of DEX’s currently has. This is good news for LPs as they’ll earn more fees for a given capital base
+            </li>
+            <li>
+              Capital efficiency results in <strong>
+                ultra-low slippage
+              </strong> trade execution that can surpass both centralized exchanges and stable AMMs
+            </li>
+            <li>
+              Ps can significantly increase their exposure to preferred assets and <strong>
+                reduce their downside risk
+              </strong>
+            </li>
+            <li>
+              LPs can sell one asset for another by adding liquidity to a price range entirely above or below the market price, approximating a fee-earning limit order that executes along a smooth curve️
+            </li>
+            <li>
+              With greater ROI potential, PoolSea emissions can be exponentially reduced. With a increased deflationary rate, we’ll be on the path of tokenholder-value maximization
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- summary end
+      =========================================== -->
 
-              </p>
-            </div>
-            <div class="featuresItem">
-              <div class="featuresItem__icon">
-                <img src="./images/features/supply.png" alt="">
-              </div>
-              <h5>
-                0 supply
-              </h5>
-              <p class="sm">
-                $Hpx will start with 0 supply, the only way to get it is to burn our native token $POOL. 1 $POOL burned = $1 Hpx received.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- features end
-    =========================================== -->
-    <!-- work start
-    =========================================== -->
-    <section class="work" >
+    <!-- fees start
+      =========================================== -->
+    <section class="fees">
       <div class="auto__container">
-        <div class="work__inner">
+        <div class="fees__inner">
           <h3>
-            How does it work?
+            <span>Dynamic <br> commissions </span> Fees
           </h3>
-          <div class="work__inner-image">
-            <img src="./images/workLight.png" alt="" class="light">
-            <img src="./images/workDark.png" alt="" class="dark">
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- work end
-    =========================================== -->
-    <!-- about start
-    =========================================== -->
-    <section class="about">
-      <div class="auto__container">
-        <div class="about__inner">
-          <h3>
-            About HPX
-          </h3>
-          <div class="about__inner-main">
-            <div class="aboutText">
-              <h5>
-                What's HPX ?
+          <div class="fees__inner-main">
+            <div class="feesText">
+              <h5 class="extra">
+                Deposits
               </h5>
-              <p class="sm">
-                Hpx is a marketplace for NFT trading based on the PulseChain Network. Make profits from owning $Hpx as
-                one of the shareholders of our venture.
+              <p class="big">
+                Deposit fees on swap are 0%
               </p>
             </div>
-            <div class="aboutText">
-              <h5>
-                All Ethereum NFT collections in one place.
+            <div class="feesText">
+              <h5 class="extra">
+                Withdrawals
               </h5>
-              <p class="sm">
-                All of your favorite NFT collections including BAYC, Crypto Punks, Doodles etc... will be available on
-                Hpx.
+              <p class="big">
+                Withdrawal fees in HpxSwap range from 25% to 0.01%:
               </p>
             </div>
-            <div class="aboutText">
-              <h5>
-                Enrich PulseX holders:
+            <ul class="feesList">
+              <li>
+                25% slashing fee if the user withdraws from PoolSea Swap in the same block. (This Is to prevent abuse
+                from flash loans)
+              </li>
+            </ul>
+            <ul class="feesList">
+              <li>
+                15.55% fee if the user withdraws from PoolSea Swap under 1 hour.
+              </li>
+              <li class="color">
+              <span>  3.1216% fee if the user withdraws from </span>  PoolSea Swap<span>
+                under 1 day3
+                </span> 
+              </li>
+              <li>
+                1.5% fee if the user withdraws from PoolSea Swap under 7 days.
+              </li>
+              <li>
+                1% fee if the user withdraws from PoolSea Swap under 35 days
+              </li>
+              <li>
+                0.75% if the user withdraws from PoolSea Swap after 100 days
+
+              </li>
+              <li>
+                0.28% if the user withdraws from PoolSea Swap after 365 days
+              </li>
+            </ul>
+            <ul class="feesList">
+              <li>
+                0% if the user withdraws from PoolSea Swap after 730 days (2 years).
+              </li>
+            </ul>
+            <p class="sm">
+              All earned withdrawal fee’s will be earned by Hpx staker’s. (85% for staker’s, 15% OA)
+            </p>
+            <div class="feesText">
+              <h5 class="extra">
+                The Dynamic fee system
               </h5>
-              <p class="sm">
-                Hpx will have an auto swap system where users can buy their favorite nft listed for Pulsechain (or pHex,
-                PLSX and USDL) using our crypto currency, $Hpx and benefit skipping our 2.22% commission.
+              <p class="big">
+                The Dynamic fee system is designed to disincentivize short-term farming and selling pressure but still
+                be reasonable for those who only wish to yield farm during shorter time periods.
                 <br><br>
-                If person X decides to put his nft up for sale for 10,000,000 PLS person Y will be able to buy it back
-                with our $Hpx token using 0% commission. The savings on this transaction - 222,222 PLS. And will be
-                subject to a commission of 0.29% through the PulseX system
-              </p>
-            </div>
-            <div class="aboutText">
-              <h5>
-                Making Pulse chain increase in value and helping
-                it go viral.
-              </h5>
-              <p class="sm">
-                Hpx is the core of popularizing PulseChain. We increase the value of the entire network by providing a
-                stable tool for exchanging value and helping populating Pulse network in NFT space.
+                Withdrawal fees from HpxSwap are calculated based on the block of your <span>previous withdrawal. </span> If you have
+                not withdrawn from the pool previously, they are based on the block of your <span>
+                  first deposit.
+                </span>
               </p>
             </div>
           </div>
+          <p class="fees__inner-info big">
+            Every 24H at midnight (15:30 UTC +2) a random number will be generated, which will decide how much LP will
+            earn of commissions between 67.5% - 97.5%. The result of this <br> lottery will determine how high buy & burn
+            will be. <br>
+            The smaller LP commission result, the higher buy & burn and vice versa.
+          </p>
         </div>
       </div>
     </section>
-    <!-- about end
-    =========================================== -->
+    <!-- fees end
+      =========================================== -->
     <!-- faq start
-    =========================================== -->
+      =========================================== -->
     <section class="faq big">
       <div class="auto__container">
         <div class="faq__inner">
@@ -433,10 +428,10 @@
       </div>
     </section>
     <!-- faq end
-    =========================================== -->
+      =========================================== -->
 
     <!-- join start
-    =========================================== -->
+      =========================================== -->
     <section class="join">
       <div class="auto__container">
         <div class="join__inner">
@@ -464,9 +459,9 @@
       </div>
     </section>
     <!-- join end
-    =========================================== -->
+      =========================================== -->
     <!-- footer start
-    =========================================== -->
+      =========================================== -->
     <footer class="footer">
       <div class="auto__container">
         <div class="footer__inner">
@@ -550,8 +545,9 @@
       </div>
     </footer>
     <!-- footer end
-    =========================================== -->
+      =========================================== -->
   </main>
+
   <!-- Sprites
     =========================================== -->
   <svg style="display: none">
@@ -605,6 +601,12 @@
       <g>
         <path fill-rule="evenodd" clip-rule="evenodd"
           d="M10.8801 0.980178C11.2934 1.37865 11.3054 2.03668 10.9068 2.4499L4.81298 8.7695L1.09492 4.91375C0.696434 4.50052 0.7084 3.84249 1.12165 3.444C1.53488 3.04555 2.19291 3.05751 2.5914 3.47073L4.81298 5.77461L9.41041 1.00689C9.80889 0.593655 10.467 0.58169 10.8801 0.980178Z" />
+      </g>
+    </symbol>
+    <symbol id="close" viewBox="0 0 14 14">
+      <g>
+        <path
+          d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z" />
       </g>
     </symbol>
   </svg>
