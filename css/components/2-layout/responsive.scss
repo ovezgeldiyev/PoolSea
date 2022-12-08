@@ -3,6 +3,10 @@
     h1 {
         font-size: 90px;
         line-height: 105px;
+        &.sm {
+            font-size: 80px;
+            line-height: 88px;
+        }
     }
 
     h2 {
@@ -49,6 +53,10 @@
     h1 {
         font-size: 80px;
         line-height: 92px;
+        &.sm {
+            font-size: 75px;
+            line-height: 84px;
+        }
     }
 
     h2 {
@@ -110,6 +118,10 @@
     h1 {
         font-size: 70px;
         line-height: 82px;
+        &.sm {
+            font-size: 65px;
+            line-height: 72px;
+        }
     }
 
     h2 {
@@ -177,6 +189,9 @@
     @include info-xlg-xxlg;
     @include fees-xlg-xxlg;
     @include summary-xlg-xxlg;
+    @include staking-xlg-xxlg;
+    @include demo-xlg-xxlg;
+
 }
 
 // 1024px
@@ -186,6 +201,10 @@
     h1 {
         font-size: 60px;
         line-height: 72px;
+        &.sm {
+            font-size: 55px;
+            line-height: 63px;
+        }
     }
 
     h2 {
@@ -328,6 +347,8 @@
     @include techspecs-md-lg;
     @include dex-md-lg;
     @include fees-md-lg;
+    @include staking-md-lg;
+    @include demo-md-lg;
 
 }
 
@@ -349,6 +370,10 @@
     h1 {
         font-size: 55px;
         line-height: 64px;
+        &.sm {
+            font-size: 50px;
+            line-height: 58px;
+        }
     }
 
     h2 {
@@ -415,6 +440,10 @@
     h1 {
         font-size: 45px;
         line-height: 52px;
+        &.sm {
+            font-size: 38px;
+            line-height: 45px;
+        }
     }
 
     h2 {
@@ -512,6 +541,8 @@
     @include location-xsm-sm;
     @include fees-xsm-sm;
     @include summary-xsm-sm;
+    @include demo-xsm-sm;
+
 }
 
 // 440px
@@ -519,6 +550,10 @@
     h1 {
         font-size: 40px;
         line-height: 47px;
+        &.sm {
+            font-size: 34px;
+            line-height: 42px;
+        }
     }
 
     h2 {
@@ -530,7 +565,10 @@
         font-size: 20px;
         line-height: 24px;
     }
-
+    h5 {
+        font-size: 17px;
+        line-height: 22px;
+    }
     h6 {
 
         &.sm {
@@ -571,6 +609,8 @@
     @include dex-xxsm-xsm;
     @include fees-xxsm-xsm;
     @include summary-xxsm-xsm;
+    @include staking-xxsm-xsm;
+
 }
 
 // 390px
