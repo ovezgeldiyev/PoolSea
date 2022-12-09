@@ -3,10 +3,12 @@ h1 {
   font-size: 112px;
   line-height: 122px;
   font-family: $sfDisplay;
+
   &.sm {
     font-weight: 600;
     font-size: 92px;
     line-height: 98px;
+
     span {
       background: linear-gradient(268.3deg,
           #00fff9 -4.34%,
@@ -64,12 +66,14 @@ h4 {
 h5 {
   font-size: 28px;
   line-height: 36px;
+
   &.extra {
     font-weight: 600;
     font-size: 24px;
     line-height: 30px;
     font-family: $sfDisplay;
   }
+
   &.sm {
     font-weight: 600;
     font-size: 22px;
@@ -113,9 +117,11 @@ p {
   overflow: hidden;
   padding-top: 215px;
   position: relative;
+
   &.big {
     padding: 0;
   }
+
   &__note {
     position: relative;
     top: 0;
@@ -126,6 +132,7 @@ p {
     border-radius: 8px;
     max-width: 900px;
     transform: translate(-50%, -50%);
+
     &-icon {
       display: flex;
       justify-content: center;
@@ -134,6 +141,7 @@ p {
       height: 28px;
       margin-right: 24px;
       margin-top: 7px;
+
       img {
         width: 100%;
       }
@@ -174,9 +182,19 @@ p {
     position: absolute;
     width: 100%;
     height: 13%;
-    top: 0;
+    top: 16%;
     left: 0;
     pointer-events: none;
+
+    &.big {
+      top: 0;
+
+      height: 21%;
+
+      .circle {
+        z-index: -1;
+      }
+    }
 
     &-wave {
       display: flex;
@@ -184,13 +202,21 @@ p {
       align-items: center;
       position: absolute;
       bottom: 0;
-      left: 0;
+      left: 50%;
       width: 100%;
       height: 60%;
-      opacity: .6;
+      opacity: .2;
+      min-width: 900px;
+      transform: translateX(-50%);
+
       &.sharp {
-        opacity: 1;
+        @include inLightMode {
+          opacity: 1;
+        }
+
+        opacity: .2;
       }
+
       img {
         width: 100%;
       }
@@ -220,6 +246,10 @@ p {
     width: 100%;
     height: 8%;
     pointer-events: none;
+
+    &.big {
+      height: 13%;
+    }
 
     .circle {
       position: absolute;
@@ -265,46 +295,55 @@ p {
   justify-content: center;
   transition: 0.3s ease;
   cursor: pointer;
+
   &:hover {
     opacity: 0.88;
   }
+
   &.uniq {
     background: $bgColor;
     position: relative;
     padding: 12px 38px;
+
     &.uniqDark {
-        border: 1px solid #0078ff;
+      border: 1px solid #0078ff;
+      background: transparent;
+
+      &::before {
+        display: none;
+      }
+
+      &:hover {
+        opacity: .9;
         background: transparent;
-        &::before {
-          display: none;
+
+        span {
+          background: linear-gradient(268.3deg,
+              #00fff9 -4.34%,
+              #00c5ff 13.53%,
+              #0078ff 93.71%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          transition: .3s ease;
         }
-        &:hover {
-          opacity: .9;
-          background: transparent;
-          span {
-            background: linear-gradient(268.3deg,
-            #00fff9 -4.34%,
-            #00c5ff 13.53%,
-            #0078ff 93.71%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            transition: .3s ease;
-          }
-        }
+      }
     }
+
     &:hover {
       opacity: 1;
       background: linear-gradient(268.3deg,
-      #00fff9 -4.34%,
-      #00c5ff 13.53%,
-      #0078ff 93.71%);
+          #00fff9 -4.34%,
+          #00c5ff 13.53%,
+          #0078ff 93.71%);
+
       span {
         background: transparent;
         -webkit-text-fill-color: unset;
         color: $white;
       }
     }
+
     &::before {
       position: absolute;
       top: 50%;
@@ -314,48 +353,55 @@ p {
       border-radius: 10px;
       content: "";
       background: linear-gradient(268.3deg,
-      #00fff9 -4.34%,
-      #00c5ff 13.53%,
-      #0078ff 93.71%);
+          #00fff9 -4.34%,
+          #00c5ff 13.53%,
+          #0078ff 93.71%);
       transform: translate(-50%, -50%);
       z-index: -1;
     }
+
     span {
       background: linear-gradient(268.3deg,
-      #00fff9 -4.34%,
-      #00c5ff 13.53%,
-      #0078ff 93.71%);
+          #00fff9 -4.34%,
+          #00c5ff 13.53%,
+          #0078ff 93.71%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
       transition: .3s ease;
     }
   }
+
   &.primary {
     color: $white;
     background: $gradient;
     padding: 15px 23px;
     line-height: 19px;
     font-weight: 600;
- 
+
   }
 
   &.icon {
     padding: 13px;
     background-color: $iconbg;
+
     &:hover {
       opacity: 1;
+
       svg {
         fill: $linkColor;
       }
+
       img {
         opacity: .8;
       }
     }
+
     img {
       width: 24px;
       height: 24px;
       transition: .3s ease;
+
       &.sun {
         display: none;
       }
@@ -367,6 +413,7 @@ p {
           display: none;
         }
       }
+
       img {
         &.sun {
           display: block;
@@ -447,6 +494,7 @@ p {
     line-height: 16px;
   }
 }
+
 .video {
   display: flex;
   justify-content: center;
@@ -454,7 +502,8 @@ p {
   position: relative;
   padding-bottom: 56%;
 
-  video, iframe {
+  video,
+  iframe {
     position: absolute;
     top: 0;
     left: 0;
