@@ -484,25 +484,17 @@ html[data-theme=light] .main__bg-wave.sharp {
   display: none;
 }
 .button.uniq.uniqDark:hover {
-  opacity: 0.9;
+  opacity: 1;
   background: transparent;
+  border-color: var(--textColor);
 }
 .button.uniq.uniqDark:hover span {
-  background: linear-gradient(268.3deg, #00fff9 -4.34%, #00c5ff 13.53%, #0078ff 93.71%);
+  background: var(--textColor);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
-}
-.button.uniq:hover {
-  opacity: 1;
-  background: linear-gradient(268.3deg, #00fff9 -4.34%, #00c5ff 13.53%, #0078ff 93.71%);
-}
-.button.uniq:hover span {
-  background: transparent;
-  -webkit-text-fill-color: unset;
-  color: #fff;
 }
 .button.uniq::before {
   position: absolute;
@@ -516,14 +508,28 @@ html[data-theme=light] .main__bg-wave.sharp {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: -1;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 .button.uniq span {
   background: linear-gradient(268.3deg, #00fff9 -4.34%, #00c5ff 13.53%, #0078ff 93.71%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+.button.uniq:hover {
+  opacity: 1;
+}
+.button.uniq:hover span {
+  background: var(--textColor);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.button.uniq:hover::before {
+  background: var(--textColor);
 }
 .button.primary {
   color: #fff;
@@ -541,6 +547,10 @@ html[data-theme=light] .main__bg-wave.sharp {
 }
 .button.icon:hover svg {
   fill: #3772ff;
+}
+.button.icon:hover svg.moon {
+  opacity: 0.7;
+  fill: var(--iconColor);
 }
 .button.icon:hover img {
   opacity: 0.8;
@@ -617,6 +627,7 @@ html[data-theme=light] .main__bg-wave.sharp {
   font-weight: 500;
   line-height: 28px;
   font-size: 28px;
+  color: var(--textColor);
 }
 
 .swiperBtn {
@@ -669,11 +680,27 @@ html[data-theme=light] .main__bg-wave.sharp {
 .header.uniqHead:not(.sticky) .header__inner-logo {
   color: #fff;
 }
+.header.uniqHead:not(.sticky) .header__inner .button.uniq.uniqDark:hover {
+  opacity: 1;
+  background: transparent;
+  border-color: #fff;
+}
+.header.uniqHead:not(.sticky) .header__inner .button.uniq.uniqDark:hover span {
+  background: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
 .header.uniqHead:not(.sticky) .header__inner .button.icon {
   background-color: #131823;
 }
 .header.uniqHead:not(.sticky) .header__inner .button.icon:hover svg {
   fill: #3772ff;
+}
+.header.uniqHead:not(.sticky) .header__inner .button.icon:hover svg.moon {
+  fill: #fff;
 }
 .header.uniqHead:not(.sticky) .header__inner .button.icon svg {
   fill: #fff;
@@ -698,6 +725,39 @@ html[data-theme=light] .main__bg-wave.sharp {
 }
 .header .auto__container {
   max-width: 1460px;
+}
+.header.uniqHead.active {
+  background-color: var(--bgColor);
+}
+.header.uniqHead.active .header__inner-logo {
+  color: var(--textColor);
+}
+.header.uniqHead.active .header__inner .button.icon {
+  background-color: var(--iconbg);
+}
+.header.uniqHead.active .header__inner .button.icon:hover svg {
+  fill: #3772ff;
+}
+.header.uniqHead.active .header__inner .button.icon:hover svg.moon {
+  fill: var(--iconColor);
+}
+.header.uniqHead.active .header__inner .button.icon svg {
+  fill: var(--iconColor);
+}
+.header.uniqHead.active .header__inner .lang {
+  color: var(--langColor);
+}
+.header.uniqHead.active .header__inner .lang svg {
+  stroke: var(--langColor);
+}
+.header.uniqHead.active .header__inner .burger::before {
+  background-color: var(--textColor);
+}
+.header.uniqHead.active .header__inner .burger::after {
+  background-color: var(--textColor);
+}
+.header.uniqHead.active .header__inner .burger span {
+  background-color: var(--textColor);
 }
 .header.sticky {
   position: fixed;
@@ -5901,6 +5961,9 @@ html[data-theme=dark] .summary p {
   .demo__inner .video {
     width: 100%;
   }
+  .demo__inner h3 {
+    margin-bottom: 20px;
+  }
 
   .update__inner {
     padding-bottom: 40px;
@@ -6192,7 +6255,7 @@ html[data-theme=dark] .summary p {
   }
 
   .staking {
-    padding: 80px 0 0;
+    padding: 70px 0 0;
   }
   .staking__inner-header {
     margin-bottom: 18px;

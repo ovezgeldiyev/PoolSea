@@ -314,14 +314,11 @@ p {
       }
 
       &:hover {
-        opacity: .9;
+        opacity: 1;
         background: transparent;
-
+        border-color: $textColor;
         span {
-          background: linear-gradient(268.3deg,
-              #00fff9 -4.34%,
-              #00c5ff 13.53%,
-              #0078ff 93.71%);
+          background: $textColor;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
@@ -330,19 +327,7 @@ p {
       }
     }
 
-    &:hover {
-      opacity: 1;
-      background: linear-gradient(268.3deg,
-          #00fff9 -4.34%,
-          #00c5ff 13.53%,
-          #0078ff 93.71%);
 
-      span {
-        background: transparent;
-        -webkit-text-fill-color: unset;
-        color: $white;
-      }
-    }
 
     &::before {
       position: absolute;
@@ -358,6 +343,7 @@ p {
           #0078ff 93.71%);
       transform: translate(-50%, -50%);
       z-index: -1;
+      transition: .4s ease;
     }
 
     span {
@@ -368,7 +354,19 @@ p {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      transition: .3s ease;
+      transition: .4s ease;
+    }
+    &:hover {
+      opacity: 1;
+      span {
+        background: $textColor;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      &::before {
+        background: $textColor;
+      }
     }
   }
 
@@ -390,6 +388,11 @@ p {
 
       svg {
         fill: $linkColor;
+
+        &.moon {
+          opacity: .7;
+          fill: $iconColor;
+        }
       }
 
       img {
@@ -476,6 +479,8 @@ p {
     font-weight: 500;
     line-height: 28px;
     font-size: 28px;
+    color: $textColor;
+
   }
 }
 

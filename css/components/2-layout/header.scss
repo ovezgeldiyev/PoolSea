@@ -1,50 +1,74 @@
 .header {
+
   &.uniqHead:not(.sticky){
-      .header {
-        &__inner {
-          &-logo {
-            color: #fff;
+    .header {
+      &__inner {
+        &-logo {
+          color: #fff;
+        }
+        .button {
+          &.uniq {
+            &.uniqDark {
+              &:hover {
+                opacity: 1;
+                background: transparent;
+                border-color: $white;
+                span {
+                  background: $white;
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  background-clip: text;
+                  transition: .3s ease;
+                }
+              }
+            }
           }
-          .button.icon {
+          &.icon {
             background-color: #131823;
             &:hover {
               svg {
                 fill: $linkColor;
+                &.moon {
+                  fill: #fff;
+                }
               }
             }
             svg {
               fill: #fff;
-            }
-          }
-          .lang {
-            color: #F6F9FC;
-            svg {
-              stroke:#F4F4F4CC
+              
             }
           }
         }
-      
-      }
-      .burger {
-        &::before {
-          background-color: #fff;
-        }
-        &::after {
-          background-color: #fff;
-        }
-        span {
-          background-color: #fff;
-        }
-      }
-      .nav {
-        &__inner {
-          li {
-            a {
-              color: #fff;
-            }
+     
+        .lang {
+          color: #F6F9FC;
+          svg {
+            stroke:#F4F4F4CC;
           }
         }
       }
+    
+    }
+    .burger {
+      &::before {
+        background-color: #fff;
+      }
+      &::after {
+        background-color: #fff;
+      }
+      span {
+        background-color: #fff;
+      }
+    }
+    .nav {
+      &__inner {
+        li {
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
   }
   position: absolute;
   top: 0;
@@ -55,7 +79,49 @@
   .auto__container {
     max-width: 1460px;
   }
-
+  &.uniqHead {
+    &.active {
+      background-color: $bgColor;
+      .header {
+        &__inner {
+          &-logo {
+            color: $textColor;
+          }
+          .button.icon {
+            background-color: $iconbg;
+            &:hover {
+              svg {
+                fill: $linkColor;
+                &.moon {
+                  fill: $iconColor;
+                }
+              }
+            }
+            svg {
+              fill: $iconColor;
+            }
+          }
+          .lang {
+            color: $langColor;
+            svg {
+              stroke:$langColor;
+            }
+          }
+          .burger {
+            &::before {
+              background-color: $textColor;
+            }
+            &::after {
+              background-color: $textColor;
+            }
+            span {
+              background-color: $textColor;
+            }
+          }
+        }
+      }
+    }
+  }
   &.sticky {
     position: fixed;
     top: 0;
