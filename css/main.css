@@ -6622,6 +6622,9 @@ html[data-theme=light] .faq.big .faq__inner {
     padding-top: 150px;
   }
 
+  .header.uniqHead:not(.sticky) .nav__inner li a {
+    color: var(--textColor);
+  }
   .header__inner {
     padding: 16px 0;
   }
