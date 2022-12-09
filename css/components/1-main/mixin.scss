@@ -175,3 +175,12 @@
     @content;
   }
 }
+
+
+
+
+@mixin inDarkMode {
+  html[data-theme="dark"] & {
+    @content;
+  }
+}

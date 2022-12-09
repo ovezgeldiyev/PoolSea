@@ -10,6 +10,11 @@
       &-content {
         width: calc(40% - 10px);
         max-width: 407px;
+        p{
+          @include inDarkMode{
+            opacity: .7;
+          }
+        }
       }
 
       &-links {
@@ -26,6 +31,9 @@
       align-items: center;
       justify-content: center;
       font-weight: 500;
+      @include inDarkMode{
+        opacity: .7;
+      }
 
       span {
         width: 6px;
@@ -52,14 +60,15 @@
       margin-bottom: 20px;
       font-family: $sfDisplay;
     }
-
     a {
       display: block;
       margin-bottom: 15px;
       font-size: 16px;
       line-height: 19px;
       color: $iconColor;
-
+      @include inDarkMode{
+        opacity: .7;
+      }
       &:last-child {
         margin-bottom: 0;
       }
