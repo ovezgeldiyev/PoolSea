@@ -91,7 +91,16 @@
     @content;
   }
 }
-
+@mixin inDarkMode {
+  html[data-theme="dark"] & {
+    @content;
+  }
+}
+@mixin xxxxsm-xxxsm {
+  @media (max-width: 370px) {
+    @content;
+  }
+}
 @mixin xxxsm-xxsm {
   @media (max-width: 390px) {
     @content;
@@ -179,8 +188,3 @@
 
 
 
-@mixin inDarkMode {
-  html[data-theme="dark"] & {
-    @content;
-  }
-}

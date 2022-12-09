@@ -59,6 +59,9 @@
       line-height: 23px;
       margin-bottom: 20px;
       font-family: $sfDisplay;
+      @include inDarkMode{
+        opacity: .7;
+      }
     }
     a {
       display: block;
@@ -289,9 +292,9 @@
     }
 
     &Link {
-      width: 100%;
+      width: calc(50% - 15px);
       margin-bottom: 30px;
-      text-align: center;
+      text-align: left;
 
       &:last-child {
         margin-bottom: 0;

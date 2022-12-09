@@ -27,6 +27,10 @@ var swiper2 = new Swiper(".mySwiper2", {
   },
   breakpoints: {
     280: {
+      slidesPerView: 1,
+      spaceBetween: 8,
+    },
+    370: {
       slidesPerView: 2,
       spaceBetween: 8,
     },
@@ -262,7 +266,7 @@ if (canvas) {
 // copy start
 const copyBtn = document.getElementById("copyBtn");
 
-if(copyBtn) {
+if (copyBtn) {
   const copyInput = document.getElementById("copyInput");
   const tooltip = copyBtn.querySelector("span");
   const copy = (text) => {
@@ -277,7 +281,7 @@ if(copyBtn) {
       console.log(`can't copy: not secure`);
     }
   };
-  
+
   copyBtn.onclick = () => {
     copy(copyInput.value);
     tooltip.classList.add("active");
@@ -329,25 +333,19 @@ themeChange.onchange = function () {
       circle.classList.remove("dark");
     });
   }
-  if(canvas) {
-    preloadImages();
-  }
 };
 // themeChange end
 
 const warn = document.getElementById("warn");
-if(warn) {
+if (warn) {
   const warnClose = document.getElementById("warnClose");
   warnClose.onclick = () => {
     warn.style.display = "none";
   };
 }
 
-
-
-
-const sponsorTooltip = () =>{
-  const content = document.querySelector("#sponsorsTooltip")
+const sponsorTooltip = () => {
+  const content = document.querySelector("#sponsorsTooltip");
   content.classList.add("active");
   setTimeout(() => content.classList.remove("active"), 1500);
-}
+};

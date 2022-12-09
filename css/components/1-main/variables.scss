@@ -52,6 +52,8 @@ $feesItenBg: var(--feesItenBg);
 $feesPColor: var(--feesPColor);
 $aquaItem: var(--aquaItem);
 $aquaNumber: var(--aquaNumber);
+$check: var(--check);
+
 
 html[data-theme |=light] {
     --bgColor: #fff;
@@ -94,6 +96,8 @@ html[data-theme |=light] {
     --feesPColor: #6e6f73;
     --aquaItem: #e8eef4;
     --aquaNumber: #c0c8d9;
+    --check: #6E6E73;
+
 
 }
 
@@ -139,6 +143,8 @@ html[data-theme |=dark] {
     --feesPColor: #828384;
     --aquaItem: #0e121a;
     --aquaNumber: #131823;
+    --check: #6E6E73;
+
 }
 // fonts
 $graphik: "Graphik", sans-serif;
@@ -146,5 +152,3 @@ $sfDisplay: "sfDisplay", sans-serif;
 $sfText: "sfText", sans-serif;
 
 
-$check:#6E6E73;
-// #6E6E73

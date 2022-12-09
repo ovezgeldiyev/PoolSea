@@ -233,3 +233,11 @@
         height: 22px;
     }
 }
+// 370px
+@mixin nav-xxxxsm-xxxsm {
+    .nav {
+        &__inner {
+            width: 100%;
+        }
+    }
+}

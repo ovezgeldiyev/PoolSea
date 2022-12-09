@@ -1,0 +1,761 @@
+.dex {
+    background-color: #06070A;
+  
+    .auto__container {
+      padding: 0;
+    }
+  
+    &__inner {
+      &-content {
+        position: absolute;
+        bottom: 60px;
+        left: 60px;
+      }
+  
+      h1 {
+        color: $white;
+        margin-bottom: 20px;
+        line-height: 100%;
+      }
+  
+      h5 {
+        color: $white;
+        line-height: 100%;
+      }
+    }
+  }
+  
+  // 1024px
+  @mixin dex-lg-xlg {
+    .dex {
+      &__inner {
+        &-content {
+          bottom: 30px;
+          left: 30px;
+        }
+  
+        h1 {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  
+  // 930px
+  @mixin dex-md-lg {
+    .dex {
+      &__inner {
+        &-content {
+          bottom: 30px;
+          left: 30px;
+        }
+  
+        h1 {
+          font-size: 45px;
+        }
+  
+        h5 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  
+  // 750px
+  @mixin dex-sm-md {
+    .dex {
+      &__inner {
+        &-content {
+          left: 20px;
+          bottom: 20px;
+        }
+  
+        h1 {
+          font-size: 35px;
+          margin-bottom: 5px;
+        }
+  
+        h5 {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  
+  // 440px
+  @mixin dex-xxsm-xsm {
+    .dex {
+      &__inner {
+        h1 {
+          font-size: 26px;
+        }
+  
+        h5 {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  
+  // 390px
+  @mixin dex-xxxsm-xxsm {
+    .dex {
+      &__inner {
+        &-content {
+          left: 15px;
+          bottom: 10px;
+        }
+  
+        h1 {
+          font-size: 22px;
+        }
+  
+        h5 {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  .summary {
+    &__inner {
+      padding: 0 0 160px;
+      display: flex;
+      justify-content: space-between;
+  
+      &-info {
+        width: calc(35% - 15px);
+      }
+  
+      &-text {
+        width: calc(65% - 15px);
+        padding: 60px;
+        border-radius: 20px;
+        background-color: $tabBg;
+        max-width: 754px;
+      }
+    }
+  
+    h3 {
+      margin-bottom: 30px;
+      font-family: $sfDisplay;
+    }
+  
+    h5 {
+      margin-bottom: 24px;
+      font-family: $sfText;
+    }
+  
+    ul {
+      li {
+        padding-left: 34px;
+        position: relative;
+        font-weight: 500;
+        margin-bottom: 24px;
+        font-size: 18px;
+        line-height: 25px;
+        color: $textColor;
+      @include inDarkMode{
+        opacity: .8;
+      }
+  
+        &:last-child {
+          margin-bottom: 0;
+        }
+  
+        &::before {
+          content: "";
+          width: 24px;
+          height: 2px;
+          position: absolute;
+          left: 0;
+          top: 15px;
+          background: $gradient;
+        }
+      }
+    }
+  
+    p {
+      color: $textColor;
+      @include inDarkMode{
+        opacity: .8;
+      }
+    }
+  }
+  
+  // 1180px
+  @mixin summary-xlg-xxlg {
+    .summary {
+      &__inner {
+        padding-bottom: 140px;
+  
+        &-text {
+          padding: 50px;
+        }
+      }
+  
+      h3 {
+        margin-bottom: 25px;
+      }
+    }
+  }
+  
+  // 1024px
+  @mixin summary-lg-xlg {
+    .summary {
+      &__inner {
+        flex-wrap: wrap;
+        padding-bottom: 100px;
+  
+        &-info {
+          width: 100%;
+          max-width: 900px;
+          margin: 0 auto 40px;
+        }
+  
+        &-text {
+          width: 100%;
+          max-width: 900px;
+          margin: 0 auto;
+        }
+      }
+  
+      h3 {
+        margin-bottom: 25px;
+      }
+  
+      p {
+        &.big {
+          font-size: 18px;
+          line-height: 26px;
+        }
+      }
+  
+      h5 {
+        text-align: center;
+      }
+    }
+  }
+  
+  // 750px
+  @mixin summary-sm-md {
+    .summary {
+      &__inner {
+        padding-bottom: 70px;
+  
+        &-text {
+          padding: 40px;
+        }
+      }
+  
+      h3 {
+        margin-bottom: 20px;
+      }
+  
+      p {
+        &.big {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+  
+      h5 {
+        font-size: 22px;
+        line-height: 28px;
+      }
+  
+      ul {
+        li {
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 20px;
+  
+          &::before {
+            width: 22px;
+          }
+        }
+      }
+    }
+  }
+  
+  // 650px
+  @mixin summary-sm-md-extra {
+    .summary {
+      &__inner {
+        padding-bottom: 50px;
+  
+        &-info {
+          margin-bottom: 30px;
+        }
+  
+        &-text {
+          padding: 30px;
+          border-radius: 15px;
+        }
+      }
+  
+      h5 {
+        font-size: 20px;
+        line-height: 26px;
+      }
+    }
+  }
+  
+  // 540px
+  @mixin summary-xsm-sm {
+    .summary {
+      &__inner {
+        padding-bottom: 40px;
+  
+        &-text {
+          padding: 25px;
+          border-radius: 12px;
+        }
+      }
+  
+      h3 {
+        margin-bottom: 15px;
+      }
+  
+      p {
+        &.big {
+          font-size: 15px;
+          line-height: 21px;
+        }
+      }
+  
+      h5 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 20px;
+      }
+  
+      ul {
+        li {
+          font-size: 15px;
+          line-height: 21px;
+          padding-left: 30px;
+  
+          &::before {
+            top: 8.5px;
+            width: 18px;
+          }
+        }
+      }
+    }
+  }
+  
+  // 440px
+  @mixin summary-xxsm-xsm {
+    .summary {
+      &__inner {
+        padding-bottom: 30px;
+  
+        &-text {
+          padding: 20px;
+          border-radius: 10px;
+        }
+      }
+  
+      p {
+        &.big {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+  
+      h5 {
+        font-size: 17px;
+        line-height: 23px;
+        margin-bottom: 15px;
+      }
+  
+      ul {
+        li {
+          font-size: 14px;
+          line-height: 20px;
+          margin-bottom: 15px;
+  
+          &::before {
+            top: 8.5px;
+            width: 18px;
+          }
+        }
+      }
+    }
+  }
+  
+  // 390px
+  @mixin summary-xxxsm-xxsm {
+    .summary {
+      &__inner {
+        padding-bottom: 40px;
+  
+        &-text {
+          padding: 15px;
+          border-radius: 8px;
+        }
+      }
+  
+      p {
+        &.big {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+  
+      h5 {
+        font-size: 17px;
+        line-height: 23px;
+        margin-bottom: 15px;
+      }
+  
+      ul {
+        li {
+          font-size: 14px;
+          line-height: 20px;
+          margin-bottom: 15px;
+          padding-left: 25px;
+  
+          &::before {
+            width: 16px;
+          }
+        }
+      }
+    }
+  }
+  
+
+  .fees {
+    &__inner {
+      &-main {
+        padding: 56px;
+        border: 1px solid $feesBorder;
+        border-radius: 20px;
+        margin-bottom: 60px;
+      }
+  
+      &-info {
+        text-align: center;
+        max-width: 790px;
+        margin: 0 auto;
+        color: $feesColor;
+      }
+    }
+  
+    &Text {
+      margin-bottom: 28px;
+  
+      h5 {
+        background: linear-gradient(268.3deg,
+            #00fff9 -4.34%,
+            #00c5ff 13.53%,
+            #0078ff 93.71%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 16px;
+        display: inline-block;
+        font-family: $sfText;
+        font-weight: 700;
+      }
+  
+      p {
+        color: $feesColor;
+  
+        span {
+          color: $feesColor;
+          font-weight: 700;
+        }
+      }
+    }
+  
+    &List {
+      padding: 24px;
+      background: $feesItenBg;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+  
+    ul {
+      li {
+        padding-left: 24px;
+        position: relative;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25px;
+        margin-bottom: 7px;
+        color: $feesColor;
+        display: inline-block;
+  
+        &.color {
+          span {
+            background: linear-gradient(268.3deg,
+                #00fff9 -4.34%,
+                #00c5ff 13.53%,
+                #0078ff 93.71%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+          }
+        }
+  
+        &:last-child {
+          margin-bottom: 0;
+        }
+  
+        &::before {
+          content: "";
+          width: 6px;
+          height: 6px;
+          background-color: $feesColor;
+          position: absolute;
+          top: 8.5px;
+          left: 10px;
+          border-radius: 50%;
+        }
+      }
+    }
+  
+    h3 {
+      margin-bottom: 60px;
+      text-align: center;
+      font-family: $sfDisplay;
+  
+      span {
+        background: linear-gradient(359deg,
+            #00fff9 -4.34%,
+            #00c5ff 13.53%,
+            #0078ff 93.71%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    }
+  
+    p {
+      &.sm {
+        margin-bottom: 36px;
+        color: $feesPColor;
+      }
+    }
+  }
+  
+  // 1180px
+  @mixin fees-xlg-xxlg {
+    .fees {
+      &__inner {
+        &-main {
+          margin-bottom: 50px;
+          padding: 40px;
+        }
+      }
+  
+      h3 {
+        margin-bottom: 50px;
+      }
+  
+      ul {
+        li {
+          font-size: 16px;
+          line-height: 22px;
+  
+          &::before {
+            top: 7px;
+          }
+        }
+      }
+    }
+  }
+  
+  // 1024px
+  @mixin fees-lg-xlg {
+    .fees {
+      &__inner {
+        padding: 40px 0;
+  
+        &-main {
+          padding: 45px;
+          margin-bottom: 45px;
+        }
+      }
+  
+      h3 {
+        margin-bottom: 45px;
+      }
+  
+      &Text {
+        margin-bottom: 25px;
+  
+        h5 {
+          font-size: 22px;
+          line-height: 28px;
+          margin-bottom: 10px;
+        }
+      }
+  
+      &List {
+        padding: 20px;
+        border-radius: 15px;
+      }
+    }
+  }
+  
+  // 930px
+  @mixin fees-md-lg {
+    .fees {
+      &__inner {
+        &-main {
+          padding: 35px;
+          border-radius: 17px;
+          margin-bottom: 40px;
+        }
+  
+        &-info {
+          br {
+            display: none;
+          }
+        }
+      }
+  
+      &Text {
+        h5 {
+          font-size: 20px;
+          line-height: 27px;
+          margin-bottom: 8px;
+        }
+      }
+  
+      &List {
+        padding: 15px;
+        border-radius: 10px;
+      }
+  
+      h3 {
+        margin-bottom: 40px;
+      }
+  
+      ul {
+        li {
+          font-size: 15px;
+          line-height: 21px;
+        }
+      }
+    }
+  }
+  
+  // 650px
+  @mixin fees-sm-md-extra {
+    .fees {
+      &__inner {
+        &-main {
+          padding: 25px;
+          border-radius: 13px;
+          margin-bottom: 30px;
+        }
+      }
+  
+      &Text {
+        margin-bottom: 20px;
+  
+        h5 {
+          margin-bottom: 5px;
+        }
+      }
+  
+      h3 {
+        margin-bottom: 30px;
+      }
+  
+      p {
+        &.sm {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+  
+  // 540px
+  @mixin fees-xsm-sm {
+    .fees {
+      ul {
+        li {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  
+  // 440px
+  @mixin fees-xxsm-xsm {
+    .fees {
+      &__inner {
+        padding: 20px 0;
+  
+        &-main {
+          padding: 20px;
+          border-radius: 11px;
+        }
+      }
+  
+      &Text {
+        h5 {
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+  
+      &List {
+        padding: 10px;
+        border-radius: 5px;
+      }
+  
+      ul {
+        li {
+          font-size: 13px;
+          line-height: 19px;
+          padding-left: 15px;
+  
+          &::before {
+            width: 4px;
+            height: 4px;
+            left: 7px;
+          }
+        }
+      }
+    }
+  }
+  
+  // 390px
+  @mixin fees-xxxsm-xxsm {
+    .fees {
+      &__inner {
+        padding: 10px 0;
+  
+        &-main {
+          padding: 15px;
+          border-radius: 7px;
+        }
+      }
+  
+      &Text {
+        margin-bottom: 15px;
+  
+        h5 {
+          font-size: 16px;
+          line-height: 21px;
+        }
+      }
+  
+      h3 {
+        margin-bottom: 25px;
+      }
+  
+      p {
+        &.sm {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
