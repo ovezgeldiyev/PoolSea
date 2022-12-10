@@ -1,129 +1,133 @@
 .join {
-    &__inner {
-      padding: 80px 20px;
-      border-radius: 40px;
-      background-color: $tabBg;
-  
-      &-social {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-    }
-  
-    h5 {
-      margin-bottom: 38px;
-      font-family: $sfDisplay;
-      text-align: center;
-    }
-  
-    &Social {
-      width: 69px;
-      height: 69px;
-      background: $teamArrow;
-      border-radius: 49px;
+  &__inner {
+    padding: 80px 20px;
+    border-radius: 40px;
+    background-color: $tabBg;
+
+    &-social {
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+  }
+
+  h5 {
+    margin-bottom: 38px;
+    font-family: $sfDisplay;
+    text-align: center;
+  }
+
+  &Social {
+    width: 69px;
+    height: 69px;
+    background: $teamArrow;
+    border-radius: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease;
+    margin: 0 10px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: $socialBg;
+      content: "";
+      z-index: 1;
+      opacity: 0;
       transition: .3s ease;
-      margin: 0 10px;
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+      fill: $iconColor;
+      transition: .3s ease;
       position: relative;
-      &::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        background: $socialBg;
-        content: "";
-        z-index: 1;
-        opacity: 0;
-        transition: .3s ease;
-      }
-      svg {
-        width: 24px;
-        height: 24px;
-        fill: $iconColor;
-       transition: .3s ease;
-       position: relative;
-       z-index: 3;
-      }
-  
-      &:hover {
+      z-index: 3;
+    }
+
+    &:hover {
+      opacity: 1;
+
+      &:before {
         opacity: 1;
-        &:before {
-          opacity: 1;
-        }
-        svg {
-          fill: $white;
-        }
+      }
+
+      svg {
+        fill: $white;
       }
     }
   }
-  
-  // 1180px
-  @mixin join-xlg-xxlg {
-    .join {
-      &__inner {
-        padding: 70px 20px;
-      }
-  
-      &Social {
-        width: 65px;
-        height: 65px;
-        margin: 0 8px;
-  
-        svg {
-          width: 23px;
-          height: 23px;
-        }
+}
+
+// 1180px
+@mixin join-xlg-xxlg {
+  .join {
+    &__inner {
+      padding: 70px 20px;
+    }
+
+    &Social {
+      width: 65px;
+      height: 65px;
+      margin: 0 8px;
+
+      svg {
+        width: 23px;
+        height: 23px;
       }
     }
   }
-  
-  // 750px
-  @mixin join-sm-md {
-    .join {
-      &__inner {
-        padding: 50px 20px;
-        border-radius: 30px;
-      }
-  
-      h5 {
-        margin-bottom: 28px;
+}
+
+// 750px
+@mixin join-sm-md {
+  .join {
+    &__inner {
+      padding: 50px 20px;
+      border-radius: 30px;
+    }
+
+    h5 {
+      margin-bottom: 28px;
+    }
+  }
+}
+
+// 540px
+@mixin join-xsm-sm {
+  .join {
+    &__inner {
+      border-radius: 20px;
+    }
+
+    &Social {
+      width: 55px;
+      height: 55px;
+      margin: 0 7px;
+
+      svg {
+        width: 20px;
+        height: 20px;
       }
     }
   }
-  
-  // 540px
-  @mixin join-xsm-sm {
-    .join {
-      &__inner {
-        border-radius: 20px;
-      }
-  
-      &Social {
-        width: 55px;
-        height: 55px;
-        margin: 0 7px;
-  
-        svg {
-          width: 20px;
-          height: 20px;
-        }
-      }
+}
+
+// 390px
+@mixin join-xxxsm-xxsm {
+  .join {
+    background-color: $tabBg;
+
+    &__inner {
+      padding: 50px 0;
+      background-color: unset;
     }
   }
-  
-  // 390px
-  @mixin join-xxxsm-xxsm {
-    .join {
-      background-color: $tabBg;
-  
-      &__inner {
-        padding: 50px 0;
-        background-color: unset;
-      }
-    }
-  }
+}
