@@ -26,9 +26,10 @@
       justify-content: center;
       align-items: center;
       max-width: 684px;
-
+      border-radius: 10px;
       img {
         width: 100%;
+        border-radius: 10px;
       }
     }
 
@@ -274,6 +275,12 @@
 
           br {
             display: none;
+          }
+          span {
+            span {
+              background: transparent;
+              -webkit-background-clip: unset;
+            }
           }
         }
       }
@@ -970,13 +977,13 @@
 
       &__content {
         width: 100%;
+        margin-bottom: 20px;
+        max-width: unset;
       }
 
       &__image {
         width: 100%;
-        order: -1;
         justify-content: center;
-        margin-bottom: 20px;
       }
 
       &.long {
@@ -1035,7 +1042,7 @@
     }
 
     &Item {
-      &__image {
+      &__content {
         margin-bottom: 16px;
       }
 

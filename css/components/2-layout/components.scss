@@ -222,7 +222,7 @@ p {
       z-index: -1;
       min-width: 900px;
       transform: translateX(-50%);
-
+      max-width: 1920px;
       &.sharp {
         @include inLightMode {
           opacity: 1;

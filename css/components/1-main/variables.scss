@@ -52,6 +52,7 @@ $feesPColor: var(--feesPColor);
 $aquaItem: var(--aquaItem);
 $aquaNumber: var(--aquaNumber);
 $check: var(--check);
+$stakinBg: var(--stakinBg);
 
 
 html[data-theme |=light] {
@@ -96,6 +97,7 @@ html[data-theme |=light] {
     --aquaItem: #e8eef4;
     --aquaNumber: #c0c8d9;
     --check: #6E6E73;
+    --stakinBg: linear-gradient(116.97deg, #3D6585 18.34%, #fff 100%);
 
 
 }
@@ -143,6 +145,7 @@ html[data-theme |=dark] {
     --aquaItem: #0e121a;
     --aquaNumber: #131823;
     --check: #6E6E73;
+    --stakinBg: linear-gradient(116.97deg, #3D6585 18.34%, #000000 80%);
 
 }
 // fonts
