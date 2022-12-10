@@ -5383,7 +5383,7 @@ html[data-theme=dark] .summary p {
     height: 18px;
     margin-right: 0;
     position: absolute;
-    top: 2px;
+    top: 1px;
     left: 0;
   }
   .techspecs h3 {
@@ -5636,6 +5636,7 @@ html[data-theme=dark] .summary p {
   .techspecsItem p span {
     width: 15px;
     height: 15px;
+    margin: 0 2px;
   }
 
   .footer__inner {
@@ -5750,7 +5751,7 @@ html[data-theme=dark] .summary p {
 
   h5.extra {
     font-size: 16px;
-    line-height: 22px;
+    line-height: 19px;
   }
   h5.sm {
     font-size: 14px;
