@@ -10,16 +10,7 @@
           &.uniq {
             &.uniqDark {
               &:hover {
-                opacity: 1;
-                background: transparent;
-                border-color: $white;
-                span {
-                  background: $white;
-                  -webkit-background-clip: text;
-                  -webkit-text-fill-color: transparent;
-                  background-clip: text;
-                  transition: .3s ease;
-                }
+                opacity: .8;
               }
             }
           }
@@ -27,7 +18,7 @@
             background-color: #131823;
             &:hover {
               svg {
-                fill: $linkColor;
+                fill: $blue;
                 &.moon {
                   fill: #fff;
                 }
@@ -91,7 +82,7 @@
             background-color: $iconbg;
             &:hover {
               svg {
-                fill: $linkColor;
+                fill: $blue;
                 &.moon {
                   fill: $iconColor;
                 }
@@ -427,7 +418,7 @@
           }
         }
         .button {
-          margin-right: 4px;
+          margin-right: 5px;
           &.icon {
             padding: 5px;
             border-radius: 4px;

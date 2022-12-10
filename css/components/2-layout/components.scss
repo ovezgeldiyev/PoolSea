@@ -123,16 +123,29 @@ p {
   }
 
   &__note {
-    position: relative;
-    top: 0;
+    position: absolute;
+    width: 100%;
+    top: 130px;
     left: 50%;
     display: flex;
     padding: 28px 130px 28px 32px;
     background-color: $tabBg;
     border-radius: 8px;
     max-width: 900px;
-    transform: translate(-50%, -50%);
-
+    transform: translateX(-50%);
+    &.active {
+      animation-name: fadeOut;
+      animation-duration: .2s;
+      opacity: 0;
+      pointer-events: none;
+    }
+    &-outer {
+      margin-bottom: 120px;
+      transition: .4s ease;
+      &.active {
+        margin-bottom: 0;
+      }
+    }
     &-icon {
       display: flex;
       justify-content: center;
@@ -181,8 +194,8 @@ p {
   &__bg {
     position: absolute;
     width: 100%;
-    height: 13%;
-    top: 16%;
+    height: 10%;
+    top: 18%;
     left: 0;
     pointer-events: none;
 
@@ -206,6 +219,7 @@ p {
       width: 100%;
       height: 60%;
       opacity: .2;
+      z-index: -1;
       min-width: 900px;
       transform: translateX(-50%);
 
@@ -214,7 +228,7 @@ p {
           opacity: 1;
         }
 
-        opacity: .2;
+        opacity: .05;
       }
 
       img {
@@ -314,15 +328,12 @@ p {
       }
 
       &:hover {
-        opacity: 1;
-        background: transparent;
-        border-color: $textColor;
+        opacity: .8;
         span {
-          background: $textColor;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-          transition: .3s ease;
+          opacity: 1;
+        }
+        &::before {
+          opacity: 1;
         }
       }
     }
@@ -343,7 +354,7 @@ p {
           #0078ff 93.71%);
       transform: translate(-50%, -50%);
       z-index: -1;
-      transition: .4s ease;
+      transition: .3s ease;
     }
 
     span {
@@ -354,18 +365,15 @@ p {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      transition: .4s ease;
+      transition: .3s ease;
     }
     &:hover {
       opacity: 1;
       span {
-        background: $textColor;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+        opacity: .8;
       }
       &::before {
-        background: $textColor;
+        opacity: .8;
       }
     }
   }
@@ -387,7 +395,7 @@ p {
       opacity: 1;
 
       svg {
-        fill: $linkColor;
+        fill: $blue;
 
         &.moon {
           opacity: .7;
@@ -516,5 +524,15 @@ p {
     height: 100%;
     object-fit: cover;
     object-position: center;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
   }
 }

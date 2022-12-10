@@ -166,7 +166,9 @@
 
     .main {
         padding-top: 150px;
-
+        &__note {
+            top: 90px;
+        }
     }
 
     @include header-xlg-xxlg;
@@ -259,8 +261,10 @@
         padding-top: 110px;
 
         &__note {
-            transform: translate(-50%, -20%);
             width: calc(100% - 60px);
+            &-outer {
+                margin-bottom: 130px;
+            }
         }
     }
 
@@ -340,7 +344,9 @@
     .main {
         &__note {
             padding: 20px 70px 20px 20px;
-
+            &-outer {
+                margin-bottom: 115px;
+            }
             &-icon {
                 margin-right: 18px;
             }
@@ -425,6 +431,10 @@
         &__note {
             width: calc(100% - 40px);
             padding: 20px 60px 20px 20px;
+            p {
+                font-size: 14px;
+                line-height: 20px;
+            }
         }
     }
 
@@ -539,7 +549,10 @@
 
         &__note {
             padding: 12px 40px 12px 12px;
-
+            top: 76px;
+            &-outer {
+                margin-bottom: 80px;
+            }
             &-icon {
                 width: 20px;
                 height: 20px;
@@ -556,6 +569,8 @@
             }
 
             p {
+                font-size: 12px;
+                line-height: 18px;
                 width: calc(100% - 35px);
             }
         }
@@ -626,6 +641,7 @@
         padding-top: 90px;
 
         &__note {
+            top: 65px;
             p {
                 font-size: 10px;
                 line-height: 14px;
@@ -657,7 +673,14 @@
     .auto__container {
         padding: 0 15px;
     }
-
+    .main {
+        &__note {
+            width: calc(100% - 30px);
+            &-outer {
+                margin-bottom: 75px;
+            }
+        }
+    }
     @include footer-xxxsm-xxsm;
     @include join-xxxsm-xxsm;
     @include discleamer-xxxsm-xxsm;
@@ -680,6 +703,31 @@
 }
 // 370px
 @include xxxxsm-xxxsm {
+    .main {
+        &__note {
+            padding: 10px 34px 10px 10px;
+            border-radius: 6px;
+            &-outer {
+                margin-bottom: 66px;
+            }
+            &-icon {
+                margin-top: 2px;
+                width: 16px;
+                height: 16px;
+                margin-right: 8px;
+            }
+            span {
+                top: 12px;
+                right: 12px;
+                width: 10px;
+                height: 10px;
+            }
+            p {
+                font-size: 9px;
+                line-height: 11px;
+            }
+        }
+    }
     @include nav-xxxxsm-xxxsm;
  
 }

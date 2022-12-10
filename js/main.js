@@ -281,10 +281,13 @@ themeChange.onchange = function () {
 // themeChange end
 
 const warn = document.getElementById("warn");
+const warnClose = document.getElementById("warnClose");
+const warnOuter = document.getElementById("warnOuter");
+
 if (warn) {
-  const warnClose = document.getElementById("warnClose");
   warnClose.onclick = () => {
-    warn.style.display = "none";
+    warn.classList.add("active");
+    warnOuter.classList.add("active");
   };
 }
 

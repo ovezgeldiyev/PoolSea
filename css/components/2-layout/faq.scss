@@ -1,5 +1,6 @@
 .faq {
   background: $faqOuterBg;
+
   &__inner {
     padding: 140px 0;
     transition: padding 0.2s ease;
@@ -61,6 +62,7 @@
       &.active {
         background-color: $faqBg;
         border-radius: 10px 10px 0 0;
+
         h6 {
           color: $white;
         }
@@ -103,19 +105,29 @@
     margin-bottom: 55px;
     font-family: $sfDisplay;
   }
+
   &.big {
     background-color: unset;
     border: unset;
+
     .faq {
       &__inner {
         padding: 160px 0;
+
         @include inLightMode {
           padding: 160px 0 160px 0;
         }
       }
+
       &Item {
         border: unset;
         position: relative;
+
+        @include inDarkMode {
+          background: $faqNFTActive;
+
+        }
+
         &::before {
           content: "";
           width: calc(100% + 2px);
@@ -129,14 +141,18 @@
           z-index: -1;
           transform: translate(-50%, -50%);
         }
+
         &__header {
           background: $faqNFTBg;
+
           &.active {
             background: $faqNFTActive;
           }
         }
+
         &__content {
           background: $faqNFTActive;
+          transition: .3s ease;
         }
       }
     }
@@ -153,13 +169,16 @@
         padding: 0px 0 110px 0;
       }
     }
+
     h3 {
       margin-bottom: 45px;
     }
+
     &.big {
       .faq {
         &__inner {
           padding: 120px 0;
+
           @include inLightMode {
             padding: 120px 0;
           }
@@ -179,10 +198,12 @@
         padding: 0px 0 90px 0;
       }
     }
+
     &.big {
       .faq {
         &__inner {
           padding: 90px 0;
+
           @include inLightMode {
             padding: 90px 0;
           }
@@ -235,10 +256,12 @@
         }
       }
     }
+
     &.big {
       .faq {
         &__inner {
           padding: 70px 0;
+
           @include inLightMode {
             padding: 70px 0;
           }
@@ -258,6 +281,7 @@
         padding: 0px 0 30px 0;
       }
     }
+
     &Item {
       margin-bottom: 15px;
 
@@ -287,10 +311,12 @@
         }
       }
     }
+
     &.big {
       .faq {
         &__inner {
           padding: 50px 0;
+
           @include inLightMode {
             padding: 50px 0;
           }
@@ -305,13 +331,16 @@
   .faq {
     &__inner {
       padding: 30px 0;
+
       @include inLightMode {
         padding: 0;
       }
+
       &.big {
         .faq {
           &__inner {
             padding: 40px 0;
+
             @include inLightMode {
               padding: 40px 0;
             }
@@ -354,4 +383,3 @@
     }
   }
 }
-
