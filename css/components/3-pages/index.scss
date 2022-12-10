@@ -1694,7 +1694,7 @@
 @mixin rate-sm-md-extra {
   .rate {
     &__inner {
-      padding: 40px;
+      padding: 25px 20px;
       border-radius: 20px;
     }
 
@@ -1710,11 +1710,11 @@
     background-color: $tabBg;
 
     &__inner {
-      padding: 30px 20px;
+      padding: 20px 15px;
     }
 
     h3 {
-      margin-bottom: 25px;
+      margin-bottom: 15px;
     }
 
     .circle {
@@ -2077,7 +2077,7 @@
   background-color: $tabBg;
 
   .auto__container {
-    max-width: 1430px;
+    max-width: 1180px;
   }
 
   &__inner {
@@ -2258,7 +2258,7 @@
       }
 
       &-swiper {
-        width: calc(100% - 20px);
+        width: calc(100% - 40px);
       }
 
       h3 {
@@ -2267,7 +2267,23 @@
     }
   }
 }
+// 440px
+@mixin team-xxsm-xsm {
+  .team {
+    &__inner {
+      .swiperBtn {
+        transform: translateX(0);
+      }
 
+      .swiper-button-prev {
+        transform: translateX(0);
+      }
+      &-swiper {
+        width: calc(100% - 60px);
+      }
+    }
+  }
+}
 .location {
   &__inner {
     padding: 160px 0;

@@ -18,7 +18,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 var swiper2 = new Swiper(".mySwiper2", {
-  slidesPerView: 7,
+  slidesPerView: 5,
   spaceBetween: 15,
   loop: true,
   navigation: {
@@ -30,9 +30,9 @@ var swiper2 = new Swiper(".mySwiper2", {
       slidesPerView: 1,
       spaceBetween: 8,
     },
-    370: {
+    440: {
       slidesPerView: 2,
-      spaceBetween: 8,
+      spaceBetween: 5,
     },
     600: {
       slidesPerView: 3,
@@ -44,16 +44,8 @@ var swiper2 = new Swiper(".mySwiper2", {
     },
     1024: {
       slidesPerView: 5,
-      spaceBetween: 5,
-    },
-    1180: {
-      slidesPerView: 6,
-      spaceBetween: 5,
-    },
-    1380: {
-      slidesPerView: 7,
-      spaceBetween: 15,
-    },
+      spaceBetween: 10,
+    }
   },
 });
 // swiper end
