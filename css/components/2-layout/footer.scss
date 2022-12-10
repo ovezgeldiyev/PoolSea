@@ -54,14 +54,23 @@
   }
 
   &Link {
+    @include inDarkMode{
+      h5 {
+        opacity: .7;
+      }
+      a {
+        opacity: .7;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
     h5 {
       font-size: 20px;
       line-height: 23px;
       margin-bottom: 20px;
       font-family: $sfDisplay;
-      @include inDarkMode{
-        opacity: .7;
-      }
+   
     }
     a {
       display: block;
@@ -69,9 +78,6 @@
       font-size: 16px;
       line-height: 19px;
       color: $iconColor;
-      @include inDarkMode{
-        opacity: .7;
-      }
       &:last-child {
         margin-bottom: 0;
       }
