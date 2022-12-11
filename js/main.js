@@ -45,7 +45,7 @@ var swiper2 = new Swiper(".mySwiper2", {
     1024: {
       slidesPerView: 5,
       spaceBetween: 10,
-    }
+    },
   },
 });
 // swiper end
@@ -57,18 +57,17 @@ var body = document.body;
 var html = document.querySelector("html");
 let header = document.getElementById("header");
 
-window.onresize = ()=> {
+window.onresize = () => {
   menu.classList.remove("active");
   menuBtn.classList.remove("active");
   body.classList.remove("active");
   header.classList.remove("active");
-}
+};
 menuBtn.onclick = function () {
   menu.classList.toggle("active");
   menuBtn.classList.toggle("active");
   body.classList.toggle("active");
   header.classList.toggle("active");
-
 };
 window.onclick = function (event) {
   if (event.target == menu) {
@@ -192,17 +191,18 @@ if (countdown) {
 
 // timer end
 
-
-
 // copy start
 const copyBtn = document.getElementById("copyBtn");
+const copyInput = document.getElementById("copyInput");
 
 if (copyBtn) {
-  const copyInput = document.getElementById("copyInput");
   const tooltip = copyBtn.querySelector("span");
+
   const copy = (text) => {
     if (navigator.clipboard !== undefined) {
-      navigator.clipboard.writeText(text).then(
+      text.select();
+      text.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(text.value).then(
         () => {},
         (err) => console.error("Async: Could not copy text: ", err)
       );
@@ -214,7 +214,7 @@ if (copyBtn) {
   };
 
   copyBtn.onclick = () => {
-    copy(copyInput.value);
+    copy(copyInput);
     tooltip.classList.add("active");
     setTimeout(() => tooltip.classList.remove("active"), 1500);
   };
@@ -229,6 +229,7 @@ const circles = document.querySelectorAll(".circle");
 
 const imagesDark = document.querySelectorAll(".dark");
 const imagesLight = document.querySelectorAll(".light");
+
 const imageChange = () => {
   if (html.getAttribute("data-theme") == "light") {
     imagesLight.forEach((image) => {
@@ -249,27 +250,44 @@ const imageChange = () => {
 imageChange();
 var canvas = document.querySelector(".animation-scrolling");
 
-themeChange.onchange = function () {
-  if (themeChange.checked) {
-    document.documentElement.setAttribute("data-theme", "dark");
+if (localStorage.getItem("data-theme")) {
+  html.setAttribute("data-theme", localStorage.getItem("data-theme"));
+  toggleDark(1);
+}
+
+function toggleDark(r) {
+  const dataTheme = html.getAttribute("data-theme");
+  let theme_switch;
+  if (dataTheme === "light") {
+    theme_switch = 1;
+  } else {
+    theme_switch = 0;
+  }
+  if (r) {
+    theme_switch = !theme_switch;
+  }
+  if (theme_switch) {
+    html.setAttribute("data-theme", "dark");
     themeChangeBtn.classList.add("active");
+    localStorage.setItem("data-theme", "dark");
     imageChange();
     circles.forEach((circle) => {
       circle.classList.add("dark");
     });
   } else {
-    document.documentElement.setAttribute("data-theme", "light");
+    html.setAttribute("data-theme", "light");
     themeChangeBtn.classList.remove("active");
     imageChange();
     circles.forEach((circle) => {
       circle.classList.remove("dark");
     });
+    localStorage.setItem("data-theme", "light");
   }
   if (canvas) {
     preloadImages();
-
   }
-};
+}
+
 // themeChange end
 
 const warn = document.getElementById("warn");

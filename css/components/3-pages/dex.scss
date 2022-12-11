@@ -487,16 +487,25 @@
         margin-bottom: 7px;
         color: $feesColor;
         display: inline-block;
-  
+        span {
+          font-weight: 700;
+        }
         &.color {
+          color: unset;
+          background: linear-gradient(268.3deg,
+          #00fff9 -4.34%,
+          #00c5ff 13.53%,
+          #0078ff 93.71%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
           span {
-            background: linear-gradient(268.3deg,
-                #00fff9 -4.34%,
-                #00c5ff 13.53%,
-                #0078ff 93.71%);
+            background: $feesColor;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            position: relative;
+            z-index: 2;
           }
         }
   
@@ -521,12 +530,15 @@
       margin-bottom: 60px;
       text-align: center;
       font-family: $sfDisplay;
-  
+      background: linear-gradient(268.3deg,
+      #00fff9 -4.34%,
+      #00c5ff 13.53%,
+      #0078ff 93.71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
       span {
-        background: linear-gradient(359deg,
-            #00fff9 -4.34%,
-            #00c5ff 13.53%,
-            #0078ff 93.71%);
+        background: $textColor;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
