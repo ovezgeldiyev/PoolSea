@@ -27,12 +27,31 @@
       align-items: center;
       max-width: 684px;
       border-radius: 10px;
+
       img {
         width: 100%;
         border-radius: 10px;
+        &.dark {
+          display: none ;
+          border-radius: 0;
+        }
+        &.light {
+          display: none;
+          border-radius: 0;
+        }
       }
     }
-
+    &-banner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: none;
+      position: relative;
+      z-index: 3;
+      img {
+        width: 100%;
+      }
+    }
     &-content {
       width: calc(40% - 20px);
       max-width: 470px;
@@ -41,6 +60,7 @@
         text-align: left;
         letter-spacing: -0.02em;
         font-family: $sfDisplay;
+
         span {
           span {
             background: linear-gradient(268.3deg, #00C5FF -30.53%, #0078FF 98.71%);
@@ -57,17 +77,17 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background: $heroBg;
+      background: $bgColor;
 
       .main__bg {
         top: -13%;
-        height: 110%;
+        height: 130%;
 
         &-wave {
           bottom: unset;
-          top: 70%;
+          top: 100%;
           z-index: 1;
-          opacity: .1;
+          opacity: .2;
         }
 
         .circle {
@@ -215,13 +235,29 @@
 
 // 750px
 @mixin hero-sm-md {
+  .scrollmagic-pin-spacer {
+    position: static !important;
+    height: 0 !important;
+    overflow: hidden;
+  }
   .hero {
     &.market {
       padding: 10px 0 80px;
     }
 
     &__inner {
+
+      &-banner {
+        display: block;
+      }
       &-wrapper {
+        height: 45vh;
+        width: 100%;
+        top: 2% !important;
+        position: absolute !important;
+        background: unset;
+        margin: 0 !important;
+        pointer-events: none;
         .main__bg {
           height: 106%;
 
@@ -232,7 +268,14 @@
           }
         }
       }
-
+      &-image {
+        &.large {
+          display: none;
+        }
+        canvas {
+          display: none;
+        }
+      }
       h1 {
         margin-bottom: 5px;
       }
@@ -284,6 +327,7 @@
           br {
             display: none;
           }
+
           span {
             span {
               background: transparent;
@@ -309,6 +353,7 @@
           white-space: nowrap;
         }
       }
+
       &-wrapper {
         canvas {
           top: 50%;
@@ -331,7 +376,6 @@
 
 .intro {
   padding: 217px 0;
-
   &__inner {
     display: flex;
     align-items: flex-end;
@@ -520,11 +564,17 @@
     }
   }
 }
+// 750px
+@mixin intro-sm-md {
+  .intro {
 
+  }
+}
 // 540px
 @mixin intro-xsm-sm {
   .intro {
     padding: 30px 0 70px;
+
 
     &__inner {
       &-content {
@@ -1772,12 +1822,13 @@
     margin-bottom: 16px;
     font-family: $sfDisplay;
     background: linear-gradient(268.3deg,
-    #00fff9 -4.34%,
-    #00c5ff 13.53%,
-    #0078ff 93.71%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
+        #00fff9 -4.34%,
+        #00c5ff 13.53%,
+        #0078ff 93.71%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
     span {
       background: $feesColor;
       -webkit-background-clip: text;
@@ -2292,6 +2343,7 @@ background-clip: text;
     }
   }
 }
+
 // 440px
 @mixin team-xxsm-xsm {
   .team {
@@ -2303,12 +2355,14 @@ background-clip: text;
       .swiper-button-prev {
         transform: translateX(0);
       }
+
       &-swiper {
         width: calc(100% - 60px);
       }
     }
   }
 }
+
 .location {
   &__inner {
     padding: 160px 0;
@@ -2738,6 +2792,8 @@ background-clip: text;
     right: -23%;
     z-index: -1;
   }
+
+
 }
 
 // 1350px
@@ -2785,6 +2841,40 @@ background-clip: text;
     .circle {
       width: 500px;
     }
+
+    .check {
+      span {
+        left: -30%;
+        transform: translateX(0);
+
+        &::before {
+          display: none;
+        }
+      }
+
+      &::before {
+        position: absolute;
+        bottom: calc(100% + 2.5px);
+        left: 50%;
+        content: "";
+        border-width: 5px;
+        border-style: solid;
+        border-color: var(--textColor) transparent transparent transparent;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: .3s ease;
+      }
+
+      &.active {
+        span {
+          opacity: 1;
+        }
+
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
   }
 }
 
@@ -2798,6 +2888,8 @@ background-clip: text;
     h3 {
       margin-bottom: 20px;
     }
+
+
   }
 }
 
@@ -2928,6 +3020,12 @@ background-clip: text;
       }
     }
 
+    .check {
+      span {
+        left: 0;
+      }
+    }
+
     h3 {
       margin-bottom: 20px;
     }
@@ -2969,77 +3067,7 @@ background-clip: text;
     }
   }
 
-  .check {
-    font-size: 18px;
-    line-height: 22px;
-    font-family: $sfDisplay;
-    position: relative;
-    display: inline;
-    padding-bottom: 1px;
-    background-color: unset;
-    color: inherit;
-    cursor: pointer;
 
-    &:after {
-      content: "";
-      width: 100%;
-      height: 1px;
-      background-color: $langColor;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    }
-
-    span {
-      position: absolute;
-      bottom: calc(100% + 12px);
-      width: 450px;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-      transform: translateX(-50%);
-      background-color: var(--textColor);
-      color: var(--bgColor);
-      padding: 10px 12px;
-      border-radius: 5px;
-      z-index: 3;
-      font-size: 14px;
-      line-height: 14px;
-      text-align: center;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      opacity: 0;
-      pointer-events: none;
-      -webkit-transition: 0.3s ease;
-      transition: 0.3s ease;
-
-      br {
-        display: none;
-      }
-
-      &::before {
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        content: "";
-        border-width: 5px;
-        border-style: solid;
-        border-color: var(--textColor) transparent transparent transparent;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-      }
-
-      &.active {
-        opacity: 1;
-      }
-    }
-  }
 }
 
 // 1180px
@@ -3083,10 +3111,7 @@ background-clip: text;
       width: calc(25% - 10px);
     }
 
-    .check {
-      font-size: 16px;
-      line-height: 20px;
-    }
+
   }
 }
 
@@ -3106,6 +3131,11 @@ background-clip: text;
       width: calc(50% - 20px);
       max-width: 265px;
       margin: 10px;
+
+      img {
+        width: 80%;
+        max-height: 35px;
+      }
     }
 
     h3 {
@@ -3133,16 +3163,14 @@ background-clip: text;
       padding: 30px 20px;
       width: calc(50% - 10px);
       margin: 10px 5px;
-    }
+      border-radius: 15px;
 
-    .check {
-      span {
-        font-size: 12px;
-        line-height: 18px;
-        width: 380px;
-        padding: 8px 10px;
+      img {
+        max-height: 25px;
       }
     }
+
+
   }
 }
 
@@ -3161,16 +3189,13 @@ background-clip: text;
       padding: 40px 30px;
       width: 100%;
       margin: 10px 0;
-    }
 
-    .check {
-      span {
-        width: 240px;
-        font-size: 11px;
-        line-height: 14px;
-
+      img {
+        max-height: 35px;
       }
     }
+
+
   }
 }
 
@@ -3326,14 +3351,16 @@ background-clip: text;
         width: calc(55% - 18px);
         max-width: 720px;
       }
+
       h3 {
         background: linear-gradient(268.3deg,
-        #00fff9 -4.34%,
-        #00c5ff 13.53%,
-        #0078ff 93.71%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+            #00fff9 -4.34%,
+            #00c5ff 13.53%,
+            #0078ff 93.71%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+
         span {
           background: $textColor;
           -webkit-background-clip: text;

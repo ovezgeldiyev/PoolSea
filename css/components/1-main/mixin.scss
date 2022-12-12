@@ -185,6 +185,10 @@
   }
 }
 
-
+@mixin xxxxxlg-xxxxxxlg {
+  @media (max-width: 1700px) {
+    @content;
+  }
+}
 
 

@@ -89,6 +89,11 @@
           line-height: 22px;
           color: $darkWhite;
         }
+        a {
+          text-decoration: underline;
+          color: $darkWhite;
+
+        }
       }
 
       &.active {

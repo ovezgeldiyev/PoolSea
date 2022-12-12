@@ -80,7 +80,6 @@ html[data-theme |=light] {
     --faqOuterBg: #fff;
     --line: #EEEEF1;
     --timer: #0D0F15;
-    --heroBg: #fff;
     --scrollBg: #d4d4d4;
     --scrollThumb: rgba(0, 0, 0, 0.3);
     --scrollThumbHover: rgba(0, 0, 0, 0.4);
@@ -98,11 +97,12 @@ html[data-theme |=light] {
     --aquaNumber: #c0c8d9;
     --check: #6E6E73;
     --stakinBg: linear-gradient(116.97deg, #3D6585 20.34%, #fff 120%);
+    --heroBg: #fff;
 
 }
 
 html[data-theme |=dark] {
-    --bgColor: #06070A;
+    --bgColor: #010103;
     --textColor: #fff;
     --iconColor: #fff;
     --iconbg: #131823;
@@ -127,7 +127,6 @@ html[data-theme |=dark] {
     --faqOuterBg: #131823;
     --line: #06070A;
     --timer: linear-gradient(268.3deg, #00FFF9 -4.34%, #00C5FF 13.53%, #0078FF 93.71%);
-    --heroBg: #010103;
     --scrollBg: #525252;
     --scrollThumb: rgba(255, 255, 255, 0.3);
     --scrollThumbHover: rgba(255, 255, 255, 0.4);
@@ -145,6 +144,7 @@ html[data-theme |=dark] {
     --aquaNumber: #131823;
     --check: #6E6E73;
     --stakinBg: linear-gradient(116.97deg, #3D6585 18.34%, #000000 80%);
+    --heroBg: #010103;
 
 }
 // fonts

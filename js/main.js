@@ -156,10 +156,14 @@ function onFaqClick(faqBtns, faqItems, item) {
 // faq end
 
 // timer start
-let upgradeTime = 3283200;
-let seconds = upgradeTime;
+
 const countdown = document.getElementById("countdown");
 if (countdown) {
+  let endDate = new Date(countdown.getAttribute("data-date"));
+  let upgradeTime = endDate - Date.now();
+
+  let seconds = upgradeTime / 1000;
+
   let countdownTimer = setInterval("timer()", 1000);
 
   function timer() {
@@ -168,11 +172,11 @@ if (countdown) {
     let hours = Math.floor(hoursLeft / 3600);
     let minutesLeft = Math.floor(hoursLeft - hours * 3600);
     let minutes = Math.floor(minutesLeft / 60);
-    let remainingSeconds = seconds % 60;
+    let remainingSeconds = Math.floor(seconds) % 60;
     function pad(n) {
       return n < 10 ? "0" + n : n;
     }
-    document.getElementById("countdown").innerHTML =
+    countdown.innerHTML =
       pad(days) +
       ":" +
       pad(hours) +
@@ -182,7 +186,7 @@ if (countdown) {
       pad(remainingSeconds);
     if (seconds == 0) {
       clearInterval(countdownTimer);
-      document.getElementById("countdown").innerHTML = "Completed";
+      countdown.innerHTML = "Completed";
     } else {
       seconds--;
     }
@@ -200,23 +204,30 @@ if (copyBtn) {
 
   const copy = (text) => {
     if (navigator.clipboard !== undefined) {
+      console.log("navigator.clipboard");
       text.select();
       text.setSelectionRange(0, 99999);
       navigator.clipboard.writeText(text.value).then(
-        () => {},
+        () => {
+          tooltip.classList.add("active");
+        },
         (err) => console.error("Async: Could not copy text: ", err)
       );
     } else if (window.clipboardData) {
+      console.log("window.clipboardData");
       window.clipboardData.setData("Text", text);
+      tooltip.classList.add("active");
     } else {
-      console.log(`can't copy: not secure`);
+      text.select();
+      text.setSelectionRange(0, 99999);
+      let success = document.execCommand("copy");
+      console.log(`can't copy: not secure`, window.isSecureContext);
     }
+    setTimeout(() => tooltip.classList.remove("active"), 1500);
   };
 
   copyBtn.onclick = () => {
     copy(copyInput);
-    tooltip.classList.add("active");
-    setTimeout(() => tooltip.classList.remove("active"), 1500);
   };
 }
 
@@ -285,6 +296,8 @@ function toggleDark(r) {
   }
   if (canvas) {
     preloadImages();
+
+
   }
 }
 
@@ -300,9 +313,26 @@ if (warn) {
     warnOuter.classList.add("active");
   };
 }
+const myCheck = document.getElementById("myCheck");
 
 const sponsorTooltip = () => {
-  const content = document.querySelector("#sponsorsTooltip");
-  content.classList.add("active");
-  setTimeout(() => content.classList.remove("active"), 1500);
+  const contentBtns = document.querySelectorAll(".check");
+
+  contentBtns.forEach((contentBtn) => {
+    contentBtn.onclick = (e) => {
+      e.preventDefault();
+
+      contentBtn.classList.toggle("active");
+
+      setTimeout(() => contentBtn.classList.remove("active"), 1500);
+      contentBtns.forEach((button) => {
+        if (button !== contentBtn) {
+          button.classList.remove("active");
+        }
+      });
+    };
+  });
 };
+
+  sponsorTooltip();
+

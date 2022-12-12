@@ -202,12 +202,17 @@
           transform: translateX(-50%);
           overflow: hidden;
           z-index: 12;
-          span {
+          .check {
             padding: 4px 10px;
             transition: .2s ease;
             text-align: start;
-            &:hover {
-              opacity: .9;
+            position: static;
+            &::after {
+              display: none;
+            }
+            span {
+              white-space: nowrap;
+              width: unset;
             }
           }
         }
@@ -219,6 +224,7 @@
           .lang__dropdown {
             max-height: 100px;
             opacity: 1;
+            overflow: unset;
           }
         }
         svg {
@@ -235,6 +241,30 @@
         }
       }
     }
+  }
+}
+// 1700px
+@mixin header-xxxxxlg-xxxxxxlg {
+  .header {
+      &__inner {
+        &-buttons {
+          .lang {
+            &__dropdown {
+              .check {
+                span {
+                  left: unset;
+                  right: -36%;
+                  transform: translateX(0);
+                  &::before {
+                    left: unset;
+                    right: 58px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
   }
 }
 // 1380px
@@ -267,6 +297,15 @@
             }
           }
           .lang {
+            &__dropdown {
+              .check {
+                span {
+                  &::before {
+                    right: 53px;
+                  }
+                }
+              }
+            }
             svg {
               &.globe {
                 width: 20px;
@@ -319,7 +358,16 @@
         }
         .lang {
           margin-right: 20px;
-
+          &__dropdown {
+            .check {
+              span {
+                right: -60%;
+                &::before {
+                  right: 73px;
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -401,9 +449,16 @@
           &__dropdown {
             padding: 6px;
             border-radius: 10px;
-            span {
-              padding: 3px 6px;
+            .check {
+              padding: 2px 8px;
               margin: 0;
+              span {
+                right: -60%;
+                padding: 5px 8px;
+                &::before {
+                  right: 50px;
+                }
+              }
             }
           }
           & > span {

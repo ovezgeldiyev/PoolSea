@@ -1,3 +1,7 @@
+// 1700px
+@include xxxxxlg-xxxxxxlg {
+    @include header-xxxxxlg-xxxxxxlg;
+}
 // 1450px
 @include xxxxlg-xxxxxlg {
     h1 {
@@ -277,7 +281,10 @@
             line-height: 14px;
         }
     }
-
+    .check {
+        font-size: 16px;
+        line-height: 20px;
+      }
     @include hero-lg-xlg;
     @include intro-lg-xlg;
     @include tab-lg-xlg;
@@ -389,6 +396,9 @@
 
 // 750px
 @include sm-md {
+    html[data-theme |=dark] {
+    --bgColor: #06070A;
+    }
     .auto__container {
         padding: 0 20px;
     }
@@ -450,6 +460,7 @@
     @include dex-sm-md;
     @include summary-sm-md;
     @include update-sm-md;
+    @include intro-sm-md;
 
 }
 
@@ -575,7 +586,14 @@
             }
         }
     }
-
+    .check {
+        span {
+          font-size: 12px;
+          line-height: 18px;
+          width: 380px;
+          padding: 8px 10px;
+        }
+      }
     @include header-xsm-sm;
     @include nav-xsm-sm;
     @include intro-xsm-sm;
@@ -682,6 +700,14 @@
             }
         }
     }
+    .check {
+        span {
+          width: 240px;
+          font-size: 11px;
+          line-height: 14px;
+  
+        }
+      }
     @include footer-xxxsm-xxsm;
     @include join-xxxsm-xxsm;
     @include discleamer-xxxsm-xxsm;

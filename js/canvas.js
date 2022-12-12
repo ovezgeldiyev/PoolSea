@@ -2,16 +2,21 @@ var html = document.querySelector("html");
 
 // scrollMagic
 const intro = document.querySelector("#startPoint");
-const controller = new ScrollMagic.Controller();
 const duration = 2000;
-let scene = new ScrollMagic.Scene({
-  duration: duration,
-  triggerElement: intro,
-  triggerHook: 0.07,
-})
+let controller = null;
+let scene = null;
 
-  .setPin(intro)
-  .addTo(controller);
+const initController = () => {
+  controller = new ScrollMagic.Controller();
+  scene = new ScrollMagic.Scene({
+    duration: duration,
+    triggerElement: intro,
+    triggerHook: 0.07,
+  })
+    .setPin(intro)
+    .addTo(controller);
+};
+initController();
 
 // canvas start
 var canvas = document.querySelector(".animation-scrolling");
@@ -40,7 +45,8 @@ img.src = generatePath(1);
 img.onload = function () {
   context.drawImage(img, 0, 0);
 };
-window.addEventListener("scroll", () => {
+
+const scrollFunc2 = () => {
   const scrollTop = html.scrollTop;
   const maxScrollTop = html.scrollHeight - window.innerHeight;
   const scrollFraction = frameCount / duration;
@@ -49,14 +55,14 @@ window.addEventListener("scroll", () => {
     Math.floor(speed * scrollTop * scrollFraction)
   );
   requestAnimationFrame(() => updateImage(frameIndex));
-});
+};
 
 const updateImage = (index) => {
   img.src = generatePath(index);
   context.drawImage(img, 0, 0);
 };
 
-const preloadImages = () => {
+var preloadImages = () => {
   img.src = generatePath(1);
   img.onload = function () {
     context.drawImage(img, 0, 0);
@@ -68,4 +74,26 @@ const preloadImages = () => {
 };
 preloadImages();
 
+window.addEventListener("scroll", scrollFunc2);
+window.addEventListener("resize", () => {
+  const innerWidth = window.innerWidth;
+  let isEnabled = innerWidth > 750;
+
+  if (!isEnabled) {
+    if (!!controller) {
+      scene.removePin(intro);
+      scene.removeClassToggle(true);
+      scene.remove();
+      scene = scene.destroy(true);
+      controller = controller.destroy(true);
+      window.removeEventListener("scroll", scrollFunc2);
+    }
+  } else {
+    if (!controller) {
+      window.addEventListener("scroll", scrollFunc2);
+      initController();
+    }
+
+  }
+});
 // canvas end
