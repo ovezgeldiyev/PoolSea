@@ -1446,14 +1446,6 @@ html[data-theme=dark] .faq.big .faqItem {
   width: 100%;
   border-radius: 10px;
 }
-.hero__inner-image img.dark {
-  display: none;
-  border-radius: 0;
-}
-.hero__inner-image img.light {
-  display: none;
-  border-radius: 0;
-}
 .hero__inner-banner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1470,6 +1462,12 @@ html[data-theme=dark] .faq.big .faqItem {
 }
 .hero__inner-banner img {
   width: 100%;
+}
+.hero__inner-banner img.dark {
+  display: none;
+}
+.hero__inner-banner img.light {
+  display: none;
 }
 .hero__inner-content {
   width: calc(40% - 20px);

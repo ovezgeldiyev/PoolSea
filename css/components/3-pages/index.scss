@@ -31,14 +31,6 @@
       img {
         width: 100%;
         border-radius: 10px;
-        &.dark {
-          display: none ;
-          border-radius: 0;
-        }
-        &.light {
-          display: none;
-          border-radius: 0;
-        }
       }
     }
     &-banner {
@@ -50,6 +42,12 @@
       z-index: 3;
       img {
         width: 100%;
+        &.dark {
+          display: none ;
+        }
+        &.light {
+          display: none;
+        }
       }
     }
     &-content {
