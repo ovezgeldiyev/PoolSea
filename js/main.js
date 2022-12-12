@@ -18,7 +18,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 var swiper2 = new Swiper(".mySwiper2", {
-  slidesPerView: 7,
+  slidesPerView: 5,
   spaceBetween: 15,
   loop: true,
   navigation: {
@@ -30,9 +30,9 @@ var swiper2 = new Swiper(".mySwiper2", {
       slidesPerView: 1,
       spaceBetween: 8,
     },
-    370: {
+    440: {
       slidesPerView: 2,
-      spaceBetween: 8,
+      spaceBetween: 5,
     },
     600: {
       slidesPerView: 3,
@@ -44,15 +44,7 @@ var swiper2 = new Swiper(".mySwiper2", {
     },
     1024: {
       slidesPerView: 5,
-      spaceBetween: 5,
-    },
-    1180: {
-      slidesPerView: 6,
-      spaceBetween: 5,
-    },
-    1380: {
-      slidesPerView: 7,
-      spaceBetween: 15,
+      spaceBetween: 10,
     },
   },
 });
@@ -65,18 +57,17 @@ var body = document.body;
 var html = document.querySelector("html");
 let header = document.getElementById("header");
 
-window.onresize = ()=> {
+window.onresize = () => {
   menu.classList.remove("active");
   menuBtn.classList.remove("active");
   body.classList.remove("active");
   header.classList.remove("active");
-}
+};
 menuBtn.onclick = function () {
   menu.classList.toggle("active");
   menuBtn.classList.toggle("active");
   body.classList.toggle("active");
   header.classList.toggle("active");
-
 };
 window.onclick = function (event) {
   if (event.target == menu) {
@@ -165,10 +156,14 @@ function onFaqClick(faqBtns, faqItems, item) {
 // faq end
 
 // timer start
-let upgradeTime = 3283200;
-let seconds = upgradeTime;
+
 const countdown = document.getElementById("countdown");
 if (countdown) {
+  let endDate = new Date(countdown.getAttribute("data-date"));
+  let upgradeTime = endDate - Date.now();
+
+  let seconds = upgradeTime / 1000;
+
   let countdownTimer = setInterval("timer()", 1000);
 
   function timer() {
@@ -177,11 +172,11 @@ if (countdown) {
     let hours = Math.floor(hoursLeft / 3600);
     let minutesLeft = Math.floor(hoursLeft - hours * 3600);
     let minutes = Math.floor(minutesLeft / 60);
-    let remainingSeconds = seconds % 60;
+    let remainingSeconds = Math.floor(seconds) % 60;
     function pad(n) {
       return n < 10 ? "0" + n : n;
     }
-    document.getElementById("countdown").innerHTML =
+    countdown.innerHTML =
       pad(days) +
       ":" +
       pad(hours) +
@@ -191,7 +186,7 @@ if (countdown) {
       pad(remainingSeconds);
     if (seconds == 0) {
       clearInterval(countdownTimer);
-      document.getElementById("countdown").innerHTML = "Completed";
+      countdown.innerHTML = "Completed";
     } else {
       seconds--;
     }
@@ -200,31 +195,43 @@ if (countdown) {
 
 // timer end
 
-
-
 // copy start
 const copyBtn = document.getElementById("copyBtn");
+const copyInput = document.getElementById("copyInput");
 
 if (copyBtn) {
-  const copyInput = document.getElementById("copyInput");
   const tooltip = copyBtn.querySelector("span");
+
   const copy = (text) => {
     if (navigator.clipboard !== undefined) {
-      navigator.clipboard.writeText(text).then(
-        () => {},
+      console.log("navigator.clipboard");
+      text.select();
+      text.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(text.value).then(
+        () => {
+          tooltip.classList.add("active");
+        },
         (err) => console.error("Async: Could not copy text: ", err)
       );
     } else if (window.clipboardData) {
+      console.log("window.clipboardData");
       window.clipboardData.setData("Text", text);
+      tooltip.classList.add("active");
     } else {
-      console.log(`can't copy: not secure`);
+      text.select();
+      text.setSelectionRange(0, 99999);
+      let success = document.execCommand("copy");
+      // if (success) {
+      //   tooltip.classList.add("active");
+      //   console.log(`copied `, success);
+      // } else
+      console.log(`can't copy: not secure`, window.isSecureContext);
     }
+    setTimeout(() => tooltip.classList.remove("active"), 1500);
   };
 
   copyBtn.onclick = () => {
-    copy(copyInput.value);
-    tooltip.classList.add("active");
-    setTimeout(() => tooltip.classList.remove("active"), 1500);
+    copy(copyInput);
   };
 }
 
@@ -237,6 +244,7 @@ const circles = document.querySelectorAll(".circle");
 
 const imagesDark = document.querySelectorAll(".dark");
 const imagesLight = document.querySelectorAll(".light");
+
 const imageChange = () => {
   if (html.getAttribute("data-theme") == "light") {
     imagesLight.forEach((image) => {
@@ -257,27 +265,44 @@ const imageChange = () => {
 imageChange();
 var canvas = document.querySelector(".animation-scrolling");
 
-themeChange.onchange = function () {
-  if (themeChange.checked) {
-    document.documentElement.setAttribute("data-theme", "dark");
+if (localStorage.getItem("data-theme")) {
+  html.setAttribute("data-theme", localStorage.getItem("data-theme"));
+  toggleDark(1);
+}
+
+function toggleDark(r) {
+  const dataTheme = html.getAttribute("data-theme");
+  let theme_switch;
+  if (dataTheme === "light") {
+    theme_switch = 1;
+  } else {
+    theme_switch = 0;
+  }
+  if (r) {
+    theme_switch = !theme_switch;
+  }
+  if (theme_switch) {
+    html.setAttribute("data-theme", "dark");
     themeChangeBtn.classList.add("active");
+    localStorage.setItem("data-theme", "dark");
     imageChange();
     circles.forEach((circle) => {
       circle.classList.add("dark");
     });
   } else {
-    document.documentElement.setAttribute("data-theme", "light");
+    html.setAttribute("data-theme", "light");
     themeChangeBtn.classList.remove("active");
     imageChange();
     circles.forEach((circle) => {
       circle.classList.remove("dark");
     });
+    localStorage.setItem("data-theme", "light");
   }
   if (canvas) {
     preloadImages();
-
   }
-};
+}
+
 // themeChange end
 
 const warn = document.getElementById("warn");
@@ -290,9 +315,20 @@ if (warn) {
     warnOuter.classList.add("active");
   };
 }
+const myCheck = document.getElementById("myCheck");
 
 const sponsorTooltip = () => {
-  const content = document.querySelector("#sponsorsTooltip");
-  content.classList.add("active");
-  setTimeout(() => content.classList.remove("active"), 1500);
+  const contentBtns = document.querySelectorAll(".check");
+  contentBtns.forEach((contentBtn) => {
+    contentBtn.onclick = () =>{
+      const contentText = contentBtn.querySelector("span");
+      contentText.classList.add("active");
+     setTimeout(() => contentText.classList.remove("active"), 1500);
+    }
+
+  })
 };
+if(myCheck) {
+  sponsorTooltip();
+
+}

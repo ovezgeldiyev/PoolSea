@@ -277,7 +277,10 @@
             line-height: 14px;
         }
     }
-
+    .check {
+        font-size: 16px;
+        line-height: 20px;
+      }
     @include hero-lg-xlg;
     @include intro-lg-xlg;
     @include tab-lg-xlg;
@@ -501,7 +504,7 @@
     h5 {
         &.extra {
             font-size: 16px;
-            line-height: 22px;
+            line-height: 19px;
         }
 
         &.sm {
@@ -575,7 +578,14 @@
             }
         }
     }
-
+    .check {
+        span {
+          font-size: 12px;
+          line-height: 18px;
+          width: 380px;
+          padding: 8px 10px;
+        }
+      }
     @include header-xsm-sm;
     @include nav-xsm-sm;
     @include intro-xsm-sm;
@@ -665,6 +675,7 @@
     @include summary-xxsm-xsm;
     @include staking-xxsm-xsm;
     @include aquaPool-xxsm-xsm;
+    @include team-xxsm-xsm;
 
 }
 
@@ -681,6 +692,14 @@
             }
         }
     }
+    .check {
+        span {
+          width: 240px;
+          font-size: 11px;
+          line-height: 14px;
+  
+        }
+      }
     @include footer-xxxsm-xxsm;
     @include join-xxxsm-xxsm;
     @include discleamer-xxxsm-xxsm;

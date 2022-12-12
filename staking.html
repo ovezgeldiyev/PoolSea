@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -64,12 +64,12 @@
               </a>
               <a href="#" class="button primary"> Referral </a>
             </div>
-            <a href="#" class="button icon">
+            <a href="#" class="button icon active">
               <svg class="moon">
                 <use xlink:href="#moon"></use>
               </svg>
               <img class="sun" src="./images/icons/sun.svg" alt="" />
-              <input type="checkbox" id="themeChange" />
+              <input type="checkbox" id="themeChange" checked onchange="toggleDark()">
             </a>
             <a href="#" class="lang">
               <svg class="globe">
@@ -212,6 +212,85 @@
       </section>
       <!-- aquaPool end
         =========================================== -->
+              <!-- faq start
+          =========================================== -->
+      <section class="faq big">
+        <div class="auto__container">
+          <div class="faq__inner">
+            <h3>FAQ</h3>
+            <div class="faq__inner-main">
+              <div class="faqItem">
+                <div class="faqItem__header faqBtn" data-faq="#faq-1">
+                  <h6 class="big">
+                    What’s PoolSea staking pool (AquaPool)?
+                  </h6>
+                  <span>
+                    <svg>
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </span>
+                </div>
+                <div class="faqItem__content faqEvent" id="faq-1">
+                  <p class="sm">
+                    AquaPool is a liquid staking solution for PulseChain backed by industry-leading staking providers. AquaPool lets users stake their PLS - without locking assets or maintaining infrastructure - whilst participating in on-chain activities, e.g. borrowing USDH against your liquid staked PLS (stPLS). <br/>
+                    <br />
+                    Our goal is to solve the problems associated with initial Pulsechain staking – Minimum PLS staking required, illiquidity, immovability and accessibility - making staked PLS liquid and allowing for participation with any amount of PLS to improve security of the Pulsechain network.
+                  </p>
+                </div>
+              </div>
+              <div class="faqItem">
+                <div class="faqItem__header faqBtn" data-faq="#faq-2">
+                  <h6 class="big">How does AquaPool work?</h6>
+                  <span>
+                    <svg>
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </span>
+                </div>
+                <div class="faqItem__content faqEvent" id="faq-2">
+                  <p class="sm">
+                    When staking with AquaPool, users receive stPLS tokens which are issued 1:1 to their initial stake. stPLS balances can be used like regular PLS to earn and lending rewards, and are updated on a daily basis to reflect your PLS staking rewards. Note that there are no lock-ups or minimum deposits when staking with PoolSea staking pool. <br />
+                    <br />
+                    When using AquaPool, users receive staking rewards in real-time, and they also could use staked tokens across the DeFi ecosystem to compound rewards.
+                  </p>
+                </div>
+              </div>
+              <div class="faqItem">
+                <div class="faqItem__header faqBtn" data-faq="#faq-3">
+                  <h6 class="big">What is liquid staking?</h6>
+                  <span>
+                    <svg>
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </span>
+                </div>
+                <div class="faqItem__content faqEvent" id="faq-3">
+                  <p class="sm">
+                    Liquid staking protocols allow users to earn staking rewards without locking assets or maintaining staking infrastructure. Users can deposit tokens and receive tradable liquid tokens in return. The DAO-controlled smart contract stakes these tokens using elected staking providers. As users funds are controlled by the DAO, staking providers never have direct access to the users' assets.
+                  </p>
+                </div>
+              </div>
+              <div class="faqItem">
+                <div class="faqItem__header faqBtn" data-faq="#faq-4">
+                  <h6 class="big">I still have questions! Where can I talk about AquaPool?</h6>
+                  <span>
+                    <svg>
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </span>
+                </div>
+                <div class="faqItem__content faqEvent" id="faq-4">
+                  <p class="sm">
+                    Ask your questions in the official <a href="#">PoolSea chat</a>. No administrator will send you a direct message! No member of our team will ever ask you for money.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- faq end
+          =========================================== -->
       <!-- join start
           =========================================== -->
       <section class="join">
@@ -242,55 +321,88 @@
           =========================================== -->
       <!-- footer start
           =========================================== -->
-      <footer class="footer">
-        <div class="auto__container">
-          <div class="footer__inner">
-            <div class="footer__inner-main">
-              <div class="footer__inner-main-content">
-                <a href="#" class="mainLogo">
-                  <div class="mainLogo__image">
-                    <img src="./images/logo.png" alt="" />
+          <footer class="footer">
+            <div class="auto__container">
+              <div class="footer__inner">
+                <div class="footer__inner-main">
+                  <div class="footer__inner-main-content">
+                    <a href="#" class="mainLogo">
+                      <div class="mainLogo__image">
+                        <img src="./images/logo.png" alt="">
+                      </div>
+                      <p>
+                        PoolSea
+                      </p>
+                    </a>
+                    <p class="sm">
+                      New, better solution for Pulsechain. DEX, Staking pool, NFT market place and a Stablecoin in one place
+                    </p>
                   </div>
-                  <p>PoolSea</p>
-                </a>
-                <p class="sm">
-                  New, better solution for Pulsechain. DEX, Staking pool, NFT
-                  market place and a Stablecoin in one place
+                  <div class="footer__inner-main-links">
+                    <div class="footerLink">
+                      <h5>
+                        Explore
+                      </h5>
+                      <a href="#">
+                        $POOL
+                      </a>
+                      <a href="./marketplace.html">
+                        NFT market place
+                      </a>
+                      <a href="#">
+                        Stablecoin
+                      </a>
+                      <a href="./staking.html">
+                        Staking pool
+                      </a>
+                      <a href="./dex.html">
+                        DEX
+                      </a>
+                    </div>
+                    <div class="footerLink">
+                      <h5>
+                        Socials
+                      </h5>
+                      <a href="https://t.me/poolsea">
+                        Telegram
+                      </a>
+                      <a href="https://twitter.com/PoolSeaCrypto">
+                        Twitter
+                      </a>
+                      <a href="https://www.youtube.com/@sebastiankulec9292">
+                        Youtube
+                      </a>
+                      <a href="#">
+                        Github 
+                      </a>
+                    </div>
+                    <div class="footerLink">
+                      <h5>
+                        Other
+                      </h5>
+                      <a href="#">
+                        Referral 
+                      </a>
+                      <a href="#">
+                        Info
+                      </a>
+                      <a href="#">
+                        Earliest sacrifice bonus
+                      </a>
+                      <a href="#">
+                        Staking pool explainer
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <p class="footer__inner-copy">
+                  ©PoolSea All rights reserved
+                  <span></span>
+                  Disclaimer
                 </p>
               </div>
-              <div class="footer__inner-main-links">
-                <div class="footerLink">
-                  <h5>Explore</h5>
-                  <a href="#"> $POOL </a>
-                  <a href="./marketplace.html"> NFT market place </a>
-                  <a href="#"> Stablecoin </a>
-                  <a href="./staking.html"> Staking pool </a>
-                  <a href="./dex.html"> DEX </a>
-                </div>
-                <div class="footerLink">
-                  <h5>Community</h5>
-                  <a href="./index.html"> Home </a>
-                  <a href="#"> Project Status </a>
-                  <a href="#"> Value </a>
-                  <a href="#"> Wallet </a>
-                </div>
-                <div class="footerLink">
-                  <h5>Company</h5>
-                  <a href="#"> About </a>
-                  <a href="#"> Careers </a>
-                  <a href="#"> Team </a>
-                  <a href="#"> Location </a>
-                </div>
-              </div>
             </div>
-            <p class="footer__inner-copy">
-              ©PoolSea All rights reserved
-              <span></span>
-              Disclaimer
-            </p>
-          </div>
-        </div>
-      </footer>
+          </footer>
       <!-- footer end
           =========================================== -->
     </main>

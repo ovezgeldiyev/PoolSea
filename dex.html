@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -64,12 +64,12 @@
               </a>
               <a href="#" class="button primary"> Referral </a>
             </div>
-            <a href="#" class="button icon">
+            <a href="#" class="button icon active">
               <svg class="moon">
                 <use xlink:href="#moon"></use>
               </svg>
               <img class="sun" src="./images/icons/sun.svg" alt="" />
-              <input type="checkbox" id="themeChange" />
+              <input type="checkbox" id="themeChange" checked onchange="toggleDark()">
             </a>
             <a href="#" class="lang">
               <svg class="globe">
@@ -104,7 +104,7 @@
           <div class="dex__inner">
             <div class="dex__inner-content">
               <h1>Dex</h1>
-              <h5>Better prices. Lower commission’s.</h5>
+              <h5>Better prices. Lower commissions.</h5>
             </div>
           </div>
         </div>
@@ -120,13 +120,12 @@
               <img src="./images/info-dex.png" alt="" />
             </div>
             <div class="info__inner-content">
-              <h3>
-                NEW DEX,<span>
+              <h3> 
+                <span>NEW DEX,</span>
                   Best <br />
                   prices & lowest <br />
                   fee’s with The <br />
                   highest Liquidity
-                </span>
               </h3>
               <p class="big">
                 Our routing algorithm, which offers asset exchanges at the best
@@ -208,11 +207,10 @@
         <div class="auto__container">
           <div class="fees__inner">
             <h3>
-              <span
-                >Dynamic <br />
+              Dynamic <br />
                 commissions
-              </span>
-              Fees
+              <span>Fees</span>
+              
             </h3>
             <div class="fees__inner-main">
               <div class="feesText">
@@ -233,24 +231,23 @@
               </ul>
               <ul class="feesList">
                 <li>
-                  15.55% fee if the user withdraws from PoolSea Swap under 1
-                  hour.
+                  15.55% fee if the user withdraws from <span>PoolSea</span> Swap under <span>1 hour.</span>
+                  
                 </li>
                 <li class="color">
-                  <span> 3.1216% fee if the user withdraws from </span> PoolSea
-                  Swap<span> under 1 day3 </span>
+                  3.1216% fee if the user withdraws from <span>PoolSea Swap</span> under 1 day.
                 </li>
                 <li>
-                  1.5% fee if the user withdraws from PoolSea Swap under 7 days.
+                  1.5% fee if the user withdraws from <span>PoolSea Swap</span> under <span>7 days.</span>
                 </li>
                 <li>
-                  1% fee if the user withdraws from PoolSea Swap under 35 days
+                  1% fee if the user withdraws from <span>PoolSea Swap</span> under <span>35 days.</span>
                 </li>
                 <li>
-                  0.75% if the user withdraws from PoolSea Swap after 100 days
+                  0.75% if the user withdraws from <span>PoolSea Swap</span> after <span>100 days.</span>
                 </li>
                 <li>
-                  0.28% if the user withdraws from PoolSea Swap after 365 days
+                  0.28% if the user withdraws from <span>PoolSea Swap</span> after <span>365 days.</span>
                 </li>
               </ul>
               <ul class="feesList">
@@ -506,55 +503,88 @@
           =========================================== -->
       <!-- footer start
           =========================================== -->
-      <footer class="footer">
-        <div class="auto__container">
-          <div class="footer__inner">
-            <div class="footer__inner-main">
-              <div class="footer__inner-main-content">
-                <a href="./index.html" class="mainLogo">
-                  <div class="mainLogo__image">
-                    <img src="./images/logo.png" alt="" />
+          <footer class="footer">
+            <div class="auto__container">
+              <div class="footer__inner">
+                <div class="footer__inner-main">
+                  <div class="footer__inner-main-content">
+                    <a href="#" class="mainLogo">
+                      <div class="mainLogo__image">
+                        <img src="./images/logo.png" alt="">
+                      </div>
+                      <p>
+                        PoolSea
+                      </p>
+                    </a>
+                    <p class="sm">
+                      New, better solution for Pulsechain. DEX, Staking pool, NFT market place and a Stablecoin in one place
+                    </p>
                   </div>
-                  <p>PoolSea</p>
-                </a>
-                <p class="sm">
-                  New, better solution for Pulsechain. DEX, Staking pool, NFT
-                  market place and a Stablecoin in one place
+                  <div class="footer__inner-main-links">
+                    <div class="footerLink">
+                      <h5>
+                        Explore
+                      </h5>
+                      <a href="#">
+                        $POOL
+                      </a>
+                      <a href="./marketplace.html">
+                        NFT market place
+                      </a>
+                      <a href="#">
+                        Stablecoin
+                      </a>
+                      <a href="./staking.html">
+                        Staking pool
+                      </a>
+                      <a href="./dex.html">
+                        DEX
+                      </a>
+                    </div>
+                    <div class="footerLink">
+                      <h5>
+                        Socials
+                      </h5>
+                      <a href="https://t.me/poolsea">
+                        Telegram
+                      </a>
+                      <a href="https://twitter.com/PoolSeaCrypto">
+                        Twitter
+                      </a>
+                      <a href="https://www.youtube.com/@sebastiankulec9292">
+                        Youtube
+                      </a>
+                      <a href="#">
+                        Github 
+                      </a>
+                    </div>
+                    <div class="footerLink">
+                      <h5>
+                        Other
+                      </h5>
+                      <a href="#">
+                        Referral 
+                      </a>
+                      <a href="#">
+                        Info
+                      </a>
+                      <a href="#">
+                        Earliest sacrifice bonus
+                      </a>
+                      <a href="#">
+                        Staking pool explainer
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <p class="footer__inner-copy">
+                  ©PoolSea All rights reserved
+                  <span></span>
+                  Disclaimer
                 </p>
               </div>
-              <div class="footer__inner-main-links">
-                <div class="footerLink">
-                  <h5>Explore</h5>
-                  <a href="#"> $POOL </a>
-                  <a href="./marketplace.html"> NFT market place </a>
-                  <a href="#"> Stablecoin </a>
-                  <a href="./staking.html"> Staking pool </a>
-                  <a href="./dex.html"> DEX </a>
-                </div>
-                <div class="footerLink">
-                  <h5>Community</h5>
-                  <a href="./index.html"> Home </a>
-                  <a href="#"> Project Status </a>
-                  <a href="#"> Value </a>
-                  <a href="#"> Wallet </a>
-                </div>
-                <div class="footerLink">
-                  <h5>Company</h5>
-                  <a href="#"> About </a>
-                  <a href="#"> Careers </a>
-                  <a href="#"> Team </a>
-                  <a href="#"> Location </a>
-                </div>
-              </div>
             </div>
-            <p class="footer__inner-copy">
-              ©PoolSea All rights reserved
-              <span></span>
-              Disclaimer
-            </p>
-          </div>
-        </div>
-      </footer>
+          </footer>
       <!-- footer end
           =========================================== -->
     </main>

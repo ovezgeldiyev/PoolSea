@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Home</title>
+    <title>PoolSea</title>
     <link rel = "icon" href = "./images/logo.png" type = "image/x-icon">
   </head>
   <body>
@@ -53,12 +53,12 @@
             </ul>
           </nav>
           <div class="header__inner-buttons">
-            <a href="#" class="button icon">
+            <a href="https://t.me/poolsea" class="button icon">
               <svg>
                 <use xlink:href="#telegram"></use>
               </svg>
             </a>
-            <a href="#" class="button icon">
+            <a href="https://twitter.com/PoolSeaCrypto" class="button icon">
               <svg>
                 <use xlink:href="#twitter"></use>
               </svg>
@@ -73,10 +73,10 @@
                 Referral
               </a>
             </div>
-            <a href="#" class="button icon">
+            <a href="#" class="button icon active" >
               <img class="moon" src="./images/icons/moon.svg" alt="" />
               <img class="sun" src="./images/icons/sun.svg" alt="" />
-              <input type="checkbox" id="themeChange">
+              <input type="checkbox" id="themeChange" checked onchange="toggleDark()">
             </a>
             <a href="#" class="lang">
               <svg class="globe">
@@ -509,10 +509,9 @@
       <div class="auto__container">
         <div class="bonus__inner">
           <div class="bonus__inner-info">
-            <h3>
-              Volume <span>
+            <h3> 
+              <span>Volume</span>
                 Bonus <br> Multiplier
-              </span>
             </h3>
           </div>
           <div class="bonus__inner-text">
@@ -559,7 +558,7 @@
                 End in
               </h6>
               <div class="timer__clock">
-                <span id="countdown"></span>
+                <span id="countdown" data-date="01/10/2023"></span>
               </div>
             </div>
             <a href="#">
@@ -667,12 +666,12 @@
                       Founder, Chairman
                     </p>
                     <div class="teamItem__social">
-                      <a href="#" class="teamItem__social-icon">
+                      <a href="https://twitter.com/PoolSeaCrypto" class="teamItem__social-icon">
                         <svg>
                           <use xlink:href="#twitter"></use>
                         </svg>
                       </a>
-                      <a href="#" class="teamItem__social-icon">
+                      <a href="https://t.me/poolsea" class="teamItem__social-icon">
                         <svg>
                           <use xlink:href="#telegram"></use>
                         </svg>
@@ -692,12 +691,12 @@
                       Febrit CEO
                     </p>
                     <div class="teamItem__social">
-                      <a href="#" class="teamItem__social-icon">
+                      <a href="https://linkedin.com/company/febrit" class="teamItem__social-icon">
                         <svg>
                           <use xlink:href="#linkedin"></use>
                         </svg>
                       </a>
-                      <a href="#" class="teamItem__social-icon">
+                      <a href="https://febrit.co" class="teamItem__social-icon">
                         <svg class="globe">
                           <use xlink:href="#globe"></use>
                         </svg>
@@ -717,7 +716,7 @@
                       Febrit CTO
                     </p>
                     <div class="teamItem__social">
-                      <a href="#" class="teamItem__social-icon">
+                      <a href="https://febrit.co" class="teamItem__social-icon">
                         <svg class="globe">
                           <use xlink:href="#globe"></use>
                         </svg>
@@ -737,7 +736,7 @@
                       Backend Developer
                     </p>
                     <div class="teamItem__social">
-                      <a href="#" class="teamItem__social-icon">
+                      <a href="https://febrit.co" class="teamItem__social-icon">
                         <svg class="globe">
                           <use xlink:href="#globe"></use>
                         </svg>
@@ -757,7 +756,7 @@
                       Graphic designer
                     </p>
                     <div class="teamItem__social">
-                      <a href="#" class="teamItem__social-icon">
+                      <a href="https://febrit.co" class="teamItem__social-icon">
                         <svg class="globe">
                           <use xlink:href="#globe"></use>
                         </svg>
@@ -793,152 +792,7 @@
                       Backend Developer 
                     </p>
                     <div class="teamItem__social">
-                      <a href="#" class="teamItem__social-icon">
-                        <svg class="globe">
-                          <use xlink:href="#globe"></use>
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="teamItem">
-                    <div class="teamItem__image">
-                        <img src="./images/team/team-1.png" alt="">
-                    </div>
-                    <h5 class="sm">
-                      Sébastien
-                    </h5>
-                    <p>
-                      Founder, Chairman
-                    </p>
-                    <div class="teamItem__social">
-                      <a href="#" class="teamItem__social-icon">
-                        <svg>
-                          <use xlink:href="#twitter"></use>
-                        </svg>
-                      </a>
-                      <a href="#" class="teamItem__social-icon">
-                        <svg>
-                          <use xlink:href="#telegram"></use>
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="teamItem">
-                    <div class="teamItem__image">
-                        <img src="./images/team/team-2.png" alt="">
-                    </div>
-                    <h5 class="sm">
-                      Seweryn
-                    </h5>
-                    <p>
-                      Febrit CEO
-                    </p>
-                    <div class="teamItem__social">
-                      <a href="#" class="teamItem__social-icon">
-                        <svg>
-                          <use xlink:href="#linkedin"></use>
-                        </svg>
-                      </a>
-                      <a href="#" class="teamItem__social-icon">
-                        <svg class="globe">
-                          <use xlink:href="#globe"></use>
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="teamItem">
-                    <div class="teamItem__image">
-                        <img src="./images/team/team-3.png" alt="">
-                    </div>
-                    <h5 class="sm">
-                      Adam K.
-                    </h5>
-                    <p>
-                      Febrit CTO
-                    </p>
-                    <div class="teamItem__social">
-                      <a href="#" class="teamItem__social-icon">
-                        <svg class="globe">
-                          <use xlink:href="#globe"></use>
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="teamItem">
-                    <div class="teamItem__image">
-                        <img src="./images/team/team-4.png" alt="">
-                    </div>
-                    <h5 class="sm">
-                      Wojtek J.
-                    </h5>
-                    <p>
-                      Backend Developer
-                    </p>
-                    <div class="teamItem__social">
-                      <a href="#" class="teamItem__social-icon">
-                        <svg class="globe">
-                          <use xlink:href="#globe"></use>
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="teamItem">
-                    <div class="teamItem__image">
-                        <img src="./images/team/team-5.png" alt="">
-                    </div>
-                    <h5 class="sm">
-                      Marcin Bejs R.
-                    </h5>
-                    <p>
-                      Graphic designer
-                    </p>
-                    <div class="teamItem__social">
-                      <a href="#" class="teamItem__social-icon">
-                        <svg class="globe">
-                          <use xlink:href="#globe"></use>
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="teamItem">
-                    <div class="teamItem__image">
-                        <img src="./images/team/team-6.png" alt="">
-                    </div>
-                    <h5 class="sm">
-                      Flo Crypto
-                    </h5>
-                    <p>
-                      Blockchain advisor
-                    </p>
-                    <div class="teamItem__social">
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="teamItem">
-                    <div class="teamItem__image">
-                        <img src="./images/team/team-7.png" alt="">
-                    </div>
-                    <h5 class="sm">
-                      Aleksander J.
-                    </h5>
-                    <p>
-                      Backend Developer 
-                    </p>
-                    <div class="teamItem__social">
-                      <a href="#" class="teamItem__social-icon">
+                      <a href="https://febrit.co" class="teamItem__social-icon">
                         <svg class="globe">
                           <use xlink:href="#globe"></use>
                         </svg>
@@ -1135,8 +989,9 @@
                 </p>
               </div>
             </div>
-            <a href="#" class="status__inner-check">
+            <a class="status__inner-check check">
               Check the code
+              <span class="sponsorsTooltip">Audits & Source code will be  published by the end of January 2023. </span>
             </a>
           </div>
           <div class="circle">
@@ -1170,14 +1025,13 @@
             <a href="#" class="sponsorsItem">
               <img class="light" src="./images/sponsors/sigmaLight.png" alt="">
               <img class="dark" src="./images/sponsors/sigmaDark.png" alt="">
-
             </a>
           </div>
           <div class="sponsors__inner-check">
-            <button type="button" class="check" onclick="sponsorTooltip()">
+            <a class="check" id="myCheck">
               Check the code
-              <span id="sponsorsTooltip" >Audits & Source code will be  published by the end of January 2023. </span>
-            </button>
+              <span class="sponsorsTooltip" >Audits & Source code will be  published by the end of January 2023. </span>
+            </a>
           </div>
         </div>
       </div>
@@ -1218,7 +1072,7 @@
             <div class="faqItem">
               <div class="faqItem__header faqBtn" data-faq="#faq-2">
                 <h6 class="big">
-                  Who is responsible for developing PoolSea?
+                  How much POOL will there be? 
                 </h6>
                 <span>
                   <svg>
@@ -1228,19 +1082,17 @@
               </div>
               <div class="faqItem__content faqEvent" id="faq-2">
                 <p class="sm">
-                  Febrit.co is an organization of developers, analysts and graphic designers who improve agile business
-                  processes and scale your work to international markets. The organization develops startups and digital
-                  products for businesses around the world. <br> <br>
-                  This is a company that takes full responsibility for the success of the product without exposing
-                  shareholders to delays. The success of the startup is not a coincidence. We have prepared for every
-                  eventuality.
+                  This will be determined once our sacrifice is over. To get a rough idea of how many POOLs there are, check out our leaderboard by clicking here
+                   <br> <br>
+                   The pronunciation of PoolSea is similar to Pulse, which is the main network we are launching on. <br> 
+                   PoolSea also accurately describes our DEX, large closed and liquid.
                 </p>
               </div>
             </div>
             <div class="faqItem">
               <div class="faqItem__header faqBtn" data-faq="#faq-3">
                 <h6 class="big">
-                  When will $PoolSea will be release?
+                  Are there any partnerships already set? 
                 </h6>
                 <span>
                   <svg>
@@ -1250,19 +1102,17 @@
               </div>
               <div class="faqItem__content faqEvent" id="faq-3">
                 <p class="sm">
-                  Febrit.co is an organization of developers, analysts and graphic designers who improve agile business
-                  processes and scale your work to international markets. The organization develops startups and digital
-                  products for businesses around the world. <br> <br>
-                  This is a company that takes full responsibility for the success of the product without exposing
-                  shareholders to delays. The success of the startup is not a coincidence. We have prepared for every
-                  eventuality.
+                  Yes, we are already in discussions with two major exchanges. 
+                  Depending on the outcome of Pulsechain's launch, it will be decided whether we will be listed or not. 
+                  <br>
+                  If so, thanks to us and our team of commercial partners, Pulsechain will be listed on two major international stock exchanges.
                 </p>
               </div>
             </div>
             <div class="faqItem">
               <div class="faqItem__header faqBtn" data-faq="#faq-4">
                 <h6 class="big">
-                  Where can I see your NFT platform?
+                  I still have questions! Where can I talk about PoolSea?
                 </h6>
                 <span>
                   <svg>
@@ -1272,78 +1122,7 @@
               </div>
               <div class="faqItem__content faqEvent" id="faq-4">
                 <p class="sm">
-                  Febrit.co is an organization of developers, analysts and graphic designers who improve agile business
-                  processes and scale your work to international markets. The organization develops startups and digital
-                  products for businesses around the world. <br> <br>
-                  This is a company that takes full responsibility for the success of the product without exposing
-                  shareholders to delays. The success of the startup is not a coincidence. We have prepared for every
-                  eventuality.
-                </p>
-              </div>
-            </div>
-            <div class="faqItem">
-              <div class="faqItem__header faqBtn" data-faq="#faq-5">
-                <h6 class="big">
-                  Will I be able to store my $PoolSea in Meta Mask?
-                </h6>
-                <span>
-                  <svg>
-                    <use xlink:href="#arrow"></use>
-                  </svg>
-                </span>
-              </div>
-              <div class="faqItem__content faqEvent" id="faq-5">
-                <p class="sm">
-                  Febrit.co is an organization of developers, analysts and graphic designers who improve agile business
-                  processes and scale your work to international markets. The organization develops startups and digital
-                  products for businesses around the world. <br> <br>
-                  This is a company that takes full responsibility for the success of the product without exposing
-                  shareholders to delays. The success of the startup is not a coincidence. We have prepared for every
-                  eventuality.
-                </p>
-              </div>
-            </div>
-            <div class="faqItem">
-              <div class="faqItem__header faqBtn" data-faq="#faq-6">
-                <h6 class="big">
-                  I still have questions! Where can I talk about PoolSea ?
-                </h6>
-                <span>
-                  <svg>
-                    <use xlink:href="#arrow"></use>
-                  </svg>
-                </span>
-              </div>
-              <div class="faqItem__content faqEvent" id="faq-6">
-                <p class="sm">
-                  Febrit.co is an organization of developers, analysts and graphic designers who improve agile business
-                  processes and scale your work to international markets. The organization develops startups and digital
-                  products for businesses around the world. <br> <br>
-                  This is a company that takes full responsibility for the success of the product without exposing
-                  shareholders to delays. The success of the startup is not a coincidence. We have prepared for every
-                  eventuality.
-                </p>
-              </div>
-            </div>
-            <div class="faqItem">
-              <div class="faqItem__header faqBtn" data-faq="#faq-7">
-                <h6 class="big">
-                  In total how many tokens are there?
-                </h6>
-                <span>
-                  <svg>
-                    <use xlink:href="#arrow"></use>
-                  </svg>
-                </span>
-              </div>
-              <div class="faqItem__content faqEvent" id="faq-7">
-                <p class="sm">
-                  Febrit.co is an organization of developers, analysts and graphic designers who improve agile business
-                  processes and scale your work to international markets. The organization develops startups and digital
-                  products for businesses around the world. <br> <br>
-                  This is a company that takes full responsibility for the success of the product without exposing
-                  shareholders to delays. The success of the startup is not a coincidence. We have prepared for every
-                  eventuality.
+                  Ask your questions in the official <a href="#"> PoolSea chat</a>. No administrator will send you a direct message! No member of our team will ever ask you for money.
                 </p>
               </div>
             </div>
@@ -1387,17 +1166,17 @@
             Join with us
           </h5>
           <div class="join__inner-social">
-            <a href="#" class="joinSocial">
+            <a href="https://t.me/poolsea" class="joinSocial">
               <svg>
                 <use xlink:href="#telegram"></use>
               </svg>
             </a>
-            <a href="#" class="joinSocial">
+            <a href="https://twitter.com/PoolSeaCrypto" class="joinSocial">
               <svg>
                 <use xlink:href="#twitter"></use>
               </svg>
             </a>
-            <a href="#" class="joinSocial">
+            <a href="https://www.youtube.com/@sebastiankulec9292" class="joinSocial">
               <svg>
                 <use xlink:href="#youTube"></use>
               </svg>
@@ -1450,36 +1229,36 @@
               </div>
               <div class="footerLink">
                 <h5>
-                  Community
+                  Socials
                 </h5>
-                <a href="./index.html">
-                  Home
+                <a href="https://t.me/poolsea">
+                  Telegram
+                </a>
+                <a href="https://twitter.com/PoolSeaCrypto">
+                  Twitter
+                </a>
+                <a href="https://www.youtube.com/@sebastiankulec9292">
+                  Youtube
                 </a>
                 <a href="#">
-                  Project Status
-                </a>
-                <a href="#">
-                  Value
-                </a>
-                <a href="#">
-                  Wallet
+                  Github 
                 </a>
               </div>
               <div class="footerLink">
                 <h5>
-                  Company
+                  Other
                 </h5>
                 <a href="#">
-                  About
+                  Referral 
                 </a>
                 <a href="#">
-                  Careers
+                  Info
                 </a>
                 <a href="#">
-                  Team
+                  Earliest sacrifice bonus
                 </a>
                 <a href="#">
-                  Location
+                  Staking pool explainer
                 </a>
               </div>
             </div>

@@ -304,6 +304,8 @@
 
       &:last-child {
         margin-bottom: 0;
+        width: calc(70% - 15px);
+
       }
     }
   }
