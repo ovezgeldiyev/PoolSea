@@ -220,7 +220,7 @@ p {
       height: 60%;
       opacity: .2;
       z-index: -1;
-      min-width: 900px;
+      min-width: 700px;
       transform: translateX(-50%);
       max-width: 1920px;
       &.sharp {
@@ -228,7 +228,7 @@ p {
           opacity: 1;
         }
 
-        opacity: .05;
+        opacity: .08;
       }
 
       img {
@@ -238,7 +238,7 @@ p {
 
     .circle {
       position: absolute;
-      top: 2%;
+      top: 0;
       right: 0;
       transform: translateX(55%);
       z-index: 2;
@@ -556,7 +556,11 @@ p {
     bottom: 0;
     left: 0;
   }
-
+  &.active {
+    span {
+      opacity: 1;
+    }
+  }
   span {
     position: absolute;
     bottom: calc(100% + 12px);
@@ -592,7 +596,7 @@ p {
 
     &::before {
       position: absolute;
-      top: 100%;
+      top: calc(100% - 1px);
       left: 50%;
       content: "";
       border-width: 5px;
@@ -602,8 +606,6 @@ p {
       transform: translateX(-50%);
     }
 
-    &.active {
-      opacity: 1;
-    }
+ 
   }
 }

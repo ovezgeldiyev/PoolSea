@@ -221,10 +221,6 @@ if (copyBtn) {
       text.select();
       text.setSelectionRange(0, 99999);
       let success = document.execCommand("copy");
-      // if (success) {
-      //   tooltip.classList.add("active");
-      //   console.log(`copied `, success);
-      // } else
       console.log(`can't copy: not secure`, window.isSecureContext);
     }
     setTimeout(() => tooltip.classList.remove("active"), 1500);
@@ -300,6 +296,8 @@ function toggleDark(r) {
   }
   if (canvas) {
     preloadImages();
+
+
   }
 }
 
@@ -319,16 +317,22 @@ const myCheck = document.getElementById("myCheck");
 
 const sponsorTooltip = () => {
   const contentBtns = document.querySelectorAll(".check");
-  contentBtns.forEach((contentBtn) => {
-    contentBtn.onclick = () =>{
-      const contentText = contentBtn.querySelector("span");
-      contentText.classList.add("active");
-     setTimeout(() => contentText.classList.remove("active"), 1500);
-    }
 
-  })
+  contentBtns.forEach((contentBtn) => {
+    contentBtn.onclick = (e) => {
+      e.preventDefault();
+
+      contentBtn.classList.toggle("active");
+
+      setTimeout(() => contentBtn.classList.remove("active"), 1500);
+      contentBtns.forEach((button) => {
+        if (button !== contentBtn) {
+          button.classList.remove("active");
+        }
+      });
+    };
+  });
 };
-if(myCheck) {
+
   sponsorTooltip();
 
-}
