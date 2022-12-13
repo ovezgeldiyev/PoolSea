@@ -294,6 +294,17 @@
   .hero {
     &.market {
       padding: 10px 0 80px;
+      .hero{
+        &__inner{
+          &-image{
+            margin-bottom: 0;
+          }
+          &-content{
+            order: -1;
+            margin-bottom: 30px;
+          }
+        }
+      }
     }
 
     &__inner {
@@ -343,6 +354,13 @@
   .hero {
     &.market {
       padding: 0 0 50px;
+      .hero{
+        &__inner{
+          &-content{
+            margin-bottom: 20px;
+          }
+        }
+      }
     }
 
     &__inner {
@@ -2986,10 +3004,8 @@
 @mixin status-xxxsm-xxsm {
   .status {
     background-color: $tabBg;
-
     &__inner {
-      padding: 20px 0;
-      border-radius: unset;
+      padding: 20px 10px;
       background-color: unset;
     }
 
@@ -3435,9 +3451,6 @@
           width: calc(53% - 14px);
         }
 
-        p {
-          line-height: 18px;
-        }
       }
     }
 
