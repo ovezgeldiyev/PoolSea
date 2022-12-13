@@ -32,7 +32,7 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   font-family: $sfDisplay;
 }
 
@@ -608,4 +608,8 @@ p {
 
  
   }
+}
+.anchor {
+  position: relative;
+  top: -50px;
 }

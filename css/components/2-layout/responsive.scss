@@ -267,7 +267,7 @@
         &__note {
             width: calc(100% - 60px);
             &-outer {
-                margin-bottom: 130px;
+                margin-bottom: 150px;
             }
         }
     }
@@ -352,7 +352,6 @@
         &__note {
             padding: 20px 70px 20px 20px;
             &-outer {
-                margin-bottom: 115px;
             }
             &-icon {
                 margin-right: 18px;
@@ -420,7 +419,7 @@
 
     h3 {
         font-size: 30px;
-        line-height: 34px;
+        line-height: 38px;
     }
 
     h4 {
@@ -439,6 +438,8 @@
         }
 
         &__note {
+            &-outer {
+            }
             width: calc(100% - 40px);
             padding: 20px 60px 20px 20px;
             p {
@@ -501,7 +502,7 @@
 
     h3 {
         font-size: 25px;
-        line-height: 28px;
+        line-height: 35px;
     }
 
     h4 {
@@ -562,7 +563,7 @@
             padding: 12px 40px 12px 12px;
             top: 76px;
             &-outer {
-                margin-bottom: 80px;
+                margin-bottom: 110px;
             }
             &-icon {
                 width: 20px;
@@ -626,12 +627,12 @@
 
     h2 {
         font-size: 30px;
-        line-height: 36px;
+        line-height: 38px;
     }
 
     h4 {
         font-size: 20px;
-        line-height: 24px;
+        line-height: 26px;
     }
 
     h5 {
@@ -695,9 +696,7 @@
     .main {
         &__note {
             width: calc(100% - 30px);
-            &-outer {
-                margin-bottom: 75px;
-            }
+
         }
     }
     .check {
@@ -735,7 +734,7 @@
             padding: 10px 34px 10px 10px;
             border-radius: 6px;
             &-outer {
-                margin-bottom: 66px;
+                margin-bottom: 90px;
             }
             &-icon {
                 margin-top: 2px;

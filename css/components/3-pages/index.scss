@@ -43,7 +43,7 @@
       img {
         width: 100%;
         &.dark {
-          display: none ;
+          display: none;
         }
         &.light {
           display: none;
@@ -84,7 +84,6 @@
         &-wave {
           bottom: unset;
           top: 100%;
-          z-index: 1;
           opacity: .2;
         }
 
@@ -1857,7 +1856,10 @@
     color: $iconColor;
     font-family: $sfDisplay;
     margin-bottom: 40px;
-
+    a {
+    color: $iconColor;
+      text-decoration: underline;
+    }
     @include inDarkMode {
       opacity: .7;
     }
@@ -3404,12 +3406,19 @@
 
       img {
         width: 100%;
+        &.light {
+          display: none;
+        }
+        &.dark {
+          display: block;
+        }
       }
     }
 
     h2,
     h3 {
       margin-bottom: 36px;
+      letter-spacing: .6px;
     }
 
     p {
@@ -3500,7 +3509,6 @@
     &__inner {
       h3 {
         margin-bottom: 20px;
-
         br {
           display: none;
         }

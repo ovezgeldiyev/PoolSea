@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/animate.css">
     <title>PoolSea</title>
     <link rel = "icon" href = "./images/logo.png" type = "image/x-icon">
   </head>
@@ -155,7 +156,7 @@
       <section class="intro">
         <div class="auto__container">
           <div class="intro__inner">
-            <div class="intro__inner-content">
+            <div class="intro__inner-content wow fadeInLeft" data-wow-duration=".5s" data-wow-delay=".6s">
               <h2>
                 Your StableCoin. <br />
                 Your staking pool. <br />
@@ -515,6 +516,7 @@
     =========================================== -->
     <!-- bonus start
     =========================================== -->
+    <div class="anchor" id="volume"></div>
     <section class="bonus multiplier">
       <div class="auto__container">
         <div class="bonus__inner">
@@ -561,7 +563,7 @@
             <p class="sm">
               To reward our early sacrifices, the earlier you sacrifice, the more bonus points you earn. The higher the
               total sacrifice is, the smaller the number of bonus points you will earn. (And yes, the more you
-              sacrifice, the more volume bonus you earn, check out the volume bonus here)
+              sacrifice, the more volume bonus you earn, check out the <a href="#volume">Volume bonus here</a>)
             </p>
             <div class="timer">
               <h6 class="sm">
@@ -1364,6 +1366,7 @@
     <script src="./js/swiper.js"></script>
     <script src="./js/scrollMagic.js"></script>
     <script src="./js/canvas.js"></script>
+    <script src="./js/wow.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
