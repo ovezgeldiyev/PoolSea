@@ -53,6 +53,8 @@ $aquaItem: var(--aquaItem);
 $aquaNumber: var(--aquaNumber);
 $check: var(--check);
 $stakinBg: var(--stakinBg);
+$selectBg: var(--selectBg);
+$selectHover: var(--selectHover);
 
 
 html[data-theme |=light] {
@@ -98,6 +100,8 @@ html[data-theme |=light] {
     --check: #6E6E73;
     --stakinBg: linear-gradient(116.97deg, #3D6585 20.34%, #fff 120%);
     --heroBg: #fff;
+    --selectBg: #E4EDF6;
+    --selectHover: #F4F7FB;
 
 }
 
@@ -145,6 +149,8 @@ html[data-theme |=dark] {
     --check: #6E6E73;
     --stakinBg: linear-gradient(116.97deg, #3D6585 18.34%, #000000 80%);
     --heroBg: #010103;
+    --selectBg: #1F2738;
+    --selectHover: #283248;
 
 }
 // fonts

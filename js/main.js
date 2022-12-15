@@ -333,6 +333,75 @@ const sponsorTooltip = () => {
 };
 
 sponsorTooltip();
+
+// network select start
+
+const networkSelect = document.getElementById("networkSelect");
+const networkContent = document.getElementById("networkContent");
+
+if (networkSelect) {
+  const selectBtn = networkSelect.querySelector(".networkSelect__button");
+  const selectContent = networkSelect.querySelector(".networkSelect__content");
+  const selectItems = networkSelect.querySelectorAll(".networkSelect__item");
+  const networkItems = networkContent.querySelectorAll(".networkItem");
+  const networkCol = networkContent.querySelector(".network__inner-col");
+
+  selectBtn.onclick = () => {
+    selectBtn.classList.toggle("active");
+    selectContent.classList.toggle("active");
+  };
+
+  selectItems.forEach((e) => {
+    onTabClick(selectItems, networkItems, e);
+  });
+  function onTabClick(tabBtns, tabItems, item) {
+    item.addEventListener("click", function (e) {
+      let currentBtn = item;
+      let tabId = currentBtn.getAttribute("data-select");
+      let currentTab = document.querySelector(tabId);
+      if (currentBtn.classList.contains("active")) {
+        const faq = currentBtn.parentElement.querySelector(".networkItem");
+        if (faq) {
+          faq.classList.remove("active");
+          currentBtn.classList.remove("active");
+        }
+      } else if (!currentBtn.classList.contains("active")) {
+        tabBtns.forEach(function (item) {
+          item.classList.remove("active");
+        });
+
+        tabItems.forEach(function (item) {
+          item.classList.remove("active");
+          item.classList.add("delete");
+        });
+        currentBtn.classList.add("active");
+        currentTab.classList.add("active");
+        if (currentTab === document.getElementById("select-1")) {
+          networkCol.classList.add("delete");
+          console.log("asdad");
+        } else {
+          networkCol.classList.add("active");
+          networkCol.classList.remove("delete");
+        }
+      }
+    });
+  }
+
+  // selectItems.forEach((selectItem, index) => {
+  //   selectItem.onclick = () => {
+  //     selectItem.classList.toggle("active");
+
+  //     networkItems.forEach((networkItem, index) => {
+  //       console.log(networkItems[index])
+  //       networkItem.classList.add("delete")
+
+  //     });
+  //   };
+  // });
+}
+
+// network select end
+
 // wow start
 if (canvas) {
   var wow = new WOW({
