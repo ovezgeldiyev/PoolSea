@@ -195,43 +195,7 @@ if (countdown) {
 
 // timer end
 
-// copy start
-const copyBtn = document.getElementById("copyBtn");
-const copyInput = document.getElementById("copyInput");
 
-if (copyBtn) {
-  const tooltip = copyBtn.querySelector("span");
-
-  const copy = (text) => {
-    if (navigator.clipboard !== undefined) {
-      console.log("navigator.clipboard");
-      text.select();
-      text.setSelectionRange(0, 99999);
-      navigator.clipboard.writeText(text.value).then(
-        () => {
-          tooltip.classList.add("active");
-        },
-        (err) => console.error("Async: Could not copy text: ", err)
-      );
-    } else if (window.clipboardData) {
-      console.log("window.clipboardData");
-      window.clipboardData.setData("Text", text);
-      tooltip.classList.add("active");
-    } else {
-      text.select();
-      text.setSelectionRange(0, 99999);
-      let success = document.execCommand("copy");
-      console.log(`can't copy: not secure`, window.isSecureContext);
-    }
-    setTimeout(() => tooltip.classList.remove("active"), 1500);
-  };
-
-  copyBtn.onclick = () => {
-    copy(copyInput);
-  };
-}
-
-// copy end
 
 // themeChange start
 const themeChange = document.getElementById("themeChange");
@@ -342,10 +306,16 @@ const networkContent = document.getElementById("networkContent");
 if (networkSelect) {
   const selectBtn = networkSelect.querySelector(".networkSelect__button");
   const selectContent = networkSelect.querySelector(".networkSelect__content");
-  const selectSelected = networkSelect.querySelector(".networkSelect__selected");
+  const selectSelected = networkSelect.querySelector(
+    ".networkSelect__selected"
+  );
   const selectItems = networkSelect.querySelectorAll(".networkSelect__item");
   const networkItems = networkContent.querySelectorAll(".networkItem");
   const networkCol = networkContent.querySelector(".network__inner-col");
+
+  const selectCodes = networkSelect.querySelectorAll(
+    ".networkSelect__selected-item"
+  );
 
   const hidden = document.getElementById("hidden");
 
@@ -364,6 +334,7 @@ if (networkSelect) {
       let currentBtn = item;
       let tabId = currentBtn.getAttribute("data-select");
       let currentTab = document.querySelector(tabId);
+
       if (currentBtn.classList.contains("active")) {
         const faq = currentBtn.parentElement.querySelector(".networkItem");
         if (faq) {
@@ -379,6 +350,7 @@ if (networkSelect) {
           item.classList.remove("active");
           item.classList.add("delete");
         });
+
         currentBtn.classList.add("active");
         currentTab.classList.add("active");
         selectBtn.classList.remove("active");
@@ -386,8 +358,16 @@ if (networkSelect) {
         selectBtn.innerHTML = currentBtn.innerHTML;
         selectContent.classList.remove("active");
         selectContent.classList.add("selected");
-        selectSelected.classList.toggle("active");
-        
+        selectSelected.classList.add("active");
+
+        selectCodes.forEach((selectCode) => {
+          if (selectCode.classList.contains(tabId)) {
+            selectCode.classList.add("active");
+          } else {
+            selectCode.classList.remove("active");
+          }
+        });
+
         if (currentTab === document.getElementById("select-1")) {
           networkCol.classList.add("delete");
         } else {
@@ -400,6 +380,47 @@ if (networkSelect) {
 }
 
 // network select end
+
+// copy start
+const copy = document.getElementById("copy");
+if (copy) {
+  const copyClips = document.querySelectorAll(".copyClip");
+  
+    const copy = (text, tooltip) => {
+      if (navigator.clipboard !== undefined) {
+        text.select();
+        text.setSelectionRange(0, 99999);
+        navigator.clipboard.writeText(text.value).then(
+          () => {
+            tooltip.classList.add("active");
+          },
+          (err) => console.error("Async: Could not copy text: ", err)
+        );
+      } else if (window.clipboardData) {
+        console.log("window.clipboardData");
+        window.clipboardData.setData("Text", text);
+        tooltip.classList.add("active");
+      } else {
+        text.select();
+        text.setSelectionRange(0, 99999);
+        let success = document.execCommand("copy");
+        console.log(`can't copy: not secure`, window.isSecureContext);
+      }
+      setTimeout(() => tooltip.classList.remove("active"), 1500);
+    };
+  
+    copyClips.forEach((copyClip) => {
+      const copyBtn = copyClip.querySelector("button");
+      const copyInput = copyClip.querySelector("input");
+      const tooltip = copyClip.querySelector("span");
+      copyBtn.onclick = () => {
+        copy(copyInput, tooltip);
+      };
+    });
+  }
+  
+  // copy end
+
 
 // wow start
 if (canvas) {
