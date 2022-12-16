@@ -1,478 +1,577 @@
 .staking {
-    padding: 180px 0 0;
-    background: $stakinBg;
-  
-    &__inner {
-      text-align: center;
-  
-      &-header {
-        margin-bottom: 50px;
-      }
-  
-      &-image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-  
-        img {
-          width: 100%;
-        }
-      }
-  
-      h5 {
-        margin-bottom: 20px;
-        color: $white;
-  
-        &:last-of-type {
-          margin-bottom: 0;
-        }
-      }
-  
-      h1 {
-        margin-bottom: 30px;
-        color: $white;
-      }
-    }
-  }
-  
-  // 1180px
-  @mixin staking-xlg-xxlg {
-    .staking {
-      padding: 140px 0 0;
-  
-      &__inner {
-        &-header {
-          margin-bottom: 30px;
-        }
-  
-        h1 {
-          margin-bottom: 16px;
-        }
-  
-        h5 {
-          margin-bottom: 10px;
-        }
-      }
-    }
-  }
-  
-  // 930px
-  @mixin staking-md-lg {
-    .staking {
-      padding: 110px 0 0;
-    }
-  }
-  
-  // 750px
-  @mixin staking-sm-md {
-    .staking {}
-  }
-  
-  // 540px
-  @mixin staking-xsm-sm {
-    .staking {
-      &__inner {
-        h5 {
-          margin-bottom: 4px;
-          font-size: 18px;
-          line-height: 22px;
-        }
-  
-        h1 {
-          margin-bottom: 6px;
-        }
-      }
-    }
-  }
-  
-  // 440px
-  @mixin staking-xxsm-xsm {
-    .staking {
-      padding: 70px 0 0;
-  
-      &__inner {
-        &-header {
-          margin-bottom: 18px;
-        }
-  
-        h5 {
-          margin-bottom: 0px;
-          font-size: 16px;
-          line-height: 20px;
-        }
-  
-        h1 {
-          margin-bottom: 6px;
-        }
-      }
-    }
-  }
+  padding: 180px 0 0;
+  background: $stakinBg;
 
-.demo {
-    padding: 160px 0;
-  
-    &__inner {
-      h3 {
-        text-align: center;
-        margin-bottom: 60px;
-      }
-  
-      .video {
-        padding-bottom: 47%;
-        width: calc(100% - 30px);
-        max-width: 1064px;
-        margin: 0 auto;
-      }
-    }
-  }
-  
-  // 1180px
-  @mixin demo-xlg-xxlg {
-    .demo {
-      padding: 120px 0;
-    }
-  }
-  
-  // 930px
-  @mixin demo-md-lg {
-    .demo {
-      padding: 90px 0;
-  
-      &__inner {
-        h3 {
-          margin-bottom: 40px;
-        }
-      }
-    }
-  }
-  
-  // 540px
-  @mixin demo-xsm-sm {
-    .demo {
-      padding: 60px 0;
-  
-      &__inner {
-        .video {
-          width: 100%;
-        }
-        h3 {
-            margin-bottom: 20px;
-          }
-      }
-    }
-  }
+  &__inner {
+    text-align: center;
 
-.update {
-    &__inner {
-      padding-bottom: 160px;
+    &-header {
+      margin-bottom: 50px;
+    }
+
+    &-image {
       display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-  
-      h3 {
-        width: calc(50% - 20px);
-        max-width: 500px;
-        font-family: $sfDisplay;
-      }
-  
-      p {
-        width: calc(50% - 20px);
-        font-size: 20px;
-        line-height: 30px;
-        font-weight: 400;
-        color: $feesColor;
-        max-width: 594px;
-      }
-    }
-  }
-  
-  // 1180px
-  @mixin update-xlg-xxlg {
-    .update {
-      &__inner {
-        padding-bottom: 120px;
-        align-items: center;
-  
-        p {
-          font-size: 18px;
-          line-height: 26px;
-        }
-      }
-    }
-  }
-  
-  // 1024px
-  @mixin update-lg-xlg {
-    .update {
-      &__inner {
-        padding-bottom: 90px;
-        flex-wrap: wrap;
-  
-        h3 {
-          width: 100%;
-          max-width: 800px;
-          text-align: center;
-          margin: 0 auto 40px;
-        }
-  
-        p {
-          width: 100%;
-          max-width: 800px;
-          margin: 0 auto;
-        }
-      }
-    }
-  
-  }
-  
-  // 750px
-  @mixin update-sm-md {
-    .update {
-      &__inner {
-        padding-bottom: 60px;
-      }
-    }
-  }
-  
-  // 540px
-  @mixin update-xsm-sm {
-    .update {
-      &__inner {
-        padding-bottom: 40px;
-      }
-    }
-  }
-  
-  //390px
-  @mixin update-xxxsm-xxsm {
-    .update {
-      &__inner {
-        padding-bottom: 30px;
-  
-        h3 {
-          margin-bottom: 30px;
-        }
-  
-        p {
-          font-size: 16px;
-          line-height: 24px;
-        }
-      }
-    }
-  
-  }
-
-  .aquaPool {
-    padding: 160px 0;
-  
-    &__inner {
-      padding: 60px;
-      background: $tabBg;
-      border-radius: 20px;
-      display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
-  
-      &-info {
-        width: calc(37% - 10px);
-        max-width: 387px;
-      }
-  
-      &-points {
-        width: calc(63% - 20px);
-        max-width: 628px;
+
+      img {
+        width: 100%;
       }
     }
-  
-    &Item {
-      padding: 30px;
-      background: $aquaItem;
-      border-radius: 20px;
-      margin-bottom: 24px;
-  
-      &:last-child {
+
+    h5 {
+      margin-bottom: 20px;
+      color: $white;
+
+      &:last-of-type {
         margin-bottom: 0;
       }
     }
-  
-    h6 {
-      border-radius: 50%;
-      background-color: $aquaNumber;
-      margin-bottom: 18px;
-      width: 40px;
-      height: 40px;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  
-      span {
-        background: $gradient;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        position: absolute;
-        font-family: $sfDisplay;
+
+    h1 {
+      margin-bottom: 30px;
+      color: $white;
+    }
+  }
+}
+
+// 1180px
+@mixin staking-xlg-xxlg {
+  .staking {
+    padding: 140px 0 0;
+
+    &__inner {
+      &-header {
+        margin-bottom: 30px;
+      }
+
+      h1 {
+        margin-bottom: 16px;
+      }
+
+      h5 {
+        margin-bottom: 10px;
       }
     }
-  
+  }
+}
+
+// 930px
+@mixin staking-md-lg {
+  .staking {
+    padding: 110px 0 0;
+  }
+}
+
+// 750px
+@mixin staking-sm-md {
+  .staking {}
+}
+
+// 540px
+@mixin staking-xsm-sm {
+  .staking {
+    &__inner {
+      h5 {
+        margin-bottom: 4px;
+        font-size: 18px;
+        line-height: 22px;
+      }
+
+      h1 {
+        margin-bottom: 6px;
+      }
+    }
+  }
+}
+
+// 440px
+@mixin staking-xxsm-xsm {
+  .staking {
+    padding: 70px 0 0;
+
+    &__inner {
+      &-header {
+        margin-bottom: 18px;
+      }
+
+      h5 {
+        margin-bottom: 0px;
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      h1 {
+        margin-bottom: 6px;
+      }
+    }
+  }
+}
+
+.demo {
+  padding: 160px 0;
+
+  &__inner {
+    h3 {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .video {
+      padding-bottom: 47%;
+      width: calc(100% - 30px);
+      max-width: 1064px;
+      margin: 0 auto;
+    }
+  }
+}
+
+// 1180px
+@mixin demo-xlg-xxlg {
+  .demo {
+    padding: 120px 0;
+  }
+}
+
+// 930px
+@mixin demo-md-lg {
+  .demo {
+    padding: 90px 0;
+
+    &__inner {
+      h3 {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+// 540px
+@mixin demo-xsm-sm {
+  .demo {
+    padding: 60px 0;
+
+    &__inner {
+      .video {
+        width: 100%;
+      }
+
+      h3 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.update {
+  &__inner {
+    padding-bottom: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    h3 {
+      width: calc(50% - 20px);
+      max-width: 500px;
+      font-family: $sfDisplay;
+    }
+
     p {
+      width: calc(50% - 20px);
       font-size: 20px;
       line-height: 30px;
       font-weight: 400;
       color: $feesColor;
-  
-      &.big {
+      max-width: 594px;
+    }
+  }
+}
+
+// 1180px
+@mixin update-xlg-xxlg {
+  .update {
+    &__inner {
+      padding-bottom: 120px;
+      align-items: center;
+
+      p {
         font-size: 18px;
-        line-height: 27px;
+        line-height: 26px;
       }
     }
-  
-    h3 {
-      margin-bottom: 30px;
+  }
+}
+
+// 1024px
+@mixin update-lg-xlg {
+  .update {
+    &__inner {
+      padding-bottom: 90px;
+      flex-wrap: wrap;
+
+      h3 {
+        width: 100%;
+        max-width: 800px;
+        text-align: center;
+        margin: 0 auto 40px;
+      }
+
+      p {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+}
+
+// 750px
+@mixin update-sm-md {
+  .update {
+    &__inner {
+      padding-bottom: 60px;
+    }
+  }
+}
+
+// 540px
+@mixin update-xsm-sm {
+  .update {
+    &__inner {
+      padding-bottom: 40px;
+    }
+  }
+}
+
+//390px
+@mixin update-xxxsm-xxsm {
+  .update {
+    &__inner {
+      padding-bottom: 30px;
+
+      h3 {
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+
+}
+
+.aquaPool {
+  padding: 160px 0;
+
+  &__inner {
+    padding: 60px;
+    background: $tabBg;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-info {
+      width: calc(37% - 10px);
+      max-width: 387px;
+    }
+
+    &-points {
+      width: calc(63% - 20px);
+      max-width: 628px;
+    }
+  }
+
+  &Item {
+    padding: 30px;
+    background: $aquaItem;
+    border-radius: 20px;
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  h6 {
+    border-radius: 50%;
+    background-color: $aquaNumber;
+    margin-bottom: 18px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      background: $gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      position: absolute;
       font-family: $sfDisplay;
     }
   }
-  
-  // 1180px
-  @mixin aquaPool-xlg-xxlg {
-    .aquaPool {
-      padding: 140px 0;
-  
-      &__inner {
-        padding: 50px;
-      }
-  
-      h3 {
-        margin-bottom: 25px;
-      }
-  
-      p {
-        font-size: 18px;
-        line-height: 27px;
-  
-        &.big {
-          font-size: 16px;
-          line-height: 24px;
-        }
-      }
+
+  p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $textColor;
+    letter-spacing: 0.5px;
+
+    &.big {
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    @include inDarkMode {
+      opacity: 0.8;
     }
   }
-  
-  // 1024px
-  @mixin aquaPool-lg-xlg {
+
+  h3 {
+    margin-bottom: 30px;
+    font-family: $sfDisplay;
+  }
+
+  &.sm {
+    padding: 140px 0;
+
     .aquaPool {
-      padding: 100px 0;
-  
       &__inner {
-        padding: 45px;
-        flex-wrap: wrap;
-  
-        &-info {
-          width: 100%;
-          max-width: 900px;
-          margin: 0 auto 40px;
-          text-align: center;
-        }
-  
+        align-items: flex-start;
+
         &-points {
-          width: 100%;
-          max-width: 900px;
-          margin: 0 auto;
+          width: calc(68% - 30px);
+          max-width: unset;
         }
-      }
-    }
-  }
-  
-  // 840px
-  @mixin aquaPool-md-lg-extra {
-    .aquaPool {
-      padding: 70px 0;
-  
-      &__inner {
-        padding: 35px;
-      }
-    }
-  }
-  
-  // 650px
-  @mixin aquaPool-sm-md-extra {
-    .aquaPool {
-      padding: 50px 0;
-  
-      &__inner {
-        padding: 30px;
-  
+
         &-info {
-          margin-bottom: 30px;
+          width: calc(32% - 10px);
         }
       }
-  
-      &Item {
-        margin-bottom: 20px;
-        padding: 25px;
-        border-radius: 15px;
-      }
-  
-      p {
-        font-size: 18px;
+    }
+
+    h3 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// 1180px
+@mixin aquaPool-xlg-xxlg {
+  .aquaPool {
+    padding: 140px 0;
+
+    &__inner {
+      padding: 45px;
+    }
+
+    h3 {
+      margin-bottom: 25px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 27px;
+
+      &.big {
+        font-size: 16px;
         line-height: 24px;
-  
-        &.big {
-          font-size: 14px;
-          line-height: 20px;
+      }
+    }
+
+    &.sm {
+      padding: 120px 0;
+    }
+  }
+}
+
+// 1024px
+@mixin aquaPool-lg-xlg {
+  .aquaPool {
+    padding: 100px 0;
+
+    &__inner {
+      padding: 30px;
+      flex-wrap: wrap;
+
+      &-info {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto 40px;
+        text-align: center;
+      }
+
+      &-points {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+    }
+
+    &.sm {
+      .aquaPool {
+        &__inner {
+          &-info {
+            h3 {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+
+    &.sm {
+      padding: 80px 0;
+    }
+  }
+}
+
+// 930px
+@mixin aquaPool-md-lg {
+  .aquaPool {
+    &__inner {
+      padding: 25px;
+      border-radius: 15px;
+    }
+  }
+}
+
+// 840px
+@mixin aquaPool-md-lg-extra {
+  .aquaPool {
+    padding: 70px 0;
+
+    &__inner {
+      padding: 35px;
+    }
+
+    &.sm {
+      padding: 50px 0;
+
+      .aquaPool {
+        &__inner {
+          &-info {
+            width: 100%;
+
+            h3 {
+              text-align: center;
+
+              br {
+                display: none;
+              }
+            }
+          }
+
+          &-points {
+            width: 100%;
+          }
         }
       }
     }
   }
-  
-  // 440px
-  @mixin aquaPool-xxsm-xsm {
-    .aquaPool {
-      &__inner {
-        padding: 25px;
+}
+
+// 650px
+@mixin aquaPool-sm-md-extra {
+  .aquaPool {
+    padding: 50px 0;
+
+    &__inner {
+      padding: 30px;
+
+      &-info {
+        margin-bottom: 30px;
       }
-  
-      &Item {
-        padding: 20px;
+    }
+
+    &Item {
+      margin-bottom: 20px;
+      padding: 25px;
+      border-radius: 15px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 24px;
+
+      &.big {
+        font-size: 14px;
+        line-height: 20px;
       }
-  
-      p {
-        font-size: 15px;
-        line-height: 22px;
-  
-        &.big {
-          font-size: 13px;
-          line-height: 18px;
-        }
+    }
+
+    &.sm {
+      padding: 40px 0;
+    }
+  }
+}
+
+// 440px
+@mixin aquaPool-xxsm-xsm {
+  .aquaPool {
+    &__inner {
+      padding: 20px;
+
+      &-info {
+        margin-bottom: 18px;
       }
-  
-      h3 {
-        margin-bottom: 20px;
+    }
+
+    &Item {
+      padding: 20px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 22px;
+
+      &.big {
+        font-size: 13px;
+        line-height: 18px;
       }
-  
-      h6 {
-        width: 35px;
-        height: 35px;
-  
-        span {
-          font-size: 18px;
-          line-height: 20px;
-        }
+    }
+
+    h3 {
+      margin-bottom: 20px;
+    }
+
+    h6 {
+      width: 35px;
+      height: 35px;
+
+      span {
+        font-size: 18px;
+        line-height: 20px;
       }
     }
   }
-  
-  // 390px
-  @mixin aquaPool-xxxsm-xxsm {
-    .aquaPool {
-      margin: 50px 0;
+}
+
+// 390px
+@mixin aquaPool-xxxsm-xxsm {
+  .aquaPool {
+    margin: 40px 0;
+    padding: 30px 0;
+    background-color: $tabBg;
+
+    &__inner {
+      padding: unset;
+    }
+
+    &.sm {
       padding: 30px 0;
-      background-color: $tabBg;
-  
-      &__inner {
-        padding: unset;
-      }
+    }
+
+    &Item {
+      padding: 15px;
+      border-radius: 10px;
     }
   }
-  
+}

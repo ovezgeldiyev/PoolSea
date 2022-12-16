@@ -3433,13 +3433,37 @@
     h2,
     h3 {
       margin-bottom: 36px;
-      letter-spacing: .6px;
+      letter-spacing: 0.6px;
     }
 
     p {
       &.extra {
         color: $pColor;
-        opacity: .8;
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &.sm {
+    .info {
+      &__inner {
+        padding: 160px 0 50px;
+
+        &-image {
+          max-width: 570px;
+        }
+      }
+    }
+
+    p {
+      max-width: 402px;
+
+      @include inDarkMode {
+        opacity: 0.8;
+      }
+
+      &.big {
+        font-weight: 400;
       }
     }
   }
@@ -3455,6 +3479,14 @@
     &__inner {
       h3 {
         margin-bottom: 26px;
+      }
+    }
+
+    &.sm {
+      .info {
+        &__inner {
+          padding: 110px 0 40px;
+        }
       }
     }
   }
@@ -3474,7 +3506,6 @@
         &-image {
           width: calc(53% - 14px);
         }
-
       }
     }
 
@@ -3493,6 +3524,14 @@
 
       h3 {
         margin-bottom: 15px;
+      }
+    }
+
+    &.sm {
+      .info {
+        &__inner {
+          padding: 70px 0 30px;
+        }
       }
     }
   }
@@ -3527,6 +3566,14 @@
 
         br {
           display: none;
+        }
+      }
+    }
+
+    &.sm {
+      .info {
+        &__inner {
+          padding: 50px 0 20px;
         }
       }
     }
@@ -3568,6 +3615,19 @@
 
       h3 {
         margin-bottom: 12px;
+      }
+    }
+
+    &.sm {
+      .info {
+        &__inner {
+          padding: 20px 0;
+        }
+      }
+
+      p {
+        width: 100%;
+        max-width: unset;
       }
     }
   }
@@ -4088,7 +4148,8 @@
         width: 97%;
         max-width: 954px;
         justify-content: center;
-        svg { 
+
+        svg {
           display: none;
         }
 
@@ -4127,9 +4188,11 @@
       display: flex;
       flex-direction: column;
       transition: .5s ease;
+
       &::-webkit-scrollbar {
         display: none;
       }
+
       &.active {
         max-height: 500px;
         opacity: 1;
@@ -4155,6 +4218,7 @@
       padding: 0 20px;
       background-color: $selectBg;
       border-radius: 10px;
+
       &-item {
         display: none;
         align-items: center;
@@ -4165,15 +4229,19 @@
         border-radius: 10px;
         cursor: pointer;
         transition: .3s ease;
+
         &:hover {
           opacity: .9;
         }
+
         &:last-child {
           margin: 0;
         }
+
         &.active {
           display: flex;
         }
+
         input {
           position: absolute;
           width: 100%;
@@ -4254,9 +4322,11 @@
           }
         }
       }
+
       &::-webkit-scrollbar {
         display: none;
       }
+
       &.active {
         padding: 24px 20px;
         max-height: 550px;
@@ -4367,6 +4437,7 @@
 
       img {
         width: 100%;
+
         &.light {
           display: none;
         }
@@ -4417,20 +4488,24 @@
 
     &Select {
       padding: 40px 0;
+
       &__selected {
         padding: 0 16px;
+
         &.active {
-        padding: 20px 16px;
+          padding: 20px 16px;
         }
 
         &-item {
           padding: 12px 20px;
+
           input {
             font-size: 20px;
             line-height: 22px;
           }
         }
       }
+
       &__button {
         padding: 30px 20px;
 
@@ -4506,19 +4581,23 @@
 
     &Select {
       padding: 30px 0;
+
       &__selected {
         padding: 0 14px;
+
         &.active {
-        padding: 16px 14px;
+          padding: 16px 14px;
         }
 
         &-item {
           padding: 10px 16px;
+
           button {
             width: 42px;
             height: 42px;
             padding: 10px;
           }
+
           input {
             font-size: 17px;
             line-height: 20px;
@@ -4526,6 +4605,7 @@
           }
         }
       }
+
       &__button {
         &.selected {
           padding: 20px;
@@ -4605,19 +4685,23 @@
 
     &Select {
       padding: 22px 0;
+
       &__selected {
         padding: 0 12px;
+
         &.active {
-        padding: 12px;
+          padding: 12px;
         }
 
         &-item {
           padding: 10px 12px;
+
           button {
             width: 38px;
             height: 38px;
             padding: 9px;
           }
+
           input {
             font-size: 15px;
             line-height: 17px;
@@ -4625,6 +4709,7 @@
           }
         }
       }
+
       &__item {
         span {
           width: 32px;
@@ -4683,19 +4768,23 @@
 
     &Select {
       padding: 18px 0;
+
       &__selected {
         padding: 0 8px;
+
         &.active {
-        padding: 8px;
+          padding: 8px;
         }
 
         &-item {
           padding: 8px 10px;
+
           button {
             width: 36px;
             height: 36px;
             padding: 9px;
           }
+
           input {
             font-size: 13px;
             line-height: 15px;
@@ -4703,6 +4792,7 @@
           }
         }
       }
+
       &__button {
         padding: 18px;
 
@@ -4711,12 +4801,14 @@
           height: 10px;
           right: 30px;
         }
+
         &.selected {
-            padding: 13px 18px;
-            span {
-              width: 28px;
-              height: 28px;
-            }
+          padding: 13px 18px;
+
+          span {
+            width: 28px;
+            height: 28px;
+          }
         }
       }
     }
@@ -4750,19 +4842,23 @@
 @mixin network-xsm-sm {
   .network {
     padding: 0 0 30px;
+
     &__inner {
       &-header {
         margin-bottom: 20px;
       }
+
       &-select {
         padding: 18px;
         border-radius: 8px;
         margin-bottom: 12px;
-        & > p {
+
+        &>p {
           font-size: 13px;
           line-height: 19px;
         }
       }
+
       &-col {
         .networkItem {
           &:nth-child(n) {
@@ -4771,14 +4867,18 @@
           }
         }
       }
+
       h3 {
         margin-bottom: 0;
       }
     }
+
     &Select {
       padding: 14px 0;
+
       &__selected {
         width: 100%;
+
         &-item {
           input {
             font-size: 12px;
@@ -4786,48 +4886,57 @@
           }
         }
       }
+
       &__button {
         &.selected {
           width: 100%;
         }
       }
+
       &__content {
         &.selected {
           width: 100%;
         }
       }
     }
+
     &Item {
       margin-bottom: 12px;
       padding: 20px;
+
       &.active {
-      padding: 20px;
+        padding: 20px;
 
       }
+
       &__logo {
         margin-bottom: 18px;
       }
-      p {
 
-      }
+      p {}
     }
   }
 }
+
 // 440px
 @mixin network-xxsm-xsm {
   .network {
     padding: 0 0 30px;
+
     &__inner {
       &-header {
         margin-bottom: 20px;
       }
+
       &-select {
         padding: 15px;
-        & > p {
+
+        &>p {
           font-size: 12px;
           line-height: 17px;
         }
       }
+
       &-col {
         .networkItem {
           &:nth-child(n) {
@@ -4836,26 +4945,33 @@
           }
         }
       }
+
       h3 {
         margin-bottom: 0;
       }
     }
+
     &Select {
       padding: 12px 0 8px;
+
       &__selected {
         padding: 0 6px;
         border-radius: 8px;
+
         &.active {
           padding: 6px;
         }
+
         &-item {
           padding: 6px;
           border-radius: 8px;
+
           input {
             font-size: 10px;
             line-height: 12px;
             padding: 10px 10px 10px 42px;
           }
+
           button {
             width: 28px;
             height: 28px;
@@ -4863,18 +4979,22 @@
           }
         }
       }
+
       &__button {
         width: 100%;
         padding: 14px;
         border-radius: 8px;
+
         &.selected {
           padding: 10px 14px;
+
           span {
             width: 24px;
             height: 24px;
             margin-right: 8px;
           }
         }
+
         &::before {
           width: 8px;
           height: 8px;
@@ -4882,23 +5002,29 @@
           right: 24px;
         }
       }
+
       &__content {
         width: 100%;
         padding: 0 6px;
+
         &.active {
           padding: 6px;
         }
+
         &.selected {
           width: 100%;
         }
       }
+
       &__item {
         padding: 8px 36px 8px 8px;
+
         span {
           width: 26px;
           height: 26px;
           margin-right: 8px;
         }
+
         svg {
           width: 14px;
           height: 10px;
@@ -4906,25 +5032,31 @@
         }
       }
     }
+
     &Item {
       padding: 15px;
       border-radius: 8px;
+
       &.active {
         padding: 15px;
 
       }
+
       &__logo {
         margin-bottom: 18px;
       }
+
       p {
         &.big {
           font-size: 11px;
           line-height: 17px;
         }
       }
+
       h5 {
         margin-bottom: 6px;
       }
     }
   }
 }
+

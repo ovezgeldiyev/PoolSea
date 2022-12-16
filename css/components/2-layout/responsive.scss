@@ -2,6 +2,7 @@
 @include xxxxxlg-xxxxxxlg {
     @include header-xxxxxlg-xxxxxxlg;
 }
+
 // 1450px
 @include xxxxlg-xxxxxlg {
     h1 {
@@ -170,6 +171,7 @@
 
     .main {
         padding-top: 150px;
+
         &__note {
             top: 90px;
         }
@@ -268,6 +270,7 @@
 
         &__note {
             width: calc(100% - 60px);
+
             &-outer {
                 margin-bottom: 150px;
             }
@@ -283,10 +286,12 @@
             line-height: 14px;
         }
     }
+
     .check {
         font-size: 16px;
         line-height: 20px;
-      }
+    }
+
     @include hero-lg-xlg;
     @include intro-lg-xlg;
     @include tab-lg-xlg;
@@ -355,8 +360,9 @@
     .main {
         &__note {
             padding: 20px 70px 20px 20px;
-            &-outer {
-            }
+
+            &-outer {}
+
             &-icon {
                 margin-right: 18px;
             }
@@ -383,6 +389,7 @@
     @include fees-md-lg;
     @include staking-md-lg;
     @include demo-md-lg;
+    @include aquaPool-md-lg;
 
 }
 
@@ -401,8 +408,9 @@
 // 750px
 @include sm-md {
     html[data-theme |=dark] {
-    --bgColor: #06070A;
+        --bgColor: #06070A;
     }
+
     .auto__container {
         padding: 0 20px;
     }
@@ -445,6 +453,7 @@
         &__note {
             width: calc(100% - 40px);
             padding: 20px 60px 20px 20px;
+
             p {
                 font-size: 14px;
                 line-height: 20px;
@@ -464,7 +473,6 @@
     @include dex-sm-md;
     @include summary-sm-md;
     @include update-sm-md;
-
 }
 
 // 650px
@@ -481,8 +489,8 @@
     @include footer-sm-md-extra;
     @include fees-sm-md-extra;
     @include summary-sm-md-extra;
-  @include aquaPool-sm-md-extra;
-  @include network-sm-md-extra;
+    @include aquaPool-sm-md-extra;
+    @include network-sm-md-extra;
 
 }
 
@@ -565,9 +573,11 @@
         &__note {
             padding: 12px 40px 12px 12px;
             top: 76px;
+
             &-outer {
                 margin-bottom: 110px;
             }
+
             &-icon {
                 width: 20px;
                 height: 20px;
@@ -590,14 +600,16 @@
             }
         }
     }
+
     .check {
         span {
-          font-size: 12px;
-          line-height: 18px;
-          width: 380px;
-          padding: 8px 10px;
+            font-size: 12px;
+            line-height: 18px;
+            width: 380px;
+            padding: 8px 10px;
         }
-      }
+    }
+
     @include header-xsm-sm;
     @include nav-xsm-sm;
     @include intro-xsm-sm;
@@ -665,6 +677,7 @@
 
         &__note {
             top: 65px;
+
             p {
                 font-size: 10px;
                 line-height: 14px;
@@ -698,20 +711,23 @@
     .auto__container {
         padding: 0 15px;
     }
+
     .main {
         &__note {
             width: calc(100% - 30px);
 
         }
     }
+
     .check {
         span {
-          width: 240px;
-          font-size: 11px;
-          line-height: 14px;
-  
+            width: 240px;
+            font-size: 11px;
+            line-height: 14px;
+
         }
-      }
+    }
+
     @include footer-xxxsm-xxsm;
     @include join-xxxsm-xxsm;
     @include discleamer-xxxsm-xxsm;
@@ -731,34 +747,41 @@
     @include summary-xxxsm-xxsm;
     @include aquaPool-xxxsm-xxsm;
     @include update-xxxsm-xxsm;
+
 }
+
 // 370px
 @include xxxxsm-xxxsm {
     .main {
         &__note {
             padding: 10px 34px 10px 10px;
             border-radius: 6px;
+
             &-outer {
                 margin-bottom: 90px;
             }
+
             &-icon {
                 margin-top: 2px;
                 width: 16px;
                 height: 16px;
                 margin-right: 8px;
             }
+
             span {
                 top: 12px;
                 right: 12px;
                 width: 10px;
                 height: 10px;
             }
+
             p {
                 font-size: 9px;
                 line-height: 11px;
             }
         }
     }
+
     @include nav-xxxxsm-xxxsm;
- 
+
 }
