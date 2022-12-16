@@ -925,6 +925,7 @@ html[data-theme=light] .main__bg-wave.sharp {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  margin-right: 6px;
 }
 .header__inner-buttons #themeChange {
   position: absolute;
@@ -1625,9 +1626,6 @@ html[data-theme=dark] .faq.big .faqItem {
   height: 100%;
   border-radius: 12px;
 }
-.intro__inner .swiper-slide img.dark {
-  display: none;
-}
 .intro__inner .swiperBtn {
   position: absolute;
   top: calc(100% + 65px);
@@ -1803,9 +1801,6 @@ html[data-theme=dark] .faq.big .faqItem {
   -o-object-fit: contain;
      object-fit: contain;
   max-width: 100%;
-}
-.tabItem__image img.dark {
-  display: none;
 }
 .tabItem h4 {
   display: inline-block;
@@ -4371,6 +4366,7 @@ html[data-theme=dark] .aquaPool p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 0;
   }
   .nav__inner .header__inner-buttons .button {
     width: 100%;
