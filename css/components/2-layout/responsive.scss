@@ -202,6 +202,8 @@
     @include demo-xlg-xxlg;
     @include aquaPool-xlg-xxlg;
     @include update-xlg-xxlg;
+    @include network-xlg-xxlg;
+
 }
 
 // 1024px
@@ -306,6 +308,8 @@
     @include summary-lg-xlg;
     @include aquaPool-lg-xlg;
     @include update-lg-xlg;
+    @include network-lg-xlg;
+
 }
 
 // 930px
@@ -390,6 +394,7 @@
     @include bonus-md-lg-extra;
     @include rate-md-lg-extra;
     @include aquaPool-md-lg-extra;
+    @include network-md-lg-extra;
 
 }
 
@@ -438,8 +443,6 @@
         }
 
         &__note {
-            &-outer {
-            }
             width: calc(100% - 40px);
             padding: 20px 60px 20px 20px;
             p {
@@ -461,7 +464,6 @@
     @include dex-sm-md;
     @include summary-sm-md;
     @include update-sm-md;
-    @include intro-sm-md;
 
 }
 
@@ -480,6 +482,7 @@
     @include fees-sm-md-extra;
     @include summary-sm-md-extra;
   @include aquaPool-sm-md-extra;
+  @include network-sm-md-extra;
 
 }
 

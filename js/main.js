@@ -342,18 +342,23 @@ const networkContent = document.getElementById("networkContent");
 if (networkSelect) {
   const selectBtn = networkSelect.querySelector(".networkSelect__button");
   const selectContent = networkSelect.querySelector(".networkSelect__content");
+  const selectSelected = networkSelect.querySelector(".networkSelect__selected");
   const selectItems = networkSelect.querySelectorAll(".networkSelect__item");
   const networkItems = networkContent.querySelectorAll(".networkItem");
   const networkCol = networkContent.querySelector(".network__inner-col");
 
+  const hidden = document.getElementById("hidden");
+
   selectBtn.onclick = () => {
     selectBtn.classList.toggle("active");
     selectContent.classList.toggle("active");
+    hidden.classList.add("active");
   };
 
   selectItems.forEach((e) => {
     onTabClick(selectItems, networkItems, e);
   });
+
   function onTabClick(tabBtns, tabItems, item) {
     item.addEventListener("click", function (e) {
       let currentBtn = item;
@@ -376,9 +381,15 @@ if (networkSelect) {
         });
         currentBtn.classList.add("active");
         currentTab.classList.add("active");
+        selectBtn.classList.remove("active");
+        selectBtn.classList.add("selected");
+        selectBtn.innerHTML = currentBtn.innerHTML;
+        selectContent.classList.remove("active");
+        selectContent.classList.add("selected");
+        selectSelected.classList.toggle("active");
+        
         if (currentTab === document.getElementById("select-1")) {
           networkCol.classList.add("delete");
-          console.log("asdad");
         } else {
           networkCol.classList.add("active");
           networkCol.classList.remove("delete");
@@ -386,18 +397,6 @@ if (networkSelect) {
       }
     });
   }
-
-  // selectItems.forEach((selectItem, index) => {
-  //   selectItem.onclick = () => {
-  //     selectItem.classList.toggle("active");
-
-  //     networkItems.forEach((networkItem, index) => {
-  //       console.log(networkItems[index])
-  //       networkItem.classList.add("delete")
-
-  //     });
-  //   };
-  // });
 }
 
 // network select end
