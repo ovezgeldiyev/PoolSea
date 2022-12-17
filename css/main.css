@@ -3895,6 +3895,17 @@ html[data-theme=dark] .summary p {
   width: calc(50% - 20px);
   max-width: 500px;
   font-family: "sfDisplay", sans-serif;
+  background: linear-gradient(268.3deg, #00fff9 -4.34%, #00c5ff 13.53%, #0078ff 93.71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
+}
+.update__inner h3 span {
+  background: var(--textColor);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .update__inner p {
   width: calc(50% - 20px);
