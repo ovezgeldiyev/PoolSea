@@ -702,14 +702,6 @@
     justify-content: space-between;
     width: 100%;
 
-    &:first-child {
-      .tabItem__image {
-        img {
-          width: 80%;
-        }
-      }
-    }
-
     &.dark {
       .tabItem {
         &__image {
@@ -753,14 +745,14 @@
     }
 
     &__content {
-      width: calc(55% - 40px);
-      max-width: 555px;
+      width: calc(63% - 20px);
+      max-width: 630px;
     }
 
     &__image {
-      width: calc(45% - 40px);
+      width: calc(37% - 20px);
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
 
       img {
@@ -799,65 +791,73 @@
         line-height: 34px;
         margin-bottom: 12px;
       }
+      &.title {
+          
+        padding-left: 34px;
+        position: relative;
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 24px;
+          height: 24px;
+          position: absolute;
+          margin-right: 8px;
+          top: -3px;
+          left: 0;
+          svg {
+            fill: $tickColor;
+            width: 11px;
+            height: 8px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+  
+          img {
+            width: 100%;
+          }
+        }
+      }
+ 
     }
 
     h6 {
-      display: flex;
-      align-items: center;
       color: $textColor;
       letter-spacing: -0.02em;
-      margin-bottom: 15px;
-
-      &:last-of-type {
-        margin-bottom: 0;
-      }
-
-      &:first-of-type {
-        margin-top: 35px;
-      }
-
-      span {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 24px;
-        height: 24px;
-        position: relative;
-        margin-right: 8px;
-
-        svg {
-          fill: $tickColor;
-          width: 11px;
-          height: 8px;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
-
-        img {
-          width: 100%;
-        }
+      margin-bottom: 20px;
+      font-family: $sfDisplay;
+      font-weight: 600;
+      &:nth-of-type(2) {
+        margin-top: 34px;
       }
     }
 
     ul {
       li {
-        font-size: 22px;
-        line-height: 48px;
+        font-size: 18px;
+        line-height: 26px;
         font-family: $sfDisplay;
         position: relative;
         padding-left: 18px;
         letter-spacing: -0.02em;
         opacity: 0.7;
-
+        margin-bottom: 10px;
+        &:last-child {
+          margin: 0;
+        }
         &::before {
           position: absolute;
           content: "";
-          top: 20px;
+          top: 10px;
           left: 0;
-          width: 8px;
-          height: 8px;
+          width: 6px;
+          height: 6px;
           background-color: $textColor;
           border-radius: 50%;
         }
@@ -888,16 +888,7 @@
     }
 
     &Item {
-      ul {
-        li {
-          font-size: 18px;
-          line-height: 40px;
 
-          &::before {
-            top: 18px;
-          }
-        }
-      }
 
       p {
         &.extra {
@@ -940,21 +931,21 @@
 
     &Item {
       &__content {
-        width: calc(55% - 15px);
+        width: calc(65% - 10px);
       }
 
       &__image {
-        width: calc(45% - 15px);
+        width: calc(35% - 10px);
       }
 
       ul {
         li {
           font-size: 16px;
-          line-height: 30px;
+          line-height: 22px;
           padding-left: 15px;
-
+          margin-bottom: 6px;
           &::before {
-            top: 12px;
+            top: 9px;
             width: 6px;
             height: 6px;
           }
@@ -969,11 +960,7 @@
         }
       }
 
-      h6 {
-        &:first-of-type {
-          margin-top: 20px;
-        }
-      }
+   
 
       h4 {
         margin-bottom: 15px;
@@ -999,11 +986,11 @@
 
     &Item {
       &__content {
-        width: calc(57% - 8px);
+        width: calc(62% - 8px);
       }
 
       &__image {
-        width: calc(43% - 8px);
+        width: calc(38% - 8px);
       }
 
       &.long {
@@ -1031,6 +1018,26 @@
           }
         }
       }
+      h6 {
+        margin-bottom: 14px;
+        &.big {
+          font-size: 17px;
+          line-height: 22px;
+        }
+        &:nth-of-type(2) {
+        margin-top: 18px;
+
+        }
+      }
+      ul {
+        li {
+          font-size: 14px;
+          line-height: 20px;
+          &::before {
+            top: 8px;
+          }
+        }
+      }
     }
   }
 }
@@ -1046,15 +1053,13 @@
 
     &Item {
       flex-direction: column;
-
-      &:first-child {
-        .tabItem__image {
-          img {
-            width: 60%;
+      &:first-of-type {
+        .tabItem {
+          &__image {
+            width: 80%;
           }
         }
       }
-
       &__content {
         width: 100%;
         margin-bottom: 20px;
@@ -1128,21 +1133,11 @@
 
       h6 {
         margin-bottom: 10px;
-
-        &:first-of-type {
-          margin-top: 15px;
+        &.big {
+          font-size: 15px;
+          line-height: 20px;
         }
 
-        span {
-          width: 20px;
-          height: 20px;
-          margin-right: 5px;
-
-          svg {
-            width: 10px;
-            height: 7px;
-          }
-        }
       }
 
       h4 {
@@ -1151,10 +1146,10 @@
 
       ul {
         li {
-          font-size: 14px;
-          line-height: 25px;
+          font-size: 13px;
+          line-height: 19px;
           padding-left: 12px;
-
+          margin-bottom: 4px;
           &::before {
             top: 9px;
             width: 5px;
@@ -1167,6 +1162,19 @@
         &.extra {
           font-size: 16px;
           line-height: 22px;
+        }
+        &.title {
+          padding-left: 28px;
+          span {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            top: -2px;
+            svg {
+              width: 10px;
+              height: 7px;
+            }
+          }
         }
       }
     }
