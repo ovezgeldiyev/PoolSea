@@ -453,10 +453,6 @@
         width: 100%;
         height: 100%;
         border-radius: 12px;
-
-        &.dark {
-          display: none;
-        }
       }
     }
 
@@ -771,10 +767,6 @@
         height: 100%;
         object-fit: contain;
         max-width: 100%;
-
-        &.dark {
-          display: none;
-        }
       }
     }
 

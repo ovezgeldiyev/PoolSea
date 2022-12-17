@@ -197,73 +197,73 @@ if (countdown) {
 
 
 
-// themeChange start
-const themeChange = document.getElementById("themeChange");
-const themeChangeBtn = themeChange.parentNode;
-const circles = document.querySelectorAll(".circle");
+// // themeChange start
+// const themeChange = document.getElementById("themeChange");
+// const themeChangeBtn = themeChange.parentNode;
+// const circles = document.querySelectorAll(".circle");
 
-const imagesDark = document.querySelectorAll(".dark");
-const imagesLight = document.querySelectorAll(".light");
+// const imagesDark = document.querySelectorAll(".dark");
+// const imagesLight = document.querySelectorAll(".light");
 
-const imageChange = () => {
-  if (html.getAttribute("data-theme") == "light") {
-    imagesLight.forEach((image) => {
-      image.style.display = "block";
-    });
-    imagesDark.forEach((image) => {
-      image.style.display = "none";
-    });
-  } else {
-    imagesLight.forEach((image) => {
-      image.style.display = "none";
-    });
-    imagesDark.forEach((image) => {
-      image.style.display = "block";
-    });
-  }
-};
-imageChange();
-var canvas = document.querySelector(".animation-scrolling");
+// const imageChange = () => {
+//   if (html.getAttribute("data-theme") == "light") {
+//     imagesLight.forEach((image) => {
+//       image.style.display = "block";
+//     });
+//     imagesDark.forEach((image) => {
+//       image.style.display = "none";
+//     });
+//   } else {
+//     imagesLight.forEach((image) => {
+//       image.style.display = "none";
+//     });
+//     imagesDark.forEach((image) => {
+//       image.style.display = "block";
+//     });
+//   }
+// };
+// imageChange();
+// var canvas = document.querySelector(".animation-scrolling");
 
-if (localStorage.getItem("data-theme")) {
-  html.setAttribute("data-theme", localStorage.getItem("data-theme"));
-  toggleDark(1);
-}
+// if (localStorage.getItem("data-theme")) {
+//   html.setAttribute("data-theme", localStorage.getItem("data-theme"));
+//   toggleDark(1);
+// }
 
-function toggleDark(r) {
-  const dataTheme = html.getAttribute("data-theme");
-  let theme_switch;
-  if (dataTheme === "light") {
-    theme_switch = 1;
-  } else {
-    theme_switch = 0;
-  }
-  if (r) {
-    theme_switch = !theme_switch;
-  }
-  if (theme_switch) {
-    html.setAttribute("data-theme", "dark");
-    themeChangeBtn.classList.add("active");
-    localStorage.setItem("data-theme", "dark");
-    imageChange();
-    circles.forEach((circle) => {
-      circle.classList.add("dark");
-    });
-  } else {
-    html.setAttribute("data-theme", "light");
-    themeChangeBtn.classList.remove("active");
-    imageChange();
-    circles.forEach((circle) => {
-      circle.classList.remove("dark");
-    });
-    localStorage.setItem("data-theme", "light");
-  }
-  if (canvas) {
-    preloadImages();
-  }
-}
+// function toggleDark(r) {
+//   const dataTheme = html.getAttribute("data-theme");
+//   let theme_switch;
+//   if (dataTheme === "light") {
+//     theme_switch = 1;
+//   } else {
+//     theme_switch = 0;
+//   }
+//   if (r) {
+//     theme_switch = !theme_switch;
+//   }
+//   if (theme_switch) {
+//     html.setAttribute("data-theme", "dark");
+//     themeChangeBtn.classList.add("active");
+//     localStorage.setItem("data-theme", "dark");
+//     imageChange();
+//     circles.forEach((circle) => {
+//       circle.classList.add("dark");
+//     });
+//   } else {
+//     html.setAttribute("data-theme", "light");
+//     themeChangeBtn.classList.remove("active");
+//     imageChange();
+//     circles.forEach((circle) => {
+//       circle.classList.remove("dark");
+//     });
+//     localStorage.setItem("data-theme", "light");
+//   }
+//   if (canvas) {
+//     preloadImages();
+//   }
+// }
 
-// themeChange end
+// // themeChange end
 
 const warn = document.getElementById("warn");
 const warnClose = document.getElementById("warnClose");
