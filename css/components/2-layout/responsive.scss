@@ -205,6 +205,8 @@
     @include aquaPool-xlg-xxlg;
     @include update-xlg-xxlg;
     @include network-xlg-xxlg;
+    @include benefits-xlg-xxlg;
+    @include fee-xlg-xxlg;
 
 }
 
@@ -314,6 +316,8 @@
     @include aquaPool-lg-xlg;
     @include update-lg-xlg;
     @include network-lg-xlg;
+    @include benefits-lg-xlg;
+    @include fee-lg-xlg;
 
 }
 
@@ -390,6 +394,8 @@
     @include staking-md-lg;
     @include demo-md-lg;
     @include aquaPool-md-lg;
+    @include benefits-md-lg;
+    @include fee-md-lg;
 
 }
 
@@ -473,6 +479,10 @@
     @include dex-sm-md;
     @include summary-sm-md;
     @include update-sm-md;
+    @include pool-sm-md;
+    @include benefits-sm-md;
+    @include fee-sm-md;
+
 }
 
 // 650px
@@ -626,6 +636,8 @@
     @include demo-xsm-sm;
     @include update-xsm-sm;
     @include network-xsm-sm;
+    @include benefits-xsm-sm;
+    @include fee-xsm-sm;
 
 }
 
@@ -703,6 +715,8 @@
     @include aquaPool-xxsm-xsm;
     @include team-xxsm-xsm;
     @include network-xxsm-xsm;
+    @include pool-xxsm-xsm;
+    @include fee-xxsm-xsm;
 
 }
 
