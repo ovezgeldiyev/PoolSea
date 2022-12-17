@@ -264,7 +264,6 @@
 }
 
 .aquaPool {
-  padding: 160px 0;
 
   &__inner {
     padding: 60px;
@@ -366,7 +365,6 @@
 // 1180px
 @mixin aquaPool-xlg-xxlg {
   .aquaPool {
-    padding: 140px 0;
 
     &__inner {
       padding: 45px;
@@ -395,7 +393,6 @@
 // 1024px
 @mixin aquaPool-lg-xlg {
   .aquaPool {
-    padding: 100px 0;
 
     &__inner {
       padding: 30px;
@@ -446,8 +443,6 @@
 // 840px
 @mixin aquaPool-md-lg-extra {
   .aquaPool {
-    padding: 70px 0;
-
     &__inner {
       padding: 35px;
     }
@@ -481,7 +476,6 @@
 // 650px
 @mixin aquaPool-sm-md-extra {
   .aquaPool {
-    padding: 50px 0;
 
     &__inner {
       padding: 30px;
@@ -557,7 +551,6 @@
 // 390px
 @mixin aquaPool-xxxsm-xxsm {
   .aquaPool {
-    margin: 40px 0;
     padding: 30px 0;
     background-color: $tabBg;
 
