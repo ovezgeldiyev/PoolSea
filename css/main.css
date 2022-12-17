@@ -3905,9 +3905,6 @@ html[data-theme=dark] .summary p {
   max-width: 594px;
 }
 
-.aquaPool {
-  padding: 160px 0;
-}
 .aquaPool__inner {
   padding: 60px;
   background: var(--tabBg);
@@ -5296,9 +5293,6 @@ html[data-theme=dark] .aquaPool p {
     padding: 120px 0;
   }
 
-  .aquaPool {
-    padding: 140px 0;
-  }
   .aquaPool__inner {
     padding: 45px;
   }
@@ -5928,9 +5922,6 @@ html[data-theme=dark] .aquaPool p {
     top: 9px;
   }
 
-  .aquaPool {
-    padding: 100px 0;
-  }
   .aquaPool__inner {
     padding: 30px;
     -ms-flex-wrap: wrap;
@@ -6700,9 +6691,6 @@ html[data-theme=dark] .aquaPool p {
     width: 500px;
   }
 
-  .aquaPool {
-    padding: 70px 0;
-  }
   .aquaPool__inner {
     padding: 35px;
   }
@@ -7533,9 +7521,6 @@ html[data-theme=dark] .aquaPool p {
     line-height: 26px;
   }
 
-  .aquaPool {
-    padding: 50px 0;
-  }
   .aquaPool__inner {
     padding: 30px;
   }
@@ -9110,7 +9095,6 @@ html[data-theme=dark] .aquaPool p {
   }
 
   .aquaPool {
-    margin: 40px 0;
     padding: 30px 0;
     background-color: var(--tabBg);
   }
