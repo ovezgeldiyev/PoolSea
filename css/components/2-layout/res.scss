@@ -1,0 +1,798 @@
+// 1700px
+@include xxxxxlg-xxxxxxlg {
+  @include header-xxxxxlg-xxxxxxlg;
+}
+
+// 1450px
+@include xxxxlg-xxxxxlg {
+  h1 {
+    font-size: 90px;
+    line-height: 105px;
+
+    &.sm {
+      font-size: 80px;
+      line-height: 88px;
+    }
+  }
+
+  h2 {
+    font-size: 70px;
+    line-height: 78px;
+  }
+
+  h3 {
+    font-size: 50px;
+    line-height: 58px;
+  }
+
+  h4 {
+    font-size: 42px;
+    line-height: 49px;
+
+    &.sm {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+
+  h5 {
+    font-size: 25px;
+    line-height: 32px;
+
+    &.sm {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  p {
+    &.extra {
+      font-size: 26px;
+      line-height: 36px;
+    }
+  }
+}
+
+// 1380px
+@include xxxlg-xxxxlg {
+  h1 {
+    font-size: 80px;
+    line-height: 92px;
+
+    &.sm {
+      font-size: 75px;
+      line-height: 84px;
+    }
+  }
+
+  h2 {
+    font-size: 60px;
+    line-height: 68px;
+  }
+
+  h3 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+
+  h4 {
+    font-size: 35px;
+    line-height: 38px;
+
+    &.sm {
+      font-size: 28px;
+      line-height: 34px;
+    }
+  }
+
+  h5 {
+    font-size: 22px;
+    line-height: 28px;
+
+    &.sm {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  .main {
+    padding-top: 180px;
+  }
+
+  @include header-xxxlg-xxxxlg;
+  @include intro-xxxlg-xxxxlg;
+  @include bonus-xxxlg-xxxxlg;
+  @include status-xxxlg-xxxxlg;
+}
+
+// 1250px
+@include xlg-xxlg-extra {
+  @include footer-xlg-xxlg-extra;
+  @include location-xlg-xxlg-extra;
+}
+
+// 1180px
+@include xlg-xxlg {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .auto__container {
+    padding: 0 30px;
+  }
+
+  h1 {
+    font-size: 70px;
+    line-height: 82px;
+
+    &.sm {
+      font-size: 65px;
+      line-height: 72px;
+    }
+  }
+
+  h2 {
+    font-size: 52px;
+    line-height: 62px;
+  }
+
+  h3 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  h4 {
+    font-size: 30px;
+    line-height: 34px;
+
+    &.sm {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  p {
+    &.extra {
+      font-size: 23px;
+      line-height: 34px;
+    }
+
+    &.big {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &.sm {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  .main {
+    padding-top: 150px;
+
+    &__note {
+      top: 90px;
+    }
+  }
+
+  @include header-xlg-xxlg;
+  @include nav-xlg-xxlg;
+  @include hero-xlg-xxlg;
+  @include intro-xlg-xxlg;
+  @include tab-xlg-xxlg;
+  @include team-xlg-xxlg;
+  @include donate-xlg-xxlg;
+  @include join-xlg-xxlg;
+  @include discleamer-xlg-xxlg;
+  @include faq-xlg-xxlg;
+  @include sponsors-xlg-xxlg;
+  @include status-xlg-xxlg;
+  @include location-xlg-xxlg;
+  @include airdrop-xlg-xxlg;
+  @include bonus-xlg-xxlg;
+  @include rate-xlg-xxlg;
+  @include techspecs-xlg-xxlg;
+  @include about-xlg-xxlg;
+  @include work-xlg-xxlg;
+  @include features-xlg-xxlg;
+  @include info-xlg-xxlg;
+  @include fees-xlg-xxlg;
+  @include summary-xlg-xxlg;
+  @include staking-xlg-xxlg;
+  @include demo-xlg-xxlg;
+  @include aquaPool-xlg-xxlg;
+  @include update-xlg-xxlg;
+  @include network-xlg-xxlg;
+
+  // --------------
+  @include examples-xlg-xxlg;
+  @include emergency-xlg-xxlg;
+
+}
+
+// 1024px
+@include lg-xlg {
+  h1 {
+    font-size: 60px;
+    line-height: 72px;
+
+    &.sm {
+      font-size: 55px;
+      line-height: 63px;
+    }
+  }
+
+  h2 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+
+  h3 {
+    font-size: 35px;
+    line-height: 42px;
+  }
+
+  h4 {
+    font-size: 28px;
+    line-height: 32px;
+
+    &.sm {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
+
+  h5 {
+    font-size: 20px;
+    line-height: 25px;
+
+    &.extra {
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    &.sm {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+
+  p {
+    &.extra {
+      font-size: 20px;
+      line-height: 27px;
+    }
+  }
+
+  .main {
+    padding-top: 110px;
+
+    &__note {
+      width: calc(100% - 60px);
+
+      &-outer {
+        margin-bottom: 150px;
+      }
+    }
+  }
+
+  .swiperBtn {
+    width: 42px;
+    height: 42px;
+
+    &::after {
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+
+  .check {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @include hero-lg-xlg;
+  @include intro-lg-xlg;
+  @include tab-lg-xlg;
+  @include team-lg-xlg;
+  @include donate-lg-xlg;
+  @include discleamer-lg-xlg;
+  @include sponsors-lg-xlg;
+  @include status-lg-xlg;
+  @include location-lg-xlg;
+  @include airdrop-lg-xlg;
+  @include bonus-lg-xlg;
+  @include faq-lg-xlg;
+  @include rate-lg-xlg;
+  @include dex-lg-xlg;
+  @include about-lg-xlg;
+  @include work-lg-xlg;
+  @include features-lg-xlg;
+  @include fees-lg-xlg;
+  @include summary-lg-xlg;
+  @include aquaPool-lg-xlg;
+  @include update-lg-xlg;
+  @include network-lg-xlg;
+
+  // ------------
+  @include examples-lg-xlg;
+}
+
+// 930px
+@include md-lg {
+  h2 {
+    font-size: 38px;
+    line-height: 46px;
+  }
+
+  h5 {
+    &.extra {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &.sm {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+
+  h6 {
+    &.sm {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+
+  p {
+    &.big {
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
+
+  .circle {
+    width: 550px;
+    height: 550px;
+  }
+
+  .main {
+    &__note {
+      padding: 20px 70px 20px 20px;
+
+      &-outer {
+      }
+
+      &-icon {
+        margin-right: 18px;
+      }
+
+      span {
+        top: 24px;
+        right: 24px;
+      }
+    }
+  }
+
+  @include hero-md-lg;
+  @include tab-md-lg;
+  @include donate-md-lg;
+  @include footer-md-lg;
+  @include status-md-lg;
+  @include airdrop-md-lg;
+  @include bonus-md-lg;
+  @include info-md-lg;
+  @include about-md-lg;
+  @include work-md-lg;
+  @include techspecs-md-lg;
+  @include dex-md-lg;
+  @include fees-md-lg;
+  @include staking-md-lg;
+  @include demo-md-lg;
+  @include aquaPool-md-lg;
+
+  // ========================
+  @include emergency-md-lg;
+  
+}
+
+// 840px
+@include md-lg-extra {
+  @include discleamer-md-lg-extra;
+  @include sponsors-md-lg-extra;
+  @include airdrop-md-lg-extra;
+  @include bonus-md-lg-extra;
+  @include rate-md-lg-extra;
+  @include aquaPool-md-lg-extra;
+  @include network-md-lg-extra;
+}
+
+// 750px
+@include sm-md {
+  html[data-theme|="dark"] {
+    --bgColor: #06070a;
+  }
+
+  .auto__container {
+    padding: 0 20px;
+  }
+
+  h1 {
+    font-size: 55px;
+    line-height: 64px;
+
+    &.sm {
+      font-size: 50px;
+      line-height: 58px;
+    }
+  }
+
+  h2 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  h3 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  h4 {
+    font-size: 24px;
+    line-height: 28px;
+
+    &.sm {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  .main {
+    &__bg {
+      height: 10%;
+    }
+
+    &__note {
+      width: calc(100% - 40px);
+      padding: 20px 60px 20px 20px;
+
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  @include hero-sm-md;
+  @include tab-sm-md;
+  @include team-sm-md;
+  @include donate-sm-md;
+  @include join-sm-md;
+  @include faq-sm-md;
+  @include status-sm-md;
+  @include techspecs-sm-md;
+  @include info-sm-md;
+  @include dex-sm-md;
+  @include summary-sm-md;
+  @include update-sm-md;
+
+  // ----------------
+  @include examples-sm-md;
+}
+
+// 650px
+@include sm-md-extra {
+  @include hero-sm-md-extra;
+  @include location-sm-md-extra;
+  @include airdrop-sm-md-extra;
+  @include rate-sm-md-extra;
+  @include info-sm-md-extra;
+  @include about-sm-md-extra;
+  @include work-sm-md-extra;
+  @include features-sm-md-extra;
+  @include techspecs-sm-md-extra;
+  @include footer-sm-md-extra;
+  @include fees-sm-md-extra;
+  @include summary-sm-md-extra;
+  @include aquaPool-sm-md-extra;
+  @include network-sm-md-extra;
+
+  // -------------------
+  @include emergency-sm-md-extra;
+
+}
+
+// 540px
+@include xsm-sm {
+  h1 {
+    font-size: 45px;
+    line-height: 52px;
+
+    &.sm {
+      font-size: 38px;
+      line-height: 45px;
+    }
+  }
+
+  h2 {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  h3 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  h4 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  h5 {
+    &.extra {
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    &.sm {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  p {
+    &.extra {
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    &.big {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    &.sm {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  .swiperBtn {
+    width: 32px;
+    height: 32px;
+
+    &::after {
+      font-size: 12px;
+      line-height: 12px;
+    }
+  }
+
+  .circle {
+    width: 320px;
+    height: 320px;
+  }
+
+  .main {
+    &__bg {
+      height: 7%;
+    }
+
+    &__note {
+      padding: 12px 40px 12px 12px;
+      top: 76px;
+
+      &-outer {
+        margin-bottom: 110px;
+      }
+
+      &-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        margin-top: 4px;
+      }
+
+      span {
+        top: 18px;
+        right: 18px;
+        width: 11px;
+        height: 11px;
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 18px;
+        width: calc(100% - 35px);
+      }
+    }
+  }
+
+  .check {
+    span {
+      font-size: 12px;
+      line-height: 18px;
+      width: 380px;
+      padding: 8px 10px;
+    }
+  }
+
+  @include header-xsm-sm;
+  @include nav-xsm-sm;
+  @include intro-xsm-sm;
+  @include tab-xsm-sm;
+  @include donate-xsm-sm;
+  @include join-xsm-sm;
+  @include discleamer-xsm-sm;
+  @include faq-xsm-sm;
+  @include sponsors-xsm-sm;
+  @include status-xsm-sm;
+  @include location-xsm-sm;
+  @include fees-xsm-sm;
+  @include summary-xsm-sm;
+  @include demo-xsm-sm;
+  @include update-xsm-sm;
+  @include network-xsm-sm;
+
+  // ----------------------------
+  @include examples-xsm-sm;
+
+}
+
+// 440px
+@include xxsm-xsm {
+  h1 {
+    font-size: 40px;
+    line-height: 47px;
+
+    &.sm {
+      font-size: 34px;
+      line-height: 42px;
+    }
+  }
+
+  h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  h4 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  h5 {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  h6 {
+    &.sm {
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
+
+  p {
+    &.big {
+      font-size: 13px;
+      line-height: 20px;
+    }
+  }
+
+  .main {
+    padding-top: 90px;
+
+    &__note {
+      top: 65px;
+
+      p {
+        font-size: 10px;
+        line-height: 14px;
+      }
+    }
+  }
+
+  @include header-xxsm-xsm;
+  @include nav-xxsm-xsm;
+  @include hero-xxsm-xsm;
+  @include donate-xxsm-xsm;
+  @include tab-xxsm-xsm;
+  @include footer-xxsm-xsm;
+  @include discleamer-xxsm-xsm;
+  @include location-xxsm-xsm;
+  @include airdrop-xxsm-xsm;
+  @include bonus-xxsm-xsm;
+  @include techspecs-xxsm-xsm;
+  @include dex-xxsm-xsm;
+  @include fees-xxsm-xsm;
+  @include summary-xxsm-xsm;
+  @include staking-xxsm-xsm;
+  @include aquaPool-xxsm-xsm;
+  @include team-xxsm-xsm;
+  @include network-xxsm-xsm;
+
+  // -----------------
+  @include emergency-xxsm-xsm;
+
+}
+
+// 390px
+@include xxxsm-xxsm {
+  .auto__container {
+    padding: 0 15px;
+  }
+
+  .main {
+    &__note {
+      width: calc(100% - 30px);
+    }
+  }
+
+  .check {
+    span {
+      width: 240px;
+      font-size: 11px;
+      line-height: 14px;
+    }
+  }
+
+  @include footer-xxxsm-xxsm;
+  @include join-xxxsm-xxsm;
+  @include discleamer-xxxsm-xxsm;
+  @include faq-xxxsm-xxsm;
+  @include sponsors-xxxsm-xxsm;
+  @include status-xxxsm-xxsm;
+  @include location-xxxsm-xxsm;
+  @include airdrop-xxxsm-xxsm;
+  @include bonus-xxxsm-xxsm;
+  @include rate-xxxsm-xxsm;
+  @include techspecs-xxxsm-xxsm;
+  @include about-xxxsm-xxsm;
+  @include work-xxxsm-xxsm;
+  @include features-xxxsm-xxsm;
+  @include dex-xxxsm-xxsm;
+  @include fees-xxxsm-xxsm;
+  @include summary-xxxsm-xxsm;
+  @include aquaPool-xxxsm-xxsm;
+  @include update-xxxsm-xxsm;
+
+  // ------------------------
+  @include examples-xxxsm-xxsm;
+}
+
+// 370px
+@include xxxxsm-xxxsm {
+  .main {
+    &__note {
+      padding: 10px 34px 10px 10px;
+      border-radius: 6px;
+
+      &-outer {
+        margin-bottom: 90px;
+      }
+
+      &-icon {
+        margin-top: 2px;
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+      }
+
+      span {
+        top: 12px;
+        right: 12px;
+        width: 10px;
+        height: 10px;
+      }
+
+      p {
+        font-size: 9px;
+        line-height: 11px;
+      }
+    }
+  }
+
+  @include nav-xxxxsm-xxxsm;
+}
