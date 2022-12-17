@@ -455,7 +455,9 @@ html[data-theme=light] .main__bg-wave.sharp {
 }
 
 .circle {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

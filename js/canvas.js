@@ -97,3 +97,13 @@ window.addEventListener("resize", () => {
   }
 });
 // canvas end
+// var wow = new WOW({
+//   boxClass: "wow",
+//   animateClass: "animated",
+//   offset: 0,
+//   mobile: true,
+//   live: true,
+//   scrollContainer: null,
+//   resetAnimation: true,
+// });
+// wow.init();
