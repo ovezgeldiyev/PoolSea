@@ -78,11 +78,14 @@ window.onclick = function (event) {
   }
 };
 // menu end
-
+const introContent = document.getElementById("introContent");
 // scroll start
 function scrollFunc() {
   if (window.pageYOffset >= 60) {
     header.classList.add("sticky");
+    if(introContent) {
+      introContent.classList.add("active");
+    }
   } else {
     header.classList.remove("sticky");
   }
@@ -194,76 +197,6 @@ if (countdown) {
 }
 
 // timer end
-
-
-
-// // themeChange start
-// const themeChange = document.getElementById("themeChange");
-// const themeChangeBtn = themeChange.parentNode;
-// const circles = document.querySelectorAll(".circle");
-
-// const imagesDark = document.querySelectorAll(".dark");
-// const imagesLight = document.querySelectorAll(".light");
-
-// const imageChange = () => {
-//   if (html.getAttribute("data-theme") == "light") {
-//     imagesLight.forEach((image) => {
-//       image.style.display = "block";
-//     });
-//     imagesDark.forEach((image) => {
-//       image.style.display = "none";
-//     });
-//   } else {
-//     imagesLight.forEach((image) => {
-//       image.style.display = "none";
-//     });
-//     imagesDark.forEach((image) => {
-//       image.style.display = "block";
-//     });
-//   }
-// };
-// imageChange();
-// var canvas = document.querySelector(".animation-scrolling");
-
-// if (localStorage.getItem("data-theme")) {
-//   html.setAttribute("data-theme", localStorage.getItem("data-theme"));
-//   toggleDark(1);
-// }
-
-// function toggleDark(r) {
-//   const dataTheme = html.getAttribute("data-theme");
-//   let theme_switch;
-//   if (dataTheme === "light") {
-//     theme_switch = 1;
-//   } else {
-//     theme_switch = 0;
-//   }
-//   if (r) {
-//     theme_switch = !theme_switch;
-//   }
-//   if (theme_switch) {
-//     html.setAttribute("data-theme", "dark");
-//     themeChangeBtn.classList.add("active");
-//     localStorage.setItem("data-theme", "dark");
-//     imageChange();
-//     circles.forEach((circle) => {
-//       circle.classList.add("dark");
-//     });
-//   } else {
-//     html.setAttribute("data-theme", "light");
-//     themeChangeBtn.classList.remove("active");
-//     imageChange();
-//     circles.forEach((circle) => {
-//       circle.classList.remove("dark");
-//     });
-//     localStorage.setItem("data-theme", "light");
-//   }
-//   if (canvas) {
-//     preloadImages();
-//   }
-// }
-
-// // themeChange end
 
 const warn = document.getElementById("warn");
 const warnClose = document.getElementById("warnClose");
@@ -385,40 +318,38 @@ if (networkSelect) {
 const copy = document.getElementById("copy");
 if (copy) {
   const copyClips = document.querySelectorAll(".copyClip");
-  
-    const copy = (text, tooltip) => {
-      if (navigator.clipboard !== undefined) {
-        text.select();
-        text.setSelectionRange(0, 99999);
-        navigator.clipboard.writeText(text.value).then(
-          () => {
-            tooltip.classList.add("active");
-          },
-          (err) => console.error("Async: Could not copy text: ", err)
-        );
-      } else if (window.clipboardData) {
-        console.log("window.clipboardData");
-        window.clipboardData.setData("Text", text);
-        tooltip.classList.add("active");
-      } else {
-        text.select();
-        text.setSelectionRange(0, 99999);
-        let success = document.execCommand("copy");
-        console.log(`can't copy: not secure`, window.isSecureContext);
-      }
-      setTimeout(() => tooltip.classList.remove("active"), 1500);
+
+  const copy = (text, tooltip) => {
+    if (navigator.clipboard !== undefined) {
+      text.select();
+      text.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(text.value).then(
+        () => {
+          tooltip.classList.add("active");
+        },
+        (err) => console.error("Async: Could not copy text: ", err)
+      );
+    } else if (window.clipboardData) {
+      console.log("window.clipboardData");
+      window.clipboardData.setData("Text", text);
+      tooltip.classList.add("active");
+    } else {
+      text.select();
+      text.setSelectionRange(0, 99999);
+      let success = document.execCommand("copy");
+      console.log(`can't copy: not secure`, window.isSecureContext);
+    }
+    setTimeout(() => tooltip.classList.remove("active"), 1500);
+  };
+
+  copyClips.forEach((copyClip) => {
+    const copyBtn = copyClip.querySelector("button");
+    const copyInput = copyClip.querySelector("input");
+    const tooltip = copyClip.querySelector("span");
+    copyBtn.onclick = () => {
+      copy(copyInput, tooltip);
     };
-  
-    copyClips.forEach((copyClip) => {
-      const copyBtn = copyClip.querySelector("button");
-      const copyInput = copyClip.querySelector("input");
-      const tooltip = copyClip.querySelector("span");
-      copyBtn.onclick = () => {
-        copy(copyInput, tooltip);
-      };
-    });
-  }
-  
-  // copy end
+  });
+}
 
-
+// copy end

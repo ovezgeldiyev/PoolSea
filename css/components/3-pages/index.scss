@@ -44,14 +44,6 @@
 
       img {
         width: 100%;
-
-        &.dark {
-          display: none;
-        }
-
-        &.light {
-          display: none;
-        }
       }
     }
 
@@ -80,7 +72,7 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background: $bgColor;
+      background: $heroBg;
 
       .main__bg {
         top: -13%;
@@ -600,6 +592,14 @@
     &__inner {
       &-content {
         margin-bottom: 20px;
+        visibility: hidden;
+
+        &.active {
+          visibility: visible;
+          animation-name: fadeInUp;
+          animation-duration: .4s;
+          
+        }
       }
 
       .swiperBtn {
@@ -3364,13 +3364,13 @@
 
     .info__inner {
       &-content {
-        width: calc(45% - 18px);
-        max-width: 480px;
+        width: calc(55% - 18px);
+        max-width: 600px;
       }
 
       &-image {
-        width: calc(55% - 18px);
-        max-width: 720px;
+        width: calc(45% - 18px);
+        max-width: 510px;
       }
 
       h3 {
@@ -3381,6 +3381,9 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
+        letter-spacing: -0.02em;
+        font-family: $sfDisplay;
+        font-weight: 600;
 
         span {
           background: $textColor;
@@ -3492,11 +3495,11 @@
 
       .info__inner {
         &-content {
-          width: calc(47% - 14px);
+          width: calc(60% - 18px);
         }
 
         &-image {
-          width: calc(53% - 14px);
+          width: calc(40% - 18px);
         }
       }
     }
@@ -3546,8 +3549,9 @@
         }
 
         &-image {
-          width: 100%;
+          width: 80%;
           margin-bottom: 28px;
+          max-width: 370px;
         }
       }
     }

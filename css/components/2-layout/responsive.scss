@@ -207,7 +207,8 @@
     @include network-xlg-xxlg;
     @include benefits-xlg-xxlg;
     @include fee-xlg-xxlg;
-
+    @include examples-xlg-xxlg;
+    @include emergency-xlg-xxlg;
 }
 
 // 1024px
@@ -318,6 +319,7 @@
     @include network-lg-xlg;
     @include benefits-lg-xlg;
     @include fee-lg-xlg;
+    @include examples-lg-xlg;
 
 }
 
@@ -396,6 +398,7 @@
     @include aquaPool-md-lg;
     @include benefits-md-lg;
     @include fee-md-lg;
+    @include emergency-md-lg;
 
 }
 
@@ -482,6 +485,7 @@
     @include pool-sm-md;
     @include benefits-sm-md;
     @include fee-sm-md;
+    @include examples-sm-md;
 
 }
 
@@ -501,6 +505,7 @@
     @include summary-sm-md-extra;
     @include aquaPool-sm-md-extra;
     @include network-sm-md-extra;
+    @include emergency-sm-md-extra;
 
 }
 
@@ -638,6 +643,7 @@
     @include network-xsm-sm;
     @include benefits-xsm-sm;
     @include fee-xsm-sm;
+    @include examples-xsm-sm;
 
 }
 
@@ -717,6 +723,7 @@
     @include network-xxsm-xsm;
     @include pool-xxsm-xsm;
     @include fee-xxsm-xsm;
+    @include emergency-xxsm-xsm;
 
 }
 
@@ -761,6 +768,7 @@
     @include summary-xxxsm-xxsm;
     @include aquaPool-xxxsm-xxsm;
     @include update-xxxsm-xxsm;
+    @include examples-xxxsm-xxsm;
 
 }
 
