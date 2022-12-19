@@ -7,6 +7,7 @@
 
   &__inner {
     &-content {
+      width: 100%;
       position: absolute;
       bottom: 60px;
       left: 60px;
@@ -21,35 +22,51 @@
     h5 {
       color: $white;
       line-height: 100%;
+
+      &.extra {
+        font-weight: 600;
+        font-family: $sfDisplay;
+        line-height: 140%;
+      max-width: 420px;
+
+      }
+    }
+
+    h2 {
+      font-family: $sfDisplay;
+      font-weight: 600;
+      margin-bottom: 20px;
+      background: linear-gradient(268.3deg,
+          #00fff9 -4.34%,
+          #00c5ff 13.53%,
+          #0078ff 93.71%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -0.02em;
     }
   }
 }
-
-// 1024px
-@mixin dex-lg-xlg {
+// 1180px
+@mixin dex-xlg-xxlg {
   .dex {
     &__inner {
       &-content {
         bottom: 30px;
         left: 30px;
       }
-
-      h1 {
+      h1, h2 {
         margin-bottom: 10px;
       }
     }
   }
 }
 
+
 // 930px
 @mixin dex-md-lg {
   .dex {
     &__inner {
-      &-content {
-        bottom: 30px;
-        left: 30px;
-      }
-
       h1 {
         font-size: 45px;
       }
@@ -74,7 +91,9 @@
         font-size: 35px;
         margin-bottom: 5px;
       }
-
+      h2 {
+        margin-bottom: 5px;
+      }
       h5 {
         font-size: 15px;
       }
@@ -415,6 +434,7 @@
       .summary {
         &__inner {
           padding-top: 40px;
+
           &-info {
             margin-bottom: 20px;
           }

@@ -1,95 +1,3 @@
-.pool {
-    background: url("../images/pool.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    &__inner {
-        padding-bottom: 81%;
-        position: relative;
-
-        &-content {
-            width: 60%;
-            max-width: 420px;
-            position: absolute;
-            left: 0;
-            bottom: 12%;
-        }
-
-        h3 {
-            font-family: $sfDisplay;
-            font-weight: 600;
-            margin-bottom: 20px;
-            background: linear-gradient(268.3deg,
-                    #00fff9 -4.34%,
-                    #00c5ff 13.53%,
-                    #0078ff 93.71%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            letter-spacing: -0.02em;
-        }
-
-        h5 {
-            font-weight: 600;
-            font-family: $sfDisplay;
-        }
-    }
-}
-
-// 1180px
-@mixin pool-xlg-xxlg {
-    .pool {}
-}
-
-// 1024px
-@mixin pool-lg-xlg {
-    .pool {
-        &__inner {}
-    }
-}
-
-// 930px
-@mixin pool-md-lg {
-    .pool {
-        &__inner {}
-    }
-}
-
-// 750px
-@mixin pool-sm-md {
-    .pool {
-        &__inner {
-            h3 {
-                margin-bottom: 10px;
-
-            }
-        }
-    }
-}
-
-// 540px
-@mixin pool-xsm-sm {
-    .pool {
-        &__inner {}
-    }
-}
-
-// 440px
-@mixin pool-xxsm-xsm {
-    .pool {
-        &__inner {
-            &-content {
-                width: 80%;
-            }
-
-            h3 {
-                margin-bottom: 5px;
-            }
-        }
-    }
-}
-
 .benefits {
     padding: 180px 0;
 
@@ -362,7 +270,7 @@
     }
 }
 
-.fee {
+.tax {
     padding: 160px 0;
 
     &__inner {
@@ -561,8 +469,8 @@
 }
 
 // 1180px
-@mixin fee-xlg-xxlg {
-    .fee {
+@mixin tax-xlg-xxlg {
+    .tax {
         padding: 140px 0;
 
         &__inner {
@@ -584,8 +492,8 @@
 }
 
 // 1024px
-@mixin fee-lg-xlg {
-    .fee {
+@mixin tax-lg-xlg {
+    .tax {
         padding: 110px 0;
 
         &__inner {
@@ -633,8 +541,8 @@
 }
 
 // 930px
-@mixin fee-md-lg {
-    .fee {
+@mixin tax-md-lg {
+    .tax {
         padding: 80px 0;
 
         &__inner {
@@ -672,8 +580,8 @@
 }
 
 // 750px
-@mixin fee-sm-md {
-    .fee {
+@mixin tax-sm-md {
+    .tax {
         padding: 60px 0;
 
         &__inner {
@@ -730,8 +638,8 @@
 }
 
 // 540px
-@mixin fee-xsm-sm {
-    .fee {
+@mixin tax-xsm-sm {
+    .tax {
         padding: 40px 0;
 
         &__inner {
@@ -792,8 +700,8 @@
 }
 
 // 440px
-@mixin fee-xxsm-xsm {
-    .fee {
+@mixin tax-xxsm-xsm {
+    .tax {
         &__inner {
             &-header {
                 margin-bottom: 20px;

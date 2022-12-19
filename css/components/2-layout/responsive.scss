@@ -206,9 +206,11 @@
     @include update-xlg-xxlg;
     @include network-xlg-xxlg;
     @include benefits-xlg-xxlg;
-    @include fee-xlg-xxlg;
+    @include tax-xlg-xxlg;
     @include examples-xlg-xxlg;
     @include emergency-xlg-xxlg;
+    @include dex-xlg-xxlg;
+
 }
 
 // 1024px
@@ -308,7 +310,6 @@
     @include bonus-lg-xlg;
     @include faq-lg-xlg;
     @include rate-lg-xlg;
-    @include dex-lg-xlg;
     @include about-lg-xlg;
     @include work-lg-xlg;
     @include features-lg-xlg;
@@ -318,7 +319,7 @@
     @include update-lg-xlg;
     @include network-lg-xlg;
     @include benefits-lg-xlg;
-    @include fee-lg-xlg;
+    @include tax-lg-xlg;
     @include examples-lg-xlg;
 
 }
@@ -397,7 +398,7 @@
     @include demo-md-lg;
     @include aquaPool-md-lg;
     @include benefits-md-lg;
-    @include fee-md-lg;
+    @include tax-md-lg;
     @include emergency-md-lg;
 
 }
@@ -482,15 +483,17 @@
     @include dex-sm-md;
     @include summary-sm-md;
     @include update-sm-md;
-    @include pool-sm-md;
     @include benefits-sm-md;
-    @include fee-sm-md;
+    @include tax-sm-md;
     @include examples-sm-md;
 
 }
 
 // 650px
 @include sm-md-extra {
+    .video {
+        min-height: 360px;
+    }
     @include hero-sm-md-extra;
     @include location-sm-md-extra;
     @include airdrop-sm-md-extra;
@@ -642,7 +645,7 @@
     @include update-xsm-sm;
     @include network-xsm-sm;
     @include benefits-xsm-sm;
-    @include fee-xsm-sm;
+    @include tax-xsm-sm;
     @include examples-xsm-sm;
 
 }
@@ -702,7 +705,9 @@
             }
         }
     }
-
+    .video {
+        min-height: 320px;
+    }
     @include header-xxsm-xsm;
     @include nav-xxsm-xsm;
     @include hero-xxsm-xsm;
@@ -721,8 +726,7 @@
     @include aquaPool-xxsm-xsm;
     @include team-xxsm-xsm;
     @include network-xxsm-xsm;
-    @include pool-xxsm-xsm;
-    @include fee-xxsm-xsm;
+    @include tax-xxsm-xsm;
     @include emergency-xxsm-xsm;
 
 }

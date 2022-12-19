@@ -514,7 +514,9 @@ p {
   align-items: center;
   position: relative;
   padding-bottom: 56%;
-
+  &.big {
+    padding-bottom: 62%;
+  }
   video,
   iframe {
     position: absolute;

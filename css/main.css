@@ -680,6 +680,9 @@ html[data-theme=light] .main__bg-wave.sharp {
   position: relative;
   padding-bottom: 56%;
 }
+.video.big {
+  padding-bottom: 62%;
+}
 .video video,
 .video iframe {
   position: absolute;
@@ -3637,6 +3640,7 @@ html[data-theme=dark] .aboutText P {
   padding: 0;
 }
 .dex__inner-content {
+  width: 100%;
   position: absolute;
   bottom: 60px;
   left: 60px;
@@ -3649,6 +3653,22 @@ html[data-theme=dark] .aboutText P {
 .dex__inner h5 {
   color: #fff;
   line-height: 100%;
+}
+.dex__inner h5.extra {
+  font-weight: 600;
+  font-family: "sfDisplay", sans-serif;
+  line-height: 140%;
+  max-width: 420px;
+}
+.dex__inner h2 {
+  font-family: "sfDisplay", sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+  background: linear-gradient(268.3deg, #00fff9 -4.34%, #00c5ff 13.53%, #0078ff 93.71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
 }
 
 .summary__inner {
@@ -3887,9 +3907,9 @@ html[data-theme=dark] .summary p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .update__inner h3 {
   width: calc(50% - 20px);
@@ -4009,38 +4029,6 @@ html[data-theme=dark] .aquaPool p {
   margin-bottom: 0;
 }
 
-.pool {
-  background: url("../images/pool.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.pool__inner {
-  padding-bottom: 81%;
-  position: relative;
-}
-.pool__inner-content {
-  width: 60%;
-  max-width: 420px;
-  position: absolute;
-  left: 0;
-  bottom: 12%;
-}
-.pool__inner h3 {
-  font-family: "sfDisplay", sans-serif;
-  font-weight: 600;
-  margin-bottom: 20px;
-  background: linear-gradient(268.3deg, #00fff9 -4.34%, #00c5ff 13.53%, #0078ff 93.71%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  letter-spacing: -0.02em;
-}
-.pool__inner h5 {
-  font-weight: 600;
-  font-family: "sfDisplay", sans-serif;
-}
-
 .benefits {
   padding: 180px 0;
 }
@@ -4149,10 +4137,10 @@ html[data-theme=dark] .aquaPool p {
   background-clip: text;
 }
 
-.fee {
+.tax {
   padding: 160px 0;
 }
-.fee__inner {
+.tax__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4164,11 +4152,11 @@ html[data-theme=dark] .aquaPool p {
       -ms-flex-align: center;
           align-items: center;
 }
-.fee__inner-header {
+.tax__inner-header {
   margin-bottom: 80px;
   text-align: center;
 }
-.fee__inner-row {
+.tax__inner-row {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4181,12 +4169,12 @@ html[data-theme=dark] .aquaPool p {
           justify-content: space-between;
   margin-bottom: 60px;
 }
-.fee__inner-content {
+.tax__inner-content {
   width: 40%;
   max-width: 280px;
   margin-top: 140px;
 }
-.fee__inner-content-equation {
+.tax__inner-content-equation {
   width: 130px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4198,10 +4186,10 @@ html[data-theme=dark] .aquaPool p {
       -ms-flex-align: center;
           align-items: center;
 }
-.fee__inner-content-equation img {
+.tax__inner-content-equation img {
   width: 100%;
 }
-.fee__inner-content h4 {
+.tax__inner-content h4 {
   margin-bottom: 64px;
   font-weight: 600;
   font-family: "sfDisplay", sans-serif;
@@ -4212,7 +4200,7 @@ html[data-theme=dark] .aquaPool p {
   background-clip: text;
   letter-spacing: -0.02em;
 }
-.fee__inner-image {
+.tax__inner-image {
   width: 60%;
   max-width: 710px;
   display: -webkit-box;
@@ -4225,17 +4213,17 @@ html[data-theme=dark] .aquaPool p {
       -ms-flex-align: center;
           align-items: center;
 }
-.fee__inner-image img {
+.tax__inner-image img {
   width: 100%;
 }
-.fee__inner-text {
+.tax__inner-text {
   width: 100%;
   margin: 160px 0 190px;
   padding: 80px 30px;
   border-radius: 20px;
   background-color: var(--tabBg);
 }
-.fee__inner-text p {
+.tax__inner-text p {
   width: 85%;
   max-width: 880px;
   text-align: center;
@@ -4243,14 +4231,14 @@ html[data-theme=dark] .aquaPool p {
   opacity: 0.8;
   font-weight: 500;
 }
-.fee__inner-pool {
+.tax__inner-pool {
   width: 100%;
   padding: 84px 30px;
   border-radius: 20px;
   background-color: var(--bgColor);
   position: relative;
 }
-.fee__inner-pool::before {
+.tax__inner-pool::before {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -4263,7 +4251,7 @@ html[data-theme=dark] .aquaPool p {
           transform: translate(-50%, -50%);
   z-index: -1;
 }
-.fee__inner-pool h4 {
+.tax__inner-pool h4 {
   position: absolute;
   top: 0;
   left: 50%;
@@ -4285,7 +4273,7 @@ html[data-theme=dark] .aquaPool p {
   padding: 0 26px;
   background: var(--bgColor);
 }
-.fee__inner-pool h4 span {
+.tax__inner-pool h4 span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4299,17 +4287,17 @@ html[data-theme=dark] .aquaPool p {
   height: 46px;
   margin-right: 10px;
 }
-.fee__inner-pool h4 span img {
+.tax__inner-pool h4 span img {
   width: 100%;
 }
-.fee__inner-pool h4 strong {
+.tax__inner-pool h4 strong {
   background: linear-gradient(268.3deg, #00fff9 -4.34%, #00c5ff 13.53%, #0078ff 93.71%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-right: 6px;
 }
-.fee__inner-pool p {
+.tax__inner-pool p {
   text-align: center;
   width: 90%;
   margin: 0 auto;
@@ -4320,11 +4308,11 @@ html[data-theme=dark] .aquaPool p {
   font-weight: 400;
   color: var(--langColor);
 }
-.fee__inner .check::after {
+.tax__inner .check::after {
   background: linear-gradient(268.3deg, #00fff9 -4.34%, #00c5ff 13.53%, #0078ff 93.71%);
   bottom: -2px;
 }
-.fee__inner .check strong {
+.tax__inner .check strong {
   font-family: "sfText", sans-serif;
   font-weight: 500;
   background: linear-gradient(268.3deg, #00fff9 -4.34%, #00c5ff 13.53%, #0078ff 93.71%);
@@ -4332,7 +4320,7 @@ html[data-theme=dark] .aquaPool p {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.fee__inner h3 {
+.tax__inner h3 {
   margin-bottom: 18px;
   font-weight: 600;
   font-family: "sfDisplay", sans-serif;
@@ -4342,7 +4330,7 @@ html[data-theme=dark] .aquaPool p {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.fee__inner h6 {
+.tax__inner h6 {
   font-weight: 600;
   font-family: "sfDisplay", sans-serif;
 }
@@ -5409,16 +5397,16 @@ html[data-theme=dark] .aquaPool p {
     margin-bottom: 10px;
   }
 
-  .fee {
+  .tax {
     padding: 140px 0;
   }
-  .fee__inner-text {
+  .tax__inner-text {
     margin: 140px 0 160px;
   }
-  .fee__inner-pool {
+  .tax__inner-pool {
     padding: 60px 30px 50px;
   }
-  .fee__inner-pool p {
+  .tax__inner-pool p {
     width: 95%;
     font-size: 20px;
     line-height: 32px;
@@ -5451,6 +5439,14 @@ html[data-theme=dark] .aquaPool p {
     margin-bottom: 70px;
     padding: 60px;
     border-radius: 20px;
+  }
+
+  .dex__inner-content {
+    bottom: 30px;
+    left: 30px;
+  }
+  .dex__inner h1, .dex__inner h2 {
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 1024px) {
@@ -5832,14 +5828,6 @@ html[data-theme=dark] .aquaPool p {
     margin-bottom: 40px;
   }
 
-  .dex__inner-content {
-    bottom: 30px;
-    left: 30px;
-  }
-  .dex__inner h1 {
-    margin-bottom: 10px;
-  }
-
   .about__inner {
     padding: 90px 0;
   }
@@ -6084,36 +6072,36 @@ html[data-theme=dark] .aquaPool p {
     margin-bottom: 8px;
   }
 
-  .fee {
+  .tax {
     padding: 110px 0;
   }
-  .fee__inner-header {
+  .tax__inner-header {
     margin-bottom: 50px;
   }
-  .fee__inner-content {
+  .tax__inner-content {
     margin-top: 110px;
   }
-  .fee__inner-content-equation {
+  .tax__inner-content-equation {
     width: 100px;
   }
-  .fee__inner-content h4 {
+  .tax__inner-content h4 {
     margin-bottom: 45px;
   }
-  .fee__inner-row {
+  .tax__inner-row {
     margin-bottom: 40px;
   }
-  .fee__inner-text {
+  .tax__inner-text {
     margin: 110px 0 130px;
     padding: 60px 30px;
   }
-  .fee__inner-pool {
+  .tax__inner-pool {
     padding: 50px 20px 40px;
   }
-  .fee__inner-pool p {
+  .tax__inner-pool p {
     font-size: 18px;
     line-height: 27px;
   }
-  .fee__inner h3 {
+  .tax__inner h3 {
     margin-bottom: 12px;
   }
 
@@ -6487,10 +6475,6 @@ html[data-theme=dark] .aquaPool p {
     margin-bottom: 10px;
   }
 
-  .dex__inner-content {
-    bottom: 30px;
-    left: 30px;
-  }
   .dex__inner h1 {
     font-size: 45px;
   }
@@ -6552,31 +6536,31 @@ html[data-theme=dark] .aquaPool p {
     line-height: 17px;
   }
 
-  .fee {
+  .tax {
     padding: 80px 0;
   }
-  .fee__inner-text {
+  .tax__inner-text {
     margin: 80px 0 95px;
     padding: 50px 20px;
   }
-  .fee__inner-text p {
+  .tax__inner-text p {
     width: 90%;
   }
-  .fee__inner-pool {
+  .tax__inner-pool {
     padding: 45px 20px 35px;
   }
-  .fee__inner-pool p {
+  .tax__inner-pool p {
     font-size: 16px;
     line-height: 24px;
   }
-  .fee__inner-pool h4 {
+  .tax__inner-pool h4 {
     padding: 0 18px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     white-space: nowrap;
   }
-  .fee__inner-pool h4 span {
+  .tax__inner-pool h4 span {
     width: 40px;
     height: 40px;
     margin-right: 6px;
@@ -7124,6 +7108,9 @@ html[data-theme=dark] .aquaPool p {
     font-size: 35px;
     margin-bottom: 5px;
   }
+  .dex__inner h2 {
+    margin-bottom: 5px;
+  }
   .dex__inner h5 {
     font-size: 15px;
   }
@@ -7161,10 +7148,6 @@ html[data-theme=dark] .aquaPool p {
     padding-bottom: 60px;
   }
 
-  .pool__inner h3 {
-    margin-bottom: 10px;
-  }
-
   .benefits {
     padding: 60px 0;
   }
@@ -7192,44 +7175,44 @@ html[data-theme=dark] .aquaPool p {
     margin: 10px;
   }
 
-  .fee {
+  .tax {
     padding: 60px 0;
   }
-  .fee__inner-header {
+  .tax__inner-header {
     margin-bottom: 30px;
   }
-  .fee__inner-content {
+  .tax__inner-content {
     margin-top: 60px;
   }
-  .fee__inner-content-equation {
+  .tax__inner-content-equation {
     width: 80px;
   }
-  .fee__inner-content h4 {
+  .tax__inner-content h4 {
     margin-bottom: 30px;
   }
-  .fee__inner-row {
+  .tax__inner-row {
     margin-bottom: 30px;
   }
-  .fee__inner-text {
+  .tax__inner-text {
     margin: 60px 0 80px;
     padding: 40px 30px;
   }
-  .fee__inner-text p {
+  .tax__inner-text p {
     width: 100%;
   }
-  .fee__inner-pool {
+  .tax__inner-pool {
     padding: 36px 20px 26px;
     border-radius: 15px;
   }
-  .fee__inner-pool::before {
+  .tax__inner-pool::before {
     border-radius: 15px;
   }
-  .fee__inner-pool p {
+  .tax__inner-pool p {
     width: 100%;
     font-size: 15px;
     line-height: 24px;
   }
-  .fee__inner h3 {
+  .tax__inner h3 {
     margin-bottom: 8px;
   }
 
@@ -7274,6 +7257,10 @@ html[data-theme=dark] .aquaPool p {
   }
 }
 @media (max-width: 650px) {
+  .video {
+    min-height: 360px;
+  }
+
   .hero.market {
     padding: 10px 0 80px;
   }
@@ -8099,45 +8086,45 @@ html[data-theme=dark] .aquaPool p {
     margin-bottom: 15px;
   }
 
-  .fee {
+  .tax {
     padding: 40px 0;
   }
-  .fee__inner-content {
+  .tax__inner-content {
     margin-top: 40px;
   }
-  .fee__inner-content-equation {
+  .tax__inner-content-equation {
     width: 65px;
   }
-  .fee__inner-content h4 {
+  .tax__inner-content h4 {
     margin-bottom: 20px;
   }
-  .fee__inner-row {
+  .tax__inner-row {
     margin-bottom: 20px;
   }
-  .fee__inner-text {
+  .tax__inner-text {
     margin: 40px 0 50px;
     padding: 24px 20px;
     border-radius: 12px;
   }
-  .fee__inner-pool {
+  .tax__inner-pool {
     padding: 30px 20px 20px;
     border-radius: 15px;
   }
-  .fee__inner-pool::before {
+  .tax__inner-pool::before {
     border-radius: 15px;
   }
-  .fee__inner-pool h4 {
+  .tax__inner-pool h4 {
     padding: 0 12px;
   }
-  .fee__inner-pool h4 span {
+  .tax__inner-pool h4 span {
     width: 32px;
     height: 32px;
   }
-  .fee__inner-pool p {
+  .tax__inner-pool p {
     font-size: 14px;
     line-height: 22px;
   }
-  .fee__inner h6.big {
+  .tax__inner h6.big {
     font-size: 18px;
     line-height: 22px;
   }
@@ -8228,6 +8215,10 @@ html[data-theme=dark] .aquaPool p {
   .main__note p {
     font-size: 10px;
     line-height: 14px;
+  }
+
+  .video {
+    min-height: 320px;
   }
 
   .header.sticky .header__inner {
@@ -8657,17 +8648,10 @@ html[data-theme=dark] .aquaPool p {
     margin-bottom: 6px;
   }
 
-  .pool__inner-content {
-    width: 80%;
-  }
-  .pool__inner h3 {
-    margin-bottom: 5px;
-  }
-
-  .fee__inner-header {
+  .tax__inner-header {
     margin-bottom: 20px;
   }
-  .fee__inner-row {
+  .tax__inner-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -8676,49 +8660,49 @@ html[data-theme=dark] .aquaPool p {
         -ms-flex-align: center;
             align-items: center;
   }
-  .fee__inner-content {
+  .tax__inner-content {
     width: 100%;
     margin: 0 0 30px 0;
     max-width: unset;
   }
-  .fee__inner-content h4 {
+  .tax__inner-content h4 {
     margin-bottom: 16px;
   }
-  .fee__inner-image {
+  .tax__inner-image {
     width: 100%;
     max-width: 370px;
   }
-  .fee__inner-text {
+  .tax__inner-text {
     padding: 18px;
   }
-  .fee__inner-text p {
+  .tax__inner-text p {
     font-size: 12px;
     line-height: 19px;
   }
-  .fee__inner-pool {
+  .tax__inner-pool {
     padding: 26px 18px 16px;
     border-radius: 12px;
   }
-  .fee__inner-pool::before {
+  .tax__inner-pool::before {
     border-radius: 12px;
   }
-  .fee__inner-pool h4 {
+  .tax__inner-pool h4 {
     padding: 0 12px;
     font-size: 18px;
     line-height: 24px;
   }
-  .fee__inner-pool h4 span {
+  .tax__inner-pool h4 span {
     width: 28px;
     height: 28px;
   }
-  .fee__inner-pool p {
+  .tax__inner-pool p {
     font-size: 12px;
     line-height: 19px;
   }
-  .fee__inner h3 {
+  .tax__inner h3 {
     margin-bottom: 4px;
   }
-  .fee__inner h6.big {
+  .tax__inner h6.big {
     font-size: 15px;
     line-height: 19px;
   }
