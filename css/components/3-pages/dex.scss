@@ -27,7 +27,7 @@
         font-weight: 600;
         font-family: $sfDisplay;
         line-height: 140%;
-      max-width: 420px;
+        max-width: 420px;
 
       }
     }
@@ -47,6 +47,7 @@
     }
   }
 }
+
 // 1180px
 @mixin dex-xlg-xxlg {
   .dex {
@@ -55,7 +56,9 @@
         bottom: 30px;
         left: 30px;
       }
-      h1, h2 {
+
+      h1,
+      h2 {
         margin-bottom: 10px;
       }
     }
@@ -81,6 +84,10 @@
 // 750px
 @mixin dex-sm-md {
   .dex {
+    .video {
+      min-height: 360px;
+    }
+
     &__inner {
       &-content {
         left: 20px;
@@ -91,9 +98,11 @@
         font-size: 35px;
         margin-bottom: 5px;
       }
+
       h2 {
         margin-bottom: 5px;
       }
+
       h5 {
         font-size: 15px;
       }
@@ -104,6 +113,9 @@
 // 440px
 @mixin dex-xxsm-xsm {
   .dex {
+    .video {
+      min-height: 320px;
+  }
     &__inner {
       h1 {
         font-size: 26px;
@@ -554,6 +566,8 @@
 
 
 .fees {
+  padding-bottom: 160px;
+
   &__inner {
     &-main {
       padding: 56px;
@@ -687,6 +701,8 @@
 // 1180px
 @mixin fees-xlg-xxlg {
   .fees {
+    padding-bottom: 120px;
+
     &__inner {
       &-main {
         margin-bottom: 50px;
@@ -714,8 +730,9 @@
 // 1024px
 @mixin fees-lg-xlg {
   .fees {
+    padding-bottom: 90px;
+
     &__inner {
-      padding: 40px 0;
 
       &-main {
         padding: 45px;
@@ -747,6 +764,8 @@
 // 930px
 @mixin fees-md-lg {
   .fees {
+    padding-bottom: 70px;
+
     &__inner {
       &-main {
         padding: 35px;
@@ -821,6 +840,8 @@
 // 540px
 @mixin fees-xsm-sm {
   .fees {
+    padding-bottom: 50px;
+
     ul {
       li {
         font-size: 14px;
@@ -834,7 +855,6 @@
 @mixin fees-xxsm-xsm {
   .fees {
     &__inner {
-      padding: 20px 0;
 
       &-main {
         padding: 20px;
@@ -873,8 +893,9 @@
 // 390px
 @mixin fees-xxxsm-xxsm {
   .fees {
+    padding-bottom: 30px;
+
     &__inner {
-      padding: 10px 0;
 
       &-main {
         padding: 15px;

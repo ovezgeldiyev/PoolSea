@@ -491,9 +491,7 @@
 
 // 650px
 @include sm-md-extra {
-    .video {
-        min-height: 360px;
-    }
+
     @include hero-sm-md-extra;
     @include location-sm-md-extra;
     @include airdrop-sm-md-extra;
@@ -705,9 +703,7 @@
             }
         }
     }
-    .video {
-        min-height: 320px;
-    }
+
     @include header-xxsm-xsm;
     @include nav-xxsm-xsm;
     @include hero-xxsm-xsm;

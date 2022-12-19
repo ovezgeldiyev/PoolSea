@@ -233,7 +233,8 @@
             }
 
             &-bg {
-                display: none;
+                top: 60%;
+                width: 120%;
             }
 
             h1 {
@@ -869,7 +870,9 @@
             li {
                 margin-bottom: 28px;
                 padding-left: 44px;
-
+                &:last-child {
+                    margin-bottom: 0;
+                }
                 &::before {
                     content: "";
                     width: 24px;
@@ -1054,7 +1057,7 @@
         }
 
         &Info {
-            padding: 20px;
+            padding: 15px;
             border-radius: 10px;
             margin-bottom: 20px;
         }
@@ -1085,7 +1088,7 @@
         &.big {
             .examples {
                 &Info {
-                    padding: 25px 20px;
+                    padding: 20px 15px;
                     border-radius: 10px;
                 }
             }
