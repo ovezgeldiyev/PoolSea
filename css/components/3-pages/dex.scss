@@ -51,6 +51,10 @@
 // 1180px
 @mixin dex-xlg-xxlg {
   .dex {
+    .video {
+      min-height: 590px;
+    }
+
     &__inner {
       &-content {
         bottom: 30px;
@@ -71,7 +75,7 @@
   .dex {
     &__inner {
       h1 {
-        font-size: 45px;
+        font-size: 48px;
       }
 
       h5 {
@@ -84,18 +88,15 @@
 // 750px
 @mixin dex-sm-md {
   .dex {
-    .video {
-      min-height: 360px;
-    }
+
 
     &__inner {
       &-content {
         left: 20px;
-        bottom: 20px;
+        bottom: 30px;
       }
 
       h1 {
-        font-size: 35px;
         margin-bottom: 5px;
       }
 
@@ -104,7 +105,8 @@
       }
 
       h5 {
-        font-size: 15px;
+        font-size: 16px;
+        line-height: 22px;
       }
     }
   }
@@ -113,18 +115,7 @@
 // 440px
 @mixin dex-xxsm-xsm {
   .dex {
-    .video {
-      min-height: 320px;
-  }
-    &__inner {
-      h1 {
-        font-size: 26px;
-      }
-
-      h5 {
-        font-size: 12px;
-      }
-    }
+    &__inner {}
   }
 }
 
@@ -132,18 +123,7 @@
 @mixin dex-xxxsm-xxsm {
   .dex {
     &__inner {
-      &-content {
-        left: 15px;
-        bottom: 10px;
-      }
 
-      h1 {
-        font-size: 22px;
-      }
-
-      h5 {
-        font-size: 10px;
-      }
     }
   }
 }
@@ -173,6 +153,11 @@
   }
 
   h5 {
+    &.extra {
+      font-size: 24px;
+      line-height: 30px;
+      font-family: $sfDisplay;
+    }
     margin-bottom: 24px;
     font-family: $sfText;
   }
@@ -255,7 +240,7 @@
       padding-bottom: 140px;
 
       &-text {
-        padding: 50px;
+        padding: 60px 50px;
       }
     }
 
@@ -295,7 +280,6 @@
 
     h3 {
       margin-bottom: 25px;
-      text-align: center;
     }
 
     p {
@@ -305,9 +289,6 @@
       }
     }
 
-    h5 {
-      text-align: center;
-    }
 
     &.sm {
       .summary {
@@ -334,7 +315,7 @@
       padding-bottom: 70px;
 
       &-text {
-        padding: 40px;
+        padding: 60px 40px;
       }
     }
 
@@ -349,16 +330,11 @@
       }
     }
 
-    h5 {
-      font-size: 22px;
-      line-height: 28px;
-    }
 
     ul {
       li {
         font-size: 16px;
         line-height: 24px;
-        margin-bottom: 20px;
 
         &::before {
           width: 22px;
@@ -381,22 +357,17 @@
 @mixin summary-sm-md-extra {
   .summary {
     &__inner {
-      padding-bottom: 50px;
 
       &-info {
-        margin-bottom: 30px;
+        margin-bottom: 36px;
       }
 
       &-text {
-        padding: 30px;
+        padding: 60px 30px;
         border-radius: 15px;
       }
     }
 
-    h5 {
-      font-size: 20px;
-      line-height: 26px;
-    }
   }
 }
 
@@ -404,8 +375,7 @@
 @mixin summary-xsm-sm {
   .summary {
     &__inner {
-      padding-bottom: 40px;
-
+      padding-bottom: 60px;
       &-text {
         padding: 25px;
         border-radius: 12px;
@@ -423,16 +393,11 @@
       }
     }
 
-    h5 {
-      font-size: 18px;
-      line-height: 24px;
-      margin-bottom: 20px;
-    }
 
     ul {
       li {
         font-size: 15px;
-        line-height: 21px;
+        line-height: 19px;
         padding-left: 30px;
 
         &::before {
@@ -468,36 +433,23 @@
 @mixin summary-xxsm-xsm {
   .summary {
     &__inner {
-      padding-bottom: 30px;
 
       &-text {
-        padding: 20px;
+        padding: 60px 20px;
         border-radius: 10px;
       }
     }
 
-    p {
-      &.big {
-        font-size: 14px;
-        line-height: 20px;
-      }
-    }
-
     h5 {
-      font-size: 17px;
-      line-height: 23px;
-      margin-bottom: 15px;
+      margin-bottom: 28px;
     }
 
     ul {
       li {
-        font-size: 14px;
-        line-height: 20px;
-        margin-bottom: 15px;
 
         &::before {
           top: 8.5px;
-          width: 18px;
+          width: 15px;
         }
       }
     }
@@ -522,34 +474,14 @@
     &__inner {
       padding-bottom: 40px;
 
-      &-text {
-        padding: 15px;
-        border-radius: 8px;
-      }
-    }
-
-    p {
-      &.big {
-        font-size: 14px;
-        line-height: 20px;
-      }
-    }
-
-    h5 {
-      font-size: 17px;
-      line-height: 23px;
-      margin-bottom: 15px;
     }
 
     ul {
       li {
-        font-size: 14px;
-        line-height: 20px;
-        margin-bottom: 15px;
         padding-left: 25px;
 
         &::before {
-          width: 16px;
+          width: 12px;
         }
       }
     }
@@ -826,7 +758,7 @@
     }
 
     h3 {
-      margin-bottom: 30px;
+      margin-bottom: 28px;
     }
 
     p {
@@ -857,8 +789,8 @@
     &__inner {
 
       &-main {
-        padding: 20px;
-        border-radius: 11px;
+        padding: 28px 20px;
+        border-radius: 10px;
       }
     }
 
@@ -894,14 +826,6 @@
 @mixin fees-xxxsm-xxsm {
   .fees {
     padding-bottom: 30px;
-
-    &__inner {
-
-      &-main {
-        padding: 15px;
-        border-radius: 7px;
-      }
-    }
 
     &Text {
       margin-bottom: 15px;

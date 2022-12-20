@@ -354,7 +354,7 @@
     p {
         &.big {
             font-size: 15px;
-            line-height: 24px;
+            line-height: 19px;
         }
 
     }
@@ -527,11 +527,6 @@
         line-height: 37px;
     }
 
-    h3 {
-        font-size: 25px;
-        line-height: 35px;
-    }
-
     h4 {
         font-size: 22px;
         line-height: 26px;
@@ -553,11 +548,6 @@
         &.extra {
             font-size: 18px;
             line-height: 28px;
-        }
-
-        &.big {
-            font-size: 14px;
-            line-height: 22px;
         }
 
         &.sm {
@@ -683,14 +673,6 @@
         }
     }
 
-    p {
-
-        &.big {
-            font-size: 13px;
-            line-height: 20px;
-        }
-    }
-
     .main {
         padding-top: 90px;
 
@@ -729,9 +711,6 @@
 
 // 390px
 @include xxxsm-xxsm {
-    .auto__container {
-        padding: 0 15px;
-    }
 
     .main {
         &__note {
