@@ -1844,6 +1844,7 @@ html[data-theme=dark] .faq.big .faqItem {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  letter-spacing: -0.02em;
 }
 .tabItem p {
   opacity: 0.7;
@@ -2016,6 +2017,8 @@ html[data-theme=dark] .faq.big .faqItem {
   border-radius: 10px;
 }
 .donate__inner-card-total h4 {
+  font-weight: 600;
+  font-family: "Graphik", sans-serif;
   text-align: center;
   letter-spacing: -0.03em;
   background: linear-gradient(268.3deg, #00fff9 -4.34%, #00c5ff 13.53%, #0078ff 93.71%);
@@ -2129,6 +2132,12 @@ html[data-theme=dark] .faq.big .faqItem {
 .donate__inner-card-info button img {
   width: 100%;
 }
+.donate__inner-card p {
+  opacity: 0.7;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  font-family: "sfDisplay", sans-serif;
+}
 .donate__inner > a {
   position: absolute;
   left: 0;
@@ -2136,8 +2145,22 @@ html[data-theme=dark] .faq.big .faqItem {
   font-size: 16px;
   line-height: 16px;
   font-weight: 500;
-  text-decoration: underline;
   color: var(--textColor);
+}
+.donate__inner > a br {
+  display: none;
+}
+.donate__inner > a span {
+  position: relative;
+}
+.donate__inner > a span::before {
+  position: absolute;
+  top: calc(100% + 1px);
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--textColor);
+  content: "";
 }
 .donate__inner h5 {
   margin-bottom: 30px;
@@ -2145,7 +2168,7 @@ html[data-theme=dark] .faq.big .faqItem {
   color: var(--textColor);
   letter-spacing: -0.02em;
   font-weight: 600;
-  font-family: "sfDisplay", sans-serif;
+  font-family: "Graphik", sans-serif;
 }
 .donate__inner p {
   margin-bottom: 36px;
@@ -2189,6 +2212,8 @@ html[data-theme=dark] .faq.big .faqItem {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: 500;
+  letter-spacing: -0.02em;
 }
 .donateItem__name span {
   display: -webkit-box;
@@ -5095,6 +5120,10 @@ html[data-theme=dark] .aquaPool p {
     padding: 30px 40px 40px;
     min-height: 500px;
   }
+  .tabItem h4 {
+    font-size: 30px;
+    line-height: 36px;
+  }
   .tabItem p.extra {
     font-size: 20px;
     line-height: 30px;
@@ -6354,9 +6383,12 @@ html[data-theme=dark] .aquaPool p {
     margin-bottom: 24px;
   }
   .donate__inner-card-info button {
-    width: 30px;
-    height: 30px;
-    padding: 7px;
+    width: 36px;
+    height: 36px;
+    padding: 10px;
+  }
+  .donate__inner-card-info button img {
+    width: 16px;
   }
   .donate__inner-card-info input {
     padding: 15px 44px 14px 10px;
@@ -6366,13 +6398,13 @@ html[data-theme=dark] .aquaPool p {
   }
   .donate__inner-card p {
     margin-bottom: 24px;
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 15px;
+    line-height: 19px;
   }
   .donate__inner-card .button {
-    padding: 14px 15px;
-    font-size: 14px;
-    line-height: 16px;
+    padding: 12px 15px;
+    font-size: 15px;
+    line-height: 19px;
   }
   .donateItem {
     padding: 10px 12px;
@@ -6992,7 +7024,7 @@ html[data-theme=dark] .aquaPool p {
   }
   .tabItem__content {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
     max-width: unset;
   }
   .tabItem__image {
@@ -7048,7 +7080,7 @@ html[data-theme=dark] .aquaPool p {
   }
   .donate__inner-list {
     width: 100%;
-    margin-bottom: 12px;
+    margin-bottom: 26px;
     padding: 15px 10px 7px;
   }
   .donate__inner-card {
@@ -7057,16 +7089,41 @@ html[data-theme=dark] .aquaPool p {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    padding: 28px 24px;
+  }
+  .donate__inner-card-total h4 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .donate__inner-card-info {
+    margin-bottom: 18px;
   }
   .donate__inner-card-info input {
-    font-size: 11px;
-    line-height: 11px;
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: -1.2px;
+    font-weight: 400;
+  }
+  .donate__inner-card h4.sm {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 24px;
   }
   .donate__inner > a {
     position: unset;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    margin-bottom: 36px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin: 20px 0 0 0;
+    font-weight: 400;
+    color: #FFFFFFB2;
+  }
+  .donate__inner > a span {
+    font-weight: 500;
+    color: #fff;
+  }
+  .donate__inner > a span::before {
+    background-color: #fff;
   }
 
   .join__inner {
@@ -7746,8 +7803,8 @@ html[data-theme=dark] .aquaPool p {
     line-height: 28px;
   }
   p.sm {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 15px;
+    line-height: 19px;
   }
 
   .swiperBtn {
@@ -7879,42 +7936,75 @@ html[data-theme=dark] .aquaPool p {
     font-family: "sfText", sans-serif;
   }
 
+  .tab {
+    padding: 60px 0;
+  }
   .tab__inner-header {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    padding: 30px 36px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .tab__inner-header .tabBtn:first-child {
-    border-top-left-radius: 15px;
+  .tab__inner-header .tabBtn {
+    background-color: #131823;
+    margin: 10px;
   }
-  .tab__inner-header .tabBtn:nth-child(3) {
-    border-top-right-radius: 15px;
+  .tab__inner-header .tabBtn::before {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(268.3deg, #00fff9 -4.34%, #00c5ff 13.53%, #0078ff 93.71%);
+    border-radius: 100px;
+    opacity: 0;
+  }
+  .tab__inner-header .tabBtn:nth-child(n) {
+    border-radius: 100px;
+    width: calc(50% - 20px);
+  }
+  .tab__inner-header .tabBtn:last-child {
+    width: 55%;
+  }
+  .tab__inner-header .tabBtn.active {
+    background: unset;
+  }
+  .tab__inner-header .tabBtn.active::before {
+    opacity: 1;
+  }
+  .tab__inner-header .tabBtn.active h5 {
+    -webkit-text-fill-color: unset;
+    color: #fff;
+  }
+  .tab__inner-header .tabBtn h5 {
+    position: relative;
+    z-index: 2;
+  }
+  .tab__inner-header .tabBtn h5.sm {
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    font-family: "sfText", sans-serif;
+    font-weight: 500;
   }
   .tab__inner-content {
-    padding: 20px 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    padding: 30px 15px;
   }
   .tabItem__content {
-    margin-bottom: 16px;
+    margin-bottom: 28px;
   }
   .tabItem h6 {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
-  .tabItem h6.big {
-    font-size: 15px;
-    line-height: 20px;
-  }
-  .tabItem h4 {
-    margin-bottom: 8px;
+  .tabItem p {
+    font-weight: 400;
+    font-family: "sfText", sans-serif;
   }
   .tabItem ul li {
-    font-size: 13px;
+    font-size: 15px;
     line-height: 19px;
-    padding-left: 12px;
-    margin-bottom: 4px;
+    padding-left: 13px;
+    margin-bottom: 8px;
   }
   .tabItem ul li::before {
-    top: 9px;
+    top: 7px;
     width: 5px;
     height: 5px;
   }
@@ -7923,13 +8013,13 @@ html[data-theme=dark] .aquaPool p {
     line-height: 22px;
   }
   .tabItem p.title {
-    padding-left: 28px;
+    padding-left: 24px;
   }
   .tabItem p.title span {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     margin-right: 5px;
-    top: -2px;
+    top: 0px;
   }
   .tabItem p.title span svg {
     width: 10px;
@@ -7937,16 +8027,19 @@ html[data-theme=dark] .aquaPool p {
   }
 
   .donate {
-    padding: 20px 0 40px;
+    padding: 0 0 60px;
   }
   .donate__inner > a {
-    font-size: 14px;
-    line-height: 15px;
-    margin-bottom: 25px;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
   }
-  .donate__inner-card-info input {
-    font-size: 10px;
-    line-height: 10px;
+  .donate__inner > a br {
+    display: block;
+  }
+  .donate__inner-card p {
+    font-weight: 400;
+    font-family: "sfText", sans-serif;
   }
   .donateItem {
     padding: 6px 8px;
@@ -8288,6 +8381,53 @@ html[data-theme=dark] .aquaPool p {
   .examples.big ul li::before {
     width: 15px;
   }
+
+  .team {
+    background: unset;
+    padding: 0;
+  }
+  .team__inner {
+    padding: 60px 20px;
+    background: var(--tabBg);
+    border-radius: 10px;
+  }
+  .team__inner .swiperBtn {
+    display: none;
+  }
+  .team__inner-swiper {
+    width: 100%;
+  }
+  .team__inner-swiper-outer {
+    margin: 0 -15px;
+  }
+  .team__inner .swiper-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: unset !important;
+            transform: unset !important;
+  }
+  .team__inner .swiper-slide {
+    width: calc(50% - 30px) !important;
+    margin: 15px !important;
+  }
+  .teamItem {
+    padding: 0;
+  }
+  .teamItem h5.sm {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .teamItem__image {
+    width: 80%;
+    height: unset;
+    margin-bottom: 9px;
+  }
+  .teamItem p {
+    margin-bottom: 10px;
+  }
 }
 @media (max-width: 440px) {
   h1 {
@@ -8447,36 +8587,48 @@ html[data-theme=dark] .aquaPool p {
   }
 
   .donate {
-    padding: 0 0 30px;
+    padding: 90px 0 60px;
+  }
+  .donate__inner {
+    position: relative;
   }
   .donate__inner-list {
-    margin-bottom: 8px;
-  }
-  .donate__inner > a {
-    font-size: 10px;
-    line-height: 12px;
-    margin-bottom: 20px;
+    padding: 8px 15px 10px;
   }
   .donate__inner h5 {
     margin-bottom: 10px;
-  }
-  .donateItem {
-    padding: 10px 12px;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    position: absolute;
+    bottom: calc(100% + 16px);
+    left: 0;
     width: 100%;
   }
+  .donateItem {
+    padding: 10px 15px;
+    font-size: 15px;
+    line-height: 19px;
+    width: 100%;
+    margin: 4px;
+  }
   .donateItem__name span {
-    width: 26px;
-    height: 26px;
+    width: 28px;
+    height: 28px;
   }
 
-  .tab__inner-header .tabBtn {
-    padding: 10px;
+  .tab__inner-header {
+    padding: 30px 26px;
   }
-  .tab__inner-header .tabBtn h5.sm {
-    font-size: 12px;
-    line-height: 14px;
+  .tab__inner-header .tabBtn {
+    padding: 10px 12px;
+    margin: 5px;
+  }
+  .tab__inner-header .tabBtn:nth-child(n) {
+    width: calc(50% - 10px);
+  }
+  .tab__inner-header .tabBtn:last-child {
+    width: 60%;
   }
 
   .footer__inner-main-content {
@@ -8631,16 +8783,19 @@ html[data-theme=dark] .aquaPool p {
     line-height: 20px;
   }
 
-  .team__inner .swiperBtn {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+  .team__inner-swiper-outer {
+    margin: 0 -8px;
   }
-  .team__inner .swiper-button-prev {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+  .team__inner .swiper-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .team__inner-swiper {
-    width: calc(100% - 60px);
+  .team__inner .swiper-slide {
+    width: calc(50% - 16px) !important;
+    margin: 8px 8px 16px !important;
   }
 
   .network {
@@ -9202,6 +9357,11 @@ html[data-theme=dark] .aquaPool p {
   }
   .examples.big ul li {
     margin-bottom: 5px;
+  }
+
+  .teamItem__image {
+    width: 100px;
+    height: 100px;
   }
 }
 @media (max-width: 370px) {

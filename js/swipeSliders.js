@@ -17,35 +17,53 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
-var swiper2 = new Swiper(".mySwiper2", {
-  slidesPerView: 5,
-  spaceBetween: 15,
-  loop: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    280: {
-      slidesPerView: 1,
-      spaceBetween: 8,
-    },
-    440: {
-      slidesPerView: 2,
-      spaceBetween: 5,
-    },
-    600: {
-      slidesPerView: 3,
-      spaceBetween: 5,
-    },
-    750: {
-      slidesPerView: 4,
-      spaceBetween: 5,
-    },
-    1024: {
-      slidesPerView: 5,
-      spaceBetween: 10,
-    },
-  },
-});
+
 // swiper end
+
+var init = false;
+function swiperCard() {
+  if (window.innerWidth >= 540) {
+    if (!init) {
+      console.log("hey")
+      init = true;
+      swiper2 = new Swiper(".mySwiper2", {
+        slidesPerView: 5,
+        spaceBetween: 15,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          280: {
+            slidesPerView: 1,
+            spaceBetween: 8,
+          },
+          440: {
+            slidesPerView: 2,
+            spaceBetween: 5,
+            
+          },
+          600: {
+            slidesPerView: 3,
+            spaceBetween: 5,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 5,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 10,
+          },
+        },
+      });
+    }
+  } else if (init) {
+    swiper.destroy();
+    init = false;
+    console.log("asd")
+  }
+}
+swiperCard();
+window.addEventListener("resize", swiperCard);
