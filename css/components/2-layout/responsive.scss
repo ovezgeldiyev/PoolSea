@@ -551,8 +551,8 @@
         }
 
         &.sm {
-            font-size: 12px;
-            line-height: 16px;
+            font-size: 15px;
+            line-height: 19px;
         }
     }
 
@@ -637,6 +637,7 @@
     @include benefits-xsm-sm;
     @include tax-xsm-sm;
     @include examples-xsm-sm;
+    @include team-xsm-sm;
 
 }
 
@@ -755,6 +756,7 @@
     @include aquaPool-xxxsm-xxsm;
     @include update-xxxsm-xxsm;
     @include examples-xxxsm-xxsm;
+    @include team-xxxsm-xxsm;
 
 }
 
