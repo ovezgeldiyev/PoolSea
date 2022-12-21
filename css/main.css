@@ -8399,7 +8399,7 @@ html[data-theme=dark] .aquaPool p {
     padding: 0;
   }
   .team__inner {
-    padding: 60px 20px;
+    padding: 60px 20px 50px;
     background: var(--tabBg);
     border-radius: 10px;
   }
