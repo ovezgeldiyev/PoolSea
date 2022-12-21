@@ -198,7 +198,9 @@ p {
     top: 18%;
     left: 0;
     pointer-events: none;
-
+    &.low {
+      opacity: .3;
+    }
     &.big {
       top: 0;
 
