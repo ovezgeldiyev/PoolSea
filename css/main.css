@@ -3773,6 +3773,9 @@ html[data-theme=dark] .aboutText P {
   line-height: 25px;
   color: var(--textColor);
 }
+.summary ul li span {
+  font-weight: 700;
+}
 html[data-theme=dark] .summary ul li {
   opacity: 0.8;
 }
@@ -3829,7 +3832,8 @@ html[data-theme=dark] .summary p {
   text-align: center;
   max-width: 790px;
   margin: 0 auto;
-  color: var(--feesColor);
+  color: #fff;
+  opacity: 0.8;
 }
 .feesText {
   margin-bottom: 28px;
@@ -3845,10 +3849,12 @@ html[data-theme=dark] .summary p {
   font-weight: 700;
 }
 .feesText p {
-  color: var(--feesColor);
+  color: #fff;
+  opacity: 0.8;
 }
 .feesText p span {
-  color: var(--feesColor);
+  color: #fff;
+  opacity: 0.8;
   font-weight: 700;
 }
 .feesList {
@@ -3864,10 +3870,14 @@ html[data-theme=dark] .summary p {
   font-weight: 500;
   line-height: 25px;
   margin-bottom: 7px;
-  color: var(--feesColor);
+  color: #fff;
+  opacity: 0.8;
   display: inline-block;
 }
 .fees ul li span {
+  font-weight: 700;
+}
+.fees ul li strong {
   font-weight: 700;
 }
 .fees ul li.color {
@@ -3878,7 +3888,8 @@ html[data-theme=dark] .summary p {
   background-clip: text;
 }
 .fees ul li.color span {
-  background: var(--feesColor);
+  background: #fff;
+  opacity: 0.8;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -3892,7 +3903,8 @@ html[data-theme=dark] .summary p {
   content: "";
   width: 6px;
   height: 6px;
-  background-color: var(--feesColor);
+  background-color: #fff;
+  opacity: 0.8;
   position: absolute;
   top: 8.5px;
   left: 10px;
@@ -8699,7 +8711,7 @@ html[data-theme=dark] .aquaPool p {
   }
 
   .fees__inner-main {
-    padding: 28px 20px;
+    padding: 28px 20px 50px;
     border-radius: 10px;
   }
   .feesText h5 {
@@ -9268,20 +9280,61 @@ html[data-theme=dark] .aquaPool p {
   }
 
   .fees {
-    padding-bottom: 30px;
+    padding: 20px 0 60px;
+  }
+  .fees__inner-info {
+    text-align: left;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 500;
+    font-family: "sfDisplay", sans-serif;
+  }
+  .fees__inner-info br {
+    display: block;
+  }
+  .fees__inner-info br:first-child {
+    display: none;
   }
   .feesText {
-    margin-bottom: 15px;
+    margin-bottom: 28px;
+  }
+  .feesText:last-child {
+    margin-bottom: 0;
   }
   .feesText h5 {
-    font-size: 16px;
-    line-height: 21px;
-  }
-  .fees h3 {
-    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 18px;
+    font-family: "sfDisplay", sans-serif;
+    margin-bottom: 12px;
+    font-weight: 600;
   }
   .fees p.sm {
-    margin-bottom: 15px;
+    margin-bottom: 28px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .fees p.big {
+    font-weight: 400;
+  }
+  .fees ul {
+    padding: 24px 20px;
+    border-radius: 20px;
+    margin: 0 -10px 12px;
+  }
+  .fees ul li {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-right: -7px;
+    letter-spacing: -0.02em;
+  }
+  .fees ul li::before {
+    left: 0;
+    top: 8px;
+  }
+  .fees ul li span {
+    font-weight: 400;
   }
 
   .summary__inner {
