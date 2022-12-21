@@ -140,10 +140,11 @@
       color: $textColor;
       font-weight: 700;
       opacity: 0.7;
-
       &:last-of-type {
         margin-bottom: 55px;
         opacity: 1;
+      font-family: $sfDisplay;
+      letter-spacing: -0.02em;
       }
     }
   }
@@ -243,7 +244,7 @@
     &__inner {
 
       &-banner {
-        display: block;
+        display: flex;
       }
 
       &-wrapper {
@@ -277,11 +278,15 @@
       }
 
       h1 {
-        margin-bottom: 5px;
+        margin-bottom: 8px;
       }
-
+      h4 {
+        font-size: 24px;
+        line-height: 31px;
+        margin-bottom: 10px;
+      }
       h5 {
-        margin-bottom: 5px;
+        margin-bottom: 8px;
 
         &:last-of-type {
           margin-bottom: 25px;
@@ -349,6 +354,10 @@
           }
         }
       }
+      h1 {
+        font-size: 48px;
+        line-height: 48px;
+      }
     }
   }
 }
@@ -369,12 +378,24 @@
     }
 
     &__inner {
+      &-banner {
+        margin: 0 -20px;
+      }
       h3 {
         span {
           white-space: nowrap;
         }
       }
-
+      h5 {
+        &:last-of-type {
+          font-size: 16px;
+          line-height: 22px;
+          color: #F6F9FC;
+          opacity: .8;
+          max-width: 322px;
+          margin: 0 auto 30px;
+        }
+      }
       &-wrapper {
         canvas {
           top: 50%;
@@ -484,6 +505,7 @@
       margin-bottom: 36px;
       font-family: $sfDisplay;
       letter-spacing: -0.02em;
+      font-weight: 600;
     }
 
     p {
@@ -572,7 +594,7 @@
       }
 
       .swiperBtn {
-        top: calc(100% + 35px);
+        top: calc(100% + 45px);
         left: 10%;
       }
 
@@ -586,12 +608,11 @@
 // 540px
 @mixin intro-xsm-sm {
   .intro {
-    padding: 30px 0 70px;
+    padding: 60px 0;
 
 
     &__inner {
       &-content {
-        margin-bottom: 20px;
         visibility: hidden;
 
         &.active {
@@ -601,14 +622,33 @@
           
         }
       }
-
+      &-buttons {
+        position: absolute;
+        width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        top: calc(100% + 40px);
+        height: 36px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
       .swiperBtn {
-        top: calc(100% + 35px);
+        top: calc(100% + 50px);
         left: 10%;
+        position: unset;
       }
 
       .swiper-button-next {
         left: calc(10% + 46px);
+        order: 2;
+      }
+      h2 {
+        margin-bottom: 16px;
+      }
+      p {
+        font-weight: 400;
+        font-family: $sfText;
       }
     }
   }

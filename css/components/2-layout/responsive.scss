@@ -557,8 +557,8 @@
     }
 
     .swiperBtn {
-        width: 32px;
-        height: 32px;
+        width: 36px;
+        height: 36px;
 
         &::after {
             font-size: 12px;
@@ -567,6 +567,7 @@
     }
 
     .circle {
+        display: none;
         width: 320px;
         height: 320px;
     }
@@ -574,6 +575,7 @@
     .main {
         &__bg {
             height: 7%;
+            display: none;
         }
 
         &__note {
@@ -652,7 +654,7 @@
 
     h2 {
         font-size: 30px;
-        line-height: 38px;
+        line-height: 36px;
     }
 
     h4 {
@@ -661,8 +663,8 @@
     }
 
     h5 {
-        font-size: 17px;
-        line-height: 22px;
+        font-size: 18px;
+        line-height: 23px;
     }
 
     h6 {
@@ -672,9 +674,14 @@
             line-height: 15px;
         }
     }
-
+    p {
+        &.extra {
+            font-size: 15px;
+            line-height: 19px;
+        }
+    }
     .main {
-        padding-top: 90px;
+        padding-top: 105px;
 
         &__note {
             top: 65px;

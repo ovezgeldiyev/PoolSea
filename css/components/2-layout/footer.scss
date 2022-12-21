@@ -10,7 +10,9 @@
       &-content {
         width: calc(40% - 10px);
         max-width: 407px;
-        p{
+        & > p{
+          font-weight: 500;
+          font-family: $sfDisplay;
           @include inDarkMode{
             opacity: .7;
           }
@@ -70,6 +72,7 @@
       line-height: 23px;
       margin-bottom: 20px;
       font-family: $sfDisplay;
+  font-weight: 500;
    
     }
     a {
@@ -128,11 +131,11 @@
   }
 }
 
-// 900px
+// 930px
 @mixin footer-md-lg {
   .footer {
     &__inner {
-      padding: 80px 0;
+      padding: 80px 0 60px;
 
       &-main {
         flex-direction: column;
@@ -167,7 +170,8 @@
 @mixin footer-sm-md-extra {
   .footer {
     &__inner {
-      padding: 70px 0;
+      padding: 66px 0 40px;
+
 
       &-copy {
         font-size: 16px;
@@ -179,27 +183,22 @@
       margin-bottom: 15px;
 
       &__image {
-        width: 45px;
-        margin-right: 9px;
+        width: 48px;
+        margin-right: 12px;
       }
 
-      p {
-        font-size: 25px;
-        line-height: 25px;
-      }
     }
 
     &Link {
       h5 {
         font-size: 17px;
         line-height: 22px;
-        margin-bottom: 15px;
       }
 
       a {
         font-size: 14px;
         line-height: 18px;
-        margin-bottom: 12px;
+        margin-bottom: 10px;
       }
     }
   }
@@ -209,8 +208,11 @@
 @mixin footer-xxsm-xsm {
   .footer {
     &__inner {
-      padding: 40px 0;
-
+      &-main {
+        &-content {
+          margin: 0 0 45px;
+        }
+      }
       &-copy {
         font-size: 15px;
         line-height: 20px;
@@ -218,23 +220,17 @@
     }
 
     .mainLogo {
-      margin-bottom: 10px;
+      margin-bottom: 16px;
+      text-align:start;
+      justify-content: flex-start;
 
-      &__image {
-        width: 40px;
-        margin-right: 9px;
-      }
-
-      p {
-        font-size: 20px;
-        line-height: 20px;
-      }
     }
 
     p {
+      text-align: start;
       &.sm {
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 15px;
+        line-height: 19px;
       }
     }
 
@@ -242,13 +238,12 @@
       h5 {
         font-size: 16px;
         line-height: 20px;
-        margin-bottom: 10px;
       }
 
       a {
         font-size: 13px;
         line-height: 18px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
       }
     }
   }
@@ -258,17 +253,15 @@
 @mixin footer-xxxsm-xxsm {
   .footer {
     &__inner {
-      padding: 30px 0;
 
       &-main {
-        margin-bottom: 30px;
+        margin-bottom: 50px;
 
         &-links {
           flex-wrap: wrap;
         }
 
         &-content {
-          margin-bottom: 30px;
         }
       }
 
@@ -283,23 +276,9 @@
       }
     }
 
-    .mainLogo {
-      margin-bottom: 10px;
-
-      &__image {
-        width: 35px;
-        margin-right: 9px;
-      }
-
-      p {
-        font-size: 18px;
-        line-height: 18px;
-      }
-    }
-
     &Link {
       width: calc(50% - 15px);
-      margin-bottom: 30px;
+      margin-bottom: 45px;
       text-align: left;
 
       &:last-child {
