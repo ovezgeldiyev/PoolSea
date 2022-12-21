@@ -3361,21 +3361,21 @@
   }
 }
 
-// 540px
-@mixin discleamer-xsm-sm {
-  .discleamer {
-    h3 {
-      margin-bottom: 20px;
-    }
+// // 540px
+// @mixin discleamer-xsm-sm {
+//   .discleamer {
+//     h3 {
+//       margin-bottom: 20px;
+//     }
 
-    p {
-      &.big {
-        font-size: 15px;
-        line-height: 20px;
-      }
-    }
-  }
-}
+//     p {
+//       &.big {
+//         font-size: 15px;
+//         line-height: 20px;
+//       }
+//     }
+//   }
+// }
 
 // 440px
 @mixin discleamer-xxsm-xsm {
@@ -3389,21 +3389,21 @@
   }
 }
 
-// 390px
-@mixin discleamer-xxxsm-xxsm {
-  .discleamer {
-    &__inner {
-      padding: 40px 0;
-    }
+// // 390px
+// @mixin discleamer-xxxsm-xxsm {
+//   .discleamer {
+//     &__inner {
+//       padding: 40px 0;
+//     }
 
-    p {
-      &.big {
-        font-size: 13px;
-        line-height: 18px;
-      }
-    }
-  }
-}
+//     p {
+//       &.big {
+//         font-size: 13px;
+//         line-height: 18px;
+//       }
+//     }
+//   }
+// }
 
 
 .info {
@@ -3995,7 +3995,7 @@
 @mixin airdrop-sm-md-extra {
   .airdrop {
     &__inner {
-      padding: 50px 0;
+      padding: 60px 0;
     }
 
     &Join {

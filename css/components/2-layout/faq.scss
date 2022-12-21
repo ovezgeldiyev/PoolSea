@@ -229,7 +229,7 @@
     }
 
     h3 {
-      margin-bottom: 30px;
+      margin-bottom: 36px;
     }
 
     &Item {
@@ -279,7 +279,7 @@
 @mixin faq-xsm-sm {
   .faq {
     &__inner {
-      padding: 50px 0;
+      padding: 60px 0;
 
       @include inLightMode {
         padding: 0px 0 30px 0;
@@ -288,30 +288,30 @@
 
     &Item {
       margin-bottom: 15px;
-
       &__header {
-        padding: 20px;
+        padding:16px 20px ;
 
         h6 {
           &.big {
             width: calc(100% - 40px);
             font-size: 17px;
             line-height: 22px;
+            font-family: $sfDisplay;
           }
         }
 
         span {
           width: 15px;
           height: 15px;
-          right: 20px;
+          right: 24px;
         }
       }
 
       &__content {
         padding: 0 20px;
-
         &.active {
-          padding: 0 20px 20px;
+          padding:11px 20px 20px;
+
         }
       }
     }
@@ -334,8 +334,6 @@
 @mixin faq-xxxsm-xxsm {
   .faq {
     &__inner {
-      padding: 30px 0;
-
       @include inLightMode {
         padding: 0;
       }
@@ -355,34 +353,31 @@
 
     &Item {
       &__header {
-        padding: 15px;
-
         h6 {
           &.big {
-            font-size: 16px;
-            line-height: 21px;
+            font-size: 15px;
+            line-height: 19.5px;
+            font-weight: 500;
+            width: calc(100% - 30px);
+            letter-spacing: -0.02em;
           }
         }
-
-        span {
-          width: 14px;
-          height: 14px;
+        span{
+          width: 10px;
+          height: 10px;
         }
       }
 
       &__content {
-        padding: 0 15px;
-
         p {
           &.sm {
             font-size: 14px;
-            line-height: 18px;
+            line-height: 15px;
+            letter-spacing: -0.02em;
           }
         }
 
-        &.active {
-          padding: 0 15px 15px;
-        }
+       
       }
     }
   }
