@@ -1,5 +1,4 @@
 .header {
-
   &.uniqHead:not(.sticky){
     .header {
       &__inner {
@@ -123,7 +122,10 @@
     background-color: $bgColor;
     box-shadow: 0px 8px 18px 0px #00000030;
   }
+  &.active {
+  background-color: $bgColor;
 
+  }
   &__inner {
     padding: 40px 0 30px;
     display: flex;

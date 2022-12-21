@@ -1,3 +1,44 @@
+.pool {
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-content {
+            width: calc(43% - 40px);
+        }
+        &-video {
+            width: calc(57% - 40px);
+
+            padding-bottom: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+        h3 {
+            font-weight: 600;
+            font-family: $sfDisplay;
+            letter-spacing: -0.02em;
+            background: linear-gradient(268.3deg,
+            #00fff9 -4.34%,
+            #00c5ff 13.53%,
+            #0078ff 93.71%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 24px;
+        }
+    }
+}
+
 .benefits {
     padding: 180px 0;
 
