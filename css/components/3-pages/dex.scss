@@ -7,11 +7,18 @@
 
   &__inner {
     &-content {
-      width: 100%;
+      width: 90%;
       position: absolute;
       bottom: 60px;
       left: 60px;
+      &.right{
+        bottom: 60px;
+        right: 60px;
+        left: unset;
+        text-align: right;
+      }
     }
+   
 
     h1 {
       color: $white;
@@ -60,6 +67,9 @@
       &-content {
         bottom: 30px;
         left: 30px;
+        &.right{
+          right: 30px;
+        }
       }
 
       h1,
@@ -92,6 +102,9 @@
       &-content {
         left: 20px;
         bottom: 30px;
+        &.right{
+          right: 20px;
+        }
       }
 
       h1 {
@@ -122,6 +135,11 @@
 @mixin dex-xxxsm-xxsm {
   .dex {
     &__inner {
+      &-content {
+        &.right{
+          bottom: 40px;
+        }
+      }
     }
   }
 }
