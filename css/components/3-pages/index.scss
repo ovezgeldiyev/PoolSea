@@ -2072,6 +2072,7 @@
     line-height: 19px;
     color: $langColor;
     position: relative;
+    text-decoration: underline;
   }
 
   &.multiplier {
@@ -4002,6 +4003,11 @@
 
     .button {
       display: inline;
+    }
+    .check{
+      &:after{
+        display: none;
+      }
     }
 
     &__bg {
