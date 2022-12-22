@@ -321,6 +321,7 @@
     @include benefits-lg-xlg;
     @include tax-lg-xlg;
     @include examples-lg-xlg;
+    @include pool-lg-xlg;
 
 }
 
@@ -469,6 +470,9 @@
                 line-height: 20px;
             }
         }
+        &.sm {
+            padding: 0;
+        }
     }
 
     @include hero-sm-md;
@@ -486,6 +490,7 @@
     @include benefits-sm-md;
     @include tax-sm-md;
     @include examples-sm-md;
+    @include pool-sm-md;
 
 }
 
@@ -756,6 +761,7 @@
     @include update-xxxsm-xxsm;
     @include examples-xxxsm-xxsm;
     @include team-xxxsm-xxsm;
+    @include benefits-xxxsm-xxsm;
 
 }
 

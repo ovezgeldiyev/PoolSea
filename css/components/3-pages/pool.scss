@@ -40,7 +40,89 @@
     }
   }
 }
+// 1024px
+@mixin pool-lg-xlg {
+  .pool {
+    &__inner {
+      &-video {
+      width: calc(57% - 16px);
+      }
+      &-content {
+        width: calc(43% - 16px);
+      }
+      h3 {
+        margin-bottom: 14px;
+      }
+    }
+  }
+}
 
+// 930px
+@mixin pool-md-lg {
+  .pool {
+
+  }
+}
+
+// 750px
+@mixin pool-sm-md {
+  .pool {
+    position: relative;
+    .auto__container {
+      padding: 0;
+    }
+    &__inner {
+      &-video {
+        padding-bottom: 80%;
+        width: 100%;
+        min-height: 590px;
+      }
+      &-content {
+        width: calc(100% - 40px);
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+      }
+      h3 {
+        font-size: 48px;
+        line-height: 48px;
+        -webkit-text-fill-color: unset;
+        background: transparent;
+        color: $white;
+        margin-bottom: 8px;
+      }
+      h5 {
+        letter-spacing: -0.02em;
+        opacity: .8;
+        &.extra {
+          font-size: 16px;
+          line-height: 22px;
+
+        }
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// 540px
+@mixin pool-xsm-sm {
+  .pool {
+
+
+    
+  }
+}
+
+// 440px
+@mixin pool-xxsm-xsm {
+  .pool {
+    &__inner {
+    }
+  }
+}
 .benefits {
   padding: 180px 0;
 
@@ -73,6 +155,7 @@
       margin-bottom: 250px;
       font-family: $sfDisplay;
       letter-spacing: -0.02em;
+      font-weight: 700;
       background: linear-gradient(
         268.3deg,
         #00fff9 -4.34%,
@@ -92,6 +175,7 @@
 
     & > h4 {
       margin-bottom: 44px;
+      letter-spacing: -0.02em;
     }
   }
 
@@ -147,6 +231,10 @@
       letter-spacing: -0.02em;
       margin-bottom: 10px;
     }
+    p {
+      letter-spacing: -0.02em;
+      font-weight: 400;
+    }
   }
 }
 
@@ -198,6 +286,9 @@
 
       & > h4 {
         margin-bottom: 25px;
+        font-size: 24px;
+        line-height: 27px;
+
       }
     }
 
@@ -251,10 +342,6 @@
         align-items: stretch;
       }
 
-      h1 {
-        margin-bottom: 120px;
-      }
-
       & > h4 {
         margin-bottom: 15px;
       }
@@ -276,53 +363,85 @@
 // 540px
 @mixin benefits-xsm-sm {
   .benefits {
-    padding: 40px 0;
 
     &__inner {
+      display: flex;
+      flex-direction: column;
       &-row {
         margin: 0;
+        justify-content: center;
       }
 
       &-bg {
-        top: 60%;
-        width: 120%;
+        width: 100%;
+        position: unset;
+        transform: translateY(-40px);
+        order: -1;
       }
 
+  
       h1 {
-        margin-bottom: 30px;
+        font-size: 42px;
+        line-height: 50px;
+        margin: 0;
+        order: -2;
       }
-
       & > h4 {
         margin-bottom: 24px;
+        text-align: center;
       }
     }
 
     &Item {
       width: 100%;
-
+      padding: 36px 40px 32px;
       &:nth-child(n) {
-        margin: 0 0 12px 0;
+        margin: 0 0 24px 0;
+        width: 85%;
       }
-
+      &:last-child {
+        margin: 0;
+      }
       &__icon {
-        margin-bottom: 18px;
+        margin-bottom: 30px;
+        width: 56px;
+        height: 56px;
       }
 
       h4 {
-        margin-bottom: 15px;
+        margin-bottom: 24px;
+        font-size: 24px;
+        line-height: 30px;
+
+        br {
+          display: none;
+        }
+      }
+      p {
+        &.sm {
+          font-size: 15px;
+          line-height: 19px;
+          font-weight: 400;
+        }
       }
     }
   }
 }
 
-// 440px
-@mixin benefits-xxsm-xsm {
+
+// 390px
+@mixin benefits-xxxsm-xxsm {
   .benefits {
     &__inner {
     }
+    &Item {
+      &:nth-child(n) {
+        width: 100%;
+        max-width: 276px;
+      }
+    }
   }
 }
-
 .tax {
   padding: 160px 0;
 
