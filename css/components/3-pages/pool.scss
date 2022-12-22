@@ -3,9 +3,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     &-content {
       width: calc(43% - 40px);
     }
+
     &-video {
       width: calc(57% - 40px);
 
@@ -14,6 +16,7 @@
       justify-content: center;
       align-items: center;
       position: relative;
+
       video {
         width: 100%;
         height: 100%;
@@ -23,16 +26,15 @@
         left: 0;
       }
     }
+
     h3 {
       font-weight: 600;
       font-family: $sfDisplay;
       letter-spacing: -0.02em;
-      background: linear-gradient(
-        268.3deg,
-        #00fff9 -4.34%,
-        #00c5ff 13.53%,
-        #0078ff 93.71%
-      );
+      background: linear-gradient(268.3deg,
+          #00fff9 -4.34%,
+          #00c5ff 13.53%,
+          #0078ff 93.71%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -40,16 +42,19 @@
     }
   }
 }
+
 // 1024px
 @mixin pool-lg-xlg {
   .pool {
     &__inner {
       &-video {
-      width: calc(57% - 16px);
+        width: calc(57% - 16px);
       }
+
       &-content {
         width: calc(43% - 16px);
       }
+
       h3 {
         margin-bottom: 14px;
       }
@@ -59,30 +64,32 @@
 
 // 930px
 @mixin pool-md-lg {
-  .pool {
-
-  }
+  .pool {}
 }
 
 // 750px
 @mixin pool-sm-md {
   .pool {
     position: relative;
+
     .auto__container {
       padding: 0;
     }
+
     &__inner {
       &-video {
         padding-bottom: 80%;
         width: 100%;
         min-height: 590px;
       }
+
       &-content {
         width: calc(100% - 40px);
         position: absolute;
         bottom: 20px;
         left: 20px;
       }
+
       h3 {
         font-size: 48px;
         line-height: 48px;
@@ -91,14 +98,17 @@
         color: $white;
         margin-bottom: 8px;
       }
+
       h5 {
         letter-spacing: -0.02em;
         opacity: .8;
+
         &.extra {
           font-size: 16px;
           line-height: 22px;
 
         }
+
         br {
           display: none;
         }
@@ -109,20 +119,16 @@
 
 // 540px
 @mixin pool-xsm-sm {
-  .pool {
-
-
-    
-  }
+  .pool {}
 }
 
 // 440px
 @mixin pool-xxsm-xsm {
   .pool {
-    &__inner {
-    }
+    &__inner {}
   }
 }
+
 .benefits {
   padding: 180px 0;
 
@@ -156,12 +162,10 @@
       font-family: $sfDisplay;
       letter-spacing: -0.02em;
       font-weight: 700;
-      background: linear-gradient(
-        268.3deg,
-        #00fff9 -4.34%,
-        #00c5ff 13.53%,
-        #0078ff 93.71%
-      );
+      background: linear-gradient(268.3deg,
+          #00fff9 -4.34%,
+          #00c5ff 13.53%,
+          #0078ff 93.71%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -173,7 +177,7 @@
       }
     }
 
-    & > h4 {
+    &>h4 {
       margin-bottom: 44px;
       letter-spacing: -0.02em;
     }
@@ -217,12 +221,10 @@
       font-weight: 600;
       font-family: $sfDisplay;
       letter-spacing: -0.02em;
-      background: linear-gradient(
-        268.3deg,
-        #00fff9 -4.34%,
-        #00c5ff 13.53%,
-        #0078ff 93.71%
-      );
+      background: linear-gradient(268.3deg,
+          #00fff9 -4.34%,
+          #00c5ff 13.53%,
+          #0078ff 93.71%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -231,6 +233,7 @@
       letter-spacing: -0.02em;
       margin-bottom: 10px;
     }
+
     p {
       letter-spacing: -0.02em;
       font-weight: 400;
@@ -248,7 +251,7 @@
         margin-bottom: 220px;
       }
 
-      & > h4 {
+      &>h4 {
         margin-bottom: 30px;
       }
     }
@@ -284,7 +287,7 @@
         margin-bottom: 200px;
       }
 
-      & > h4 {
+      &>h4 {
         margin-bottom: 25px;
         font-size: 24px;
         line-height: 27px;
@@ -342,7 +345,7 @@
         align-items: stretch;
       }
 
-      & > h4 {
+      &>h4 {
         margin-bottom: 15px;
       }
     }
@@ -367,6 +370,7 @@
     &__inner {
       display: flex;
       flex-direction: column;
+
       &-row {
         margin: 0;
         justify-content: center;
@@ -379,14 +383,15 @@
         order: -1;
       }
 
-  
+
       h1 {
         font-size: 42px;
         line-height: 50px;
         margin: 0;
         order: -2;
       }
-      & > h4 {
+
+      &>h4 {
         margin-bottom: 24px;
         text-align: center;
       }
@@ -395,13 +400,16 @@
     &Item {
       width: 100%;
       padding: 36px 40px 32px;
+
       &:nth-child(n) {
         margin: 0 0 24px 0;
         width: 85%;
       }
+
       &:last-child {
         margin: 0;
       }
+
       &__icon {
         margin-bottom: 30px;
         width: 56px;
@@ -417,6 +425,7 @@
           display: none;
         }
       }
+
       p {
         &.sm {
           font-size: 15px;
@@ -431,8 +440,8 @@
 // 390px
 @mixin benefits-xxxsm-xxsm {
   .benefits {
-    &__inner {
-    }
+    &__inner {}
+
     &Item {
       &:nth-child(n) {
         width: 100%;
@@ -454,13 +463,15 @@
     &-header {
       margin-bottom: 80px;
       text-align: center;
-      h3{
-        br{
+
+      h3 {
+        br {
           display: none;
         }
       }
-      h6{
-        br{
+
+      h6 {
+        br {
           display: none;
         }
       }
@@ -487,7 +498,8 @@
 
         img {
           width: 100%;
-          &:nth-child(2){
+
+          &:nth-child(2) {
             display: none;
           }
         }
@@ -498,12 +510,10 @@
         font-weight: 600;
         font-family: $sfDisplay;
         letter-spacing: -0.02em;
-        background: linear-gradient(
-          268.3deg,
-          #00fff9 -4.34%,
-          #00c5ff 13.53%,
-          #0078ff 93.71%
-        );
+        background: linear-gradient(268.3deg,
+            #00fff9 -4.34%,
+            #00c5ff 13.53%,
+            #0078ff 93.71%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -591,17 +601,16 @@
         }
 
         strong {
-          background: linear-gradient(
-            268.3deg,
-            #00fff9 -4.34%,
-            #00c5ff 13.53%,
-            #0078ff 93.71%
-          );
+          background: linear-gradient(268.3deg,
+              #00fff9 -4.34%,
+              #00c5ff 13.53%,
+              #0078ff 93.71%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
           margin-right: 6px;
         }
+
         br {
           display: none;
         }
@@ -617,6 +626,7 @@
         font-family: $sfDisplay;
         font-weight: 400;
         color: $langColor;
+
         br {
           display: none;
         }
@@ -632,12 +642,10 @@
       strong {
         font-family: $sfText;
         font-weight: 500;
-        background: linear-gradient(
-          268.3deg,
-          #00fff9 -4.34%,
-          #00c5ff 13.53%,
-          #0078ff 93.71%
-        );
+        background: linear-gradient(268.3deg,
+            #00fff9 -4.34%,
+            #00c5ff 13.53%,
+            #0078ff 93.71%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -649,12 +657,10 @@
       font-weight: 600;
       font-family: $sfDisplay;
       letter-spacing: -0.02em;
-      background: linear-gradient(
-        268.3deg,
-        #00fff9 -4.34%,
-        #00c5ff 13.53%,
-        #0078ff 93.71%
-      );
+      background: linear-gradient(268.3deg,
+          #00fff9 -4.34%,
+          #00c5ff 13.53%,
+          #0078ff 93.71%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -897,43 +903,49 @@
   .tax {
     &__inner {
       &-header {
-        margin:0 0 36px;
-        h3{
+        margin: 0 0 36px;
+
+        h3 {
           margin-bottom: 12px;
-          br{
+
+          br {
             display: block;
           }
         }
-         h6{
-          br{
+
+        h6 {
+          br {
             display: block;
           }
-           &.big{
-             font-weight: 500;
-           }
-         }
+
+          &.big {
+            font-weight: 500;
+          }
+        }
       }
 
       &-row {
         flex-direction: column;
         align-items: center;
       }
-     
+
 
       &-content {
         width: 100%;
         margin: 0 0 26px 0;
         max-width: unset;
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        &-equation{
-          img{
-            &:nth-child(1){
+
+        &-equation {
+          img {
+            &:nth-child(1) {
               display: none;
             }
-            &:nth-child(2){
+
+            &:nth-child(2) {
               display: block;
             }
           }
@@ -952,9 +964,10 @@
         width: 100%;
         max-width: 370px;
         margin-bottom: 40px;
-    
+
       }
-      .check{
+
+      .check {
         font-weight: 500;
         line-height: 19.5px;
         font-size: 15px;
@@ -970,8 +983,8 @@
           font-size: 15px;
           line-height: 24px;
           font-family: $sfDisplay;
-          font-weight:500;
-           
+          font-weight: 500;
+
         }
       }
 
@@ -992,6 +1005,7 @@
           font-size: 30px;
           background: none;
           transform: translate(-50%, -23%);
+
           span {
             width: 79px;
             height: 48px;
@@ -999,6 +1013,7 @@
             background: $bgColor;
             margin: 0 auto 12px;
           }
+
           br {
             display: block;
           }
@@ -1009,6 +1024,7 @@
           line-height: 19px;
           font-weight: 500;
           font-family: $sfDisplay;
+
           br {
             display: block;
           }
@@ -1105,6 +1121,7 @@
       &__inner {
         max-width: unset;
         padding: 0;
+
         &-main {
           margin: 0;
         }
@@ -1122,9 +1139,11 @@
       li {
         margin-bottom: 28px;
         padding-left: 44px;
+
         &:last-child {
           margin-bottom: 0;
         }
+
         &::before {
           content: "";
           width: 24px;
@@ -1306,12 +1325,10 @@
 
     h5 {
       &.extra {
-        background: linear-gradient(
-          268.3deg,
-          #00fff9 -4.34%,
-          #00c5ff 13.53%,
-          #0078ff 93.71%
-        );
+        background: linear-gradient(268.3deg,
+            #00fff9 -4.34%,
+            #00c5ff 13.53%,
+            #0078ff 93.71%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -1332,6 +1349,7 @@
         padding-left: 20px;
         margin-bottom: 10px;
         letter-spacing: -0.02em;
+
         &::before {
           top: 8px;
           left: 5px;
@@ -1340,6 +1358,7 @@
         }
       }
     }
+
     p {
       text-align: left;
       font-family: $sfDisplay;
@@ -1348,11 +1367,12 @@
 
     &.big {
       .examples {
-        &__inner{
+        &__inner {
           padding: 60px 18px;
-      background: $tabBg;
-      border-radius: 10px;
+          background: $tabBg;
+          border-radius: 10px;
         }
+
         &Info {
           padding: 0;
         }
@@ -1364,12 +1384,13 @@
 
       ul {
         li {
-          padding-left:24px;
+          padding-left: 24px;
           margin-bottom: 18px;
           font-size: 15px;
           line-height: 19.5px;
           font-weight: 400;
           letter-spacing: -0.02em;
+
           &::before {
             width: 12px;
             height: 2px;
@@ -1401,6 +1422,7 @@
     ul {
       li {
         padding-left: 15px;
+
         &::before {
           left: 5px;
           height: 4px;
@@ -1468,18 +1490,17 @@
   h3 {
     text-align: center;
     margin-bottom: 36px;
+
     br {
       display: none;
     }
   }
 
   h5 {
-    background: linear-gradient(
-      268.3deg,
-      #00fff9 -4.34%,
-      #00c5ff 13.53%,
-      #0078ff 93.71%
-    );
+    background: linear-gradient(268.3deg,
+        #00fff9 -4.34%,
+        #00c5ff 13.53%,
+        #0078ff 93.71%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1573,10 +1594,12 @@
     h3 {
       margin-bottom: 24px;
       font-weight: 600;
+
       br {
         display: block;
       }
     }
+
     p {
       &.big {
         margin-bottom: 60px;
@@ -1585,11 +1608,13 @@
         letter-spacing: -0.02em;
         font-weight: 400;
       }
+
       &.sm {
         font-weight: 500;
         font-family: $sfDisplay;
       }
     }
+
     h5 {
       font-size: 24px;
       line-height: 30px;
@@ -1604,9 +1629,107 @@
       &__info {
         margin-bottom: 20px;
       }
+
       &__image {
         width: calc(100% + 20px);
         margin: 0 -10px;
+      }
+    }
+  }
+}
+
+.rewards {
+  &__inner {
+    &-title {
+      margin-bottom: 80px;
+      text-align: center;
+    }
+
+    &-main {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 160px;
+    }
+
+    &-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 462px;
+      margin: 0 auto;
+
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+
+    h3 {
+      margin-bottom: 24px;
+    }
+
+    h5 {
+      font-family: $sfDisplay;
+      opacity: 0.7;
+      margin-bottom: 28px;
+      font-weight: 400;
+
+      &.extra {
+        font-weight: 600;
+        opacity: 0.8;
+        font-family: $sfText;
+        margin-bottom: 0;
+      }
+
+      &.sm {
+        font-family: $sfText;
+        opacity: 0.8;
+        font-family: $sfText;
+        margin-bottom: 0;
+        line-height: 30px;
+      }
+    }
+
+    h4 {
+      &.sm {
+        background: linear-gradient(268.3deg,
+            #00fff9 -4.34%,
+            #00c5ff 13.53%,
+            #0078ff 93.71%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        letter-spacing: -0.02em;
+        font-weight: 600;
+        font-family: $sfDisplay;
+        margin-bottom: 28px;
+      }
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 26px;
+      font-weight: 400;
+      opacity: 0.8;
+    }
+  }
+
+  &Info {
+    padding: 72px 56px 75px;
+    border-radius: 20px;
+    background: $tabBg;
+    width: calc(50% - 12px);
+  }
+
+  &.sm {
+    .rewards {
+      &__inner {
+        padding: 160px 0;
+
+        &-main {
+          margin-bottom: 0;
+        }
       }
     }
   }
