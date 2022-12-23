@@ -104,6 +104,8 @@
     @include intro-xxxlg-xxxxlg;
     @include bonus-xxxlg-xxxxlg;
     @include status-xxxlg-xxxxlg;
+    @include steps-xxxlg-xxxxlg;
+
 }
 
 // 1250px
@@ -210,6 +212,7 @@
     @include examples-xlg-xxlg;
     @include emergency-xlg-xxlg;
     @include dex-xlg-xxlg;
+    @include steps-xlg-xxlg;
 
 }
 
@@ -401,6 +404,7 @@
     @include benefits-md-lg;
     @include tax-md-lg;
     @include emergency-md-lg;
+    @include steps-md-lg;
 
 }
 
@@ -491,6 +495,7 @@
     @include tax-sm-md;
     @include examples-sm-md;
     @include pool-sm-md;
+    @include steps-sm-md;
 
 }
 
@@ -642,6 +647,7 @@
     @include tax-xsm-sm;
     @include examples-xsm-sm;
     @include team-xsm-sm;
+    @include steps-xsm-sm;
 
 }
 
@@ -718,6 +724,7 @@
     @include network-xxsm-xsm;
     @include tax-xxsm-xsm;
     @include emergency-xxsm-xsm;
+    @include steps-xxsm-xsm;
 
 }
 

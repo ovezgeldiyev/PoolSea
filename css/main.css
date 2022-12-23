@@ -409,7 +409,7 @@ p.sm {
   max-width: 1920px;
 }
 .main__bg-wave.sharp {
-  opacity: 0.08;
+  opacity: 0.15;
 }
 html[data-theme=light] .main__bg-wave.sharp {
   opacity: 1;
@@ -2841,8 +2841,10 @@ html[data-theme=dark] .discleamer p {
 .info.second .info__inner p {
   opacity: 0.8;
 }
-.info.third {
-  margin-bottom: 60px;
+.info.second .info__inner p.extra {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
 }
 .info.third .info__inner-content {
   width: calc(48% - 10px);
@@ -3775,15 +3777,25 @@ html[data-theme=dark] .aboutText P {
 
 .dex {
   background-color: #06070a;
+  position: relative;
+  height: 100vh;
 }
 .dex .auto__container {
   padding: 0;
+  height: 100%;
+}
+.dex .video {
+  position: absolute;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 .dex__inner-content {
   width: 90%;
   position: absolute;
   bottom: 60px;
   left: 60px;
+  z-index: 3;
 }
 .dex__inner-content.right {
   bottom: 60px;
@@ -4388,8 +4400,6 @@ html[data-theme=dark] .aquaPool p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-size: 18px;
-  line-height: 27px;
   letter-spacing: -0.02em;
   margin-bottom: 10px;
 }
@@ -4584,11 +4594,19 @@ html[data-theme=dark] .aquaPool p {
 .tax__inner-pool p br {
   display: none;
 }
-.tax__inner .check::after {
+.tax__inner a {
+  position: relative;
+}
+.tax__inner a::after {
+  position: absolute;
   background: linear-gradient(268.3deg, #00fff9 -4.34%, #00c5ff 13.53%, #0078ff 93.71%);
   bottom: -2px;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  content: "";
 }
-.tax__inner .check strong {
+.tax__inner a strong {
   font-family: "sfText", sans-serif;
   font-weight: 500;
   background: linear-gradient(268.3deg, #00fff9 -4.34%, #00c5ff 13.53%, #0078ff 93.71%);
@@ -4861,6 +4879,129 @@ html[data-theme=dark] .aquaPool p {
   margin-bottom: 0;
 }
 
+.steps {
+  margin-bottom: 115px;
+}
+.steps.second {
+  margin-bottom: 0;
+}
+.steps.second .steps__inner-col {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.steps.second .steps__inner-image {
+  margin: 0 0 0 -5%;
+}
+.steps.second .stepsItem:nth-child(2) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.steps__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.steps__inner-col {
+  width: calc(50% - 10px);
+  max-width: 590px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.steps__inner-image {
+  width: calc(55% - 10px);
+  max-width: 685px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: -5%;
+}
+.steps__inner-image img {
+  width: 100%;
+}
+.stepsItem {
+  padding: 30px;
+  border-radius: 30px;
+  background-color: var(--tabBg);
+  position: relative;
+  width: 80%;
+  max-width: 480px;
+  margin-bottom: 48px;
+}
+.stepsItem:last-child {
+  margin-bottom: 0;
+}
+.stepsItem:nth-child(2) {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.stepsItem__arrow {
+  position: absolute;
+  top: calc(100% - 5px);
+  right: 50%;
+  width: 25%;
+  max-width: 112px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 3;
+}
+.stepsItem__arrow.right {
+  right: unset;
+  left: 50%;
+}
+.stepsItem__arrow img {
+  width: 100%;
+}
+.stepsItem h5 {
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-family: "sfDisplay", sans-serif;
+  background: linear-gradient(268.3deg, #00fff9 -4.34%, #00c5ff 13.53%, #0078ff 93.71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.stepsItem p {
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: 500;
+  font-family: "sfDisplay", sans-serif;
+  opacity: 0.8;
+}
+.stepsItem p a {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 @media (max-width: 1700px) {
   .header__inner-buttons .lang__dropdown .check span {
     left: unset;
@@ -5031,6 +5172,21 @@ html[data-theme=dark] .aquaPool p {
     font-size: 19px;
     line-height: 26px;
     margin-bottom: 8px;
+  }
+
+  .steps.second .steps__inner-image {
+    margin: 0;
+  }
+  .steps__inner-col {
+    width: calc(50% - 5px);
+  }
+  .steps__inner-image {
+    margin: 0;
+    width: calc(50% - 5px);
+  }
+  .stepsItem p {
+    font-size: 20px;
+    line-height: 25px;
   }
 }
 @media (max-width: 1250px) {
@@ -5820,9 +5976,6 @@ html[data-theme=dark] .aquaPool p {
     border-radius: 20px;
   }
 
-  .dex .video {
-    min-height: 590px;
-  }
   .dex__inner-content {
     bottom: 30px;
     left: 30px;
@@ -5833,6 +5986,24 @@ html[data-theme=dark] .aquaPool p {
   .dex__inner h1,
 .dex__inner h2 {
     margin-bottom: 10px;
+  }
+
+  .steps {
+    margin-bottom: 90px;
+  }
+  .stepsItem {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .stepsItem h5 {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 10px;
+  }
+  .stepsItem p {
+    font-size: 18px;
+    line-height: 23px;
   }
 }
 @media (max-width: 1024px) {
@@ -6997,6 +7168,26 @@ html[data-theme=dark] .aquaPool p {
   .emergencyItem__info {
     margin-bottom: 40px;
   }
+
+  .steps {
+    margin-bottom: 70px;
+  }
+  .steps__inner-image img {
+    width: 110%;
+  }
+  .stepsItem {
+    margin-bottom: 30px;
+    padding: 18px;
+  }
+  .stepsItem h5 {
+    margin-bottom: 6px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .stepsItem p {
+    font-size: 15px;
+    line-height: 18px;
+  }
 }
 @media (max-width: 840px) {
   .discleamer__inner {
@@ -7571,6 +7762,15 @@ html[data-theme=dark] .aquaPool p {
     padding: 50px 0 20px;
   }
 
+  .dex {
+    height: unset;
+  }
+  .dex .video {
+    min-height: 590px;
+    position: relative;
+    padding-bottom: 62%;
+    max-height: 100vh;
+  }
   .dex__inner-content {
     left: 20px;
     bottom: 30px;
@@ -7768,6 +7968,47 @@ html[data-theme=dark] .aquaPool p {
   }
   .pool__inner h5 br {
     display: none;
+  }
+
+  .steps.second .steps__inner-image {
+    margin-bottom: 30px;
+  }
+  .steps__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .steps__inner-col {
+    width: 100%;
+    max-width: unset;
+  }
+  .steps__inner-image {
+    width: 100%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 30px;
+    max-width: 540px;
+  }
+  .steps__inner-image img {
+    width: 100%;
+  }
+  .stepsItem {
+    margin-bottom: 44px;
+    padding: 24px;
+  }
+  .stepsItem h5 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .stepsItem p {
+    font-size: 18px;
+    line-height: 23px;
   }
 }
 @media (max-width: 650px) {
@@ -8834,6 +9075,17 @@ html[data-theme=dark] .aquaPool p {
   .teamItem p {
     margin-bottom: 10px;
   }
+
+  .steps {
+    margin-bottom: 50px;
+  }
+  .stepsItem {
+    padding: 20px;
+    width: 90%;
+  }
+  .stepsItem h5 {
+    margin-bottom: 10px;
+  }
 }
 @media (max-width: 440px) {
   h1 {
@@ -9381,7 +9633,7 @@ html[data-theme=dark] .aquaPool p {
     max-width: 370px;
     margin-bottom: 40px;
   }
-  .tax__inner .check {
+  .tax__inner a {
     font-weight: 500;
     line-height: 19.5px;
     font-size: 15px;
@@ -9480,6 +9732,22 @@ html[data-theme=dark] .aquaPool p {
   .emergencyItem__image {
     width: calc(100% + 20px);
     margin: 0 -10px;
+  }
+
+  .steps {
+    margin-bottom: 30px;
+  }
+  .stepsItem {
+    padding: 20px;
+    width: 93%;
+    margin-bottom: 34px;
+  }
+  .stepsItem h5 {
+    margin-bottom: 6px;
+  }
+  .stepsItem p {
+    font-size: 15px;
+    line-height: 19px;
   }
 }
 @media (max-width: 390px) {

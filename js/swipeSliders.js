@@ -24,7 +24,6 @@ var init = false;
 function swiperCard() {
   if (window.innerWidth >= 540) {
     if (!init) {
-      console.log("hey")
       init = true;
       swiper2 = new Swiper(".mySwiper2", {
         slidesPerView: 5,
@@ -62,7 +61,6 @@ function swiperCard() {
   } else if (init) {
     swiper.destroy();
     init = false;
-    console.log("asd")
   }
 }
 swiperCard();

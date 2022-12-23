@@ -3723,11 +3723,15 @@
       }
       p {
         opacity: .8;
+        &.extra {
+          font-size: 20px;
+          line-height: 30px;
+          font-weight: 500;
+        }
       }
     }
   }
   &.third {
-    margin-bottom: 60px;
     .info__inner {
       &-content {
         width: calc(48% - 10px);
