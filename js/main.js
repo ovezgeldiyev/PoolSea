@@ -48,6 +48,9 @@ window.onscroll = function () {
 // tab start
 const tabBtn = document.querySelectorAll(".tabBtn");
 const tabEvent = document.querySelectorAll(".tabEvent");
+const myTab = document.getElementById("myTab");
+
+
 tabBtn.forEach((e) => {
   onTabClick(tabBtn, tabEvent, e);
 });
@@ -57,7 +60,7 @@ function onTabClick(tabBtns, tabItems, item) {
     let tabId = currentBtn.getAttribute("data-tab");
     let currentTab = document.querySelector(tabId);
     if (currentBtn.classList.contains("active")) {
-      const faq = currentBtn.parentElement.querySelector(".tabEvent");
+      const faq = myTab.querySelector(".tabEvent");
       if (faq) {
         faq.classList.remove("active");
         currentBtn.classList.remove("active");
@@ -76,6 +79,8 @@ function onTabClick(tabBtns, tabItems, item) {
   });
 }
 // tab end
+
+
 // faq start
 const faqBtn = document.querySelectorAll(".faqBtn");
 const faqEvent = document.querySelectorAll(".faqEvent");
@@ -103,50 +108,13 @@ function onFaqClick(faqBtns, faqItems, item) {
       });
       currentBtn.classList.add("active");
       currentTab.classList.add("active");
+      
     }
   });
 }
 // faq end
 
-// timer start
 
-const countdown = document.getElementById("countdown");
-if (countdown) {
-  let endDate = new Date(countdown.getAttribute("data-date"));
-  let upgradeTime = endDate - Date.now();
-
-  let seconds = upgradeTime / 1000;
-
-  let countdownTimer = setInterval("timer()", 1000);
-
-  function timer() {
-    let days = Math.floor(seconds / 24 / 60 / 60);
-    let hoursLeft = Math.floor(seconds - days * 86400);
-    let hours = Math.floor(hoursLeft / 3600);
-    let minutesLeft = Math.floor(hoursLeft - hours * 3600);
-    let minutes = Math.floor(minutesLeft / 60);
-    let remainingSeconds = Math.floor(seconds) % 60;
-    function pad(n) {
-      return n < 10 ? "0" + n : n;
-    }
-    countdown.innerHTML =
-      pad(days) +
-      ":" +
-      pad(hours) +
-      ":" +
-      pad(minutes) +
-      ":" +
-      pad(remainingSeconds);
-    if (seconds == 0) {
-      clearInterval(countdownTimer);
-      countdown.innerHTML = "Completed";
-    } else {
-      seconds--;
-    }
-  }
-}
-
-// timer end
 
 const warn = document.getElementById("warn");
 const warnClose = document.getElementById("warnClose");
@@ -181,88 +149,7 @@ const sponsorTooltip = () => {
 
 sponsorTooltip();
 
-// network select start
 
-const networkSelect = document.getElementById("networkSelect");
-const networkContent = document.getElementById("networkContent");
-
-if (networkSelect) {
-  const selectBtn = networkSelect.querySelector(".networkSelect__button");
-  const selectContent = networkSelect.querySelector(".networkSelect__content");
-  const selectSelected = networkSelect.querySelector(
-    ".networkSelect__selected"
-  );
-  const selectItems = networkSelect.querySelectorAll(".networkSelect__item");
-  const networkItems = networkContent.querySelectorAll(".networkItem");
-  const networkCol = networkContent.querySelector(".network__inner-col");
-
-  const selectCodes = networkSelect.querySelectorAll(
-    ".networkSelect__selected-item"
-  );
-
-  const hidden = document.getElementById("hidden");
-
-  selectBtn.onclick = () => {
-    selectBtn.classList.toggle("active");
-    selectContent.classList.toggle("active");
-    hidden.classList.add("active");
-  };
-
-  selectItems.forEach((e) => {
-    onTabClick(selectItems, networkItems, e);
-  });
-
-  function onTabClick(tabBtns, tabItems, item) {
-    item.addEventListener("click", function (e) {
-      let currentBtn = item;
-      let tabId = currentBtn.getAttribute("data-select");
-      let currentTab = document.querySelector(tabId);
-
-      if (currentBtn.classList.contains("active")) {
-        const faq = currentBtn.parentElement.querySelector(".networkItem");
-        if (faq) {
-          faq.classList.remove("active");
-          currentBtn.classList.remove("active");
-        }
-      } else if (!currentBtn.classList.contains("active")) {
-        tabBtns.forEach(function (item) {
-          item.classList.remove("active");
-        });
-
-        tabItems.forEach(function (item) {
-          item.classList.remove("active");
-          item.classList.add("delete");
-        });
-
-        currentBtn.classList.add("active");
-        currentTab.classList.add("active");
-        selectBtn.classList.remove("active");
-        selectBtn.classList.add("selected");
-        selectBtn.innerHTML = currentBtn.innerHTML;
-        selectContent.classList.remove("active");
-        selectContent.classList.add("selected");
-        selectSelected.classList.add("active");
-
-        selectCodes.forEach((selectCode) => {
-          if (selectCode.classList.contains(tabId)) {
-            selectCode.classList.add("active");
-          } else {
-            selectCode.classList.remove("active");
-          }
-        });
-
-        if (currentTab === document.getElementById("select-1")) {
-          networkCol.classList.add("delete");
-        } else {
-          networkCol.classList.add("active");
-          networkCol.classList.remove("delete");
-        }
-      }
-    });
-  }
-}
-
-// network select end
 
 // copy start
 const copy = document.getElementById("copy");
