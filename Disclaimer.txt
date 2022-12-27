@@ -1,0 +1,139 @@
+Disclaimer
+
+You must have no expectation of profit from the work of others.
+
+There is no common enterprise, there shall be no expectation of efforts of a promoter or third party.
+Users generate their own keys, no one else has keys to give them. Bonuses don't actually take anyone else's database values, they just add or subtract more or less database values based on the system state.
+
+If you can, learn to code; or have the smartest coder or computer scientist you can find read over the code you plan to execute.
+
+Blockchains, Smart contracts, and Cryptocurrencies, Are all cutting edge technologies, and as such, there is a risk, however small, of total failure. Software is hard. Computers are hard. Distributed software on distributed computers is harder. It's a miracle this stuff works at all. Strong cryptography seems unlikely to be broken, but if it is, everything will probably be broken.
+
+The Howey test
+
+( https://www.google.info/search?q=Howey+test) defines what U.S. federal securities laws apply to, which the SEC administers.
+
+Wherever possible you agree there is no investment of money.  Wherever possible you agree there is no common enterprise.
+
+Cryptocurrencies are extremely volatile. Bitcoin went from a penny to $32, then it crashed 94% to $2. Then it went from $2 to $270 then crashed 81%. Then it went from $51 to $1200 then crashed 86%. Then it went from $164 to $20,000, then crashed 84%. Then it went from $3150 to $14,000 and crashed 72%. And that's the most liquid, oldest cryptocurrency in the world. Nearly every crypto currency drops 85% to 95% at some point. Some get back up and make new all time highs.
+
+Website Terms and Conditions of Use
+1. Terms
+
+By accessing this Website, accessible from https://PoolSea.com, you are agreeing to be bound by these Website Terms and Conditions of Use and agree that you are responsible for the agreement with any applicable local laws. If you disagree with any of these terms, you are prohibited from accessing this site. The materials contained in this Website are protected by copyright and trade mark law.
+
+2. Use License
+
+Permission is granted to temporarily download one copy of the materials on PoolSea's Website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
+
+    modify or copy the materials;
+    use the materials for any commercial purpose or for any public display;
+    attempt to reverse engineer any software contained on PoolSea's Website;
+    remove any copyright or other proprietary notations from the materials; or
+    transferring the materials to another person or "mirror" the materials on any other server.
+
+This will let PoolSea to terminate upon violations of any of these restrictions. Upon termination, your viewing right will also be terminated and you should destroy any downloaded materials in your possession whether it is printed or electronic format.
+3. Disclaimer
+
+All the materials on PoolSea Website are provided "as is". PoolSea makes no warranties, may it be expressed or implied, therefore negates all other warranties. Furthermore, PoolSea does not make any representations concerning the accuracy or reliability of the use of the materials on its Website or otherwise relating to such materials or any sites linked to this Website.
+4. Limitations
+
+PoolSea or its suppliers will not be hold accountable for any damages that will arise with the use or inability to use the materials on PoolSeaWebsite, even if PoolSea or an authorize representative of this Website has been notified, orally or written, of the possibility of such damage. Some jurisdiction does not allow limitations on implied warranties or limitations of liability for incidental damages, these limitations may not apply to you.
+5. Revisions and Errata
+
+The materials appearing on PoolSea Website may include technical, typographical, or photographic errors. PoolSea will not promise that any of the materials in this Website are accurate, complete, or current. PoolSea may change the materials contained on its Website at any time without notice. PoolSea does not make any commitment to update the materials.
+6. Links
+
+PoolSea has not reviewed all of the sites linked to its Website and is not responsible for the contents of any such linked site. The presence of any link does not imply endorsement by PoolSea of the site. The use of any linked website is at the userown risk.
+7. Site Terms of Use Modifications
+
+PoolSea may revise these Terms of Use for its Website at any time without prior notice. By using this Website, you are agreeing to be bound by the current version of these Terms and Conditions of Use.
+8. Your Privacy
+
+Please read our Privacy Policy.
+9. Governing Law
+
+Any claim related to PoolSea's Website shall be governed by the laws of Pa without regards to its conflict of law provisions.
+
+
+LEGAL DISCLAIMER 1. Risks related to the use of PoolSea PoolSea "User Chosen Software Assister"
+
+PoolSea will not be responsible for any losses, damages or claims arising from events falling within the scope of the following five categories:
+
+Mistakes made by the user of any cryptocurrency-related software or service, e.g., forgotten passwords, payments sent to wrong coin addresses, and accidental deletion of PoolSea "User Chosen Software Assister"s.
+
+Software problems of the PoolSea "User Chosen Software Assister" and/or any cryptocurrency-related software or service, e.g., corrupted PoolSea "User Chosen Software Assister" file, incorrectly constructed transactions, unsafe cryptographic libraries, malware affecting the PoolSea "User Chosen Software Assister" and/or any cryptocurrency-related software or service.
+
+Technical failures in the hardware of the user of any cryptocurrency-related software or service, e.g., data loss due to a faulty or damaged storage device.
+
+Security problems experienced by the user of any cryptocurrency-related software or service, e.g., unauthorized access to users' PoolSea "User Chosen Software Assister"s and/or accounts.
+
+Actions or inactions of third parties and/or events experienced by third parties, e.g., bankruptcy of service providers, information security attacks on service providers, and fraud conducted by third parties.
+2. Trading and Investment risks
+
+There is considerable exposure to risk in any crypto-currency exchange transaction. Any transaction involving currencies involves risks including, but not limited to, the potential for changing economic conditions that may substantially affect the price or liquidity of a currency. Investments in crypto-currency exchange speculation may also be susceptible to sharp rises and falls as the relevant market values fluctuate. It is for this reason that when speculating in such markets it is advisable to use only risk capital.
+
+3. Electronic Trading Risks
+
+Before you engage in transactions using an electronic system, you should carefully review the rules and regulations of the exchanges offering the system and/or listing the instruments you intend to trade. Online trading has inherent risk due to system response and access times that may vary due to market conditions, system performance, and other factors. You should understand these and additional risks before trading.
+
+4. Compliance with tax obligations
+
+The users of the PoolSea "User Chosen Software Assister" are solely responsible to determinate what, if any, taxes apply to their crypto-currency transactions. The owners of, or contributors to, the PoolSea "User Chosen Software Assister" are NOT responsible for determining the taxes that apply to crypto-currency transactions.
+
+5. No warranties
+
+The PoolSea "User Chosen Software Assister" is provided on an "as is" basis without any warranties of any kind regarding the PoolSea "User Chosen Software Assister" and/or any content, data, materials and/or services provided on the PoolSea "User Chosen Software Assister"
+
+6. Limitation of liability
+
+Unless otherwise required by law, in no event shall the owners of, or contributors to, the PoolSea "User Chosen Software Assister" be liable for any damages of any kind, including, but not limited to, loss of use, loss of profits, or loss of data arising out of or in any way connected with the use of the PoolSea "User Chosen Software Assister" In no way are the owners of, or contributors to, the PoolSea "User Chosen Software Assister" responsible for the actions, decisions, or other behavior taken or not taken by you in reliance upon the PoolSea "User Chosen Software Assister"
+
+7. Arbitration
+
+The user of the PoolSea "User Chosen Software Assister" agrees to arbitrate any dispute arising from or in connection with the PoolSea "User Chosen Software Assister" or this disclaimer, except for disputes related to copyrights, logos, trademarks, trade names, trade secrets or patents.
+
+8. Last amendment
+
+This disclaimer was amended for the last time on July 15th, 2021
+
+
+
+Privacy Policy for PoolSea
+
+At PoolSea.com, accessible from https://PoolSea.com or http://PoolSea.com or any subdomain, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by PoolSea.com and how we use it.
+
+If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.
+Analytics
+
+If you really care about your privacy you should be using the tor browser from http://tor.eff.org. We prefer not to have any data about you at all really, as it's just a liability. We do use google analytics and are hosted on AWS currently to try and figure out where traffic is coming from and which pages on the site are being read the most. Many hosting companies do this and a part of hosting services' analytics. The information collected by analytics includes internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information. No matter what any company writes in their terms of service, they can always change them, or break their own rules, so you must be responsible for protecting your own privacy.
+Cookies and Web Beacons
+
+Like any other website, PoolSea.com uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.
+Privacy Policies
+
+Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on PoolSea.com, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.
+
+Note that PoolSea.com has no access to or control over these cookies that are used by third-party advertisers.
+Third Party Privacy Policies
+
+PoolSea.com's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. You may find a complete list of these Privacy Policies and their links here: Privacy Policy Links.
+
+You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites. What Are Cookies?
+Children's Information
+
+Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.
+
+PoolSea.com does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.
+Online Privacy Policy Only
+
+This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in PoolSea.com. This policy is not applicable to any information collected offline or via channels other than this website.
+Consent
+
+By using our website, you hereby consent to our Privacy Policy and agree to its Terms and Conditions.
+
+More Stuff
+
+If you've read down this far, congratulations. You will notice the theme of all of the above text is that you should have absolutely no expectations of any sort regarding anything, and if anything goes wrong, you shouldn't look for redress anywhere, and you should receive none. Everything is subject to change at anytime. Software is hard. Blockchain software is harder. Everything could go terribly wrong, and you would be out of luck. We're lucky any of this stuff works at all. A commong mistake users make is to send their cryptocurrency directly to a contract address on Ethereum or similar smart contract enabled blockchain. Anything you send, you lose, and will not get back. This nearly always results in the total loss of their funds. With the PoolSea sacrifice, if you sacrificed XRP, and didn't include the memo you were supposed to, you get no points. If you send things not supported, you get no points. If you send before or after the sacrfice phase period, you get no points. If the donate to the sens foundation, and they screw up, you might get no points. The moral of the story here is, on the blockchain, it's very easy to make mistakes, you must be very careful.
+
+
