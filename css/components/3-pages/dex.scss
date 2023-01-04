@@ -285,19 +285,23 @@
     .summary {
       &__inner {
         padding: 160px 0 0;
-
+        &-info{
+          width: calc(40% - 15px);
+        }
         &-text {
+          width: calc(60% - 15px);
           padding: unset;
           background-color: unset;
-          max-width: 770px;
+          max-width: 686px;
         }
       }
     }
-
+    
     ul {
+      margin: 30px 0;
+      padding-left: 10px;
       li {
         padding-left: 20px;
-
         &::before {
           width: 7px;
           height: 7px;
@@ -310,6 +314,8 @@
 
     h3 {
       margin-bottom: 0;
+      letter-spacing: -0.02em;
+      white-space: nowrap;
     }
   }
 }
@@ -374,6 +380,16 @@
       .summary {
         &__inner {
           padding: 80px 0 10px;
+          &-info {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto 40px;
+          }
+          &-text {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+          }
         }
       }
 
@@ -458,7 +474,6 @@
         border-radius: 12px;
       }
     }
-
     h3 {
       margin-bottom: 15px;
     }
@@ -493,11 +508,15 @@
           }
         }
 
-        ul {
-          li {
-            &::before {
-              top: 7px;
-            }
+      
+      }
+      ul {
+        padding-left: 5px;
+        margin: 15px 0;
+        li {
+          &::before {
+            top: 6px;
+            left: 4px;
           }
         }
       }
@@ -559,13 +578,6 @@
       }
     }
 
-    &.sm {
-      h3 {
-        br {
-          display: none;
-        }
-      }
-    }
   }
 }
 

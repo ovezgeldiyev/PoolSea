@@ -1,0 +1,399 @@
+ 
+The PoolSea Protocol: 
+PoolSea DAO’s Collective Collateral GOL 
+(CCG) System.
+
+Introduction 
+ 
+The Collective Collateral GOL (CCG) system, also known as the PoolSea Protocol, enables users to generate GOL by using collateral assets that have been approved by "PoolSea Governance." PoolSea Governance is a community-run process for managing various aspects of the PoolSea Protocol. GOL is a decentralized, collateral-backed cryptocurrency that is soft-pegged to the gold ounce. It is resistant to hyperinflation due to its low volatility, and provides economic freedom and opportunity to individuals around the world.
+ 
+This white paper is a reader-friendly description of the Protocol, which is (will) built on the Ethereum & Pulsechain blockchain. 
+   
+PoolSea DAO 
+PoolSea DAO is (will) an open-source project on the Ethereum & Pulsechain blockchain and a Decentralized Autonomous Organization1. The project is managed by people around the world who hold its governance token, POOL. Through a system of involving Executive Voting and Governance Polling, POOL holders manage the PoolSea Protocol and the financial risks of GOL to ensure its stability, transparency, and efficiency. POOL voting weight is proportional to the amount of POOL a voter stakes in the voting contract. In other words, the more POOL tokens locked in the contract, the greater the voter’s decision-making power. 
+
+
+
+
+
+
+PoolSea Dao on Ethereum & Pulsechain
+Please note that only Ethereum (ETH) voters will be able to vote on proposals on the ETH side of the PoolSea DAO. The PoolSea DAO (PLS) side will not be able to vote on proposals on the ETH side, and vice versa . 
+PoolSea Protocol 
+The PoolSea Protocol, built on the Pulsechain & Ethereum blockchain,2 enables users to create currency. Current elements of the PoolSea Protocol are the GOL stable coin, PoolSea Collateral Vaults, Oracles, and Voting. PoolSea DAO governs the PoolSea Protocol by deciding on key parameters (e.g., stability fees, collateral types/rates, etc.) through the voting power of POOL holders. 
+ 
+About the PoolSea Foundation 
+The PoolSea Foundation is part of the global PoolSea community, built and launched the PoolSea Protocol. It is currently working with the PoolSea DAO community to bootstrap decentralized governance of the project and drive it toward complete decentralization.
+GOL Foundation 
+The GOL Foundation, based in France and Poland. Is self-governing and independent of the PoolSea Foundation. It was formed to house the PoolSea community's key intangible assets, such as trademarks and code copyrights, and it operates solely on the basis of objective and rigid statutes that define its mandate. Its purpose, as noted in the GOL Foundation Trust Deed is to safeguard what?	 cannot be technologically decentralized in the PoolSea Protocol. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+Beginning of PoolSea
+ 
+In the beginning of 2022, the PoolSea (previously AKA Hpx) project operated with developers around the globe working together on the first iterations of code, architecture, and documentation to make an NFT marketplace based on the pulsechain Network. In August 2022, the first website of Hpx was described and published. 
+ 
+The website described how by staking you’ll receive royalties from each NFT sold. 
+By staking “Hpx” you’ll be receiving yields each day in PLS, PLSX, HEX…
+But we weren’t satisfied overall of the project, It wasn’t enough, so that’s why we created: 
+ 
+PoolSea, NFT marketplace, Stablecoin pegged to gold ounce, DEX & Staking Pool in one place. 
+
+
+
+
+Welcome to Collective Collateral GOL (CCG)?	.? 
+ 
+In CCG We Trust 
+ 
+Blockchain technology provides an unprecedented opportunity to ease the public’s growing frustration with—and distrust of—dysfunctional centralized financial systems. By distributing data across a network of computers, the technology allows any group of individuals to embrace transparency rather than central-entity control. The result is an unbiased, transparent, and highly efficient permissionless system—one that can improve current global financial and monetary structures and better serve the public good.  
+ 
+Bitcoin was created with this goal in mind. But, while Bitcoin succeeds as a cryptocurrency on several levels, it is not ideal as a medium of exchange because its fixed supply and speculative nature results in volatility, which prevents it from proliferating as mainstream money.  
+ 
+The GOL stable coin, on the other hand, succeeds where cryptocurrency like Bitcoin, Ethereum, UNI, LINK, Hex… fails precisely because GOL is designed to minimize price? volatility.?	 
+A decentralized, unbiased, collateral-backed cryptocurrency that is? ?soft-pegged to the Gold Ounce, GOL’s value is in its stability. 
+
+
+An Overview of the PoolSea Protocol and Its Features 
+ 
+The PoolSea Protocol 
+The PoolSea Protocol is (will be) build on the Pulsechain & Ethereum blockchain with a focus to store value. 
+
+The PoolSea Protocol is managed by people around the world who hold its governance token, POOL. Through a system of scientific governance involving Executive Voting and Governance Polling, POOL holders govern the Protocol and the financial risks of GOL to ensure its stability, transparency, and efficiency. 
+One POOL token locked in a voting contract equals one vote.  
+ 
+The GOL Stable coin 
+The GOL stablecoin is a decentralized, unbiased, collateral-backed cryptocurrency? ?soft-pegged to the Gold Oz. GOL is held in cryptocurrency wallets or within platforms and is supported on Pulsechain or Ethereum.
+ 
+GOL is easy to generate, access, and use. Users generate GOL by depositing collateral assets into PoolSea Vaults within the PoolSea Protocol. This is how GOL is entered into circulation and how users gain access to liquidity. Others obtain GOL by buying it from brokers or exchanges, or simply by receiving it as a means of payment.  
+Once generated, bought, or received, GOL can be used in the same manner as any other cryptocurrency: it can be sent to others, used as payments for goods and services, and even held as savings through a feature of the PoolSea Protocol called the GOL Saving Account (GSA).?	  
+ 
+Every GOL in circulation is directly backed by excess collateral, meaning that the value of the collateral is higher than the value of the GOL debt, and all GOL transactions are publicly viewable on the Ethereum or Pulsechain blockchain. 
+ 
+What Properties of GOL Function Similarly to Money? 
+ 
+Generally, money has four functions:  
+ 
+1. A store of value 
+2. A medium of exchange 
+3. A unit of account 
+4. A standard of deferred payment 
+ 
+GOL has properties and use cases designed to serve these functions. 
+GOL as a Store of Value  
+A store of value is an asset that keeps its value without significant depreciation over time. Because GOL is a stablecoin, it is designed to function as a store of value even in a volatile market.  
+GOL as a Medium of Exchange  
+A medium of exchange is anything that represents a standard of value and is used to facilitate the sale, purchase, or exchange (trade) of goods or services. The GOL stablecoin is used around the world for all types of transactional purposes.  
+GOL as a Unit of Account  
+A unit of account is a standard measurement of value used to express the prices of goods and services. Examples of units of account include the US dollar, the euro, and the Japanese yen. GOL is currently designed to have a target price of one Gold ounce (1 GOL = 1 Ounce of Gold). While GOL is not widely used as a unit of account outside of the PoolSea Protocol and certain blockchain dapps, it serves as a standardized measurement of value within these systems. This means that accounting and pricing of dapp services within the PoolSea Protocol is done using GOL, rather than physical gold.
+
+GOL as a Standard of Deferred Payment 
+GOL is used to settle debts within the PoolSea Protocol (e.g., users use GOL or POOL to pay the stability fee and close their Vaults). This benefit separates GOL from other stablecoins. 
+Collateral Assets 
+GOL is generated, backed, and kept stable through collateral assets that are deposited into PoolSea Vaults on the PoolSea Protocol. A collateral asset is a digital asset that POOL holders have voted to accept into the Protocol.  
+ 
+To generate GOL, the PoolSea Protocol accepts as collateral any 
+Ethereum or Pulsechain-based asset that has been approved by POOL holders. POOL 
+holders also must also approve specific, corresponding Risk Parameters for each accepted collateral (e.g., more stable assets might get more lenient Risk Parameters, while more risky assets could get stricter Risk Parameters). Detailed information on Risk Parameters is below. These and other decisions of POOL holders are made through the PoolSea decentralized governance process.  
+PoolSea Vaults 
+All accepted collateral assets can be leveraged to generate GOL in the PoolSea 
+Protocol through smart contracts called PoolSea Vaults. Users can access the PoolSea Protocol and create Vaults through Poolsea.app. Creating a Vault is not complicated but generating GOL does create an obligation to repay the GOL, along with a Stability Fee, in order to withdraw the collateral leveraged and locked inside a Vault. 
+ 
+Vaults are inherently non-custodial: Users interact with Vaults and the PoolSea Protocol directly, and each user has complete and independent control over their deposited collateral as long the value of that collateral doesn’t fall below the required minimum level (the Liquidation Ratio, discussed in detail below). 
+ 
+ 
+Interacting with a PoolSea Vault  
+ 
+? Step? ?1:? Create and ?Collateralize a Vault 
+A user creates a Vault via poolsea.app by funding it with a specific type and amount of collateral that will be used to generate GOL. Once funded, a Vault is considered collateralized.  
+? Step? ?2:? ?Generate GOL? ?from? ?the? ?Collateralized? ?Vault 
+The Vault owner initiates a transaction, and then confirms it in his unhosted cryptocurrency wallet in order to generate a specific amount of GOL in exchange for keeping her collateral locked in the Vault. 
+? Step? ?3:? ?Pay Down? ?the? ?Debt? ?and? the Stability? ?Fee 
+To retrieve a portion or all the collateral, a Vault owner must pay down or completely pay back the GOL he generated, plus the Stability Fee that continuously accrues on the GOL outstanding. The Stability Fee can only be paid in GOL or POOL.  
+? Step? ?4:? ?Withdraw Collateral ? 
+With the GOL returned and the Stability Fee paid, the Vault owner can withdraw all or some of her collateral back to her wallet. Once all GOL is completely returned and all collateral is retrieved, the Vault remains empty until the owner chooses to make another deposit. 
+ 
+Importantly, each collateral asset deposited requires its own Vault. So, some users will own multiple Vaults with different types of collateral and levels of collateralization. 
+Liquidation of Risky PoolSea Vaults  
+To ensure there is always enough collateral in the PoolSea Protocol to cover the value of all outstanding debt (the amount of GOL outstanding valued at the Target Price), any PoolSea Vault deemed too risky (according to parameters established by PoolSea Governance) is liquidated through automated PoolSea Protocol auctions. The Protocol makes the determination after comparing the Liquidation Ratio to the current collateral-to-debt ratio of a Vault. Each Vault type has its own Liquidation Ratio, and each ratio is determined by POOL voters based on the risk profile of the particular collateral asset type. 
+PoolSea Protocol Auctions  
+The ?auction mechanism the PoolSea Protocol enable the system to liquidate Vaults even when price information for the collateral is unavailable. At the point of liquidation, the PoolSea Protocol takes the liquidated Vault collateral and subsequently sells it using an internal market-based auction mechanism. This is a? Collateral Auction?.  
+ 
+The GOL received from the Collateral Auction is used to cover the Vault’s outstanding obligations, including payment of the Liquidation Penalty? ?fee set by POOL voters for that specific Vault collateral type. 
+  
+If enough GOL is bid in the Collateral Auction to fully cover the Vault obligations plus the Liquidation Penalty, that auction converts to a ?Reverse Collateral Auction? to sell as little collateral as possible. Any leftover collateral is returned to the original Vault owner. 
+ 
+If the Collateral Auction does not raise enough GOL to cover the Vault’s outstanding obligation, the deficit is converted into Protocol debt. Protocol debt is covered by the GOL in the PoolSea Buffer. If there is not enough GOL in the Buffer, the Protocol triggers a Debt Auction. During a Debt Auction, POOL? is minted by the system (increasing the amount of POOL in circulation), and then sold to bidders for GOL. 
+ 
+GOL proceeds from the Collateral Auction go into the PoolSea Buffer, which serves as a buffer against an increase of POOL overall supply that could result from future uncovered Collateral Auctions and the accrual of the GOL Savings Account (discussed in detail below). 
+ 
+If GOL proceeds from auctions and Stability Fee payments exceed the PoolSea 
+Buffer limit (a number set by PoolSea Governance), they are sold through a Surplus Auction. During a Surplus Auction, bidders compete by bidding? decreasing amounts of POOL to receive a fixed amount of GOL. Once the Surplus Auction has ended, the PoolSea Protocol autonomously destroys the POOL collected, thereby reducing the total POOL supply.  
+
+Example (Collateral Auction Process):  
+ 
+A large Vault becomes undercollateralized due to market conditions. An Auction Keeper then detects the undercollateralized Vault opportunity and initiates liquidation of the Vault, which kicks off a Collateral Auction for, say, 100 HEX. 
+ 
+Each Auction keeper has a ?bidding model? to assist in winning auctions. A?	 bidding model includes a price at which to bid for the collateral (HEX, in this example). The Auction Keeper uses the token price from its bidding model as the basis for its bids in the first phase of a Collateral Auction, where increasing GOL bids are placed for the set amount of collateral. This amount represents the price of the total GOL wanted from the collateral auction.  
+ 
+Now, let's say the Auction Keeper bids 15000 GOL for the 100 HEX to meet this amount. The GOL bid is transferred from the Vault Engine to the Collateral?	 Auction contract. With enough GOL in the Collateral Auction contract to cover?	 the system's debt plus the Liquidation Penalty, the first phase of the 
+Collateral Auction is over.  
+ 
+In order to reach the price defined in its bidding model, the Auction Keeper submits a bid in the second phase of the Collateral Auction. In this phase, the objective is to return as much of the collateral to the Vault owner as the market will allow. The bids that the Auction Keepers place are for fixed GOL amounts and decreasing amounts of HEX. For instance, the bidding model of the Keeper in this example seeks a bid price of 200 GOL per HEX, so it offers 15000 GOL for 75 HEX. Additional GOL for this bid is transferred from the Vault? Engine to the Collateral Auction contract. After the bid duration limit is reached and the bid expires, the Auction Keeper claims the winning bid and settles the completed Collateral Auction by collecting the won collateral. 
+ 
+Key External Actors 
+ 
+In addition to its smart contract infrastructure, the PoolSea Protocol involves groups of external actors to maintain operations: Keepers, Oracles, and Global Settlers (Emergency Oracles), and PoolSea community members. 
+Keepers take advantage of the economic incentives presented by the Protocol; Oracles and Global Settlers are external actors with special permissions in the system assigned to them by POOL voters; and PoolSea community members are individuals and organizations that provide services. 
+ Keepers are the market participants that help GOL maintain its target price of one gold ounce. 
+Keepers 
+A Keeper is an independent (usually automated) actor that is incentivized by arbitrage opportunities to provide liquidity in various aspects of a decentralized system. In the PoolSea Protocol, Keepers are the market participants that help GOL maintain its target price of one gold ounce : they sell GOL when the market price is above the Target Price and buy GOL when the market price is below the Target Price. Keepers participate in Surplus Auctions, Debt Auctions, and Collateral Auctions when PoolSea Vaults are liquidated. 
+Price Oracles 
+The PoolSea Protocol requires real-time information about the market price of the collateral assets in PoolSea Vaults in order to know when to trigger Liquidations.  
+ 
+The Protocol derives its internal collateral prices from a Decentralized oracle infrastructure that consists of a broad set of individual nodes called Oracle Feeds. POOL voters choose a set of trusted Feeds to deliver price information to the system through Ethereum & Pulsechain transactions. They also control how many Feeds are in the set. 
+ 
+
+
+
+To prevent potential attacks on the system, the PoolSea Protocol utilizes the Oracle Security Module (OSM) 1  to receive price inputs, rather than directly from the Oracles. The OSM acts as a protective layer between the Oracles and the Protocol, delaying the transmission of prices for one hour to allow for the 
+intervention of Emergency Oracles or a vote by the PoolSea Governance to freeze a potentially compromised Oracle. The selection of Emergency Oracles and the duration of the price delay are determined by POOL (PLS side) holders.  
+
+Emergency Oracles 
+Emergency Oracles are selected by POOL voters and act as a last line of defense against an attack on the governance process or on other Oracles. 
+Emergency Oracles are able to freeze individual Oracles (e.g., ETH, PLS and BAT Oracles) to mitigate the risk of a large number of customers trying to withdraw their assets from the PoolSea Protocol in a short period of time, as they have the authority to unilaterally trigger an Emergency Shutdown.  ,
+
+DAO Teams 
+DAO teams consist of individuals and service providers, who may be contracted through PoolSea Governance to provide specific services to PoolSea DAO. Members of DAO teams are independent market actors and are not employed by the PoolSea Foundation. 
+The flexibility of PoolSea Governance allows the PoolSea community to adapt the DAO team framework to suit the services needed by the ecosystem based on real-world performance and emerging challenges. 
+ 
+Examples of DAO team member roles are the Governance Facilitator, who supports the communication infrastructure and processes of governance, and Risk Team members, who support PoolSea Governance with financial risk research and draft proposals for onboarding new collateral and regulating existing collateral.  
+ 
+1 Note that the Oracle Security Module (OSM) is a layer of defense in the PoolSea Protocol that is designed to protect the system from potential attacks. It receives price inputs on behalf of the Protocol, rather than directly from the Oracles. The OSM delays the transmission of prices for one hour, allowing for the intervention of Emergency Oracles or a vote by the PoolSea Governance to freeze a potentially compromised Oracle. The OSM serves as a protective measure between the Oracles and the Protocol, helping to ensure the security and integrity of the system
+
+
+While the PoolSea Foundation has bootstrapped PoolSea Governance to date, it is anticipated that the DAO will take full control, conduct POOL votes, and fill these varied DAO team roles in the near future. 
+
+
+The GOL Savings Rate 
+
+The GOL savings account (GSA) allows any GOL holder to earn savings automatically and natively by locking their GOL into the GSA contract in the PoolSea Protocol. It can be accessed via the poolsea.app portal or through? various gateways into the PoolSea Protocol. ?Users aren’t required to deposit a minimum amount to earn the GSA, and they can withdraw any or all of their GOL from the GSA contract at any time.  
+ 
+The GSA is a global system parameter that determines the amount GOL holders earn on their savings over time. When the market price of GOL deviates from the Target Price due to changing market dynamics, POOL holders can mitigate the price instability by voting to modify the GSA accordingly:  
+ 
+? If the market price of GOL is above one gold ounce, POOL holders can choose to gradually decrease the GSA, which will reduce demand and should reduce the market price of GOL toward the gold ounce Target Price. 
+? If the market price of GOL is below one gold ounce, POOL holders can choose to gradually increase the GSA, which will stimulate demand and should increase the market price of GOL toward the one gold ounce Target Price. 
+ 
+Initially, adjustment of the GSA will depend on a weekly process, whereby POOL holders first evaluate and discuss public market data and proprietary data provided by market participants, and then vote on whether an adjustment is necessary or not. The long-term plan includes implementation of the GSA Adjustment Module, an Instant Access Module that directly controls both the GSA and the Base Rate. This module allows for easy adjustment of the GSA (within strict size and frequency boundaries set by POOL holders) by an POOL holder on behalf of the larger group of POOL holders. The motivation behind this plan is to enable nimble responses to rapidly changing market conditions, and to avoid overuse of the standard governance process of Executive Voting and Governance Polling. 
+Governance of the PoolSea Protocol 
+ 
+Use of the POOL Token in PoolSea Governance 
+The POOL token—the governance token of the PoolSea Protocol—allows those who hold it to vote? on changes to the PoolSea Protocol. Note that anyone, not only POOL holders, can submit ?proposals for an POOL vote.  
+ 
+Any voter-approved modifications to the governance variables of the Protocol will likely not take effect immediately in the future; rather, they could be delayed by as much as 24 hours if voters choose to activate the Governance Security Module (GSM). The delay would give POOL holders the opportunity to protect the system, if necessary, against a malicious governance proposal (e.g., a proposal that alters collateral parameters contrary to established monetary policies or that allows for security mechanisms to be disabled) by triggering a Shutdown.  
+ 
+Polling and Executive Voting 
+In practice, the PoolSea Governance process includes proposal polling and Executive Voting. Proposal polling is conducted to establish a rough consensus of community sentiment before any Executive Votes are cast. This helps to ensure that governance decisions are considered thoughtfully and reached by consensus prior to the voting process itself. Executive Voting is held to approve (or not) changes to the state of the system. An example of an Executive Vote could be a vote to ratify Risk Parameters for a newly accepted collateral type.  
+ 
+At a technical level, smart contracts manage each type of vote. A Proposal Contract is a smart contract with one or more valid governance actions programmed into it. It can only be executed once. When executed, it immediately applies its changes to the internal governance variables of the PoolSea Protocol. After execution, the Proposal Contract cannot be reused. 
+ 
+ 
+Any Ethereum or Pulsechain Address can deploy valid Proposal Contracts. POOL token holders can then cast approval votes for the proposal that they want to elect as the Active Proposal. The Ethereum or the Pulsechain address that has the highest number of approval votes is elected as the Active Proposal. The Active Proposal is empowered to gain administrative access to the internal governance variables of the PoolSea Protocol, and then modify them.  
+ 
+The POOL Token’s Role in Recapitalization 
+In addition to its role in PoolSea Governance, the POOL token has a complementary role as the recapitalization resource of the PoolSea Protocol. If the system debt exceeds the surplus, the POOL token supply may increase through a Debt Auction (see above) to recapitalize the system. This risk inclines POOL holders to align and responsibly govern the PoolSea ecosystem to avoid excessive risk-taking. 
+ 
+POOL Holder Responsibilities 
+POOL holders can vote to do the following: 
+ 
+? Add a ? new? collateral asset type with a unique set of Risk Parameters.
+? Change the Risk Parameters of one or more existing collateral asset types, or add new Risk Parameters to one or more existing collateral asset types. 
+? Modify ? the GOL Savings Account.?	 
+? Choose the set of Oracle Feeds. 
+? Choose the set of Emergency Oracles.  
+? Trigger Emergency Shutdown. 
+? Upgrade the system. 
+ 
+POOL holders can also allocate funds from the PoolSea Buffer to pay for various infrastructure needs and services, including Oracle infrastructure and collateral risk management research. The funds in the PoolSea Buffer are revenues from Stability Fees, Liquidation Fees, and other income streams. 
+ 
+The governance mechanism of the PoolSea Protocol is designed to be as flexible as possible, and upgradeable. Should the system mature under the guidance of the community, more advanced forms of Proposal Contracts could, in theory, be used, including Proposal Contracts that are bundled. For example, one proposal contract may contain both an adjustment of a Stability Fee and an adjustment of the GSA. Nonetheless, those revisions will remain for POOL holders to decide. 
+
+Risk Parameters Controlled by PoolSea Governance 
+Each PoolSea Vault type (e.g., PLS Vault and HEX Vault) has its own unique set of Risk Parameters that enforce usage. The parameters are determined based on the risk profile of the collateral and are directly controlled by POOL holders through voting
+ 
+The Key Risk Parameters for PoolSea Vaults are: 
+ 
+? Debt? ?Ceiling?:? A Debt Ceiling is the maximum amount of debt that can be created by a single collateral type. PoolSea Governance assigns every collateral type a Debt Ceiling, which is used to ensure sufficient diversification of the PoolSea Protocol collateral portfolio. Once a collateral type has reached its Debt Ceiling, it becomes impossible to create more debt unless some existing users pay back all or a portion of their Vault debt. 
+? Stability? ?Fee?:? The Stability Fee is an annual percentage yield calculated on top of how much GOL has been generated against a Vault’s collateral. The fee is paid in GOL or POOL only, and then sent into the PoolSea Buffer. 
+? Liquidation? ?Ratio?:? ?A low Liquidation Ratio means PoolSea Governance expects low price volatility of the collateral; a high Liquidation Ratio means high volatility is expected. 
+? Liquidation Penalty?:? The Liquidation Penalty is a fee added to a 
+Vault’s total outstanding generated GOL when a Liquidation occurs. The Liquidation Penalty is used to encourage Vault owners to keep appropriate collateral levels. 
+? Collateral Auction Duration?: The maximum duration of Collateral auctions is specific to PoolSea Vaults. Debt and Surplus auction durations are global system parameters. 
+? Auction Bid Duration:? Amount of time before an individual bid expires and closes the auction. 
+? Auction Step Size?: This Risk Parameter exists to incentivize early bidders in auctions and prevent abuse by bidding a tiny amount above an existing bid. 
+ 
+Risk and Mitigation Responsibilities of Governance 
+ 
+The successful operation of the PoolSea Protocol depends on PoolSea 
+Governance taking necessary steps to mitigate risks. Some of those risks are identified below, each followed by a mitigation plan. 
+ 
+A malicious attack on the smart contract infrastructure by a bad actor. One of the greatest risks to the PoolSea Protocol is a malicious actor—a programmer, for example, who discovers a vulnerability in the deployed smart contracts, and then uses it to break the Protocol or steal from it. 
+ 
+In the worst-case scenario, all decentralized digital assets held as collateral in the Protocol are stolen, and recovery is impossible. 
+ 
+Mitigation: The PoolSea Foundation's highest priority is the ?security of the PoolSea protocol and the strongest defense of the Protocol is Formal Verification. The GOL codebase was the first codebase of a decentralized application to be formally verified. 
+ 
+In addition to formal system verification, contracted security audits by the best security organizations in the blockchain industry, third-party (independent) audits, and bug bounties are part of the foundation security roadmap. ? 
+To review the formal verification report and various PoolSea Protocol audits, visit PoolSea’s Collective collateral GOL Security Github repository (Q2-Q3 of 2023).
+ 
+These security measures provide a strong defense system; however, they are not infallible. Even with formal verification, the mathematical modeling of intended behaviors may be incorrect, or the assumptions behind the intended behavior itself may be incorrect.  
+ 
+A black swan event  
+A black swan event is a rare and critical surprise attack on a system. For the PoolSea Protocol, examples of a black swan event include: 
+ 
+? An attack on the collateral types that back GOL.  
+? A large, unexpected price decrease of one or more collateral types.  
+? A highly coordinated Oracle attack.  
+? A malicious PoolSea Governance proposal. 
+ 
+Please note that this list of potential "black swans" is not exhaustive and not intended to capture the extent of such possibilities. 
+ 
+Mitigation: While no one solution is failsafe, the careful design of the PoolSea?	 
+Protocol (the Liquidation Ratio, Debt Ceilings, the Governance Security? Module, the Oracle Security Module, Emergency Shutdown, etc.) in? conjunction with good governance (e.g., swift reaction in a crisis, thoughtful risk parameters, etc.) help to prevent or mitigate potentially severe consequences of an attack. 
+ 
+Unforeseen pricing errors and market irrationality  
+Oracle price feed problems or irrational market dynamics that cause variations in the price of GOL for an extended period of time can occur. If confidence in the system is lost, rate adjustments or even PoolSea dilution could reach extreme levels and still not bring enough liquidity and stability to the market. 
+ 
+Mitigation: PoolSea Governance incentivizes a sufficiently large capital pool to? act as Keepers of the market in order to maximize rationality and market efficiency and allow the GOL supply to grow at a steady pace without major market shocks. As a last resort, Emergency Shutdown can be triggered to release collateral to GOL holders, with their GOL claims valued at the Target Price. 
+ 
+User Abandonment for Less Complicated Solutions  
+The PoolSea Protocol is a complex decentralized system. As a result of its complexity, there is a risk that inexperienced cryptocurrency users will abandon the Protocol in favor of systems that may be easier to use and understand.  
+ 
+Mitigation: While GOL is easy to generate and use for most crypto enthusiasts?	 and the Keepers that use it for margin trading, newcomers might find the Protocol difficult to understand and navigate. Although GOL is designed in such a way that users need not comprehend the underlying mechanics of the PoolSea Protocol in order to benefit from it, the documentation and numerus resources consistently provided by the PoolSea community and the PoolSea? Foundation help to ensure onboarding is as uncomplicated as possible. 
+ 
+Dissolution of The PoolSea Foundation  
+The PoolSea Foundation currently plays a role, along with independent actors, in maintaining the PoolSea Protocol and expanding its usage worldwide, while facilitating Governance. However, the PoolSea Foundation plans to dissolve once PoolSeaDAO can manage Governance completely on its own. Should PoolSeaDAO fail to sufficiently take the reins upon the PoolSea Foundation's dissolution, the future health of the PoolSea Protocol could be at risk. 
+ 
+Mitigation: POOL holders are incentivized to prepare for the Foundation's?	 dissolution after it completes "gradual decentralization" of the project. Moreover, successful management of the system should result in sufficient funds for governance to allocate to the continued maintenance and improvement of the PoolSea Protocol. 
+ 
+General Issues with Experimental Technology  
+ 
+Users of the PoolSea Protocol (including but not limited to GOL and POOL holders) understand and accept that the software, technology, and technical concepts and theories applicable to the PoolSea Protocol are still unproven and there is no warranty that the technology will be uninterrupted or error-free. There is an inherent risk that the technology could contain weaknesses, vulnerabilities, or bugs causing, among other things, the complete failure of the PoolSea Protocol and/or its component parts.  
+ 
+Mitigation: See “A malicious attack on the smart contract infrastructure by a? bad actor” above. The Mitigation section there explains the technical auditing in place to ensure the PoolSea Protocol functions as intended.  
+Price Stability Mechanisms 
+The GOL Target Price 
+The GOL Target Price is used to determine the value of collateral assets GOL holders receive in the case of an Emergency Shutdown. The Target Price for 
+GOL is one gold ounce, translating to a 1:1 Gold ounce soft peg.  
+
+Emergency Shutdown 
+Emergency Shutdown (or, simply, Shutdown) serves two main purposes. 
+First, it is used during emergencies as a last-resort mechanism to protect the 
+PoolSea Protocol against attacks on its infrastructure and directly enforce the GOL Target Price. Emergencies could include malicious governance actions, hacking, security breaches, and long-term market irrationality. Second, 
+Shutdown is used to facilitate a PoolSea Protocol system upgrade. The 
+Shutdown process can only be controlled by PoolSea Governance. 
+ 
+POOL voters are also able to instantly trigger an Emergency Shutdown by depositing POOL into the Emergency Shutdown Module (ESM), if enough POOL voters believe it is necessary. This prevents the Governance Security Module?	 
+(if active) from delaying Shutdown proposals before they are executed. With Emergency Shutdown, the moment a quorum is reached, the Shutdown takes effect with no delay.    
+ 
+There are three phases of Emergency Shutdown: 
+ 
+1. The PoolSea Protocol shuts down; Vault owners withdraw assets. When initiated, Shutdown prevents further Vault creation and manipulation of existing Vaults and freezes the Price Feeds. The frozen feeds ensure that all users can withdraw the net value of assets to which they are entitled. Effectively, it allows PoolSea Vault owners to immediately withdraw the collateral in their Vault that is not actively backing debt. 
+2. Post-Emergency Shutdown auction processing 
+After Shutdown is triggered, Collateral Auctions begin and must be completed within a specific amount of time. That time period is determined by PoolSea Governance to be slightly longer than the duration of the longest Collateral Auction. This guarantees that no auctions are outstanding at the end of the auction processing period. 
+	3. GOL?	 ? holders?	 ? claim?	 ? their?	 remaining ?	collateral?	 ? 
+At the end of the auction processing period, GOL holders use their GOL to claim collateral directly at a fixed rate that corresponds to the calculated value of their assets based on the GOL Target Price. For example, if the HEX/GOL Price Ratio is 2, and a user holds 1000 GOL at the Target Price of 1 gold ounce when Emergency Shutdown is activated, the user will be able to claim exactly 500 HEX from the PoolSea Protocol after the auction processing period. There is no time limit for when a final claim can be made. GOL holders will get a proportional claim to each collateral type that exists in the collateral portfolio. Note that GOL holders could be at risk of a cut, whereby they do not receive the full value of their GOL holdings at the Target Price of one gold ounce per GOL. This is due to risks related to declines in collateral value and to Vault owners having the right to retrieve their excess collateral before GOL holders may claim the remaining collateral. For more detailed information on Emergency Shutdown, including the claim priorities that would occur as a result. 
+ 
+The Future of the PoolSea Protocol: Increased Adoption and Full Decentralization 
+ 
+Addressable Market 
+A cryptocurrency with price stability serves as an important medium of exchange for many decentralized applications. As such, the potential market for GOL is at least as large as the entire decentralized blockchain industry. But the promise of GOL extends well beyond that into other industries.  
+ 
+The following is a non-exhaustive list of current and immediate markets for the GOL stablecoin: 
+ 
+? Working capital, hedging,? ?and collateralized leverage?. PoolSea Vaults allow for permissionless trading by users, who can use the GOL generated against Vault collateral for working capital. There can be numerous instances where Vault owners could use their GOL to buy additional PLS or ETH (same asset as their collateral), thereby creating a leveraged but fully collateralized position. 
+? Merchant? ?receipts,? ?cross-border? ?transactions,? ?and? ?remittances?. Precious metals volatility mitigation and a lack of intermediaries mean the transaction costs of international trade are significantly reduced when using GOL. 
+? Charities and NGOs? when using transparent distributed ledger technology.  
+? Gaming. For blockchain game developers, GOL is the currency of?	 choice. With GOL, game developers integrate not only a currency, but also an entire economy. The composability of GOL allows games to create new player behavior schemes based around decentralized finance. 
+? Prediction ? markets?.? Using a volatile cryptocurrency when making an?	 unrelated prediction only increases one’s risk when placing the bet. Long-term bets become especially infeasible if the bettor must also gamble on the future price of the volatile asset used to place the bet. That said, the GOL stablecoin would be a natural choice for use in prediction markets.  
+ 
+Asset Expansion 
+Should POOL holders approve new assets as collateral, those assets will be subject to the same risk requirements, parameters, and safety measures as GOL (e.g., Liquidation Ratios, Stability Fees, Savings Rates, Debt Ceilings, etc.). 
+
+Conclusion 
+ 
+The PoolSea Protocol allows users to generate GOL, a stable store of value that lives entirely on the blockchain. GOL is a decentralized stablecoin that is not issued or administered by any centralized actor or trusted intermediary or counterparty. It is unbiased and borderless —available to anyone, anywhere.  
+ 
+All GOL is backed by a surplus of collateral that has been individually escrowed into audited and publicly viewable Ethereum & Pulsechain smart contracts. Anyone with an internet connection can monitor the health of the system anytime. 
+ 
+
+APPENDIX 
+GOL Use-Case Benefits and Examples 
+The PoolSea Protocol can be used by anyone, anywhere, without any restrictions or personal-information requirements. Below are a few examples of how GOL is used around the world: 
+GOL Offers Financial Independence to All  
+According to the World Bank’s Global Findex Database 2017, about 1.7 billion adults around the world are unbanked. In the US alone, according to a 2017 survey by the FDIC, around 32 million American households are either unbanked or underbanked,6 meaning that they either have no bank account at all or they regularly use alternatives to traditional banking (e.g., payday or pawn shop loans) to manage their finances. GOL can empower every one of those people; all they need is access to the internet. 
+
+Self-Sovereign Money Generation 
+Poolsea.app allows users to access the PoolSea Protocol and generate GOL by locking their collateral in a PoolSea Vault. Notably, users do not need to access any third-party intermediary to generate GOL. Vaults offer individuals and businesses opportunities to create liquidity on their assets simply, quickly, and at relatively low cost.  
+Savings Earned Automatically 
+GOL holders everywhere can better power their journeys to financial inclusion by taking advantage of the GOL Savings Rate, which, as detailed earlier, builds on the value of GOL by allowing users to earn on the GOL they hold and protect their savings from inflation.  
+For example, if Séb has 55,555 GOL locked in the GSA contract, and the GSA set by PoolSea Governance is 8% per year, Bob will earn savings of 4444.4 GOL over 12 months. Additionally, because exchanges and blockchain projects can integrate the GSA into their own platforms, it presents new opportunities for cryptocurrency traders, entrepreneurs, and established businesses to increase their GOL savings and GOL operating capital. Due to this attractive mechanism, PoolSea, for example, may choose to hold their idle inventory in GOL and lock it in the GSA.  
+Fast, Low-cost Remittances 
+Cross-border remittances, whether for the purchase of goods or services or to simply send money to family and friends, can mean high service and transfer fees, long delivery timelines, and frustrating exchange issues due to inflation. The GOL stablecoin is used around the world as a medium of exchange because people have confidence in its value and efficiency. 
+Remittance users benefit from GOL in the following ways: 
+? Low-cost domestic and international transfers. GOL provides?	 immediate cost savings, as low gas fees replace high bank and wire service fees. Low cost allows for more frequent transactions. 
+? Anytime service.  GOL doesn’t rely on bank-like hours of operation. The PoolSea Protocol can be accessed 24/7/365. 
+
+? Convenient on/off ramps. Users can take advantage of the many fiat? on and off ramps that exchange fiat currencies to GOL. These options allow users to bridge the gap between the fiat and cryptocurrency world, and easily cash out GOL holdings in their local currencies or in physical gold. 
+? Increased security and confidence. The blockchain offers high levels? of security and consumer trust. 
+Stability in Volatile Markets 
+As noted above, GOL is both a readily accessible store of value and a powerful medium of exchange. As such, it can help protect traders from volatility. For example, it provides traders with a simple way to maneuver between positions smoothly and remain active in the market without having to cash out and repeat an on-ramp/off-ramp cycle. 
+GOL as an Ecosystem Driver and DeFi Builder  
+As more and more users become aware of GOL’s value as a stablecoin, more developers are integrating it into the dapps they build on the Ethereum & Pulsechain blockchain. As such, GOL is helping to power a more robust ecosystems. In short, GOL allows dapp developers to offer a stable method of exchange to their users who would rather not buy and sell goods and services using speculative assets. 
+
+
+Disclaimer: You must have no expectation of profit from the work of others. The set of people who have sacrificed to show their commitment to this political statement makes a great set of people to airdrop free things to. This sacrifice points are not meant to have any monetary value. Remember, you're not buying anything, the world is just noticing you are amongst a group of people that sacrificed to make a political statement. Some countries tax their citizens when they receive things of value. PoolSea and all the coins on it are designed to start with no value, which is ideal. Consult your own legal and financial professionals, as nothing written here should be considered professional advice. The only thing we know of set to be airdropped for free to this political group so far is PoolSea (POOL.) If we hear about other cool things, we'll let you know.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PoolSea.com
+
+
+ 
+1 Note that Decentralized Autonomous Organizations, or DAOs, are understood in the Ethereum & Pulsechain community as largely social and technical communities centered around a particular mission or project and does not necessarily imply the existence of traditional corporate forms.  
+2 ?https://ethereum.org/  - https://pulsechain.com/
+---------------
+
+------------------------------------------------------------
+
+---------------
+
+------------------------------------------------------------
+
