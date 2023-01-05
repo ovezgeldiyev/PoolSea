@@ -3790,6 +3790,9 @@ html[data-theme=dark] .aboutText P {
   width: 100%;
   height: 100%;
 }
+.dex .video video::-webkit-media-controls {
+  display: none;
+}
 .dex__inner-content {
   width: 90%;
   position: absolute;
