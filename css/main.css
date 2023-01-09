@@ -1457,6 +1457,104 @@ html[data-theme=dark] .faq.big .faqItem {
   fill: #fff;
 }
 
+.chart {
+  padding-bottom: 160px;
+}
+.chart.reverse {
+  padding: 130px 0 0;
+}
+.chart.reverse .chartItem__content.head {
+  padding: 16px 20px;
+}
+.chart.big .chartItem__content {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  opacity: 0.8;
+}
+.chart.big .chartItem__content.head {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.chartItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -4px;
+}
+.chartItem__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 4px;
+  width: calc(30% - 8px);
+  padding: 16px 11px;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "sfDisplay", sans-serif;
+  font-weight: 500;
+  border-bottom: 1px solid #313B50;
+}
+.chartItem__content span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+.chartItem__content span img {
+  width: 100%;
+}
+.chartItem__content p {
+  width: calc(100% - 30px);
+  background: linear-gradient(268.3deg, #00fff9 -4.34%, #00c5ff 13.53%, #0078ff 93.71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.chartItem__content.bg {
+  background-color: var(--tabBg);
+}
+.chartItem__content.head {
+  font-weight: 600;
+  padding: 14px 10px;
+}
+.chartItem__content.head:first-child {
+  border: unset;
+}
+.chartItem__content.head:last-child {
+  text-align: center;
+}
+.chartItem__content:first-child {
+  width: calc(40% - 8px);
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .hero.market {
   padding: 30px 0 160px;
 }
@@ -6018,6 +6116,26 @@ html[data-theme=dark] .aquaPool p {
     font-size: 18px;
     line-height: 23px;
   }
+
+  .chart {
+    padding-bottom: 120px;
+  }
+  .chart.reverse {
+    padding: 90px 0 0;
+  }
+  .chart.reverse .chartItem__content {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .chart.reverse .chartItem__content.head {
+    padding: 12px 10px;
+  }
+  .chart.big .chartItem__content {
+    width: calc(33% - 8px);
+  }
+  .chart.big .chartItem__content:first-child {
+    width: calc(34% - 8px);
+  }
 }
 @media (max-width: 1024px) {
   h1 {
@@ -7211,6 +7329,48 @@ html[data-theme=dark] .aquaPool p {
     font-size: 15px;
     line-height: 18px;
   }
+
+  .chart {
+    padding-bottom: 80px;
+  }
+  .chart__inner-wrapper {
+    min-width: 680px;
+  }
+  .chart.reverse {
+    padding: 50px 0 0;
+  }
+  .chart.reverse .chartItem {
+    margin: 0 -2px;
+  }
+  .chart.reverse .chartItem__content {
+    font-size: 14px;
+    line-height: 17px;
+    width: calc(30% - 4px);
+    margin: 0 2px;
+  }
+  .chart.reverse .chartItem__content span {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+  }
+  .chart.reverse .chartItem__content p {
+    width: calc(100% - 20px);
+  }
+  .chart.reverse .chartItem__content:first-child {
+    width: calc(40% - 4px);
+  }
+  .chart.reverse .chart__inner {
+    overflow-x: auto;
+  }
+  .chart.big .chart__inner-wrapper {
+    min-width: 880px;
+  }
+  .chart.big .chartItem__content {
+    width: calc(36% - 4px);
+  }
+  .chart.big .chartItem__content:first-child {
+    width: calc(28% - 4px);
+  }
 }
 @media (max-width: 840px) {
   .discleamer__inner {
@@ -8033,6 +8193,16 @@ html[data-theme=dark] .aquaPool p {
     font-size: 18px;
     line-height: 23px;
   }
+
+  .chart {
+    padding-bottom: 60px;
+  }
+  .chart.reverse {
+    padding: 30px 0 0;
+  }
+  .chart.reverse .chartItem__content.head {
+    padding: 8px;
+  }
 }
 @media (max-width: 650px) {
   .hero.market {
@@ -8813,9 +8983,6 @@ html[data-theme=dark] .aquaPool p {
     top: 8.5px;
     width: 18px;
   }
-  .summary.sm .summary__inner {
-    padding-top: 40px;
-  }
   .summary.sm .summary__inner-info {
     margin-bottom: 20px;
   }
@@ -9113,6 +9280,34 @@ html[data-theme=dark] .aquaPool p {
   }
   .stepsItem h5 {
     margin-bottom: 10px;
+  }
+
+  .chart.big .chart__inner-wrapper {
+    min-width: 800px;
+  }
+  .chartItem {
+    margin: 0 -2px;
+  }
+  .chartItem__content {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 10px 7px;
+    width: calc(30% - 4px);
+    margin: 0 2px;
+  }
+  .chartItem__content span {
+    width: 15px;
+    height: 15px;
+    margin-right: 4px;
+  }
+  .chartItem__content.head {
+    font-weight: 400;
+    padding: 8px;
+    background-color: transparent;
+  }
+  .chartItem__content:first-child {
+    width: calc(40% - 4px);
   }
 }
 @media (max-width: 440px) {
@@ -9434,10 +9629,6 @@ html[data-theme=dark] .aquaPool p {
   .summary h3 {
     margin-bottom: 25px;
   }
-  .summary.sm .summary__inner {
-    padding-top: 20px;
-  }
-
   .staking {
     padding: 70px 0 0;
   }
@@ -10124,9 +10315,6 @@ html[data-theme=dark] .aquaPool p {
     line-height: 17px;
   }
 
-  .work__inner {
-    padding: 40px 0;
-  }
   .work__inner h3 {
     margin-bottom: 20px;
   }
@@ -10285,6 +10473,32 @@ html[data-theme=dark] .aquaPool p {
   .benefitsItem:nth-child(n) {
     width: 100%;
     max-width: 276px;
+  }
+
+  .chart.reverse .chartItem {
+    margin: 0 -1px;
+  }
+  .chart.big .chartItem__content {
+    padding: 10px;
+  }
+  .chartItem {
+    margin: 0 -1px;
+  }
+  .chartItem__content {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 8px 4px;
+    width: calc(30% - 2px);
+    margin: 0 1px;
+  }
+  .chartItem__content span {
+    margin-right: 3px;
+  }
+  .chartItem__content.head {
+    padding: 8px 4px;
+  }
+  .chartItem__content:first-child {
+    width: calc(40% - 2px);
   }
 }
 @media (max-width: 370px) {

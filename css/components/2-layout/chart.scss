@@ -1,0 +1,295 @@
+.chart {
+    padding-bottom: 160px;
+
+    &.reverse {
+        padding: 130px 0 0;
+
+        .chartItem {
+            &__content {
+                &.head {
+                    padding: 16px 20px;
+                }
+            }
+        }
+    }
+    &.big {
+        .chart {
+            &Item {
+                &__content {
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    opacity: .8;
+                    &.head {
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+    &Item {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 -4px;
+
+        &__content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 4px;
+            width: calc(30% - 8px);
+            padding: 16px 11px;
+            font-size: 18px;
+            line-height: 22px;
+            font-family: $sfDisplay;
+            font-weight: 500;
+            border-bottom: 1px solid #313B50;
+
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 24px;
+                height: 24px;
+                margin-right: 8px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            p {
+                width: calc(100% - 30px);
+                background: linear-gradient(268.3deg,
+                        #00fff9 -4.34%,
+                        #00c5ff 13.53%,
+                        #0078ff 93.71%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+
+            &.bg {
+                background-color: $tabBg;
+            }
+
+            &.head {
+                font-weight: 600;
+                padding: 14px 10px;
+
+                &:first-child {
+                    border: unset;
+                }
+
+                &:last-child {
+                    text-align: center;
+                }
+            }
+
+            &:first-child {
+                width: calc(40% - 8px);
+                justify-content: flex-start;
+            }
+        }
+
+    }
+}
+
+// 1180px
+@mixin chart-xlg-xxlg {
+    .chart {
+        padding-bottom: 120px;
+
+        &.reverse {
+            padding: 90px 0 0;
+
+            .chartItem {
+                &__content {
+                    font-size: 16px;
+                    line-height: 20px;
+
+                    &.head {
+                        padding: 12px 10px;
+                    }
+                }
+            }
+        }
+        &.big {
+            .chart {
+                &Item {
+                    &__content {
+                        width: calc(33% - 8px);
+                        &:first-child {
+                            width: calc(34% - 8px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 930px
+@mixin chart-md-lg {
+    .chart {
+        padding-bottom: 80px;
+
+        &__inner {
+
+            &-wrapper {
+                min-width: 680px;
+            }
+        }
+
+        &.reverse {
+            padding: 50px 0 0;
+            .chartItem {
+                margin: 0 -2px;
+                &__content {
+                    font-size: 14px;
+                    line-height: 17px;
+                    width: calc(30% - 4px);
+                    margin: 0 2px;
+                    span {
+                        width: 16px;
+                        height: 16px;
+                        margin-right: 4px;
+                    }
+                    p {
+                        width: calc(100% - 20px);
+                    }
+                    &:first-child {
+                        width: calc(40% - 4px);
+                    }
+                }
+            }
+            .chart {
+                &__inner {
+                    overflow-x: auto;
+
+                }
+            }
+        }
+        &.big {
+   
+            .chart {
+                &__inner {
+                    &-wrapper {
+                        min-width: 880px;
+                    }
+                }
+                &Item {
+                    &__content {
+                        width: calc(36% - 4px);
+                        &:first-child {
+                            width: calc(28% - 4px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 750px
+@mixin chart-sm-md {
+    .chart {
+        padding-bottom: 60px;
+
+        &.reverse {
+            padding: 30px 0 0;
+
+            .chartItem {
+                &__content {
+                    &.head {
+                        padding: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 540px
+@mixin chart-xsm-sm {
+    .chart {
+        &.big {
+            .chart {
+                &__inner {
+                    &-wrapper {
+                        min-width: 800px;
+                    }
+                }
+            }
+        }
+        &Item {
+            margin: 0 -2px;
+
+            &__content {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                padding: 10px 7px;
+                width: calc(30% - 4px);
+                margin: 0 2px;
+
+                span {
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 4px;
+                }
+
+                &.head {
+                    font-weight: 400;
+                    padding: 8px;
+                    background-color: transparent;
+                }
+
+                &:first-child {
+                    width: calc(40% - 4px);
+                }
+            }
+        }
+    }
+}
+
+// 390px
+@mixin chart-xxxsm-xxsm {
+    .chart {
+        &.reverse {
+            .chartItem {
+                margin: 0 -1px;
+            }
+        }
+        &.big {
+            .chartItem {
+                &__content {
+                    padding: 10px;
+                }
+            }
+        }
+        &Item {
+            margin: 0 -1px;
+
+            &__content {
+                font-size: 14px;
+                line-height: 17px;
+                padding: 8px 4px;
+                width: calc(30% - 2px);
+                margin: 0 1px;
+
+                span {
+                    margin-right: 3px;
+                }
+
+                &.head {
+                    padding: 8px 4px;
+                }
+
+                &:first-child {
+                    width: calc(40% - 2px);
+                }
+            }
+        }
+    }
+}
