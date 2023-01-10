@@ -2,19 +2,30 @@
   background-color: #06070a;
   position: relative;
   height: 100vh;
+
   .auto__container {
     padding: 0;
     height: 100%;
   }
+
   .video {
     position: absolute;
     padding: 0;
     width: 100%;
     height: 100%;
-    video::-webkit-media-controls {
-      display: none;
+    z-index: 3;
+    video {
+      pointer-events: none;
+      &::-webkit-media-controls {
+        display: none !important;
+      }
+      &::-webkit-media-controls-panel {
+        display: none !important;
+      }
+      ::-webkit-media-controls, video::-moz-media-controls, video::-o-media-controls, video::-ms-media-controls {   display: none !important; }
     }
   }
+
   &__inner {
     &-content {
       width: 90%;
@@ -22,14 +33,15 @@
       bottom: 60px;
       left: 60px;
       z-index: 3;
-      &.right{
+
+      &.right {
         bottom: 60px;
         right: 60px;
         left: unset;
         text-align: right;
       }
     }
-   
+
 
     h1 {
       color: $white;
@@ -40,6 +52,7 @@
     h5 {
       color: $white;
       line-height: 100%;
+
       &.extra {
         font-weight: 600;
         font-family: $sfDisplay;
@@ -52,17 +65,16 @@
       font-family: $sfDisplay;
       font-weight: 600;
       margin-bottom: 20px;
-      background: linear-gradient(
-        268.3deg,
-        #00fff9 -4.34%,
-        #00c5ff 13.53%,
-        #0078ff 93.71%
-      );
+      background: linear-gradient(268.3deg,
+          #00fff9 -4.34%,
+          #00c5ff 13.53%,
+          #0078ff 93.71%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
       letter-spacing: -0.02em;
     }
+
     a {
       display: flex;
       align-items: center;
@@ -71,15 +83,14 @@
       font-weight: 500;
       margin-top: 36px;
       opacity: .8;
-      background: linear-gradient(
-        268.3deg,
-        #00fff9 -4.34%,
-        #00c5ff 13.53%,
-        #0078ff 93.71%
-      );
+      background: linear-gradient(268.3deg,
+          #00fff9 -4.34%,
+          #00c5ff 13.53%,
+          #0078ff 93.71%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
+
       span {
         display: flex;
         justify-content: center;
@@ -87,10 +98,12 @@
         width: 16px;
         height: 14px;
         margin: 3px 0 0 8px;
+
         img {
           width: 100%;
         }
       }
+
       &:hover {
         opacity: .6;
       }
@@ -105,7 +118,8 @@
       &-content {
         bottom: 30px;
         left: 30px;
-        &.right{
+
+        &.right {
           right: 30px;
         }
       }
@@ -131,9 +145,10 @@
         font-size: 18px;
 
       }
+
       a {
         font-size: 18px;
-        line-height:22px;
+        line-height: 22px;
         margin-top: 24px;
 
       }
@@ -145,23 +160,27 @@
 @mixin dex-sm-md {
   .dex {
     height: unset;
+
     .video {
       min-height: 590px;
       position: relative;
       padding-bottom: 62%;
       max-height: 100vh;
     }
+
     &__inner {
       &-content {
         left: 20px;
         bottom: 30px;
-        &.right{
+
+        &.right {
           right: 20px;
         }
       }
 
       h1 {
         margin-bottom: 5px;
+
         &.sm {
           font-size: 48px;
           line-height: 48px;
@@ -176,10 +195,12 @@
         font-size: 16px;
         line-height: 22px;
       }
+
       a {
         font-size: 15px;
         line-height: 19px;
         margin-top: 10px;
+
         span {
           width: 13px;
           height: 9px;
@@ -193,8 +214,7 @@
 // 440px
 @mixin dex-xxsm-xsm {
   .dex {
-    &__inner {
-    }
+    &__inner {}
   }
 }
 
@@ -203,7 +223,7 @@
   .dex {
     &__inner {
       &-content {
-        &.right{
+        &.right {
           bottom: 40px;
         }
       }
@@ -241,6 +261,7 @@
       line-height: 30px;
       font-family: $sfDisplay;
     }
+
     margin-bottom: 24px;
     font-family: $sfText;
   }
@@ -254,9 +275,11 @@
       font-size: 18px;
       line-height: 25px;
       color: $textColor;
+
       span {
         font-weight: 700;
       }
+
       @include inDarkMode {
         opacity: 0.8;
       }
@@ -279,6 +302,7 @@
 
   p {
     color: $textColor;
+
     @include inDarkMode {
       opacity: 0.8;
     }
@@ -288,9 +312,11 @@
     .summary {
       &__inner {
         padding: 160px 0 0;
-        &-info{
+
+        &-info {
           width: calc(40% - 15px);
         }
+
         &-text {
           width: calc(60% - 15px);
           padding: unset;
@@ -299,12 +325,14 @@
         }
       }
     }
-    
+
     ul {
       margin: 30px 0;
       padding-left: 10px;
+
       li {
         padding-left: 20px;
+
         &::before {
           width: 7px;
           height: 7px;
@@ -383,11 +411,13 @@
       .summary {
         &__inner {
           padding: 80px 0 10px;
+
           &-info {
             width: 100%;
             max-width: 900px;
             margin: 0 auto 40px;
           }
+
           &-text {
             width: 100%;
             max-width: 900px;
@@ -472,11 +502,13 @@
   .summary {
     &__inner {
       padding-bottom: 60px;
+
       &-text {
         padding: 25px;
         border-radius: 12px;
       }
     }
+
     h3 {
       margin-bottom: 15px;
     }
@@ -510,11 +542,13 @@
           }
         }
 
-      
+
       }
+
       ul {
         padding-left: 5px;
         margin: 15px 0;
+
         li {
           &::before {
             top: 6px;
@@ -555,8 +589,7 @@
 
     &.sm {
       .summary {
-        &__inner {
-        }
+        &__inner {}
       }
     }
   }
@@ -606,12 +639,10 @@
     margin-bottom: 28px;
 
     h5 {
-      background: linear-gradient(
-        268.3deg,
-        #00fff9 -4.34%,
-        #00c5ff 13.53%,
-        #0078ff 93.71%
-      );
+      background: linear-gradient(268.3deg,
+          #00fff9 -4.34%,
+          #00c5ff 13.53%,
+          #0078ff 93.71%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -651,24 +682,25 @@
       color: $white;
       opacity: 0.8;
       display: inline-block;
+
       span {
         font-weight: 700;
       }
+
       strong {
         font-weight: 700;
       }
 
       &.color {
         color: unset;
-        background: linear-gradient(
-          268.3deg,
-          #00fff9 -4.34%,
-          #00c5ff 13.53%,
-          #0078ff 93.71%
-        );
+        background: linear-gradient(268.3deg,
+            #00fff9 -4.34%,
+            #00c5ff 13.53%,
+            #0078ff 93.71%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
+
         span {
           background: $white;
           opacity: 0.8;
@@ -702,12 +734,10 @@
     margin-bottom: 60px;
     text-align: center;
     font-family: $sfDisplay;
-    background: linear-gradient(
-      268.3deg,
-      #00fff9 -4.34%,
-      #00c5ff 13.53%,
-      #0078ff 93.71%
-    );
+    background: linear-gradient(268.3deg,
+        #00fff9 -4.34%,
+        #00c5ff 13.53%,
+        #0078ff 93.71%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -922,6 +952,7 @@
 @mixin fees-xxxsm-xxsm {
   .fees {
     padding: 20px 0 60px;
+
     &__inner {
       &-info {
         text-align: left;
@@ -929,16 +960,20 @@
         line-height: 22px;
         font-weight: 500;
         font-family: $sfDisplay;
+
         br {
           display: block;
+
           &:first-child {
             display: none;
           }
         }
       }
     }
+
     &Text {
       margin-bottom: 28px;
+
       &:last-child {
         margin-bottom: 0;
       }
@@ -951,6 +986,7 @@
         font-weight: 600;
       }
     }
+
     p {
       &.sm {
         margin-bottom: 28px;
@@ -958,24 +994,29 @@
         font-size: 15px;
         line-height: 19px;
       }
+
       &.big {
         font-weight: 400;
       }
     }
+
     ul {
       padding: 24px 20px;
       border-radius: 20px;
       margin: 0 -10px 12px;
+
       li {
         font-size: 15px;
         line-height: 22px;
         font-weight: 400;
         margin-right: -7px;
         letter-spacing: -0.02em;
+
         &::before {
           left: 0;
           top: 8px;
         }
+
         span {
           font-weight: 400;
         }

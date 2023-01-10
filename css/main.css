@@ -1463,6 +1463,17 @@ html[data-theme=dark] .faq.big .faqItem {
 .chart.reverse {
   padding: 130px 0 0;
 }
+.chart.reverse.big .chartItem__content.head {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.chart.reverse.big .chartItem__content.head span {
+  width: 22px;
+  height: 22px;
+  margin: 0 6px 0 0;
+}
 .chart.reverse .chartItem__content.head {
   padding: 16px 20px;
 }
@@ -1474,6 +1485,7 @@ html[data-theme=dark] .faq.big .faqItem {
       -ms-flex-align: start;
           align-items: flex-start;
   opacity: 0.8;
+  text-align: start;
 }
 .chart.big .chartItem__content.head {
   -webkit-box-pack: center;
@@ -1510,6 +1522,7 @@ html[data-theme=dark] .faq.big .faqItem {
   font-family: "sfDisplay", sans-serif;
   font-weight: 500;
   border-bottom: 1px solid #313B50;
+  text-align: center;
 }
 .chartItem__content span {
   display: -webkit-box;
@@ -1535,8 +1548,12 @@ html[data-theme=dark] .faq.big .faqItem {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+.chartItem__content p br {
+  display: none;
+}
 .chartItem__content.bg {
   background-color: var(--tabBg);
+  text-align: start;
 }
 .chartItem__content.head {
   font-weight: 600;
@@ -3887,9 +3904,19 @@ html[data-theme=dark] .aboutText P {
   padding: 0;
   width: 100%;
   height: 100%;
+  z-index: 3;
+}
+.dex .video video {
+  pointer-events: none;
 }
 .dex .video video::-webkit-media-controls {
-  display: none;
+  display: none !important;
+}
+.dex .video video::-webkit-media-controls-panel {
+  display: none !important;
+}
+.dex .video video ::-webkit-media-controls, .dex .video video video::-moz-media-controls, .dex .video video video::-o-media-controls, .dex .video video video::-ms-media-controls {
+  display: none !important;
 }
 .dex__inner-content {
   width: 90%;
@@ -7333,9 +7360,6 @@ html[data-theme=dark] .aquaPool p {
   .chart {
     padding-bottom: 80px;
   }
-  .chart__inner-wrapper {
-    min-width: 680px;
-  }
   .chart.reverse {
     padding: 50px 0 0;
   }
@@ -8202,6 +8226,25 @@ html[data-theme=dark] .aquaPool p {
   }
   .chart.reverse .chartItem__content.head {
     padding: 8px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .chart.reverse .chartItem__content.head span {
+    width: 22px;
+    height: 24px;
+    margin: 0 0 4px 0;
+  }
+  .chart.reverse .chartItem__content.head p {
+    width: 100%;
+    text-align: center;
+  }
+  .chart.reverse .chartItem__content.head p br {
+    display: block;
   }
 }
 @media (max-width: 650px) {
