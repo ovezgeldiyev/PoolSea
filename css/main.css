@@ -3915,7 +3915,13 @@ html[data-theme=dark] .aboutText P {
 .dex .video video::-webkit-media-controls-panel {
   display: none !important;
 }
-.dex .video video ::-webkit-media-controls, .dex .video video video::-moz-media-controls, .dex .video video video::-o-media-controls, .dex .video video video::-ms-media-controls {
+.dex .video video::-moz-media-controls {
+  display: none !important;
+}
+.dex .video video::-o-media-controls {
+  display: none !important;
+}
+.dex .video video::-ms-media-controls {
   display: none !important;
 }
 .dex__inner-content {
