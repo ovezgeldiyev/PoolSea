@@ -1,0 +1,6 @@
+.dash {
+  margin: 0 0 0 auto;
+  width: calc(100% - 260px);
+  min-height: 100vh;
+  padding: 40px 30px 30px;
+}

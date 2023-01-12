@@ -649,11 +649,27 @@
       p {
         font-weight: 400;
         font-family: $sfText;
+        &.extra {
+          font-size: 15px;
+          line-height: 19px;
+        }
       }
     }
   }
 }
-
+// 440px
+@mixin intro-xxsm-xsm {
+  .intro {
+    &__inner {
+      p {
+        &.extra {
+          font-size: 13px;
+          line-height: 17px;
+        }
+      }
+    }
+  }
+}
 .tab {
   padding: 25px 0;
   position: relative;
