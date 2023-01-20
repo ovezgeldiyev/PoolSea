@@ -3106,6 +3106,9 @@ html[data-theme=dark] .discleamer p {
 .info.second {
   padding: 160px 0;
 }
+.info.second.last {
+  padding-top: 0;
+}
 .info.second .info__inner-content {
   width: calc(55% - 18px);
   max-width: 600px;
@@ -8542,6 +8545,9 @@ html[data-theme=dark] .aquaPool p {
     width: 80%;
     margin-bottom: 28px;
     max-width: 370px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
   .info.third .info__inner {
     -webkit-box-orient: vertical;

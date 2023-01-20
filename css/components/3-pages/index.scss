@@ -3705,7 +3705,9 @@
 .info {
   &.second {
     padding: 160px 0;
-
+    &.last {
+      padding-top: 0;
+    }
     .info__inner {
       &-content {
         width: calc(55% - 18px);
@@ -3963,6 +3965,7 @@
           width: 80%;
           margin-bottom: 28px;
           max-width: 370px;
+          order: -1;
         }
       }
     }
