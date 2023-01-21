@@ -3,11 +3,13 @@
 
     &.reverse {
         padding: 130px 0 0;
+
         &.big {
             .chartItem {
                 &__content {
                     &.head {
                         flex-direction: row;
+
                         span {
                             width: 22px;
                             height: 22px;
@@ -17,6 +19,7 @@
                 }
             }
         }
+
         .chartItem {
             &__content {
                 &.head {
@@ -25,6 +28,7 @@
             }
         }
     }
+
     &.big {
         .chart {
             &Item {
@@ -33,15 +37,46 @@
                     align-items: flex-start;
                     opacity: .8;
                     text-align: start;
+
                     &.head {
                         justify-content: center;
                         align-items: center;
-               
+
                     }
                 }
             }
         }
     }
+
+    &__header {
+        max-width: 500px;
+        margin: 0 auto 64px;
+        text-align: center;
+
+        h3 {
+            background: linear-gradient(268.3deg,
+                    #00fff9 -4.34%,
+                    #00c5ff 13.53%,
+                    #0078ff 93.71%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.02em;
+            font-family: $sfDisplay;
+            font-weight: 600;
+            margin-bottom: 30px;
+            span {
+                background: $textColor;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+        }
+        p {
+            opacity: .8;
+        }
+    }
+
     &Item {
         display: flex;
         justify-content: space-between;
@@ -60,29 +95,34 @@
             font-weight: 500;
             border-bottom: 1px solid #313B50;
             text-align: center;
+
             &.equal {
                 b {
                     font-weight: 500;
                 }
+
                 .chartItem {
                     &__content {
-                    
+
                         &-icon {
                             display: none;
                         }
                     }
                 }
             }
+
             &-icon {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 24px;
                 height: 24px;
+
                 img {
                     width: 100%;
                 }
             }
+
             span {
                 display: flex;
                 justify-content: center;
@@ -105,6 +145,7 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
+
                 br {
                     display: none;
                 }
@@ -156,11 +197,13 @@
                 }
             }
         }
+
         &.big {
             .chart {
                 &Item {
                     &__content {
                         width: calc(33% - 8px);
+
                         &:first-child {
                             width: calc(34% - 8px);
                         }
@@ -175,28 +218,35 @@
 @mixin chart-md-lg {
     .chart {
         padding-bottom: 80px;
+
         &.reverse {
             padding: 50px 0 0;
+
             .chartItem {
                 margin: 0 -2px;
+
                 &__content {
                     font-size: 14px;
                     line-height: 17px;
                     width: calc(30% - 4px);
                     margin: 0 2px;
+
                     span {
                         width: 16px;
                         height: 16px;
                         margin-right: 4px;
                     }
+
                     p {
                         width: calc(100% - 20px);
                     }
+
                     &:first-child {
                         width: calc(40% - 4px);
                     }
                 }
             }
+
             .chart {
                 &__inner {
                     overflow-x: auto;
@@ -204,17 +254,20 @@
                 }
             }
         }
+
         &.big {
-   
+
             .chart {
                 &__inner {
                     &-wrapper {
                         min-width: 880px;
                     }
                 }
+
                 &Item {
                     &__content {
                         width: calc(36% - 4px);
+
                         &:first-child {
                             width: calc(28% - 4px);
                         }
@@ -239,20 +292,29 @@
                         padding: 8px;
                         flex-direction: column;
                         align-items: center;
+
                         span {
                             width: 22px;
                             height: 24px;
                             margin: 0 0 4px 0;
                         }
+
                         p {
                             width: 100%;
                             text-align: center;
+
                             br {
                                 display: block;
                             }
                         }
                     }
                 }
+            }
+        }
+        &__header {
+            margin-bottom: 40px;
+            h3 {
+                margin-bottom: 20px;
             }
         }
     }
@@ -270,6 +332,17 @@
                 }
             }
         }
+        &__header {
+            margin-bottom: 25px;
+            h3 {
+                margin-bottom: 10px;
+            }
+            p {
+                br {
+                    display: none;
+                }
+            }
+        }
         &Item {
             margin: 0 -2px;
 
@@ -280,23 +353,27 @@
                 padding: 10px 7px;
                 width: calc(30% - 4px);
                 margin: 0 2px;
+
                 &-icon {
                     width: 19px;
                     height: 19px;
                 }
+
                 &.equal {
                     b {
                         display: none;
                     }
+
                     .chartItem {
                         &__content {
-                        
+
                             &-icon {
                                 display: flex;
                             }
                         }
                     }
                 }
+
                 span {
                     width: 15px;
                     height: 15px;
@@ -325,6 +402,7 @@
                 margin: 0 -1px;
             }
         }
+
         &.big {
             .chartItem {
                 &__content {
@@ -332,6 +410,7 @@
                 }
             }
         }
+
         &Item {
             margin: 0 -1px;
 
@@ -341,10 +420,12 @@
                 padding: 8px 4px;
                 width: calc(30% - 2px);
                 margin: 0 1px;
+
                 &-icon {
                     width: 15px;
                     height: 15px;
                 }
+
                 span {
                     margin-right: 3px;
                 }

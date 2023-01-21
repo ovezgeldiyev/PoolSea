@@ -4039,6 +4039,7 @@
 
       h3 {
         margin-bottom: 24px;
+     
       }
     }
 
@@ -4056,7 +4057,18 @@
     }
   }
 }
-
+// 390px
+@mixin info-xxxsm-xxsm {
+  .info {
+    &__inner {
+      h3 {
+        br {
+          display: block;
+        }
+      }
+    }
+  }
+}
 .airdrop {
   &__inner {
     padding: 160px 0;
